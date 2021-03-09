@@ -1,10 +1,32 @@
 # Datajoint Elements
-**DataJoint Elements** is a library of software modules for organizing data collection and analysis for the major modalities of neurophysiology experiments. 
-The project aims to provide an efficient approach to managing scientific data workflows—the complex multi-step methods for data collection, preparation, processing, analysis, and modeling that researchers must perform in the course of an experimental study. 
-The work is derived from the developments in leading neuroscience research groups that use the DataJoint framework for defining, deploying, and sharing their data workflows. 
+**DataJoint Elements** is a library of software modules for organizing data and computations for the major types of neurophysiology experiments. 
+The project provides an efficient approach to creating and managing *scientific data workflows*: the complex multi-step methods for data collection, preparation, processing, analysis, and modeling that researchers must perform in the course of an experimental study. 
+The work is derived from the developments in leading neuroscience projects that use the [DataJoint framework](https://datajoint.io) for defining, deploying, and sharing their data workflows. 
 
-## Structure
-### Repositories and packages
+# Project performance and governance 
+## Performer Team 
+The project is performed by [DataJoint Neuro](https://djneuro.io) with Dimitri Yatsenko serving as Principal Investigator.
+Lead scientists on the project are: Shan Shen, Thinh Nguyen, Kabilar Gunalan, and Edgar Walker. 
+Engineers on the project are: Raphael Guzman, Christopher Turner, Maho Sasaki, and Daniel Sitonic. 
+
+## Scientific Steering Group
+The project oversight is provided  by the Scientific Steering Group comprising 
+* [Mackenzie Mathis (EPFL)](http://www.mackenziemathislab.org/team) 
+* [John Cunningham (Columbia U)](https://stat.columbia.edu/~cunningham/)
+* [Carlos Brody (Princeton U](https://https://pni.princeton.edu/faculty/carlos-brody)
+* [Karel Svoboda (Janelia)](https://www.janelia.org/people/karel-svoboda)
+* [Nick Steinmetz (U of Washington)](http://www.nicksteinmetz.com/)
+* [Loren Frank (UCSF)](https://franklab.ucsf.edu/)
+
+# What is a DataJoint Element?
+In DataJoint, a workflow is organized as a relational database, where each table represents an entity type from the experiment: subjects, sessions, recordings, cells, etc. 
+
+## Validation 
+
+## Experiment Types
+p
+
+## Repositories and packages
 - GitHub: repos:   datajoint-elements, elements-ephys, elements-  
 - DataJoint Elements will comprise a collection of GitHub repos under github.com/datajoint
 - DataJoint.io/elements will have links and landing pages. 
