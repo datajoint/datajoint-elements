@@ -48,6 +48,9 @@ The project oversight and guidance is provided by the Scientific Steering Group 
 * Docker image for MySQL server configured for use with DataJoint:  https://github.com/datajoint/mysql-docker
 * Interactive online tutorial https://playground.datajoint.io
 
+## Interfaces 
+* **Pharus** -- a REST API for interacting with DataJoint databases  https://github.com/datajoint/pharus
+* **DataJoint Labbook** -- a front-end web interface for viewing and entering data  https://github.com/datajoint/datajoint-labbook
 
 ## Elements 
 
@@ -60,3 +63,5 @@ The project oversight and guidance is provided by the Scientific Steering Group 
 
 * Electrophysiology workflow with lab and animal management: https://github.com/datajoint/workflow-ephys
 * Imaging workflow https://github.com/datajoint/workflow-imaging
+
+
