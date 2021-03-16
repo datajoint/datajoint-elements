@@ -55,13 +55,12 @@ The project oversight and guidance is provided by the Scientific Steering Group 
 ## Elements 
 
 * Lab management https://github.com/datajoint/elements-lab 
-* Animal  management https://github.com/datajoint/elements-lab 
+* Animal management https://github.com/datajoint/elements-animal
 * Extracellular electrophysiology https://github.com/datajoint/elements-ephys
-* Calcium imaging https://github.com/datajoint/delements-imaging 
+* Calcium imaging https://github.com/datajoint/elements-imaging
 
 ## Example workflows 
 
 * Electrophysiology workflow with lab and animal management: https://github.com/datajoint/workflow-ephys
-* Imaging workflow https://github.com/datajoint/workflow-imaging
-
+* Imaging workflow with lab and animal management https://github.com/datajoint/workflow-imaging
 
