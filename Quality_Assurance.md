@@ -36,19 +36,19 @@ When introducing new code to the code base, the following will be required for a
 
 ## Alpha Release Process
 
-For the workflows and their revisions, the initial development and internal testing, the code will be released in Alpha. During this phase, we will engage external research teams to test and validate the complete workflows in real-life experiments with our team's engineering support. During this phase, significant design changes may be performed and not all features may be completely developed. However, several features should be usable and suitable for testing and validation.
+For the workflows and their revisions, the initial development and internal testing, the code will be released in *Alpha*. During this phase, we will engage external research teams to test and validate the complete workflows in real-life experiments with our team's engineering support. During this phase, significant design changes may be performed and not all features may be completely developed. However, several features should be usable and suitable for testing and validation.
 
 ## Beta Release Process
 
-After the initial validation phase, we make the workflows available to the general public with a warning of Beta status and that the released code may be subject to errors and changes. During this phase, feature development should be complete with a focus on collecting user feedback to make design improvements and bug fixes.
+After the initial validation phase, we make the workflows available to the general public with a warning of *Beta* status and that the released code may be subject to errors and changes. During this phase, feature development should be complete with a focus on collecting user feedback to make design improvements and bug fixes.
 
 ## Official Release Process
 
-After gaining confidence of user satisfaction by resolving concerns raised in Beta, the workflows are declared officially released and announced to the community.
+After gaining confidence of user satisfaction by resolving concerns raised in *Beta*, the workflows are declared officially released and announced to the community.
 
 ## Maintenance Support Lifecycle
 
-Revision of the workflows will be released with a version specification that clearly identifies whether in Alpha, Beta, or Official release status. Quality assurance process will be followed for all iterations and new designs. If the updates require changes in the design of the database schema or formats, a process for data migration will be provided. 
+Revision of the workflows will be released with a version specification that clearly identifies whether in *Alpha*, *Beta*, or *Official* release status. Quality assurance process will be followed for all iterations and new designs. If the updates require changes in the design of the database schema or formats, a process for data migration will be provided. 
 
 ## User Feedback & Issue Tracking
 
