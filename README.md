@@ -12,7 +12,7 @@ The overview of the principles of DataJoint pipelines and the goals of DataJoint
 
 ## Performer Team 
 The project is performed by [DataJoint Neuro](https://djneuro.io) with Dimitri Yatsenko serving as Principal Investigator.
-The lead scientists on the project are: 
+The lead scientists on the project are:
 
 * Dimitri Yatsenko
 * Thinh Nguyen
@@ -20,11 +20,11 @@ The lead scientists on the project are:
 * Kabilar Gunalan
 * Edgar Y. Walker
 
-Engineers on the project are: 
+Engineers on the project are:
 * Raphael Guzman
 * Christopher Turner
 * Maho Sasaki
-* Daniel Sitonic. 
+* Daniel Sitonic
 
 
 ## Scientific Steering Group
@@ -36,6 +36,9 @@ The project oversight and guidance is provided by the Scientific Steering Group 
 * [Nick Steinmetz (U of Washington)](http://www.nicksteinmetz.com/)
 * [Loren Frank (UCSF)](https://franklab.ucsf.edu/)
 
+## Policies
+The project observes the following policies:
+* [Quality Assurance](./Quality_Assurance.md)
 
 # Components 
 
