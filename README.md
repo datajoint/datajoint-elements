@@ -18,29 +18,8 @@ The Resource will launch on May 1, 2021.
 
 The overview of the principles of DataJoint pipelines and the goals of DataJoint Elements are described in the position paper "DataJoint Elements: Building Scientific Workflows for Neurophysiology." (prepint to be posted by 03/25/2021)
 
-# Team 
-
-The project is performed by [DataJoint Neuro](https://djneuro.io) with Dimitri Yatsenko serving as Principal Investigator.
-
-Lead scientists on the project are:
-* Dimitri Yatsenko - PI
-* Thinh Nguyen - Data Scientist
-* Shan Shen - Data Scientist
-* Kabilar Gunalan - Data Scientist
-
-Engineers on the project are:
-* Raphael Guzman - Software Engineering 
-* Christopher Turner - Data Systems Engineering
-* Maho Sasaki - Frontend Developer
-* Daniel Sitonic - Backend Developer, Software Engineer
-
-Past contributors 
-* Edgar Y. Walker - System architect, Data Scientist, Project Manager (from project start to Jan, 2021)
-
-The first-person pronouns "we" and "our" in these documents refer to the Performer Team. 
-
-# Policies
-The project observes the following policies:
+# Project Structure, Performance, Governance, and Policies
+* [Team](Team.md)
 * [Project Governance](Governance.md)
 * [Project Selection Process](Selection.md)
 * [Quality Assurance](QualityAssurance.md)
