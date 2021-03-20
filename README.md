@@ -1,7 +1,17 @@
-# Datajoint Elements
-This is the main page for **DataJoint Elements** — a library of software modules for organizing data and computations in neurophysiology experiments. 
-The project provides an efficient approach to creating and managing *scientific data workflows*: the complex multi-step methods for data collection, preparation, processing, analysis, and modeling that researchers must perform in the course of an experimental study. 
-The work is derived from the developments in leading neuroscience projects that use the [DataJoint framework](https://datajoint.io) for defining, deploying, and sharing their data workflows. 
+# DataJoint Elements 
+The project provides a resource ("Resource") to provide an efficient approach for neuroscience labs to create and manage *scientific data workflows*: the complex multi-step methods for data collection, preparation, processing, analysis, and modeling that researchers must perform in the course of an experimental study. 
+The work is derived from the developments in leading neuroscience projects and uses the [DataJoint framework](https://datajoint.io) for defining, deploying, and sharing their data workflows. 
+
+The Resource provides the following main components:
+<dl>
+<dt> DataJoint
+<dd> the open-source framework for data pipelines and automated computational workflows + related documentation, tools, and utilities.
+
+<dt> DataJoint Elements
+<dd>  a collection of curated modules for assembling workflows for the major modalities of neurophysiology experiments + related documentation, tools, and utilities.
+</dl>
+A more detailed enumeration of the componets is provided in [Components](#Components)
+
 
 ## Status 
 This resource will launch on May 1, 2021.
@@ -26,7 +36,7 @@ Engineers on the project are:
 * Daniel Sitonic - Backend Developer, Software Engineer
 
 Past contributors 
-* Edgar Y. Walker - System architect, Project Manager (from project start to Jan, 2021)
+* Edgar Y. Walker - System architect, Data Scientist, Project Manager (from project start to Jan, 2021)
 
 The first-person pronouns "we" and "our" in these documents refer to the Performer Team. 
 
@@ -38,7 +48,6 @@ The project observes the following policies:
 * [Outreach Plan](./Outreach.md)
 
 # Terminology 
-
 <dl>
 <dt>DataJoint 
 <dd>a software framework for database programming directly from matlab and python. Thanks to its support of automated computational dependencies, DataJoint serves as a workflow management system.
@@ -82,5 +91,5 @@ The project observes the following policies:
 * Electrophysiology workflow with lab and animal management: https://github.com/datajoint/workflow-ephys
 * Imaging workflow with lab and animal management https://github.com/datajoint/workflow-imaging
 
-## Online Training Infrastructure 
+## Online Training  
 * Interactive online tutorials https://playground.datajoint.io
