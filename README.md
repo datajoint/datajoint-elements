@@ -1,22 +1,12 @@
 # DataJoint Elements 
-The project provides a resource ("Resource") to provide an efficient approach for neuroscience labs to create and manage *scientific data workflows*: the complex multi-step methods for data collection, preparation, processing, analysis, and modeling that researchers must perform in the course of an experimental study. 
+This resource ("Resource") provides an efficient approach for neuroscience labs to create and manage *scientific data workflows*: the complex multi-step methods for data collection, preparation, processing, analysis, and modeling that researchers must perform in the course of an experimental study. 
 The work is derived from the developments in leading neuroscience projects and uses the [DataJoint framework](https://datajoint.io) for defining, deploying, and sharing their data workflows. 
 
-The Resource provides the following main components:
-<dl>
-<dt> DataJoint
-<dd> the open-source framework for data pipelines and automated computational workflows + related documentation, tools, and utilities.
-
-<dt> DataJoint Elements
-<dd>  a collection of curated modules for assembling workflows for the major modalities of neurophysiology experiments + related documentation, tools, and utilities.
-</dl>
-A detailed component list is in [Components](#components)
-
+An overview of the principles of DataJoint workflows and the goals of DataJoint Elements are described in the position paper "DataJoint Elements: Building Scientific Workflows for Neurophysiology." (prepint to be posted by 03/25/2021)
 
 ## Status 
-The Resource will launch on May 1, 2021.
+The beta release of the first DataJoint Elements is scheduled for April 1, 2021.
 
-The overview of the principles of DataJoint pipelines and the goals of DataJoint Elements are described in the position paper "DataJoint Elements: Building Scientific Workflows for Neurophysiology." (prepint to be posted by 03/25/2021)
 
 # Project Structure
 * [Team](Team.md)
@@ -28,6 +18,14 @@ The overview of the principles of DataJoint pipelines and the goals of DataJoint
 * [Glossary](Glossary.md) 
 
 # Components 
+The Resource provides the following main components:
+<dl>
+<dt> DataJoint
+<dd> the open-source framework for data pipelines and automated computational workflows + related documentation, tools, and utilities.
+
+<dt> DataJoint Elements
+<dd>  a collection of curated modules for assembling workflows for the major modalities of neurophysiology experiments + related documentation, tools, and utilities.
+</dl>
 
 ## The DataJoint framework 
 * **DataJoint for Python** https://github.com/datajoint/datajoint-python    
