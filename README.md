@@ -13,38 +13,33 @@ The overview of the principles of DataJoint pipelines and the goals of DataJoint
 ## Performer Team 
 The project is performed by [DataJoint Neuro](https://djneuro.io) with Dimitri Yatsenko serving as Principal Investigator.
 
-The lead scientists on the project are:
-
-* Dimitri Yatsenko
-* Thinh Nguyen
-* Shan Shen
-* Kabilar Gunalan
-* Edgar Y. Walker
+Lead scientists on the project are:
+* Dimitri Yatsenko - PI
+* Thinh Nguyen - Data Scientist
+* Shan Shen - Data Scientist
+* Kabilar Gunalan - Data Scientist
 
 Engineers on the project are:
-* Raphael Guzman
-* Christopher Turner
-* Maho Sasaki
-* Daniel Sitonic
+* Raphael Guzman - Software Engineering 
+* Christopher Turner - Data Systems Engineering
+* Maho Sasaki - Frontend Developer
+* Daniel Sitonic - Backend Developer, Software Engineer
 
-## Scientific Steering Group
-The project oversight and guidance is provided by the Scientific Steering Group comprising 
-* [Mackenzie Mathis (EPFL)](http://www.mackenziemathislab.org/team) 
-* [John Cunningham (Columbia U)](https://stat.columbia.edu/~cunningham/)
-* [Carlos Brody (Princeton U)](https://https://pni.princeton.edu/faculty/carlos-brody)
-* [Karel Svoboda (Janelia)](https://www.janelia.org/people/karel-svoboda)
-* [Nick Steinmetz (U of Washington)](http://www.nicksteinmetz.com/)
-* [Loren Frank (UCSF)](https://franklab.ucsf.edu/)
+Past contributors 
+* Edgar Y. Walker - System architect, Project Manager (from project start to Jan, 2021)
 
-## Policies
+The first-person pronouns "we" and "our" in these documents refer to the Performer Team. 
+
+# Policies
 The project observes the following policies:
+* [Project Governance](./Governance.md)
 * [Project Selection Process](./Selection.md)
 * [Quality Assurance](./QualityAssurance.md)
-* [Outreach Plan](./OutReach.md)
+* [Outreach Plan](./Outreach.md)
 
-# Some Terminology 
+# Terminology 
+
 <dl>
-
 <dt>DataJoint 
 <dd>a software framework for database programming directly from matlab and python. Thanks to its support of automated computational dependencies, DataJoint serves as a workflow management system.
 
@@ -61,8 +56,7 @@ The project observes the following policies:
 <dd>software modules implementing portions of experiment workflows designed for ease of integration into diverse custom workflows.
 
 <dt>djHub 
-<dd>our team's internal platform for delivering cloud-based infrastructure to support training infrastructure and validation studies.
-
+<dd>our team's internal platform for delivering cloud-based infrastructure to support online training resources, validation studies, and collaborative projects.
 </dl>
 
 # Components 
@@ -75,8 +69,8 @@ The project observes the following policies:
 * Docker image for MySQL server configured for use with DataJoint:  https://github.com/datajoint/mysql-docker
 
 ## Interfaces 
-* **Pharus** -- a REST API for interacting with DataJoint databases  https://github.com/datajoint/pharus
-* **DataJoint Labbook** -- a front-end web interface for viewing and entering data  https://github.com/datajoint/datajoint-labbook
+* **Pharus** — a REST API for interacting with DataJoint databases  https://github.com/datajoint/pharus
+* **DataJoint Labbook** — a front-end web interface for viewing and entering data  https://github.com/datajoint/datajoint-labbook
 
 ## Elements 
 * Lab management https://github.com/datajoint/elements-lab 
@@ -89,4 +83,4 @@ The project observes the following policies:
 * Imaging workflow with lab and animal management https://github.com/datajoint/workflow-imaging
 
 ## Online Training Infrastructure 
-* Interactive online tutorial https://playground.datajoint.io
+* Interactive online tutorials https://playground.datajoint.io
