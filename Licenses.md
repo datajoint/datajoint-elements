@@ -8,4 +8,4 @@ All components of provided by the Resource are distributed under permissive open
 * DataJoint Elements and Workflows: MIT License
 
 
-&copy; DataJoint Contributors, 2021
+&copy; DataJoint Neuro, 2021

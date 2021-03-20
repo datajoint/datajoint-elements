@@ -27,10 +27,10 @@ Before new Resource components are released as part of this Resource, our team e
 We conduct activities to disseminate Resource components for adoption in diverse neuroscience labs. These activities include
 
 * A central website for the Resource. Presently, this GitHub repository serves this perpose page https://github.com/datajoint/datajoint-elements
-* Conference talks and presentations
+* Conference talks, presentations, and workshops
 * Publications in peer-reviewed journals 
 * White papers posted on internet resources and websites
-* On-site workshops 
+* On-site workshops by invitation 
 * Remote workshops and webinars
 * Online interactive tutorials 
 

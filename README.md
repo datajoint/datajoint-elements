@@ -41,10 +41,11 @@ The first-person pronouns "we" and "our" in these documents refer to the Perform
 
 # Policies
 The project observes the following policies:
-* [Project Governance](./Governance.md)
-* [Project Selection Process](./Selection.md)
-* [Quality Assurance](./QualityAssurance.md)
-* [Outreach Plan](./Outreach.md)
+* [Project Governance](Governance.md)
+* [Project Selection Process](Selection.md)
+* [Quality Assurance](QualityAssurance.md)
+* [Outreach Plan](Outreach.md)
+* [Licenses and User Agreements](Licenses.md)
 
 # Terminology 
 <dl>
@@ -92,3 +93,5 @@ The project observes the following policies:
 
 ## Online Training  
 * Interactive online tutorials https://playground.datajoint.io
+
+&copy; DataJoint NEURO, 2021

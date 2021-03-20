@@ -1,6 +1,6 @@
 # Quality Assurance
 
-DataJoint and DataJoint Elements serve as a framework and a starting point for numerous new projects; setting the standard of quality for data architecture and software design. To ensure higher quality, the following policies have been adopted into the software development lifecycle (SDLC).
+DataJoint and DataJoint Elements serve as a framework and starting points for numerous new projects, setting the standard of quality for data architecture and software design. To ensure higher quality, the following policies have been adopted into the software development lifecycle (SDLC).
 
 ## Coding Standards
 
