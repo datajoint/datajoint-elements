@@ -18,7 +18,7 @@ The Resource will launch on May 1, 2021.
 
 The overview of the principles of DataJoint pipelines and the goals of DataJoint Elements are described in the position paper "DataJoint Elements: Building Scientific Workflows for Neurophysiology." (prepint to be posted by 03/25/2021)
 
-# Project Structure, Performance, Governance, and Policies
+# Project Structure
 * [Team](Team.md)
 * [Project Governance](Governance.md)
 * [Project Selection Process](Selection.md)
