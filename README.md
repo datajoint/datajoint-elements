@@ -10,17 +10,16 @@ The Resource provides the following main components:
 <dt> DataJoint Elements
 <dd>  a collection of curated modules for assembling workflows for the major modalities of neurophysiology experiments + related documentation, tools, and utilities.
 </dl>
-A more detailed enumeration of the componets is provided in [Components](#Components)
+A detailed component list is in [Components](#components)
 
 
 ## Status 
-This resource will launch on May 1, 2021.
+The Resource will launch on May 1, 2021.
 
 The overview of the principles of DataJoint pipelines and the goals of DataJoint Elements are described in the position paper "DataJoint Elements: Building Scientific Workflows for Neurophysiology." (prepint to be posted by 03/25/2021)
 
-# Project performance and governance 
+# Team 
 
-## Performer Team 
 The project is performed by [DataJoint Neuro](https://djneuro.io) with Dimitri Yatsenko serving as Principal Investigator.
 
 Lead scientists on the project are:
