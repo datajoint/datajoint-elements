@@ -44,7 +44,8 @@ The Resource provides the following main components:
 * Extracellular electrophysiology https://github.com/datajoint/elements-ephys
 * Calcium imaging https://github.com/datajoint/elements-imaging
 
-## Example workflows 
+## Example workflows
+* Lab and animal management workflow: https://github.com/datajoint/workflow-animal
 * Electrophysiology workflow with lab and animal management: https://github.com/datajoint/workflow-ephys
 * Imaging workflow with lab and animal management https://github.com/datajoint/workflow-imaging
 
