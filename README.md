@@ -29,7 +29,7 @@ The Resource provides the following main components:
 </dl>
 
 ## Elements
-* Lab management https://github.com/datajoint/element-lab 
+* Lab management https://github.com/datajoint/elements-lab 
 * Animal management https://github.com/datajoint/element-animal
   * Example workflow  https://github.com/datajoint/worklow-animal
 * Experiment session https://github.com/datajoint/element-session
