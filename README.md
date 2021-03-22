@@ -32,7 +32,7 @@ The Resource provides the following main components:
 * Lab management https://github.com/datajoint/elements-lab 
 * Animal management https://github.com/datajoint/elements-animal
   * Example workflow  https://github.com/datajoint/workflow-animal
-* Experiment session https://github.com/datajoint/element-session
+* Experiment session https://github.com/datajoint/elements-session
 * Extracellular array electrophysiology https://github.com/datajoint/element-array-ephys
   * Example workflow https://github.com/datajoint/wokrlow-array-ephys
 * Calcium imaging https://github.com/datajoint/element-calcium-imaging
