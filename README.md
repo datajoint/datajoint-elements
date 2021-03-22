@@ -12,6 +12,7 @@ The beta release of the first DataJoint Elements is scheduled for May 1, 2021.
 * [Team](Team.md)
 * [Project Governance](Governance.md)
 * [Project Selection Process](Selection.md)
+* [Design Principles](DesignPrinciples.md)
 * [Quality Assurance](QualityAssurance.md)
 * [Outreach Plan](Outreach.md)
 * [Licenses and User Agreements](Licenses.md)
@@ -27,6 +28,23 @@ The Resource provides the following main components:
 <dd>  a collection of curated modules for assembling workflows for the major modalities of neurophysiology experiments + related documentation, tools, and utilities.
 </dl>
 
+## Elements
+* Lab management https://github.com/datajoint/element-lab 
+* Animal management https://github.com/datajoint/element-animal
+  * Example workflow  https://github.com/datajoint/worklow-animal
+* Experiment session https://github.com/datajoint/element-session
+* Extracellular array electrophysiology https://github.com/datajoint/element-array-ephys
+  * Example workflow https://github.com/datajoint/wokrlow-array-ephys
+* Calcium imaging https://github.com/datajoint/element-calcium-imaging
+  * Example workflow https://github.com/datajoint/workflow-calcium-imaging
+* Miniscope imaging https://github.com/datajoint/element-miniscope
+  * Example workflow https://github.com/datajoint/workflow-miniscope
+   
+## Example workflows 
+* Electrophysiology workflow with lab and animal management: https://github.com/datajoint/workflow-ephys
+* Imaging workflow with lab and animal management https://github.com/datajoint/workflow-imaging
+
+
 ## The DataJoint framework 
 * **DataJoint for Python** https://github.com/datajoint/datajoint-python    
 * **DataJoint for MATLAB** https://github.com/datajoint/datajoint-matlab    
@@ -37,16 +55,6 @@ The Resource provides the following main components:
 ## Interfaces 
 * **Pharus** — a REST API for interacting with DataJoint databases  https://github.com/datajoint/pharus
 * **DataJoint Labbook** — a front-end web interface for viewing and entering data  https://github.com/datajoint/datajoint-labbook
-
-## Elements 
-* Lab management https://github.com/datajoint/elements-lab 
-* Animal management https://github.com/datajoint/elements-animal
-* Extracellular electrophysiology https://github.com/datajoint/elements-ephys
-* Calcium imaging https://github.com/datajoint/elements-imaging
-
-## Example workflows 
-* Electrophysiology workflow with lab and animal management: https://github.com/datajoint/workflow-ephys
-* Imaging workflow with lab and animal management https://github.com/datajoint/workflow-imaging
 
 ## Online Training  
 * Interactive online tutorials https://playground.datajoint.io
