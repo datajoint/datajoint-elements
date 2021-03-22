@@ -12,10 +12,10 @@ The precursor project team must be  open to interviews to describe in detail the
 **Rationale:** This Resource does not aim to develop fundamentally new solutions for neurophysiology data acquisition and analysis. Rather it seeks to systematize and disseminate existing open-source tools proven in leading research projects.
 
 <dt> 2. Impact
-<dd> New components  proposed for support in the project must be shown to be in demand  by a substantial population or research groups, on the order of 100+ labs globally.
+<dd> New components  proposed for support in the project must be shown to be in demand by a substantial population or research groups, on the order of 100+ labs globally.
 
 <dt> 3. Validation Roadmap 
-<dd> Several new research groups must express interest in becoming the validation sites during the alpha and beta release phases of the project. Our team will work closely with the validation sites to test the components in their 
+<dd> Several new research groups must express interest in becoming the validation sites during the alpha and beta release phases of the project. Our team will work closely with the validation sites to test the components in their workflow and collect feedback during the process.
 
 <dt> 4. Sustainability 
 <dd> For all third-party tool or resource included in the proposed component, their long-term maintenance roadmap must be established. 

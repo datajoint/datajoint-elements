@@ -6,9 +6,9 @@ DataJoint and DataJoint Elements serve as a framework and starting points for nu
 
 When writting code, the following principles should be observed.
 
-- **Style**: Code shall be written for clear readability. Uniform and clear naming conventions, module structure, and formatting requirements shall be established across all components of the project. Python's [PEP8](https://www.python.org/dev/peps/pep-0008/#naming-conventions) standard offers much guidance to this regard which can similarly be applied to all languages.
-- **Maintance Overhead**: Code base length should be noted to prevent large, unnecessarily complex solutions from being introduced. The idea is that the longer the code base, the more there is to review and maintain. Therefore, we should aim to find a compromise where we can keep the code base from becoming too large without adding convoluted complexity.
-- **Performance**: Performance drawbacks should be avoided, optimized, or, at least, be properly justified. For instance: memory management, garbage collection, disk reads/writes, and processing overhead should be regarded to ensure an efficient solution is achieved.
+- **Style**: Code shall be written for clear readability. Uniform and clear naming conventions, module structure, and formatting requirements shall be established across all components of the project. Python's [PEP8](https://www.python.org/dev/peps/pep-0008/#naming-conventions) standard offers clear guidance to this regard which can similarly be applied to all languages.
+- **Maintenance Overhead**: Code base size should be noted to prevent large, unnecessarily complex solutions from being introduced. The idea is that the larger the code base, the more there is to review and maintain. Therefore, we should aim to find a compromise where we can keep the code base from becoming too large without adding convoluted complexity.
+- **Performance**: Performance drawbacks should be avoided, controlled, or, at least, be properly monitored and justified. For instance: memory management, garbage collection, disk reads/writes, and processing overhead should be regarded to ensure that an efficient solution is achieved.
 
 ## Automated Testing
 
@@ -17,9 +17,9 @@ All components and their revisions must include appropriate automated software t
 Generally, this includes tests related to:
 
 - **Syntax**: Verify that the code base does not contain any syntax errors and will run or compile successfully.
-- **Unit & Integration**: Verify that that low-level, method-specific tests (unit tests) and any tests related coordinated interface between methods (integration tests) pass successfully. Typically, when bugs are patched or features are introduced, unit and integration tests are added to ensure that the use-case intended to be satisfied is accounted for. This helps us prevent any regression in functionality.
-- **Style**: Verify that the code base adheres to style guides for optimal readibility.
-- **Code Coverage**: Verify that the code base has similar or better code coverage than when last run.
+- **Unit & Integration**: Verify that low-level, method-specific tests (unit tests) and any tests related coordinated interface between methods (integration tests) pass successfully. Typically, when bugs are patched or features are introduced, unit and integration tests are added to ensure that the use-case intended to be satisfied is accounted for. This helps us prevent any regression in functionality.
+- **Style**: Verify that the code base adheres to style guides for optimal readability.
+- **Code Coverage**: Verify that the code base has similar or better code coverage than the last run.
 
 ## Code Reviews
 
