@@ -34,7 +34,7 @@ The Resource provides the following main components:
   * Example workflow  https://github.com/datajoint/workflow-animal
 * Experiment session https://github.com/datajoint/elements-session
 * Extracellular array electrophysiology https://github.com/datajoint/elements-array-ephys
-  * Example workflow https://github.com/datajoint/wokrlow-array-ephys
+  * Example workflow https://github.com/datajoint/workflow-array-ephys
 * Calcium imaging https://github.com/datajoint/element-calcium-imaging
   * Example workflow https://github.com/datajoint/workflow-calcium-imaging
 * Miniscope imaging https://github.com/datajoint/element-miniscope
