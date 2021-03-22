@@ -1,6 +1,6 @@
 # Design Principles 
 
-The following convnetions describe the Python implementation. Matlab conventions are similar and will be described separately.
+The following conventions describe the Python implementation. Matlab conventions are similar and will be described separately.
 
 ## DataJoint Schemas
 A DataJoint schema is a combination of a Python module and a database schema. For convenience, both are typically similarly named.
@@ -40,5 +40,4 @@ def activate(schema_name):
 ```
 
 However, many activate functions perform other work associated with activating the schema such as activating other schemas upstream.
-
 
