@@ -40,11 +40,6 @@ The Resource provides the following main components:
   * Example workflow https://github.com/datajoint/workflow-calcium-imaging
 * Miniscope imaging https://github.com/datajoint/element-miniscope
   * Example workflow https://github.com/datajoint/workflow-miniscope
-   
-## Example workflows 
-* Electrophysiology workflow with lab and animal management: https://github.com/datajoint/workflow-ephys
-* Imaging workflow with lab and animal management https://github.com/datajoint/workflow-imaging
-
 
 ## The DataJoint framework 
 * **DataJoint for Python** https://github.com/datajoint/datajoint-python    
