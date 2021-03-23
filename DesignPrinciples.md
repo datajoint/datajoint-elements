@@ -45,7 +45,7 @@ However, many activate functions perform other work associated with activating t
 
 ### Linking Module
 
-A *deferred schema* may require a set of prerequisites to be activated, 
+To make the code more modular with fewer dependencies, Elements' modules do not use `import` to connect to modules upstream. Instead, the `activate` function of an Element's module takes a `linking_module` argument to receive the module object that must contain all the required classes and functions. 
 these can be in the form of declared upstream DataJoint tables or utility functions. 
 For instance, to be activated, the `scan` module of the Element `element_calcium_imaging` requires an existing `Session` table. 
 
@@ -61,4 +61,3 @@ scan_schema_name = 'scan'
 
 scan.activate(scan_schema_name, linking_module=__name__)
 ```
-
