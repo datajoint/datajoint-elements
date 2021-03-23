@@ -54,8 +54,8 @@ most often the current module calling the `.activate()` itself.
 Thus, typical activation of Elements' modules takes the form of
 
 ```python
-from element-session import session
-from element-calcium-imaging import scan
+from element_session import session
+from element_calcium_imaging import scan
 
 scan_schema_name = 'scan'
 
