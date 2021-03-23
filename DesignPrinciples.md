@@ -47,17 +47,29 @@ However, many activate functions perform other work associated with activating t
 
 To make the code more modular with fewer dependencies, Elements' modules do not use `import` to connect to modules upstream. Instead, the `activate` function of an Element's module takes a `linking_module` argument to receive the module object that must contain all the required classes and functions. 
 
+These prerequisites can be provided by specifying in the `linking_module` argument the module containing them, 
+most often the current module calling the `.activate()` itself.
 For instance, to be activated, the `scan` module of the Element `element_calcium_imaging` requires an existing `Session` table. 
 
-These prerequisites can be provided by specifying in the `linking_module` argument the module containing them, 
-most often the current module calling the `.activate()` itself. 
 Thus, typical activation of Elements' modules takes the form of
 
 ```python
-from element_session import session
-from element_calcium_imaging import scan
+from element_calcium_imaging import scan     # `scan` is a deferred schema of `element_calcium_imaging`, to be activated
+
+# Activation of `scan` requires an declared table named Session
+
+schema = dj.schema('experiment')
+
+
+@schema
+class Session(dj.Manual):
+    definition = """
+    subject_name: varchar(36)
+    session_id: int
+    """
+    
+# Activating the `scan` schema
 
 scan_schema_name = 'scan'
-
-scan.activate(scan_schema_name, linking_module=__name__)
+scan.activate(scan_schema_name, linking_module=__name__)  # we use "__name__" to indicate the current module which contains `Session`
 ```
