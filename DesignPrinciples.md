@@ -46,7 +46,7 @@ However, many activate functions perform other work associated with activating t
 ### Linking Module
 
 To make the code more modular with fewer dependencies, Elements' modules do not use `import` to connect to modules upstream. Instead, the `activate` function of an Element's module takes a `linking_module` argument to receive the module object that must contain all the required classes and functions. 
-these can be in the form of declared upstream DataJoint tables or utility functions. 
+
 For instance, to be activated, the `scan` module of the Element `element_calcium_imaging` requires an existing `Session` table. 
 
 These prerequisites can be provided by specifying in the `linking_module` argument the module containing them, 
