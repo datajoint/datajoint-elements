@@ -71,5 +71,5 @@ class Session(dj.Manual):
 # Activating the `scan` schema
 
 scan_schema_name = 'scan'
-scan.activate(scan_schema_name, linking_module=__name__)  # we use "__name__" to indicate the current module which contains `Session`
+scan.activate(scan_schema_name, linking_module=__name__)  # "__name__" indicates the current module which contains `Session`
 ```
