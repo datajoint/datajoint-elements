@@ -54,11 +54,11 @@ most often the current module calling the `.activate()` itself.
 Thus, typical activation of Elements' modules takes the form of
 
 ```python
-	from element-session import session
-	from element-calcium-imaging import scan
-	
-	scan_schema_name = 'scan'
-	
-	scan.activate(scan_schema_name, linking_module=__name__)
+from element-session import session
+from element-calcium-imaging import scan
+
+scan_schema_name = 'scan'
+
+scan.activate(scan_schema_name, linking_module=__name__)
 ```
 
