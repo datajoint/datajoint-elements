@@ -14,6 +14,7 @@ The beta release of the first DataJoint Elements is scheduled for May 1, 2021.
 * [Project Selection Process](Selection.md)
 * [Design Principles](DesignPrinciples.md)
 * [Quality Assurance](QualityAssurance.md)
+* [Contribution Guideline](Contribute.md)
 * [Outreach Plan](Outreach.md)
 * [Licenses and User Agreements](Licenses.md)
 * [Glossary](Glossary.md) 
