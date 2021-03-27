@@ -6,8 +6,11 @@ We have adopted the following general criteria for selecting and accepting new p
 
 <dl>
 <dt> 1. Open Precursor Project(s)
-<dd> At least one successful *open-source* DataJoint-based precursor project must exist for any new experiment modality to be accepted for support as part of the Resource. 
+At least one *open-source* DataJoint-based precursor project must exist for any new experiment modality to be accepted for support as part of the Resource. 
 The precursor project team must be  open to interviews to describe in detail their process for the experiment workflow, tools, and interfaces.
+
+The precursor projects must provide sample data for testing during development and for tutorials. 
+The precursor projects will be acknowledged in the development of the component. 
 
 **Rationale:** This Resource does not aim to develop fundamentally new solutions for neurophysiology data acquisition and analysis. Rather it seeks to systematize and disseminate existing open-source tools proven in leading research projects.
 
