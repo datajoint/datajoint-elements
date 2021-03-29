@@ -30,7 +30,7 @@ Instead, they are declared by calling `schema.activate('<schema_name>')` after i
 
 By convention, all modules corresponding to deferred schema must declare the function `activate` which in turn calls `schema.activate`. 
 
-Thus typical Element modules begin with 
+Thus Element modules begin with 
 
 ```python
 import datajoint as dj
@@ -44,31 +44,9 @@ However, many activate functions perform other work associated with activating t
 
 ### Linking Module
 
-To make the code more modular with fewer dependencies, Elements' modules do not use `import` to connect to modules upstream. 
-Instead, all prerequisites must be defined in a "linking module" and passed to the module's `activate` function.
+To make the code more modular with fewer dependencies, Elements' modules do not `import` upstream schemas directly. 
+Instead, all required classes and functions  must be defined in a "linking module" and passed to the module's `activate` function.
 
-For instance, to be activated, the `scan` module of the Element `element_calcium_imaging` requires an existing `Session` table. 
-A module containing `Session` much be passed into `element_calcium_imaging.scan.activate(..., linking_module=<module>)`.
-
-Thus, typical activation of Elements' modules takes the form of
-
-```python
-from element_calcium_imaging import scan     # `scan` is a deferred schema of `element_calcium_imaging`, to be activated
-
-# Activation of `scan` requires an declared table named Session
-
-schema = dj.schema('experiment')
-
-
-@schema
-class Session(dj.Manual):
-    definition = """
-    subject_name: varchar(36)
-    session_id: int
-    """
-    
-# Activating the `scan` schema
-
-scan_schema_name = 'scan'
-scan.activate(scan_schema_name, linking_module=__name__)  # "__name__" indicates the current module which contains `Session`
-```
+For instance, the [`element_calcium_imaging.scan`](https://github.com/datajoint/element-calcium-imaging/blob/main/element_calcium_imaging/scan.py) module receives 
+its required functions from the linking module passed into the module's `actiate` function. 
+See the [corresponding workflow](https://github.com/datajoint/workflow-calcium-imaging/blob/main/workflow_calcium_imaging/pipeline.py) for an example of how the linking module is passed into the Element's module.
