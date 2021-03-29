@@ -48,5 +48,5 @@ To make the code more modular with fewer dependencies, Elements' modules do not 
 Instead, all required classes and functions  must be defined in a "linking module" and passed to the module's `activate` function.
 
 For instance, the [`element_calcium_imaging.scan`](https://github.com/datajoint/element-calcium-imaging/blob/main/element_calcium_imaging/scan.py) module receives 
-its required functions from the linking module passed into the module's `actiate` function. 
+its required functions from the linking module passed into the module's `activate` function. 
 See the [corresponding workflow](https://github.com/datajoint/workflow-calcium-imaging/blob/main/workflow_calcium_imaging/pipeline.py) for an example of how the linking module is passed into the Element's module.
