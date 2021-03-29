@@ -2,21 +2,11 @@
 This resource ("Resource") provides an efficient approach for neuroscience labs to create and manage *scientific data workflows*: the complex multi-step methods for data collection, preparation, processing, analysis, and modeling that researchers must perform in the course of an experimental study. 
 The work is derived from the developments in leading neuroscience projects and uses the [DataJoint framework](https://datajoint.io) for defining, deploying, and sharing their data workflows. 
 
-An overview of the principles of DataJoint workflows and the goals of DataJoint Elements are described in the position paper "DataJoint Elements: Building Scientific Workflows for Neurophysiology." (prepint to be posted by 03/25/2021)
-
-## Status 
-The beta release of the first DataJoint Elements is scheduled for May 1, 2021.
-
+An overview of the principles of DataJoint workflows and the goals of DataJoint Elements are described in the position paper "DataJoint Elements: Data Workflows for Neurophysiology" (*in submission*).
 
 # Project Structure
-* [Team](Team.md)
-* [Project Governance](Governance.md)
-* [Project Selection Process](Selection.md)
+* [Management and Policies](Management.md)
 * [Design Principles](DesignPrinciples.md)
-* [Quality Assurance](QualityAssurance.md)
-* [Contribution Guideline](Contribute.md)
-* [Outreach Plan](Outreach.md)
-* [Licenses and User Agreements](Licenses.md)
 * [Glossary](Glossary.md) 
 
 # Components 

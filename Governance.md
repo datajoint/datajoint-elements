@@ -11,3 +11,4 @@ The project oversight and guidance is provided by the Scientific Steering Group 
 * [Karel Svoboda (Janelia)](https://www.janelia.org/people/karel-svoboda)
 * [Nick Steinmetz (U of Washington)](http://www.nicksteinmetz.com/)
 * [Loren Frank (UCSF)](https://franklab.ucsf.edu/)
+
