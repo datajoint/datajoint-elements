@@ -6,7 +6,7 @@ We have adopted the following general criteria for selecting and accepting new p
 
 <dl>
 <dt> 1. Open Precursor Project(s)
-At least one *open-source* DataJoint-based precursor project must exist for any new experiment modality to be accepted for support as part of the Resource. 
+<dd> At least one *open-source* DataJoint-based precursor project must exist for any new experiment modality to be accepted for support as part of the Resource. 
 The precursor project team must be  open to interviews to describe in detail their process for the experiment workflow, tools, and interfaces.
 
 The precursor projects must provide sample data for testing during development and for tutorials. 
