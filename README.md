@@ -4,19 +4,9 @@ The work is derived from the developments in leading neuroscience projects and u
 
 An overview of the principles of DataJoint workflows and the goals of DataJoint Elements are described in the position paper "DataJoint Elements: Building Scientific Workflows for Neurophysiology." (prepint to be posted by 03/25/2021)
 
-## Status 
-The beta release of the first DataJoint Elements is scheduled for May 1, 2021.
-
-
 # Project Structure
-* [Team](Team.md)
-* [Project Governance](Governance.md)
-* [Project Selection Process](Selection.md)
+* [Management and Policies](Management.md)
 * [Design Principles](DesignPrinciples.md)
-* [Quality Assurance](QualityAssurance.md)
-* [Contribution Guideline](Contribute.md)
-* [Outreach Plan](Outreach.md)
-* [Licenses and User Agreements](Licenses.md)
 * [Glossary](Glossary.md) 
 
 # Components 
