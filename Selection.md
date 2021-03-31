@@ -21,7 +21,7 @@ The precursor projects will be acknowledged in the development of the component.
 <dd> Several new research groups must express interest in becoming the validation sites during the alpha and beta release phases of the project. Our team will work closely with the validation sites to test the components in their workflow and collect feedback during the process.
 
 <dt> 4. Sustainability 
-<dd> For all third-party tool or resource included in the proposed component, their long-term maintenance roadmap must be established. 
+<dd> For all third-party tools or resources included in the proposed component, their long-term maintenance roadmap must be established. 
 When possible, we will contact the developer team and work with them to establish a sustainability roadmap. 
 If no such roadmap can be established, alternative tools and resources must be identified as replacement.
 </dl>
