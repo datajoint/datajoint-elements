@@ -1,4 +1,4 @@
-# Design Principles 
+# Design Principles
 
 The following conventions describe the Python implementation. Matlab conventions are similar and will be described separately.
 
@@ -16,14 +16,14 @@ Then such a module becomes a "DataJoint schema" comprising a python module  with
 
 The module's `schema` object is then used as the decorator for classes that define tables in the database. 
 
-## Elements 
+## Elements
 An Element is a software package defining one or more DataJoint schemas serving a particular purpose. 
 By convention, such packages are hosted in individual GitHub repositories.
 For example, Element `element_calcium_imaging` is hosted at https://github.com/datajoint/element-calcium-imaging, 
 and contains two DataJoint schemas: `scan` and `imaging`.
  
 
-### Deferred schemas 
+### Deferred schemas
 A *deferred schema* is one in which the name of the database schema name is not specified. 
 This module does not declare schema and tables upon import. 
 Instead, they are declared by calling `schema.activate('<schema_name>')` after import. 
