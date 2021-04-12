@@ -1,0 +1,29 @@
+# docker-compose -f docker-compose-build.yaml up --exit-code-from app --build
+# 
+# Intended for updating dependencies.
+# Used to build static artifacts.
+version: "2.4"
+services:
+  app:
+    image: python:3.9-slim
+    entrypoint:
+      - sh
+      - -c
+      - |
+        pip install mkdocs mkdocs-cinder pymdown-extensions
+        "$${@}"
+    command:
+      - ignored
+      - bash
+      - -c
+      - |
+        mkdocs build
+    working_dir: /main
+    volumes:
+      - ./management:/main/docs/management
+      - ./design-principles.md:/main/docs/design-principles.md
+      - ./glossary.md:/main/docs/glossary.md
+      - ./README.md:/main/docs/README.md
+      - ./.mkdocs/mkdocs.yml:/main/mkdocs.yml
+      - ./.mkdocs/site:/main/site
+      - ./.mkdocs/cinder-theme-ext:/main/cinder-theme-ext

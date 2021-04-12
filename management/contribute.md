@@ -1,4 +1,4 @@
-# Contribution Guidelines 
+# Contribution Guideline
 
 We have established the following guidelines for contributing to DataJoint and DataJoint Elements:
 https://docs.datajoint.io/python/community/02-Contribute.html

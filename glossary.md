@@ -1,4 +1,4 @@
-# Terminology 
+# Glossary 
 
 The following are some terms used in the Resource.
 <dl>
