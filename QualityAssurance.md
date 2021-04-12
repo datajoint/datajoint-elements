@@ -39,13 +39,13 @@ When introducing new code to the code base, the following will be required for a
 For the workflows and their revisions, the initial development and internal testing, the code will be released in *Alpha*. During this phase, we will engage external research teams to test and validate the complete workflows in real-life experiments with our team's engineering support. During this phase, significant design changes may be performed and not all features may be completely developed. However, several features should be usable and suitable for testing and validation.
 
 ### Criteria to participate as validation sites
-+ The participating lab/group has an existing DataJoint pipeline for the elements to be connected to
++ The participating lab/group has an existing DataJoint pipeline for the Element(s) to be connected to
 + The DataJoint pipeline code base is hosted as a Github repository (either public or private)
-+ The participating lab/group has existing datasets in the format supported by the elements for the purpose of this validation
++ The participating lab/group has existing datasets in the format supported by the Element(s) for the purpose of this validation
 + The participating lab/group has a dedicated point of contact person to work closely with DataJoint NEURO engineering team for this validation effort
 
 ### Criteria for a successful validation
-+ Able to connect the element(s) to existing pipeline and all schemas/tables declared without errors
++ Able to connect the Element(s) to existing pipeline and all schemas/tables declared without errors
 + Successful ingestion of data for at least 2 experimental sessions
 + Inspection/verification that the data are ingested correctly by the participating lab/group - e.g. manual inspection of ingested traces, plotting of spatial footprints, spike trains, etc. to confirm correctness of ingested data 
 
