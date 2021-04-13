@@ -18,3 +18,4 @@ nav:
   - glossary.md
 markdown_extensions:
   - pymdownx.magiclink
+  - mdx_truly_sane_lists

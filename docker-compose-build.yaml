@@ -10,7 +10,7 @@ services:
       - sh
       - -c
       - |
-        pip install mkdocs mkdocs-cinder pymdown-extensions
+        pip install mkdocs mkdocs-cinder pymdown-extensions mdx_truly_sane_lists
         "$${@}"
     command:
       - ignored
