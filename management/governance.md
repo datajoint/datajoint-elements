@@ -5,6 +5,7 @@ This Resource is supported by the National Institute Of Neurological Disorders A
 
 ## Scientific Steering Group
 The project oversight and guidance is provided by the Scientific Steering Group comprising
+
 * [Mackenzie Mathis (EPFL)](http://www.mackenziemathislab.org/team)
 * [John Cunningham (Columbia U)](https://stat.columbia.edu/~cunningham/)
 * [Carlos Brody (Princeton U)](https://https://pni.princeton.edu/faculty/carlos-brody)
