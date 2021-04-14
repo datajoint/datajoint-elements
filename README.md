@@ -11,13 +11,15 @@ An overview of the principles of DataJoint workflows and the goals of DataJoint 
 
 # Components 
 The Resource provides the following main components:
-<dl>
-<dt> DataJoint
-<dd> the open-source framework for data pipelines and automated computational workflows + related documentation, tools, and utilities.
 
-<dt> DataJoint Elements
-<dd>  a collection of curated modules for assembling workflows for the major modalities of neurophysiology experiments + related documentation, tools, and utilities.
-</dl>
+***DataJoint***
+
+> the open-source framework for data pipelines and automated computational workflows + related documentation, tools, and utilities.
+
+***DataJoint Elements***
+
+> a collection of curated modules for assembling workflows for the major modalities of neurophysiology experiments + related documentation, tools, and utilities.
+
 
 ## Elements
 * Lab management https://github.com/datajoint/element-lab 
@@ -44,4 +46,3 @@ The Resource provides the following main components:
 
 ## Online Training  
 * Interactive online tutorials https://playground.datajoint.io
-

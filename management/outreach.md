@@ -26,7 +26,7 @@ Before new Resource components are released as part of this Resource, our team e
 # 4. Dissemination
 We conduct activities to disseminate Resource components for adoption in diverse neuroscience labs. These activities include
 
-* A central website for the Resource. Presently, this GitHub repository serves this purpose:  https://github.com/datajoint/datajoint-elements
+* A central website for the Resource. Presently, the site https://elements.datajoint.io serves this purpose.
 * Conference talks, presentations, and workshops
 * Publications in peer-reviewed journals 
 * White papers posted on internet resources and websites
