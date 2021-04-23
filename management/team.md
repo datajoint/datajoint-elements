@@ -2,7 +2,7 @@
 
 The project is performed by [DataJoint Neuro](https://djneuro.io) with Dimitri Yatsenko as Principal Investigator.
 
-## Scientists 
+## Scientists
 * Dimitri Yatsenko - PI
 * Thinh Nguyen - Data Scientist
 * Shan Shen - Data Scientist
