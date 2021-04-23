@@ -5,6 +5,7 @@ theme:
   custom_dir: cinder-theme-ext
 nav:
   - About: README.md
+  - signup.md
   - 'Management and Policies':
     - 'management/plan.md'
     - 'management/team.md'
