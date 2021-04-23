@@ -7,6 +7,7 @@ An overview of the principles of DataJoint workflows and the goals of DataJoint 
 # Project Structure
 * [Management and Policies](Management.md)
 * [Design Principles](DesignPrinciples.md)
+* [Guidelines for Adoption](Adoption.md)
 * [Glossary](Glossary.md) 
 
 # Components 
