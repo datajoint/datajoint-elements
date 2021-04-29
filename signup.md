@@ -3,7 +3,7 @@
 Sign up to participate as a validation site below:
 
 
-<form name="contact-form" action="https://fakeservices.datajoint.io:2000/api/element-validation-site-signup" method="post">
+<form name="contact-form" action="https://fakeservices.datajoint.io:2000/api/element-validation-site-request" method="post">
     <P>
         <label for="name">Name: </label> <input name="name" type="text" id="name">
         <br>
