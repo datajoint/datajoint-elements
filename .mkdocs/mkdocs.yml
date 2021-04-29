@@ -5,16 +5,17 @@ theme:
   custom_dir: cinder-theme-ext
 nav:
   - About: README.md
-  - signup.md
+  - adopt.md
+  - apply.md
   - 'Management and Policies':
-    - 'management/plan.md'
-    - 'management/team.md'
-    - 'management/governance.md'
-    - 'management/selection.md'
-    - 'management/quality-assurance.md'
-    - 'management/contribute.md'
-    - 'management/outreach.md'
-    - 'management/licenses.md'
+    - management/plan.md
+    - management/team.m
+    - management/governance.md
+    - management/selection.md
+    - management/quality-assurance.md
+    - management/contribute.md
+    - management/outreach.md
+    - management/licenses.md
   - design-principles.md
   - glossary.md
 markdown_extensions:
