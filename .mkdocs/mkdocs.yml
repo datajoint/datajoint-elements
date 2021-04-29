@@ -5,8 +5,6 @@ theme:
   custom_dir: cinder-theme-ext
 nav:
   - About: README.md
-  - adopt.md
-  - apply.md
   - 'Management and Policies':
     - management/plan.md
     - management/team.md
@@ -17,6 +15,8 @@ nav:
     - management/outreach.md
     - management/licenses.md
   - design-principles.md
+  - adopt.md
+  - apply.md
   - glossary.md
 markdown_extensions:
   - pymdownx.magiclink
