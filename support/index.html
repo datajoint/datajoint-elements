@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../img/favicon.ico">
 
     
-    <title>Glossary - DataJoint Elements</title>
+    <title>Support - DataJoint Elements</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -144,14 +144,14 @@
                 
                 
                 
-                    <li >
-                        <a href="../support/">Support</a>
+                    <li class="active">
+                        <a href="./">Support</a>
                     </li>
                 
                 
                 
-                    <li class="active">
-                        <a href="./">Glossary</a>
+                    <li >
+                        <a href="../glossary/">Glossary</a>
                     </li>
                 
                 
@@ -164,12 +164,12 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../support/">
+                        <a rel="prev" href="../adopt/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../glossary/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
@@ -183,37 +183,76 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#glossary">Glossary</a></li>
+        <li class="first-level active"><a href="#support">Support</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="glossary">Glossary</h1>
-<p>The following are some terms used in the Resource.</p>
-<p><strong><em>DataJoint</em></strong></p>
-<blockquote>
-<p>a software framework for database programming directly from matlab and python. Thanks to its support of automated computational dependencies, DataJoint serves as a workflow management system.</p>
-</blockquote>
-<p><strong><em>DataJoint Workflow, Experiment Workflow, or simply Workflow</em></strong></p>
-<blockquote>
-<p>a formal representation of the steps for executing an experiment from data collection to analysis. Also the software configured for performing these steps. A typical workflow is composed of tables with inter-dependencies and processes to compute and insert data into the tables.</p>
-</blockquote>
-<p><strong><em>DataJoint Pipeline</em></strong></p>
-<blockquote>
-<p>the data schemas and transformations underlying a DataJoint workflow. DataJoint allows defining code that specifies both the workflow and the data pipeline, and we have used the words "pipeline" and "workflow" almost interchangeably.</p>
-</blockquote>
-<p><strong><em>DataJoint Schema</em></strong></p>
-<blockquote>
-<p>a software module implementing a portion of an experiment workflow. Includes database table definitions, dependencies, and associated computations.</p>
-</blockquote>
-<p><strong><em>DataJoint Elements</em></strong></p>
-<blockquote>
-<p>software modules implementing portions of experiment workflows designed for ease of integration into diverse custom workflows.</p>
-</blockquote>
-<p><strong><em>djHub</em></strong></p>
-<blockquote>
-<p>our team's internal platform for delivering cloud-based infrastructure to support online training resources, validation studies, and collaborative projects.</p>
-</blockquote></div>
+<h1 id="support">Support</h1>
+<p>Thank you for your interest in engineering support for DataJoint Elements adoption!</p>
+<p>Please provide the following information.</p>
+<form name="contact-form" action="https://datajoint.io/api/element-validation-site-request" method="post">
+    <section>
+        <div style="float:left;margin-right:20px;">
+            <label for="name">Contact Name:</label>
+            <br>
+            <input name="name" type="text" id="name" size="30">
+        </div>
+        <div style="float:left;">
+            <label for="email">Contact Email:</label>
+            <br>
+            <input name="email" type="text" id="email" size="30">
+        </div>
+        <br style="clear:both;">
+    </section>
+    <section>
+        <div style="float:left;margin-right:20px;">
+            <label for="institution">Institution:</label>
+            <br>
+            <input name="institution" type="text" id="institution" size="30">
+        </div>
+        <div style="float:left;">
+            <label for="lab">Lab:</label>
+            <br>
+            <input name="lab" type="text" id="lab" size="30">
+        </div>
+        <br style="clear:both;">
+    </section>
+    <section>
+        <div style="float:left;margin-right:20px;">
+            <label for="data_modalities">Describe data modalities (ephys, calcium imaging, etc.):</label>
+            <br>
+            <input name="data_modalities" type="text" id="data_modalities" size="67">
+        </div>
+        <br style="clear:both;">
+    </section>
+    <section>
+        <div style="float:left;margin-right:20px;">
+            <label for="current_workflow">Describe current workflow for data acquisition and analysis:</label>
+            <br>
+            <input name="current_workflow" type="text" id="current_workflow" size="67">
+        </div>
+        <br style="clear:both;">
+    </section>
+    <section>
+        <div style="float:left;margin-right:20px;">
+            <label for="mysql_setup">Do you prefer to setup a database server yourself (on premises or cloud) or use DataJoint Neuro managed cloud hosting?</label>
+            <br>
+            <input name="mysql_setup" type="text" id="mysql_setup" size="67">
+        </div>
+        <br style="clear:both;">
+    </section>
+    <section>
+        <div style="float:left;margin-right:20px;">
+            <label for="start_date">When would you like to schedule the first test?</label>
+            <br>
+            <input name="start_date" type="text" id="start_date" size="30">
+        </div>
+        <br style="clear:both;">
+    </section>
+    <br>
+    <input type="submit" value="Send">
+</form></div>
         
         
     </div>
