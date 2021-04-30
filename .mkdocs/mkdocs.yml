@@ -16,7 +16,7 @@ nav:
     - management/licenses.md
   - design-principles.md
   - adopt.md
-  - apply.md
+  - support.md
   - glossary.md
 markdown_extensions:
   - pymdownx.magiclink

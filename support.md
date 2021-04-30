@@ -1,8 +1,8 @@
-# Apply
+# Support
 
-Thank you for your interest in becoming a validation site for DataJoint Elements!
+Thank you for your interest in engineering support for DataJoint Elements adoption!
 
-To apply to participate as a validation site, please complete the form below and submit to us.
+Please provide the following information.
 
 
 <form name="contact-form" action="https://datajoint.io/api/element-validation-site-request" method="post">
@@ -34,7 +34,7 @@ To apply to participate as a validation site, please complete the form below and
     </section>
     <section>
         <div style="float:left;margin-right:20px;">
-            <label for="data_modalities">Describe Data Modalities (ephys, calcium imaging, etc.):</label>
+            <label for="data_modalities">Describe data modalities (ephys, calcium imaging, etc.):</label>
             <br>
             <input name="data_modalities" type="text" id="data_modalities" size="67">
         </div>
@@ -50,7 +50,7 @@ To apply to participate as a validation site, please complete the form below and
     </section>
     <section>
         <div style="float:left;margin-right:20px;">
-            <label for="mysql_setup">Do you prefer to setup a MySQL Server yourself or would you like to utilize cloud managed hosting?</label>
+            <label for="mysql_setup">Do you prefer to setup a database server yourself (on premises or cloud) or use DataJoint Neuro managed cloud hosting?</label>
             <br>
             <input name="mysql_setup" type="text" id="mysql_setup" size="67">
         </div>
@@ -58,7 +58,7 @@ To apply to participate as a validation site, please complete the form below and
     </section>
     <section>
         <div style="float:left;margin-right:20px;">
-            <label for="start_date">When would you like to begin the tests?</label>
+            <label for="start_date">When would you like to schedule the first test?</label>
             <br>
             <input name="start_date" type="text" id="start_date" size="30">
         </div>
