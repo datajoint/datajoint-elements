@@ -6,15 +6,17 @@ theme:
 nav:
   - About: README.md
   - 'Management and Policies':
-    - 'management/plan.md'
-    - 'management/team.md'
-    - 'management/governance.md'
-    - 'management/selection.md'
-    - 'management/quality-assurance.md'
-    - 'management/contribute.md'
-    - 'management/outreach.md'
-    - 'management/licenses.md'
+    - management/plan.md
+    - management/team.md
+    - management/governance.md
+    - management/selection.md
+    - management/quality-assurance.md
+    - management/contribute.md
+    - management/outreach.md
+    - management/licenses.md
   - design-principles.md
+  - adopt.md
+  - support.md
   - glossary.md
 markdown_extensions:
   - pymdownx.magiclink

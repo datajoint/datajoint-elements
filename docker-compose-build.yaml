@@ -23,6 +23,8 @@ services:
       - ./management:/main/docs/management
       - ./design-principles.md:/main/docs/design-principles.md
       - ./glossary.md:/main/docs/glossary.md
+      - ./support.md:/main/docs/support.md
+      - ./adopt.md:/main/docs/adopt.md
       - ./README.md:/main/docs/README.md
       - ./.mkdocs/mkdocs.yml:/main/mkdocs.yml
       - ./.mkdocs/site:/main/site
