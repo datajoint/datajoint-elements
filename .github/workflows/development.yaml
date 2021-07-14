@@ -39,7 +39,7 @@ jobs:
           rm -R gh-pages/*
           cp -r .mkdocs/site/* gh-pages/
           touch gh-pages/.nojekyll
-          echo "elements.datajoint.io" > gh-pages/CNAME
+          echo "elements.datajoint.org" > gh-pages/CNAME
           cd gh-pages
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
