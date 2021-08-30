@@ -43,7 +43,7 @@ The Resource provides the following main components:
 
 ## Interfaces 
 * [Pharus](https://github.com/datajoint/pharus) — a REST API for interacting with DataJoint databases
-* [DataJoint Labbook](https://github.com/datajoint/datajoint-labbook) — a front-end web interface for viewing and entering data
+* [DataJoint LabBook](https://github.com/datajoint/datajoint-labbook) — a front-end web interface for viewing and entering data
 
 ## Online Training  
 * [DataJoint interactive online tutorials](https://playground.datajoint.io)
