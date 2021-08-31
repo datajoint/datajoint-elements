@@ -1,4 +1,4 @@
-# Setup instructions for DataJoint Elements and Workflows
+# Setup instructions for workflows created with the DataJoint Elements
 
 + The following document describes the steps to setup a development environment 
 so that you can use the DataJoint Elements to build and run a workflow on your 
@@ -20,6 +20,9 @@ instructions.
 
 ## System architecture
 ![Architecture](/images/install_architecture.jpeg)
+
++ The above diagram describes the general components for a local DataJoint 
+development environment. 
 
 ## Install an integrated development environment
 
