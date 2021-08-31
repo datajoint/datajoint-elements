@@ -8,8 +8,9 @@ local machine.
 matches your experimental setup.  We have created example workflows (e.g. 
 `workflow-array-ephys`, `workflow-calcium-imaging`) for your reference.  In this
  tutorial we will install the example DataJoint workflows (i.e.
- `workflow-array-ephys`, `workflow-calcium-imaging`).  These instructions can be 
-adapted for your custom DataJoint workflow.
+ `workflow-array-ephys`, `workflow-calcium-imaging`).
+ 
++ These instructions can be adapted for your custom DataJoint workflow.
 
 + There are several ways to create a development environment.  Here we will 
 discuss one method in detail, and will highlight other methods along the way.
@@ -17,12 +18,8 @@ discuss one method in detail, and will highlight other methods along the way.
 + You will need administrative privileges on your system for the following setup
 instructions.
 
----
-
 ## System Architecture
 #TODO insert diagram
-
----
 
 ## Install an integrated development environment
 
@@ -34,8 +31,6 @@ example, we will use Microsoft's Visual Studio Code.
 + [Install Visual Studio Code](https://code.visualstudio.com/download)
 
 ![Visual Studio Code](/images/vscode.png)
-
----
 
 ## Install a relational database
 
@@ -58,8 +53,6 @@ database server
         https://github.com/datajoint/mysql-docker)
     + [Install MariaDB server](https://mariadb.com/kb/en/binary-packages/)
 
----
-
 ## Install a version control system
 
 + Git is an open-source, distributed version control system for collaborating 
@@ -75,8 +68,6 @@ Git installed by typing `git` in a terminal window.
 
 + If Git is not install on your system, [Install Git](
     https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-
----
 
 ## Install a virtual environment
 
@@ -111,8 +102,6 @@ option.  Below are the commands for Conda.
     conda activate <environment_name>
     ```
 
----
-
 ## Install Jupyter Notebook
 #TODO this section
 + Register an IPython kernel with Jupyter
@@ -125,8 +114,6 @@ If you are using jupyter notebook, install a few more helper packages
 conda install jupyter nb_conda_kernels
 conda install ipykernel
 conda install graphviz python-graphviz pydotplus
-
----
 
 ## Clone and install the repository
 
@@ -192,8 +179,6 @@ conda install graphviz python-graphviz pydotplus
 
     </details>
 
----
-
 ## Setup connection to database server
 
 + One way to set up a connection to the database server with DataJoint is to 
@@ -258,8 +243,6 @@ For the `tutorial-db` database, you will use your DataJoint username.
 + Setup your data directory (e.g. `ephys_root_data_dir`, 
 `imaging_root_data_dir`) following the convention described in the following 
 section.
-
----
 
 ## Directory structure and file naming convention
 
@@ -373,19 +356,13 @@ and file naming convention as described below.
 
     </details>
 
----
-
 ## Setup complete
 
 + At this point the setup of this workflow is complete.
 
----
-
 ## Download example data
 #TODO this section
 We provide an example data set to run through this workflow. The instruction of data downloading is in the notebook [00-data-download](notebooks/00-data-download-optional.ipynb).
-
----
 
 ## Interacting with the DataJoint workflow and exploring data
 
@@ -429,8 +406,6 @@ populating the workflow with your data amounts to these 3 steps:
 
 + In fact, step 2 and 3 can be executed as scheduled jobs that will automatically process any data newly placed into the `imaging_root_data_dir`.
 
----
-
 ## DataJoint LabBook
 + DataJoint LabBook is a graphical user interface to facilitate working with 
 DataJoint workflows.
@@ -449,8 +424,6 @@ DataJoint workflows.
 
 + [DataJoint LabBook Documentation](
     https://datajoint.github.io/datajoint-labbook/)
-
----
 
 ## Development mode installation
 
