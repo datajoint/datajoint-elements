@@ -23,14 +23,14 @@ instructions.
 
 ## Install an integrated development environment
 
+![Visual Studio Code](/images/vscode.png)
+
 + DataJoint development and use can be done with simple text editor and terminal 
 application.  However, an integrated development environment (IDE) can help 
 improve your experience.  There are several IDEs available.  In this setup 
 example, we will use Microsoft's Visual Studio Code.
 
 + [Install Visual Studio Code](https://code.visualstudio.com/download)
-
-![Visual Studio Code](/images/vscode.png)
 
 ## Install a relational database
 
@@ -407,10 +407,11 @@ populating the workflow with your data amounts to these 3 steps:
 + In fact, step 2 and 3 can be executed as scheduled jobs that will automatically process any data newly placed into the `imaging_root_data_dir`.
 
 ## DataJoint LabBook
-+ DataJoint LabBook is a graphical user interface to facilitate working with 
-DataJoint workflows.
 
 ![LabBook GIF](https://github.com/datajoint/datajoint-labbook/blob/master/docs/sphinx/_static/images/walkthroughDemoOptimized.gif)
+
++ DataJoint LabBook is a graphical user interface to facilitate working with 
+DataJoint workflows.
 
 + Prerequisites
     + [Install Docker](https://docs.docker.com/get-docker/)
