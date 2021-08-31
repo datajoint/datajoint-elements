@@ -2,10 +2,18 @@
 
 ![Logo](https://github.com/datajoint/datajoint.org/blob/main/static/images/elements-logo.png)
 
-This resource ("Resource") provides an efficient approach for neuroscience labs to create and manage *scientific data workflows*: the complex multi-step methods for data collection, preparation, processing, analysis, and modeling that researchers must perform in the course of an experimental study. 
-The work is derived from the developments in leading neuroscience projects and uses the [DataJoint framework](https://datajoint.org) for defining, deploying, and sharing their data workflows. 
+This resource ("Resource") provides an efficient approach for neuroscience labs 
+to create and manage *scientific data workflows*: the complex multi-step methods
+ for data collection, preparation, processing, analysis, and modeling that 
+researchers must perform in the course of an experimental study.  The work is 
+derived from the developments in leading neuroscience projects and uses the 
+[DataJoint framework](https://datajoint.org) for defining, deploying, and 
+sharing their data workflows. 
 
-An overview of the principles of DataJoint workflows and the goals of DataJoint Elements are described in the position paper ["DataJoint Elements: Data Workflows for Neurophysiology"](https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
+An overview of the principles of DataJoint workflows and the goals of DataJoint 
+Elements are described in the position paper 
+["DataJoint Elements: Data Workflows for Neurophysiology"](
+  https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
 
 # Project Structure
 * [Management and Policies](management/plan.md)
@@ -18,12 +26,14 @@ The Resource provides the following main components:
 
 ***DataJoint***
 
-> the open-source framework for data pipelines and automated computational workflows + related documentation, tools, and utilities.
+> the open-source framework for data pipelines and automated computational 
+workflows + related documentation, tools, and utilities.
 
 ***DataJoint Elements***
 
-> a collection of curated modules for assembling workflows for the major modalities of neurophysiology experiments + related documentation, tools, and utilities.
-
+> a collection of curated modules for assembling workflows for the major 
+modalities of neurophysiology experiments + related documentation, tools, and 
+utilities.
 
 ## Elements
 * [Lab management](https://github.com/datajoint/element-lab)
@@ -45,8 +55,10 @@ The Resource provides the following main components:
 * [Docker image for MySQL server configured for use with DataJoint](https://github.com/datajoint/mysql-docker)
 
 ## Interfaces 
-* [Pharus](https://github.com/datajoint/pharus) — a REST API for interacting with DataJoint databases
-* [DataJoint LabBook](https://github.com/datajoint/datajoint-labbook) — a front-end web interface for viewing and entering data
+* [Pharus](https://github.com/datajoint/pharus) — a REST API for interacting 
+with DataJoint databases
+* [DataJoint LabBook](https://github.com/datajoint/datajoint-labbook) — a 
+front-end web interface for viewing and entering data
 
 ## Online Training  
 * [DataJoint interactive online tutorials](https://playground.datajoint.io)
