@@ -1,23 +1,25 @@
 # Team
 
-The project is performed by [DataJoint Neuro](https://djneuro.io) with Dimitri Yatsenko as Principal Investigator.
+The project is performed by [DataJoint](https://www.datajoint.com) with Dimitri Yatsenko as Principal Investigator.
 
 ## Scientists
 * Dimitri Yatsenko - PI
 * Thinh Nguyen - Data Scientist
-* Shan Shen - Data Scientist
 * Kabilar Gunalan - Data Scientist
+* David Godinez - Data Engineer
 
 ## Engineers
-* Raphael Guzman - Software Engineering
-* Christopher Turner - Data Systems Engineering
-* Maho Sasaki - Frontend Developer
-* Daniel Sitonic - Backend Developer, Software Engineer
+* Raphael Guzman - Software Engineer
+* Christopher Turner - Data Systems Engineer
+* Drew Yang - Data Systems Engineer
 
 ## Past contributors
 * Edgar Y. Walker - System architect, Data Scientist, Project Manager (from project start to Jan, 2021)
-* Andreas S. Tolias - grant proposal contributor
-* Jacob Reimer - grant proposal contributor
+* Andreas S. Tolias - Grant proposal contributor
+* Jacob Reimer - Grant proposal contributor
+* Shan Shen - Data Scientist
+* Maho Sasaki - Frontend Developer
+* Daniel Sitonic - Backend Developer, Software Engineer
 
 The first-person pronouns "we" and "our" in these documents refer to the Performer Team.
 

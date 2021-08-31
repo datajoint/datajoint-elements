@@ -1,6 +1,9 @@
 # DataJoint Elements
+
+![Logo](https://github.com/datajoint/datajoint.org/blob/main/static/images/elements-logo.png)
+
 This resource ("Resource") provides an efficient approach for neuroscience labs to create and manage *scientific data workflows*: the complex multi-step methods for data collection, preparation, processing, analysis, and modeling that researchers must perform in the course of an experimental study. 
-The work is derived from the developments in leading neuroscience projects and uses the [DataJoint framework](https://datajoint.io) for defining, deploying, and sharing their data workflows. 
+The work is derived from the developments in leading neuroscience projects and uses the [DataJoint framework](https://datajoint.org) for defining, deploying, and sharing their data workflows. 
 
 An overview of the principles of DataJoint workflows and the goals of DataJoint Elements are described in the position paper ["DataJoint Elements: Data Workflows for Neurophysiology"](https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
 
@@ -37,7 +40,7 @@ The Resource provides the following main components:
 ## The DataJoint framework 
 * [DataJoint for Python](https://github.com/datajoint/datajoint-python)
 * [DataJoint for MATLAB](https://github.com/datajoint/datajoint-matlab)
-* [DataJoint Documentation](https://docs.datajoint.io)
+* [DataJoint Documentation](https://docs.datajoint.org)
 * [DataJoint Tutorials](https://tutorials.datajoint.io)
 * [Docker image for MySQL server configured for use with DataJoint](https://github.com/datajoint/mysql-docker)
 
