@@ -88,8 +88,6 @@ option.  Below are the commands for Conda.
         https://conda.io/en/latest/miniconda.html) 
     for your operating system and following the instructions.
 
-![Miniconda](/images/install_miniconda.png)
-
 + Create a new conda environment
     + Type the following command into a terminal window
         ```
