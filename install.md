@@ -7,23 +7,23 @@ local machine.
 + The DataJoint Elements can be combined together to create a workflow that 
 matches your experimental setup.  We have created example workflows (e.g. 
 `workflow-array-ephys`, `workflow-calcium-imaging`) for your reference.  In this
- tutorial we will install the example DataJoint workflows (i.e.
- `workflow-array-ephys`, `workflow-calcium-imaging`).
+ tutorial we will install these example DataJoint workflows.
  
 + These instructions can be adapted for your custom DataJoint workflow.
 
 + There are several ways to create a development environment.  Here we will 
-discuss one method in detail, and will highlight other methods along the way.
+discuss one method in detail, and will highlight other methods along the way.  
+If you have already set up certain components, feel free to skip those steps.
 
 + You will need administrative privileges on your system for the following setup
 instructions.
 
-## System Architecture
-#TODO insert diagram
+## System architecture
+![Architecture](/images/install_architecture.png)
 
 ## Install an integrated development environment
 
-![Visual Studio Code](/images/vscode.png)
+![Visual Studio Code](/images/install_vscode.png)
 
 + DataJoint development and use can be done with simple text editor and terminal 
 application.  However, an integrated development environment (IDE) can help 
@@ -45,7 +45,7 @@ configured.  See the section below: [Setup connection to database server](
     #setup-connection-to-database-server).
 
 + Please note that the tutorial database should not be used for your 
-experimental analysis as the storage is not persistant.
+experimental analysis as the storage is not persistent.
 
 + There are several options if you would like to install a local relational 
 database server
@@ -60,7 +60,7 @@ with software development.  GitHub is a platform that hosts software developed
 with Git.  As the example DataJoint workflows are hosted on GitHub, we will use 
 Git to clone (i.e. download) this repository.
 
-+ For your own DataJoint workflow develpment we recommended that you use Git and 
++ For your own DataJoint workflow development we recommended that you use Git and 
 GitHub to in collaboration.
 
 + Many systems come preinstalled with Git.  You can test if have already have
@@ -85,13 +85,13 @@ option.  Below are the commands for Conda.
         https://conda.io/en/latest/miniconda.html) 
     for your operating system and following the instructions.
 
-![Miniconda](/images/miniconda.png)
+![Miniconda](/images/install_miniconda.png)
 
 + Create a new conda environment
     + Type the following command into a terminal window
-    ```
-    conda create -n <environment_name> python=<version>
-    ```
+        ```
+        conda create -n <environment_name> python=<version>
+        ```
     + Example command to create conda environment
         ```
         conda create -n workflow-array-ephys python=3.8.11
@@ -234,6 +234,7 @@ create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
 + Specify the database's `hostname`, `username`, and `password`.
     + For this tutorial we will use the `tutorial-db.datajoint.io` database.  
     Therefore the `hostname` will be `tutorial-db.datajoint.io`.
+    
     + The `username` and `password` will be the credentials for your 
     [DataJoint account](https://accounts.datajoint.io).
 
