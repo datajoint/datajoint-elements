@@ -19,7 +19,7 @@ If you have already set up certain components, feel free to skip those steps.
 instructions.
 
 ## System architecture
-![Architecture](/images/install_architecture.png)
+![Architecture](/images/install_architecture.jpeg)
 
 ## Install an integrated development environment
 
