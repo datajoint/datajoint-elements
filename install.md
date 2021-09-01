@@ -28,9 +28,9 @@ development environment.
 
 ![Visual Studio Code](/images/install_vscode.png)
 
-+ DataJoint development and use can be done with simple text editor and terminal 
-application.  However, an integrated development environment (IDE) can help 
-improve your experience.  There are several IDEs available.  In this setup 
++ DataJoint development and use can be done with a plain text editor in the terminal.  
+However, an integrated development environment (IDE) can 
+improve your experience.  Several IDEs are available.  In this setup 
 example, we will use Microsoft's Visual Studio Code.
 
 + [Install Visual Studio Code](https://code.visualstudio.com/download)
