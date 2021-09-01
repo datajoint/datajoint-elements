@@ -28,10 +28,10 @@ development environment.
 
 ![Visual Studio Code](/images/install_vscode.png)
 
-+ DataJoint development and use can be done with a plain text editor in the terminal.  
-However, an integrated development environment (IDE) can 
-improve your experience.  Several IDEs are available.  In this setup 
-example, we will use Microsoft's Visual Studio Code.
++ DataJoint development and use can be done with a plain text editor in the 
+terminal.  However, an integrated development environment (IDE) can improve your
+ experience.  Several IDEs are available.  In this setup example, we will use 
+ Microsoft's Visual Studio Code.
 
 + [Install Visual Studio Code](https://code.visualstudio.com/download)
 
@@ -64,8 +64,8 @@ with software development.  GitHub is a platform that hosts projects managed
 with Git.  As the example DataJoint workflows are hosted on GitHub, we will use 
 Git to clone (i.e. download) this repository.
 
-+ For your own DataJoint workflow development we recommended that you use Git and 
-GitHub to in collaboration.
++ For your own DataJoint workflow development we recommended that you use Git 
+and GitHub to in collaboration.
 
 + Many systems come preinstalled with Git.  You can test if have already have
 Git installed by typing `git` in a terminal window.
@@ -91,11 +91,13 @@ option.  Below are the commands for Conda.
 
     + You may need to add the Miniconda directory to the PATH environment 
     variable
+
         + First locate the Miniconda directory
+
         + Then modify and run the following command
-        ```
-        export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
-        ```
+            ```
+            export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
+            ```
 
 + Create a new conda environment
     + Type the following command into a terminal window
@@ -114,11 +116,11 @@ option.  Below are the commands for Conda.
 
 ## Install Jupyter Notebook
 
-    + Install the following, if you are using Jupyter Notebook.
-    
-        ```
-        conda install jupyter ipykernel nb_conda_kernels
-        ```
++ Install the following, if you are using Jupyter Notebook.
+
+    ```
+    conda install jupyter ipykernel nb_conda_kernels
+    ```
 
 ## Clone and install the repository
 
@@ -126,7 +128,8 @@ option.  Below are the commands for Conda.
     <details>
     <summary>Click to expand for details</summary>
 
-    + In a terminal and change directory to where you want to clone the repository
+    + In a terminal and change directory to where you want to clone the 
+    repository
         ```
         cd ~/Projects
         ```
@@ -420,18 +423,24 @@ workflow package.  Browse the revisions.
 + Download a given dataset
     + `workflow-array-ephys`
         ```python
-        client.download('workflow-array-ephys-test-set', target_directory='/tmp/example_data', revision=revision)
+        client.download('workflow-array-ephys-test-set', 
+                        target_directory='/tmp/example_data', 
+                        revision=revision)
         ```
 
     + `workflow-calcium-imaging`
         ```python
-        client.download('workflow-calcium-imaging-test-set', target_directory='/tmp/example_data', revision=revision)
+        client.download('workflow-calcium-imaging-test-set', 
+                        target_directory='/tmp/example_data', 
+                        revision=revision)
         ```
 
 + Directory organization
     + After downloading, the directory will be organized as follows
     
-    + We will use this data as an example for the tutorial notebooks for each workflow. If you use for own dataset for the workflow, change the path accordingly.
+    + We will use this data as an example for the tutorial notebooks for each 
+    workflow. If you use for own dataset for the workflow, change the path 
+    accordingly.
 
     + `workflow-array-ephys`
         <details>
@@ -446,9 +455,11 @@ workflow package.  Browse the revisions.
                 - towersTask_g0_t0.nidq.bin
         ```
         
-        + The example subject6/session1 data was recorded with SpikeGLX and processed with Kilosort2.
+        + The example subject6/session1 data was recorded with SpikeGLX and 
+        processed with Kilosort2.
         
-        + `element-array-ephys` and `workflow-array-ephys` also support data recorded with OpenEphys.
+        + `element-array-ephys` and `workflow-array-ephys` also support data 
+        recorded with OpenEphys.
 
         </details>
 
@@ -477,11 +488,11 @@ workflow package.  Browse the revisions.
         + The example subject3 data was recorded with Scanbox and processed with 
         Suite2p.
         
-        + The example subject7 data was recorded with ScanImage and processed with 
-        Suite2p.
+        + The example subject7 data was recorded with ScanImage and processed 
+        with Suite2p.
         
-        + `element-calcium-imaging` and `workflow-calcium-imaging` also support data
-        processed with CaImAn.
+        + `element-calcium-imaging` and `workflow-calcium-imaging` also support 
+        data processed with CaImAn.
         
         </details>
 
