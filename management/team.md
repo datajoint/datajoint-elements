@@ -24,6 +24,6 @@ The project is performed by [DataJoint](https://www.datajoint.com) with Dimitri 
 The first-person pronouns "we" and "our" in these documents refer to the Performer Team.
 
 ## External contributors
-The principal components of the Rescource are developed and distributed as open-source projects and external contributions are welcome.
+The principal components of the Resource are developed and distributed as open-source projects and external contributions are welcome.
 We have adopted the following Contribution Guide for DataJoint, DataJoint Elements, and related open-source tools: https://docs.datajoint.io/python/community/02-Contribute.html
 
