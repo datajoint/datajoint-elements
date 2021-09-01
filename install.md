@@ -88,6 +88,14 @@ option.  Below are the commands for Conda.
         https://conda.io/en/latest/miniconda.html) 
     for your operating system and following the instructions.
 
+    + You may need to add the Miniconda directory to the PATH environment 
+    variable
+        + First locate the Miniconda directory
+        + Then modify and run the following command
+        ```
+        export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
+        ```
+
 + Create a new conda environment
     + Type the following command into a terminal window
         ```
