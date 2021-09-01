@@ -114,12 +114,16 @@ option.  Below are the commands for Conda.
     conda activate <environment_name>
     ```
 
-## Install Jupyter Notebook
+## Install Jupyter Notebook packages
 
 + Install the following, if you are using Jupyter Notebook.
-
     ```
     conda install jupyter ipykernel nb_conda_kernels
+    ```
+
++ Install the following, for `dj.Diagram` to render.
+    ```
+    conda install graphviz python-graphviz pydotplus
     ```
 
 ## Clone and install the repository
