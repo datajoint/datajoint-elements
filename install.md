@@ -59,7 +59,7 @@ database server
 ## Install a version control system
 
 + Git is an open-source, distributed version control system for collaborating 
-with software development.  GitHub is a platform that hosts software developed 
+with software development.  GitHub is a platform that hosts projects managed 
 with Git.  As the example DataJoint workflows are hosted on GitHub, we will use 
 Git to clone (i.e. download) this repository.
 
