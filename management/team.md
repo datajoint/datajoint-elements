@@ -6,12 +6,12 @@ The project is performed by [DataJoint](https://www.datajoint.com) with Dimitri 
 * Dimitri Yatsenko - PI
 * Thinh Nguyen - Data Scientist
 * Kabilar Gunalan - Data Scientist
-* David Godinez - Data Engineer
 
 ## Engineers
 * Raphael Guzman - Software Engineer
 * Christopher Turner - Data Systems Engineer
 * Drew Yang - Data Systems Engineer
+* David Godinez - Data Engineer
 
 ## Past contributors
 * Edgar Y. Walker - System architect, Data Scientist, Project Manager (from project start to Jan, 2021)
