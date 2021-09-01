@@ -54,6 +54,7 @@ experimental analysis as the storage is not persistent.
 database server
     + [Docker image for MySQL server configured for use with DataJoint](
         https://github.com/datajoint/mysql-docker)
+
     + [Install MariaDB server](https://mariadb.com/kb/en/binary-packages/)
 
 ## Install a version control system
@@ -112,17 +113,12 @@ option.  Below are the commands for Conda.
     ```
 
 ## Install Jupyter Notebook
-#TODO this section
-+ Register an IPython kernel with Jupyter
-    ```
-    ipython kernel install --name=workflow-array-ephys
-    ```
 
-If you are using jupyter notebook, install a few more helper packages
-
-conda install jupyter nb_conda_kernels
-conda install ipykernel
-conda install graphviz python-graphviz pydotplus
+    + Install the following, if you are using Jupyter Notebook.
+    
+        ```
+        conda install jupyter ipykernel nb_conda_kernels
+        ```
 
 ## Clone and install the repository
 
