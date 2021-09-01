@@ -19,7 +19,7 @@ If you have already set up certain components, feel free to skip those steps.
 instructions.
 
 ## System architecture
-![Architecture](/images/install_architecture.jpeg)
+![Architecture](/images/install_architecture.png)
 
 + The above diagram describes the general components for a local DataJoint 
 development environment. 
@@ -153,7 +153,8 @@ conda install graphviz python-graphviz pydotplus
     <details>
     <summary>Click to expand for details</summary>
 
-    + In a terminal and change directory to where you want to clone the repository
+    + In a terminal and change directory to where you want to clone the 
+    repository
         ```
         cd ~/Projects
         ```
@@ -255,18 +256,19 @@ and file naming convention as described below.
     <details>
     <summary>Click to expand for details</summary>
 
-    + The `ephys_root_data_dir` is configurable in the `dj_local_conf.json`, under 
-    `custom/ephys_root_data_dir` variable.
+    + The `ephys_root_data_dir` is configurable in the `dj_local_conf.json`, 
+    under `custom/ephys_root_data_dir` variable.
 
-    + The `subject` directory names must match the identifiers of your subjects in 
-    the [subjects.csv](./user_data/subjects.csv) script.
+    + The `subject` directory names must match the identifiers of your subjects 
+    in the [subjects.csv](./user_data/subjects.csv) script.
 
     + The `session` directories can have any naming convention.
 
-    + Each session can have multiple probes, the `probe` directories must match the 
-    following naming convention:
+    + Each session can have multiple probes, the `probe` directories must match 
+    the following naming convention:
 
-        `*[0-9]` (where `[0-9]` is a one digit number specifying the probe number)
+        `*[0-9]` (where `[0-9]` is a one digit number specifying the probe 
+        number)
 
     + Each `probe` directory should contain:
 
