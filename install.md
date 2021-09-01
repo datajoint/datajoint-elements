@@ -363,8 +363,121 @@ and file naming convention as described below.
 + At this point the setup of this workflow is complete.
 
 ## Download example data
-#TODO this section
-We provide an example data set to run through this workflow. The instruction of data downloading is in the notebook [00-data-download](notebooks/00-data-download-optional.ipynb).
+
++ We provide example data to use with the example DataJoint workflows.
+
++ The data is hosted on DataJoint's Archive which is an AWS storage and can be 
+download with [djarchive-client](https://github.com/datajoint/djarchive-client).
+
++ Install `djarchive-client`
+    ```
+    pip install git+https://github.com/datajoint/djarchive-client.git
+    ```
+
++ In your python interpreter, import the client
+    ```python
+    import djarchive_client
+    client = djarchive_client.client()
+    ```
+
++ Browse the available datasets
+    ```python
+    list(client.datasets())
+    ```
+
++ Each datasets has different versions associated with the version of the 
+workflow package.  Browse the revisions.
+    ```python
+    list(client.revisions())                
+    ```
+
++ Get the current version of the workflow
+    + `workflow-array-ephys`
+        ```python
+        from workflow_array_ephys import version
+        revision = version.__version__.replace('.', '_')
+        revision
+        ```
+
+    + `workflow-calcium-imaging`
+        ```python
+        from workflow_calcium_imaging import version
+        revision = version.__version__.replace('.', '_')
+        revision
+        ```
+
++ Prepare a directory to store the download data, for example in `/tmp`
+    ```
+    mkdir /tmp/example_data
+    ```
+
++ Download a given dataset
+    + `workflow-array-ephys`
+        ```python
+        client.download('workflow-array-ephys-test-set', target_directory='/tmp/example_data', revision=revision)
+        ```
+
+    + `workflow-calcium-imaging`
+        ```python
+        client.download('workflow-calcium-imaging-test-set', target_directory='/tmp/example_data', revision=revision)
+        ```
+
++ Directory organization
+    + After downloading, the directory will be organized as follows
+    
+    + We will use this data as an example for the tutorial notebooks for each workflow. If you use for own dataset for the workflow, change the path accordingly.
+
+    + `workflow-array-ephys`
+        <details>
+        <summary>Click to expand for details</summary>
+
+        ```
+        /tmp/example_data/
+        - subject6
+            - session1
+                - towersTask_g0_imec0
+                - towersTask_g0_t0_nidq.meta
+                - towersTask_g0_t0.nidq.bin
+        ```
+        
+        + The example subject6/session1 data was recorded with SpikeGLX and processed with Kilosort2.
+        
+        + `element-array-ephys` and `workflow-array-ephys` also support data recorded with OpenEphys.
+
+        </details>
+
+    + `workflow-calcium-imaging`
+        <details>
+        <summary>Click to expand for details</summary>
+
+        ```
+        /tmp/example_data/
+        - subject3/
+            - 210107_run00_orientation_8dir/
+                - run00_orientation_8dir_000_000.sbx
+                - run00_orientation_8dir_000_000.mat
+                - suite2p/
+                    - combined
+                    - plane0
+                    - plane1
+                    - plane2
+                    - plane3
+        - subject7/
+            - session1
+                - suite2p
+                    - plane0
+        ```
+        
+        + The example subject3 data was recorded with Scanbox and processed with 
+        Suite2p.
+        
+        + The example subject7 data was recorded with ScanImage and processed with 
+        Suite2p.
+        
+        + `element-calcium-imaging` and `workflow-calcium-imaging` also support data
+        processed with CaImAn.
+        
+        </details>
 
 ## Interacting with the DataJoint workflow and exploring data
 
