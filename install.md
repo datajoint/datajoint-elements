@@ -42,20 +42,18 @@ from a scientific programming environment (i.e. Python or MATLAB) so that your
 experimental data can be stored in the database and downloaded from the 
 database.
 
-+ For simplicity of this tutorial we will use the DataJoint Playground tutorial 
-database located at `tutorial-db.datajoint.io` which has already been 
-configured.  See the section below: [Setup connection to database server](
-    #setup-connection-to-database-server).
-
-+ Please note that the tutorial database should not be used for your 
-experimental analysis as the storage is not persistent.
-
 + There are several options if you would like to install a local relational 
 database server
     + [Docker image for MySQL server configured for use with DataJoint](
         https://github.com/datajoint/mysql-docker)
 
     + [Install MariaDB server](https://mariadb.com/kb/en/binary-packages/)
+
++ Alternatively, for simplicity of this tutorial you can use the DataJoint 
+Playground tutorial database located at `tutorial-db.datajoint.io` which has 
+already been configured.
+    + Please note that the tutorial database should not be used for your 
+    experimental analysis as the storage is not persistent.
 
 ## Install a version control system
 
@@ -245,11 +243,15 @@ create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
     </details>
 
 + Specify the database's `hostname`, `username`, and `password`.
-    + For this tutorial we will use the `tutorial-db.datajoint.io` database.  
-    Therefore the `hostname` will be `tutorial-db.datajoint.io`.
-    
-    + The `username` and `password` will be the credentials for your 
-    [DataJoint account](https://accounts.datajoint.io).
+
+    + If using, you are using 
+    [Docker image for MySQL server configured for use with DataJoint](
+        https://github.com/datajoint/mysql-docker) then the `hostname` will be 
+    `localhost`.
+
+    + If using the tutorial database, the `hostname` will be 
+    `tutorial-db.datajoint.io`.  And the `username` and `password` will be the 
+    credentials for your [DataJoint account](https://accounts.datajoint.io).
 
 + Specify a `database.prefix` which will be the prefix for your schema names.  
 For the `tutorial-db` database, you will use your DataJoint username.
