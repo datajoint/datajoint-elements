@@ -257,121 +257,9 @@ create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
 For the `tutorial-db` database, you will use your DataJoint username.
 
 + Setup your data directory (e.g. `ephys_root_data_dir`, 
-`imaging_root_data_dir`) following the convention described in the following 
-section.
-
-## Directory structure and file naming convention
-
-+ The workflow presented here is designed to work with the directory structure 
-and file naming convention as described below.
-
-+ `workflow-array-ephys`
-    <details>
-    <summary>Click to expand for details</summary>
-
-    + The `ephys_root_data_dir` is configurable in the `dj_local_conf.json`, 
-    under `custom/ephys_root_data_dir` variable.
-
-    + The `subject` directory names must match the identifiers of your subjects 
-    in the [subjects.csv](./user_data/subjects.csv) script.
-
-    + The `session` directories can have any naming convention.
-
-    + Each session can have multiple probes, the `probe` directories must match 
-    the following naming convention:
-
-        `*[0-9]` (where `[0-9]` is a one digit number specifying the probe 
-        number)
-
-    + Each `probe` directory should contain:
-
-        + One neuropixels meta file, with the following naming convention:
-
-            `*[0-9].ap.meta`
-
-        + Potentially one Kilosort output folder
-
-    ```
-    <ephys_root_data_dir>/
-    └───<subject1>/                       # Subject name in `subjects.csv`
-    │   └───<session0>/                   # Session directory in `sessions.csv`
-    │   │   └───imec0/
-    │   │   │   │   *imec0.ap.meta
-    │   │   │   └───ksdir/
-    │   │   │       │   spike_times.npy
-    │   │   │       │   templates.npy
-    │   │   │       │   ...
-    │   │   └───imec1/
-    │   │       │   *imec1.ap.meta
-    │   │       └───ksdir/
-    │   │           │   spike_times.npy
-    │   │           │   templates.npy
-    │   │           │   ...
-    │   └───<session1>/
-    │   │   │   ...
-    └───<subject2>/
-    │   │   ...
-    ```
-
-    </details>
-
-+ `workflow-calcium-imaging`
-    <details>
-    <summary>Click to expand for details</summary>
-
-    + Note: the `element-calcium-imaging` is designed to accommodate multiple 
-    scans per session, however, in this particular `workflow-calcium-imaging`, 
-    we take the assumption that there is only one scan per session.
-
-    + The `imaging_root_data_dir` directory is configurable in the 
-    `dj_local_conf.json`, under the `custom/imaging_root_data_dir` variable
-
-    + The `subject` directory names must match the identifiers of your subjects 
-    in the [subjects.csv](./user_data/subjects.csv) script
-
-    + The `session` directories can have any naming convention
-        
-    + Each `session` directory should contain:
-
-        + All `.tif` or `.sbx` files for the scan, with any naming convention
-        
-        + One `suite2p` subfolder per `session` folder, containing the `Suite2p`
-         analysis outputs
-
-        + One `caiman` subfolder per `session` folder, containing the `CaImAn` 
-        analysis output `.hdf5` file, with any naming convention
-
-    ```
-    imaging_root_data_dir/
-    └───<subject1>/                     # Subject name in `subjects.csv`
-    │   └───<session0>/                 # Session directory in `sessions.csv`
-    │   │   │   scan_0001.tif
-    │   │   │   scan_0002.tif
-    │   │   │   scan_0003.tif
-    │   │   │   ...
-    │   │   └───suite2p/
-    │   │       │   ops1.npy
-    │   │       └───plane0/
-    │   │       │   │   ops.npy
-    │   │       │   │   spks.npy
-    │   │       │   │   stat.npy
-    │   │       │   │   ...
-    │   │       └───plane1/
-    │   │           │   ops.npy
-    │   │           │   spks.npy
-    │   │           │   stat.npy
-    │   │           │   ...
-    │   │   └───caiman/
-    │   │       │   analysis_results.hdf5
-    │   └───<session1>/                 # Session directory in `sessions.csv`
-    │   │   │   scan_0001.tif
-    │   │   │   scan_0002.tif
-    │   │   │   ...
-    └───<subject2>/                     # Subject name in `subjects.csv`
-    │   │   ...
-    ```
-
-    </details>
+`imaging_root_data_dir`) following the convention described in the section 
+[Directory structure and file naming convention](
+    #directory-structure-and-file-naming-convention).
 
 ## Setup complete
 
@@ -502,47 +390,181 @@ workflow package.  Browse the revisions.
         
         </details>
 
-## Interacting with the DataJoint workflow and exploring data
+## Directory structure and file naming convention
 
-#TODO this section
-#TODO add links to other notebooks
++ The workflow presented here is designed to work with the directory structure 
+and file naming convention as described below.
+
++ `workflow-array-ephys`
+    <details>
+    <summary>Click to expand for details</summary>
+
+    + The `ephys_root_data_dir` is configurable in the `dj_local_conf.json`, 
+    under `custom/ephys_root_data_dir` variable.
+
+    + The `subject` directory names must match the identifiers of your subjects 
+    in the [subjects.csv](./user_data/subjects.csv) script.
+
+    + The `session` directories can have any naming convention.
+
+    + Each session can have multiple probes, the `probe` directories must match 
+    the following naming convention:
+
+        `*[0-9]` (where `[0-9]` is a one digit number specifying the probe 
+        number)
+
+    + Each `probe` directory should contain:
+
+        + One neuropixels meta file, with the following naming convention:
+
+            `*[0-9].ap.meta`
+
+        + Potentially one Kilosort output folder
+
+    ```
+    <ephys_root_data_dir>/
+    └───<subject1>/                       # Subject name in `subjects.csv`
+    │   └───<session0>/                   # Session directory in `sessions.csv`
+    │   │   └───imec0/
+    │   │   │   │   *imec0.ap.meta
+    │   │   │   └───ksdir/
+    │   │   │       │   spike_times.npy
+    │   │   │       │   templates.npy
+    │   │   │       │   ...
+    │   │   └───imec1/
+    │   │       │   *imec1.ap.meta
+    │   │       └───ksdir/
+    │   │           │   spike_times.npy
+    │   │           │   templates.npy
+    │   │           │   ...
+    │   └───<session1>/
+    │   │   │   ...
+    └───<subject2>/
+    │   │   ...
+    ```
+
+    </details>
+
++ `workflow-calcium-imaging`
+    <details>
+    <summary>Click to expand for details</summary>
+
+    + Note: the `element-calcium-imaging` is designed to accommodate multiple 
+    scans per session, however, in this particular `workflow-calcium-imaging`, 
+    we take the assumption that there is only one scan per session.
+
+    + The `imaging_root_data_dir` directory is configurable in the 
+    `dj_local_conf.json`, under the `custom/imaging_root_data_dir` variable
+
+    + The `subject` directory names must match the identifiers of your subjects 
+    in the [subjects.csv](./user_data/subjects.csv) script
+
+    + The `session` directories can have any naming convention
+        
+    + Each `session` directory should contain:
+
+        + All `.tif` or `.sbx` files for the scan, with any naming convention
+        
+        + One `suite2p` subfolder per `session` folder, containing the `Suite2p`
+         analysis outputs
+
+        + One `caiman` subfolder per `session` folder, containing the `CaImAn` 
+        analysis output `.hdf5` file, with any naming convention
+
+    ```
+    imaging_root_data_dir/
+    └───<subject1>/                     # Subject name in `subjects.csv`
+    │   └───<session0>/                 # Session directory in `sessions.csv`
+    │   │   │   scan_0001.tif
+    │   │   │   scan_0002.tif
+    │   │   │   scan_0003.tif
+    │   │   │   ...
+    │   │   └───suite2p/
+    │   │       │   ops1.npy
+    │   │       └───plane0/
+    │   │       │   │   ops.npy
+    │   │       │   │   spks.npy
+    │   │       │   │   stat.npy
+    │   │       │   │   ...
+    │   │       └───plane1/
+    │   │           │   ops.npy
+    │   │           │   spks.npy
+    │   │           │   stat.npy
+    │   │           │   ...
+    │   │   └───caiman/
+    │   │       │   analysis_results.hdf5
+    │   └───<session1>/                 # Session directory in `sessions.csv`
+    │   │   │   scan_0001.tif
+    │   │   │   scan_0002.tif
+    │   │   │   ...
+    └───<subject2>/                     # Subject name in `subjects.csv`
+    │   │   ...
+    ```
+
+    </details>
+
+## Interacting with the DataJoint workflow
+
 + Connect to database and import tables
-    ```
-    from workflow_array_ephys.pipeline import *
-    ```
+    + `workflow-array-ephys`
+    <details>
+    <summary>Click to expand for details</summary>
+    
+        ```
+        from workflow_array_ephys.pipeline import *
+        ```
 
-+ Query ingested data
-    ```
-    subject.Subject()
-    session.Session()
-    ephys.ProbeInsertion()
-    ephys.EphysRecording()
-    ephys.Clustering()
-    ephys.Clustering.Unit()
-    ```
+    </details>
 
-+ For a more in-depth exploration of ingested data, please refer to the example [explore notebook](https://github.com/datajoint/workflow-array-ephys/blob/main/notebooks/05-explore.ipynb).
+    + `workflow-calcium-imaging`
+    <details>
+    <summary>Click to expand for details</summary>
 
-See `notebooks/run_workflow.ipynb` for detailed instructions on running this workflow.
+        ```
+        from workflow_calcium_imaging.pipeline import *
+        ```
 
-Once you have your data directory (`imaging_root_data_dir`) configured with the above convention, 
-populating the workflow with your data amounts to these 3 steps:
+    </details>
 
-1. Insert meta information (e.g. subject, sessions, equipment, Suite2p analysis parameters etc.) - modify:
++ View the declared tables
+    + `workflow-array-ephys`
+    <details>
+    <summary>Click to expand for details</summary>
 
-2. Import session data - run:
-    ```
-    python workflow_calcium_imaging/ingest.py
-    ```
-   
-3. Import scan data and populate downstream analyses - run:
-    ```
-    python workflow_calcium_imaging/populate.py
-    ```
+        ```
+        subject.Subject()
+        session.Session()
+        ephys.ProbeInsertion()
+        ephys.EphysRecording()
+        ephys.Clustering()
+        ephys.Clustering.Unit()
+        ```
 
-+ Rerun step 2 and 3 every time new sessions or processed data becomes available.
+    </details>
 
-+ In fact, step 2 and 3 can be executed as scheduled jobs that will automatically process any data newly placed into the `imaging_root_data_dir`.
+    + `workflow-calcium-imaging`
+    <details>
+    <summary>Click to expand for details</summary>
+
+        ```
+        subject.Subject()
+        session.Session()
+        scan.Scan()
+        scan.ScanInfo()
+        imaging.ProcessingParamSet()
+        imaging.ProcessingTask()
+        ```
+
+    </details>
+
++ For an in depth explanation of how to run the workflows and explore the data,
+please refer to the following workflow specific Jupyter notebooks.
+
+    + [workflow-array-ephys Jupyter notebooks](
+        https://github.com/datajoint/workflow-calcium-imaging/tree/main/notebooks)
+
+    + [workflow-calcium-imaging Jupyter notebooks](
+        https://github.com/datajoint/workflow-array-ephys/tree/main/notebooks)
 
 ## DataJoint LabBook
 
