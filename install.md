@@ -507,55 +507,55 @@ and file naming convention as described below.
 
 + Connect to database and import tables
     + `workflow-array-ephys`
-    <details>
-    <summary>Click to expand for details</summary>
-    
-        ```python
-        from workflow_array_ephys.pipeline import *
-        ```
+        <details>
+        <summary>Click to expand for details</summary>
+        
+            ```python
+            from workflow_array_ephys.pipeline import *
+            ```
 
-    </details>
+        </details>
 
     + `workflow-calcium-imaging`
-    <details>
-    <summary>Click to expand for details</summary>
+        <details>
+        <summary>Click to expand for details</summary>
 
-        ```python
-        from workflow_calcium_imaging.pipeline import *
-        ```
+            ```python
+            from workflow_calcium_imaging.pipeline import *
+            ```
 
-    </details>
+        </details>
 
 + View the declared tables
     + `workflow-array-ephys`
-    <details>
-    <summary>Click to expand for details</summary>
+        <details>
+        <summary>Click to expand for details</summary>
 
-        ```python
-        subject.Subject()
-        session.Session()
-        ephys.ProbeInsertion()
-        ephys.EphysRecording()
-        ephys.Clustering()
-        ephys.Clustering.Unit()
-        ```
+            ```python
+            subject.Subject()
+            session.Session()
+            ephys.ProbeInsertion()
+            ephys.EphysRecording()
+            ephys.Clustering()
+            ephys.Clustering.Unit()
+            ```
 
-    </details>
+        </details>
 
     + `workflow-calcium-imaging`
-    <details>
-    <summary>Click to expand for details</summary>
+        <details>
+        <summary>Click to expand for details</summary>
 
-        ```python
-        subject.Subject()
-        session.Session()
-        scan.Scan()
-        scan.ScanInfo()
-        imaging.ProcessingParamSet()
-        imaging.ProcessingTask()
-        ```
+            ```python
+            subject.Subject()
+            session.Session()
+            scan.Scan()
+            scan.ScanInfo()
+            imaging.ProcessingParamSet()
+            imaging.ProcessingTask()
+            ```
 
-    </details>
+        </details>
 
 + For an in depth explanation of how to run the workflows and explore the data,
 please refer to the following workflow specific Jupyter notebooks.
