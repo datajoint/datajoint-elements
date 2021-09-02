@@ -93,34 +93,34 @@ option.  Below are the commands for Conda.
         + First locate the Miniconda directory
 
         + Then modify and run the following command
-            ```
+            ```bash
             export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
             ```
 
 + Create a new conda environment
     + Type the following command into a terminal window
-        ```
+        ```bash
         conda create -n <environment_name> python=<version>
         ```
     + Example command to create conda environment
-        ```
+        ```bash
         conda create -n workflow-array-ephys python=3.8.11
         ```
 
 + Activate the conda environment
-    ```
+    ```bash
     conda activate <environment_name>
     ```
 
 ## Install Jupyter Notebook packages
 
 + Install the following, if you are using Jupyter Notebook.
-    ```
+    ```bash
     conda install jupyter ipykernel nb_conda_kernels
     ```
 
 + Install the following, for `dj.Diagram` to render.
-    ```
+    ```bash
     conda install graphviz python-graphviz pydotplus
     ```
 
@@ -132,22 +132,22 @@ option.  Below are the commands for Conda.
 
     + In a terminal and change directory to where you want to clone the 
     repository
-        ```
+        ```bash
         cd ~/Projects
         ```
 
     + Clone the repository
-        ```
+        ```bash
         git clone https://github.com/datajoint/workflow-array-ephys
         ```
 
     + Change directory to `workflow-array-ephys`
-        ```
+        ```bash
         cd workflow-array-ephys
         ```
 
     + From the root of the cloned repository directory
-        ```
+        ```bash
         pip install -e .
         ```
 
@@ -164,22 +164,22 @@ option.  Below are the commands for Conda.
 
     + In a terminal and change directory to where you want to clone the 
     repository
-        ```
+        ```bash
         cd ~/Projects
         ```
 
     + Clone the repository
-        ```
+        ```bash
         git clone https://github.com/datajoint/workflow-calcium-imaging
         ```
 
     + Change directory to `workflow-calcium-imaging`
-        ```
+        ```bash
         cd workflow-calcium-imaging
         ```
 
     + From the root of the cloned repository directory
-        ```
+        ```bash
         pip install -e .
         ```
 
@@ -273,7 +273,7 @@ For the `tutorial-db` database, you will use your DataJoint username.
 download with [djarchive-client](https://github.com/datajoint/djarchive-client).
 
 + Install `djarchive-client`
-    ```
+    ```bash
     pip install git+https://github.com/datajoint/djarchive-client.git
     ```
 
@@ -310,7 +310,7 @@ workflow package.  Browse the revisions.
         ```
 
 + Prepare a directory to store the download data, for example in `/tmp`
-    ```
+    ```bash
     mkdir /tmp/example_data
     ```
 
@@ -510,7 +510,7 @@ and file naming convention as described below.
     <details>
     <summary>Click to expand for details</summary>
     
-        ```
+        ```python
         from workflow_array_ephys.pipeline import *
         ```
 
@@ -520,7 +520,7 @@ and file naming convention as described below.
     <details>
     <summary>Click to expand for details</summary>
 
-        ```
+        ```python
         from workflow_calcium_imaging.pipeline import *
         ```
 
@@ -531,7 +531,7 @@ and file naming convention as described below.
     <details>
     <summary>Click to expand for details</summary>
 
-        ```
+        ```python
         subject.Subject()
         session.Session()
         ephys.ProbeInsertion()
@@ -546,7 +546,7 @@ and file naming convention as described below.
     <details>
     <summary>Click to expand for details</summary>
 
-        ```
+        ```python
         subject.Subject()
         session.Session()
         scan.Scan()
@@ -592,12 +592,12 @@ dependencies (i.e. DataJoint Elements).
 
     + Launch a new terminal and change directory to where you want to clone the 
     repositories
-        ```
+        ```bash
         cd ~/Projects
         ```
 
     + Clone the repositories
-        ```
+        ```bash
         git clone https://github.com/datajoint/element-lab
         git clone https://github.com/datajoint/element-animal
         git clone https://github.com/datajoint/element-session
@@ -606,7 +606,7 @@ dependencies (i.e. DataJoint Elements).
         ```
 
     + Install each package with the `-e` option
-        ```
+        ```bash
         pip install -e ./element-lab
         pip install -e ./element-animal
         pip install -e ./element-session
@@ -622,12 +622,12 @@ dependencies (i.e. DataJoint Elements).
 
     + Launch a new terminal and change directory to where you want to clone the 
     repositories
-        ```
+        ```bash
         cd ~/Projects
         ```
 
     + Clone the repositories
-        ```
+        ```bash
         git clone https://github.com/datajoint/element-lab
         git clone https://github.com/datajoint/element-animal
         git clone https://github.com/datajoint/element-session
@@ -636,7 +636,7 @@ dependencies (i.e. DataJoint Elements).
         ```
 
     + Install each package with the `-e` option
-        ```
+        ```bash
         pip install -e ./element-lab
         pip install -e ./element-animal
         pip install -e ./element-session
