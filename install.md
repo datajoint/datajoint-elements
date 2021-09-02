@@ -12,8 +12,8 @@ matches your experimental setup.  We have created example workflows (e.g.
 + These instructions can be adapted for your custom DataJoint workflow.
 
 + There are several ways to create a development environment.  Here we will 
-discuss one method in detail, and will highlight other methods along the way.  
-If you have already set up certain components, feel free to skip those steps.
+discuss one method in detail, and will highlight other methods along the way. 
+If you have already set up certain components, feel free to skip those sections.
 
 + You will need administrative privileges on your system for the following setup
 instructions.
@@ -63,12 +63,12 @@ with Git.  As the example DataJoint workflows are hosted on GitHub, we will use
 Git to clone (i.e. download) this repository.
 
 + For your own DataJoint workflow development we recommended that you use Git 
-and GitHub to in collaboration.
+and GitHub for collaboration.
 
-+ Many systems come preinstalled with Git.  You can test if have already have
-Git installed by typing `git` in a terminal window.
++ Many systems come preinstalled with Git.  You can test if Git is already 
+installed by typing `git` in a terminal window.
 
-+ If Git is not install on your system, [Install Git](
++ If Git is not installed on your system, [Install Git](
     https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 ## Install a virtual environment
@@ -102,7 +102,7 @@ option.  Below are the commands for Conda.
         ```bash
         conda create -n <environment_name> python=<version>
         ```
-    + Example command to create conda environment
+    + Example command to create a conda environment
         ```bash
         conda create -n workflow-array-ephys python=3.8.11
         ```
@@ -130,7 +130,7 @@ option.  Below are the commands for Conda.
     <details>
     <summary>Click to expand for details</summary>
 
-    + In a terminal and change directory to where you want to clone the 
+    + In a terminal window and change the directory to where you want to clone the 
     repository
         ```bash
         cd ~/Projects
@@ -141,7 +141,7 @@ option.  Below are the commands for Conda.
         git clone https://github.com/datajoint/workflow-array-ephys
         ```
 
-    + Change directory to `workflow-array-ephys`
+    + Change into the `workflow-array-ephys` directory
         ```bash
         cd workflow-array-ephys
         ```
@@ -153,7 +153,7 @@ option.  Below are the commands for Conda.
 
     + Note: the `-e` flag will install this repository in editable mode, in case
      there's a need to modify the code (e.g. the `pipeline.py` or `paths.py` 
-     scripts). If no such modification required, using `pip install .` is 
+     scripts). If no such modification is required, using `pip install .` is 
      sufficient.
 
     </details>
@@ -162,7 +162,7 @@ option.  Below are the commands for Conda.
     <details>
     <summary>Click to expand for details</summary>
 
-    + In a terminal and change directory to where you want to clone the 
+    + In a terminal window and change the directory to where you want to clone the 
     repository
         ```bash
         cd ~/Projects
@@ -173,7 +173,7 @@ option.  Below are the commands for Conda.
         git clone https://github.com/datajoint/workflow-calcium-imaging
         ```
 
-    + Change directory to `workflow-calcium-imaging`
+    + Change into the `workflow-calcium-imaging` directory
         ```bash
         cd workflow-calcium-imaging
         ```
@@ -185,12 +185,12 @@ option.  Below are the commands for Conda.
 
     + Note: the `-e` flag will install this repository in editable mode, in case
      there's a need to modify the code (e.g. the `pipeline.py` or `paths.py` 
-     scripts). If no such modification required, using `pip install .` is 
+     scripts). If no such modification is required, using `pip install .` is 
      sufficient.
 
     </details>
 
-## Setup connection to database server
+## Set up a connection to the database server
 
 + One way to set up a connection to the database server with DataJoint is to 
 create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
@@ -244,7 +244,7 @@ create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
 
 + Specify the database's `hostname`, `username`, and `password`.
 
-    + If using, you are using 
+    + If using the 
     [Docker image for MySQL server configured for use with DataJoint](
         https://github.com/datajoint/mysql-docker) then the `hostname` will be 
     `localhost`.
@@ -253,10 +253,13 @@ create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
     `tutorial-db.datajoint.io`.  And the `username` and `password` will be the 
     credentials for your [DataJoint account](https://accounts.datajoint.io).
 
-+ Specify a `database.prefix` which will be the prefix for your schema names.  
-For the `tutorial-db` database, you will use your DataJoint username.
++ Specify a `database.prefix` which will be the prefix for your schema names.
 
-+ Setup your data directory (e.g. `ephys_root_data_dir`, 
+    + For a local setup, it can be set as you see fit (e.g. `neuro_`).
+
+    + For the `tutorial-db` database, you will use your DataJoint username.
+
++ Set up your data directory (e.g. `ephys_root_data_dir`, 
 `imaging_root_data_dir`) following the convention described in the section 
 [Directory structure and file naming convention](
     #directory-structure-and-file-naming-convention).
@@ -505,14 +508,14 @@ and file naming convention as described below.
 
 ## Interacting with the DataJoint workflow
 
-+ Connect to database and import tables
++ Connect to the database and import tables
     + `workflow-array-ephys`
         <details>
         <summary>Click to expand for details</summary>
         
-            ```python
-            from workflow_array_ephys.pipeline import *
-            ```
+        ```python
+        from workflow_array_ephys.pipeline import *
+        ```
 
         </details>
 
@@ -520,9 +523,9 @@ and file naming convention as described below.
         <details>
         <summary>Click to expand for details</summary>
 
-            ```python
-            from workflow_calcium_imaging.pipeline import *
-            ```
+        ```python
+        from workflow_calcium_imaging.pipeline import *
+        ```
 
         </details>
 
@@ -531,14 +534,14 @@ and file naming convention as described below.
         <details>
         <summary>Click to expand for details</summary>
 
-            ```python
-            subject.Subject()
-            session.Session()
-            ephys.ProbeInsertion()
-            ephys.EphysRecording()
-            ephys.Clustering()
-            ephys.Clustering.Unit()
-            ```
+        ```python
+        subject.Subject()
+        session.Session()
+        ephys.ProbeInsertion()
+        ephys.EphysRecording()
+        ephys.Clustering()
+        ephys.Clustering.Unit()
+        ```
 
         </details>
 
@@ -546,25 +549,25 @@ and file naming convention as described below.
         <details>
         <summary>Click to expand for details</summary>
 
-            ```python
-            subject.Subject()
-            session.Session()
-            scan.Scan()
-            scan.ScanInfo()
-            imaging.ProcessingParamSet()
-            imaging.ProcessingTask()
-            ```
+        ```python
+        subject.Subject()
+        session.Session()
+        scan.Scan()
+        scan.ScanInfo()
+        imaging.ProcessingParamSet()
+        imaging.ProcessingTask()
+        ```
 
         </details>
 
 + For an in depth explanation of how to run the workflows and explore the data,
 please refer to the following workflow specific Jupyter notebooks.
 
-    + [workflow-array-ephys Jupyter notebooks](
-        https://github.com/datajoint/workflow-calcium-imaging/tree/main/notebooks)
-
-    + [workflow-calcium-imaging Jupyter notebooks](
+    + `workflow-array-ephys` [Jupyter notebooks](
         https://github.com/datajoint/workflow-array-ephys/tree/main/notebooks)
+
+    + `workflow-calcium-imaging` [Jupyter notebooks](
+        https://github.com/datajoint/workflow-calcium-imaging/tree/main/notebooks)
 
 ## DataJoint LabBook
 
@@ -575,9 +578,9 @@ DataJoint tables.
 
 + [DataJoint LabBook Documentation](
     https://datajoint.github.io/datajoint-labbook/)
-    + Including prerequisites, installation, and running
+    + Including prerequisites, installation, and running the application
 
-+ [DataJoint LabBook GitHub repository](
++ [DataJoint LabBook GitHub Repository](
     https://github.com/datajoint/datajoint-labbook)
 
 ## Development mode installation
