@@ -10,9 +10,9 @@ Tutorials:
 
 * https://playground.datajoint.io
 * https://tutorials.datajoint.io
-* https://docs.datajoint.io
+* https://docs.datajoint.org
 
-## Support from DataJoint NEURO
+## Support from DataJoint
 Our team provides support to labs to adopt DataJoint workflows in their research.
 
 This includes:
