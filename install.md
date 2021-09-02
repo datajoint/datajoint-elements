@@ -547,20 +547,14 @@ populating the workflow with your data amounts to these 3 steps:
 ![LabBook GIF](https://github.com/datajoint/datajoint-labbook/blob/master/docs/sphinx/_static/images/walkthroughDemoOptimized.gif)
 
 + DataJoint LabBook is a graphical user interface to facilitate working with 
-DataJoint workflows.
-
-+ Prerequisites
-    + [Install Docker](https://docs.docker.com/get-docker/)
-    + [Install Docker Compose](https://docs.docker.com/compose/install/)
-
-+ [Install DataJoint LabBook](
-    https://datajoint.github.io/datajoint-labbook/user.html#installation)
-
-+ [DataJoint LabBook GitHub repository](
-    https://github.com/datajoint/datajoint-labbook)
+DataJoint tables.
 
 + [DataJoint LabBook Documentation](
     https://datajoint.github.io/datajoint-labbook/)
+    + Including prerequisites, installation, and running
+
++ [DataJoint LabBook GitHub repository](
+    https://github.com/datajoint/datajoint-labbook)
 
 ## Development mode installation
 
