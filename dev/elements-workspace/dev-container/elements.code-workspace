@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "datajoint-elements (container)"
+		},
+		{
+			"path": "elements",
+			"name": "elements-dev"
+		},
+		{
+			"path": "workflows",
+			"name": "workflows-dev"
+		}
+	],
+	"settings": {}
+}

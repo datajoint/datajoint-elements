@@ -1,0 +1,61 @@
+# Setup containers for DataJoint elements environment
+# Joseph Burling <joseph@datajoint.com>
+# --------------------------------------------------------------------------------------
+# Basic usage:
+#   docker-compose --verbose up --detach
+#   docker-compose down
+#   docker-compose down --volumes
+
+version: "2.4"
+services:
+  db:
+    environment:
+      MYSQL_ROOT_PASSWORD: supersecretpw
+    image: datajoint/mysql:5.7
+    networks:
+      djelem: null
+    platform: linux/amd64
+    ports:
+      - "6603:3306"
+    restart: always
+    volumes:
+      - type: volume
+        source: sqldata
+        target: /var/lib/mysql
+        volume: {}
+  conda:
+    build:
+      context: ../elements-image
+      dockerfile: Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy # service_started
+    environment:
+      DJ_USER: root
+      DJ_HOST: db
+      DJ_PASS: supersecretpw
+    init: true
+    networks:
+      djelem: null
+    volumes:
+      - type: bind
+        source: ./dev-container
+        target: /home/dj/datajoint-elements
+      - type: volume
+        source: vscode
+        target: /home/dj/.vscode-server/extensions
+        volume: {}
+      - type: volume
+        source: vscode-insiders
+        target: /home/dj/.vscode-server-insiders/extensions
+        volume: {}
+networks:
+  djelem:
+    name: datajoint-elements-net-djelem
+volumes:
+  sqldata:
+    name: datajoint-elements-vol-sqldata
+  vscode:
+    name: datajoint-elements-vol-vscode
+  vscode-insiders:
+    name: datajoint-elements-vol-vscode-insiders
