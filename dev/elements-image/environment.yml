@@ -1,0 +1,35 @@
+# mamba env create -vvv -f environment.yml
+name: elements
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.* # .......... minimum python version
+  - pip>=19.3 # ............. manylinux2014 version
+  - cryptography # .......... datajoint
+  - graphviz # .............. datajoint
+  - ipython # ............... datajoint
+  - matplotlib # ............ datajoint
+  - minio>=7.0.0 # .......... datajoint
+  - networkx # .............. datajoint
+  - numpy>=1.21.0 # ......... datajoint
+  - otumat # ................ datajoint
+  - pandas # ................ datajoint
+  - plotly # ................ datajoint
+  - pydot # ................. datajoint
+  - pymysql>=0.7.2 # ........ datajoint
+  - pyparsing # ............. datajoint
+  - scipy # ................. datajoint
+  - tqdm # .................. datajoint
+  - urllib3 # ............... datajoint
+  - tabulate # .............. elements
+  - black # ................. dev
+  - flake8 # ................ dev
+  - ipykernel # ............. dev
+  - jupyter-server-proxy # .. dev
+  - jupyterlab # ............ dev
+  - pylint # ................ dev
+  - pytest # ................ dev
+  - pyyaml # ................ dev
+  - pip:
+      - datajoint # ......... datajoint

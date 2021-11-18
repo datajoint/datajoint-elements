@@ -1,0 +1,211 @@
+#! /bin/bash --login
+
+# get this script file and its parent directory name (no symlink resolution)
+script_cmd="${BASH_SOURCE[0]}"
+script_path="$(cd "$(dirname ${script_cmd})" &>/dev/null && pwd)"
+script_file=$(basename "${script_cmd}")
+
+# root folders for elements and workflows
+workspace_root=~/datajoint-elements
+elements_root=${DJ_ELEMENTS_ROOT:-"${workspace_root}/elements"}
+workflows_root=${DJ_WORKFLOWS_ROOT:-"${workspace_root}/workflows"}
+
+# default options
+github_user=${GITHUB_USER:-datajoint}
+conda_env=${CONDA_ENV_USER:-base}
+url_prefix="https://github.com/"
+clean_build=false
+remove_existing=false
+mix_repo_origin=false
+
+# default repos under a single username
+git_repos=(
+    djarchive-client
+    element-animal
+    element-array-ephys
+    element-calcium-imaging
+    element-data-loader
+    element-lab
+    element-miniscope
+    element-session
+    workflow-animal
+    workflow-array-ephys
+    workflow-calcium-imaging
+    workflow-miniscope
+)
+
+# bash functions
+show_help() {
+    echo "usage: $script_file [OPTION]...
+
+Clone and install GitHub repositories for DataJoint Elements. If using VSCode, your git
+credentials will be copied over to the dev container[1][2]. This script can be
+executed after the credentials are setup.
+
+Options:
+-------
+
+--help, -h ............... Show this help documentation then exit.
+--conda=CONDA_ENV_USER ... Name of conda environment to switch to during install.
+--listpkgs ............... List already installed packages w/ 'develop' then exit.
+                           Either '--conda=' or env var CONDA_ENV_USER must be set.
+--ssh .................... Use SSH[2][3] instead of the HTTPS[1] url prefix.
+--user=GITHUB_USER ....... GitHub username to use instead of default 'datajoint'.
+--mix-origin ............. Download repo from 'datajoint/element*' if '--user' fails.
+--clean .................. Pass '--clean' option during 'conda develop' for reinstall.
+--rm ..................... Remove existing element folder and reinstall.
+
+Environment Variables:
+---------------------
+
+  GITHUB_USER=$GITHUB_USER
+  CONDA_ENV_USER=$CONDA_ENV_USER
+
+Examples:
+--------
+
+ Get help
+
+   $script_file --help
+
+ Clone repositories using your own fork (e.g., username=iamamutt)
+
+   $script_file --user=iamamutt
+
+ Clone repositories using your own fork and use datajoint if fork doesn't exist
+
+   $script_file --user=iamamutt --mix-origin
+
+
+List of Installed DataJoint Elements:
+------------------------------------
+
+$(printf '* %s\n' "${git_repos[@]}")
+
+[1] https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
+[2] https://code.visualstudio.com/docs/remote/containers#_using-ssh-keys
+[3] https://www.ssh.com/academy/ssh/add
+"
+    exit 0
+}
+
+list_dev_pkgs() {
+    conda activate $conda_env
+    local conda_pth=$(echo "${CONDA_PREFIX}"/lib/python3*/site-packages/conda.pth)
+    if [[ -f "${conda_pth}" ]]; then
+        echo "# => conda.pth location: '$conda_pth'"
+        echo "# ---- List of packages installed with conda develop ----"
+        cat $conda_pth
+    else
+        echo "#~ Warning: could not find conda.pth at '$conda_pth'"
+    fi
+}
+
+git_clone() {
+    local repo_name="$1"
+    local repo_path="${2}/${repo_name}"
+    if [[ ! -d "${repo_path}" ]]; then
+        set +e
+        echo "# => Installing to: '${repo_path}' "
+        git clone ${url_prefix}${github_user}/${repo_name}.git
+        if $mix_repo_origin && [[ ! -d "${repo_path}" ]]; then
+            echo "# ==> Clone failed. Trying datajoint https fallback url ..."
+            git clone ${url_prefix}datajoint/${repo_name}.git "${repo_path}"
+        fi
+        set -e
+    fi
+}
+
+# parse input arguments
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+    "help" | "--help" | "-h" | "--help")
+        show_help
+        ;;
+    --conda=*)
+        conda_env="${1#*=}"
+        echo "'--conda' passed. Using conda environment: '$conda_env'"
+        shift
+        ;;
+    --listpkgs)
+        list_dev_pkgs
+        exit 0
+        ;;
+    --ssh)
+        url_prefix="git@github.com:"
+        ssh-keygen -F github.com || ssh-keyscan github.com >>~/.ssh/known_hosts
+        shift
+        ;;
+    --user=*)
+        github_user="${1#*=}"
+        echo "'--user' passed. Using GitHub user: '$github_user'"
+        shift
+        ;;
+    --mix-origin)
+        mix_repo_origin=true
+        echo "'--mix-origin' passed. Using GitHub user: 'datajoint' as a fallback."
+        shift
+        ;;
+    --rm)
+        remove_existing=true
+        echo "'--rm' passed. Will remove existing repositories"
+        shift
+        ;;
+    --clean)
+        clean_build=true
+        echo "'--clean' passed. Will pass --clean to 'conda develop'"
+        shift
+        ;;
+    *)
+        echo "#! Error: Unknown option: '$1'"
+        exit 1
+        ;;
+    esac
+done
+
+# make elements/workflows directories if not already existing
+mkdir -vp "$elements_root" "$workflows_root"
+
+# activate specified python environment, must not fail
+set -e
+conda activate $conda_env
+
+# use mamba instead of conda if it exists
+CONDA_CMD=mamba
+command -v $CONDA_CMD &>/dev/null || CONDA_CMD=conda
+
+# start cloning repositories
+for repo in ${git_repos[@]}; do
+    echo "=============================================== INSTALLING '${repo}'"
+
+    # set folder based on element or workflow
+    if echo ${repo} | grep '^element-'; then
+        sub_dir=$elements_root
+    elif echo ${repo} | grep '^workflow-'; then
+        sub_dir=$workflows_root
+    else
+        sub_dir=$workspace_root
+    fi
+
+    cd "$sub_dir"
+
+    # remove repo before cloning if it exists and remove_existing=true
+    (test -d "$sub_dir/$repo" && $remove_existing) && rm -rf "$sub_dir/$repo"
+
+    # clone only if directory doesn't exist yet
+    git_clone ${repo} "${sub_dir}"
+
+    # use --clean option if clean_build=true
+    maybe_clean=$($clean_build && echo "-c" || echo "")
+
+    # use --build_ext option if setup.py exists
+    maybe_build=$(test -f "$sub_dir/$repo/setup.py" && echo "-b" || echo "")
+
+    # install package with conda/mamba develop
+    cd "$sub_dir/$repo"
+    $CONDA_CMD develop $maybe_clean $maybe_build -n ${conda_env} .
+done
+
+# list what was installed then change back to original directory
+list_dev_pkgs
+cd "${script_path}"
