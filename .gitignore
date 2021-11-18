@@ -3,3 +3,5 @@ gh-pages/site
 .idea
 .DS_Store
 /*.code-workspace
+dev/elements-workspace/dev-container/*
+!/dev/elements-workspace/dev-container/elements.code-workspace
