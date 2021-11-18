@@ -35,12 +35,12 @@ jobs:
       - name: Commit documentation changes
         run: |
           git clone https://github.com/${GITHUB_REPOSITORY}.git \
-              --branch gh-pages --single-branch gh-pages
-          rm -R gh-pages/*
-          cp -r .mkdocs/site/* gh-pages/
-          touch gh-pages/.nojekyll
-          echo "elements.datajoint.org" > gh-pages/CNAME
-          cd gh-pages
+              --branch gh-pages --single-branch gh-pages-branch
+          rm -R gh-pages-branch/*
+          cp -r .mkdocs/site/* gh-pages-branch/
+          touch gh-pages-branch/.nojekyll
+          echo "elements.datajoint.org" > gh-pages-branch/CNAME
+          cd gh-pages-branch
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add . --all
