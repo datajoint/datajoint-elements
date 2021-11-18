@@ -2,7 +2,7 @@
 
 DataJoint Elements has established a Resource Management Plan to select projects for development, to assure quality, and to disseminate its output as summarized in the figure below:
 
-![Resource Management Plan](figures/management-plan.png)
+![Resource Management Plan](./../img/management-plan.png)
 
 The following sections provide detailed information.
 

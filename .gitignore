@@ -1,3 +1,4 @@
-.mkdocs/site
+gh-pages/docs/index.md
+gh-pages/site
 .idea
 .DS_Store

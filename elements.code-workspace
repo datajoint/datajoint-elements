@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "elements-ws"
+		}
+	],
+	"settings": {
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true
+	}
+}

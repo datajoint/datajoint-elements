@@ -2,9 +2,10 @@ site_name: DataJoint Elements
 dev_addr: '0.0.0.0:8000'
 theme:
   name: cinder
-  custom_dir: cinder-theme-ext
+  custom_dir: themes/cinder-theme-ext
 nav:
-  - About: README.md
+  - About: index.md
+  - Setup: install.md
   - 'Management and Policies':
     - management/plan.md
     - management/team.md

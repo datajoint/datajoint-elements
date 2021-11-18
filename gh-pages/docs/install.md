@@ -19,14 +19,14 @@ If you have already set up certain components, feel free to skip those sections.
 instructions.
 
 ## System architecture
-![Architecture](/images/install_architecture.png)
+![Architecture](img/install_architecture.png)
 
 + The above diagram describes the general components for a local DataJoint 
 development environment. 
 
 ## Install an integrated development environment
 
-![Visual Studio Code](/images/install_vscode.png)
+![Visual Studio Code](img/install_vscode.png)
 
 + DataJoint development and use can be done with a plain text editor in the 
 terminal.  However, an integrated development environment (IDE) can improve your
@@ -648,4 +648,3 @@ dependencies (i.e. DataJoint Elements).
         ```
 
     </details>
-
