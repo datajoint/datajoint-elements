@@ -1,11 +1,8 @@
-# Setup containers for DataJoint elements environment
-# Joseph Burling <joseph@datajoint.com>
-# --------------------------------------------------------------------------------------
+# Setup containers for DataJoint elements environment ----------------------------------
 # Basic usage:
-#   docker-compose --verbose up --detach
-#   docker-compose down
-#   docker-compose down --volumes
-
+#  > docker-compose --verbose up --detach
+#  > docker-compose down
+#  > docker-compose down --volumes
 version: "2.4"
 services:
   db:
@@ -31,12 +28,14 @@ services:
       db:
         condition: service_healthy # service_started
     environment:
-      DJ_USER: root
       DJ_HOST: db
       DJ_PASS: supersecretpw
+      DJ_USER: root
     init: true
     networks:
       djelem: null
+    ports:
+      - "18888:8888"
     volumes:
       - type: bind
         source: ./dev-container

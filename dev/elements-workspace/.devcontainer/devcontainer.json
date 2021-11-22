@@ -5,7 +5,7 @@
 	"service": "conda",
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"python.condaPath": "${env:CONDA_DIR}/bin/conda",
+		"python.condaPath": "/opt/local/conda/bin/conda",
 		"python.defaultInterpreterPath": "/home/dj/.conda/envs/elements/bin/python",
 		"python.linting.enabled": true,
 		"python.linting.pylintEnabled": true,
@@ -24,9 +24,14 @@
 		"cweijan.vscode-mysql-client2"
 	],
 	"workspaceFolder": "/home/dj/datajoint-elements",
-	// If specifying user, you must make sure forks of the repos exist or use --mix-origin:
-	// ["git-elements", "--user=iamamutt", "--mix-origin"]
+	// If specifying user, you must make sure forks of the repos exist or use --mix-origin, e.g.
+	//   ["git-elements", "--user=myUserName", "--mix-origin"]
 	"postCreateCommand": [
 		"git-elements"
-	]
+	],
+	"shutdownAction": "stopCompose",
+	"userEnvProbe": "loginInteractiveShell",
+	"features": {
+		"github": "latest"
+	}
 }

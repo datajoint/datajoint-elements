@@ -21,10 +21,10 @@ mix_repo_origin=false
 # default repos under a single username
 git_repos=(
     djarchive-client
+    element-data-loader
     element-animal
     element-array-ephys
     element-calcium-imaging
-    element-data-loader
     element-lab
     element-miniscope
     element-session
@@ -104,15 +104,27 @@ list_dev_pkgs() {
 git_clone() {
     local repo_name="$1"
     local repo_path="${2}/${repo_name}"
+    local gh_user=${github_user}
     if [[ ! -d "${repo_path}" ]]; then
-        set +e
         echo "# => Installing to: '${repo_path}' "
-        git clone ${url_prefix}${github_user}/${repo_name}.git
+        git clone ${url_prefix}${gh_user}/${repo_name}.git "${repo_path}" || true
         if $mix_repo_origin && [[ ! -d "${repo_path}" ]]; then
             echo "# ==> Clone failed. Trying datajoint https fallback url ..."
-            git clone ${url_prefix}datajoint/${repo_name}.git "${repo_path}"
+            gh_user=datajoint
+            git clone ${url_prefix}${gh_user}/${repo_name}.git "${repo_path}"
         fi
-        set -e
+
+        # disable push to datajoint repo
+        (
+            cd "${repo_path}"
+            if [[ $gh_user == datajoint ]]; then
+                git remote set-url --push origin DISABLED
+            else
+                # add upstream if cloning fork
+                git remote add upstream ${url_prefix}datajoint/${repo_name}.git
+                git remote set-url --push upstream DISABLED
+            fi
+        )
     fi
 }
 
@@ -176,7 +188,7 @@ command -v $CONDA_CMD &>/dev/null || CONDA_CMD=conda
 
 # start cloning repositories
 for repo in ${git_repos[@]}; do
-    echo "=============================================== INSTALLING '${repo}'"
+    echo "=============================================== Installing: '${repo}'"
 
     # set folder based on element or workflow
     if echo ${repo} | grep '^element-'; then
@@ -186,8 +198,6 @@ for repo in ${git_repos[@]}; do
     else
         sub_dir=$workspace_root
     fi
-
-    cd "$sub_dir"
 
     # remove repo before cloning if it exists and remove_existing=true
     (test -d "$sub_dir/$repo" && $remove_existing) && rm -rf "$sub_dir/$repo"
@@ -202,10 +212,11 @@ for repo in ${git_repos[@]}; do
     maybe_build=$(test -f "$sub_dir/$repo/setup.py" && echo "-b" || echo "")
 
     # install package with conda/mamba develop
-    cd "$sub_dir/$repo"
-    $CONDA_CMD develop $maybe_clean $maybe_build -n ${conda_env} .
+    (
+        cd "$sub_dir/$repo"
+        $CONDA_CMD develop $maybe_clean $maybe_build -n ${conda_env} .
+    )
 done
 
 # list what was installed then change back to original directory
 list_dev_pkgs
-cd "${script_path}"

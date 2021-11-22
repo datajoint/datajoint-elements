@@ -23,6 +23,7 @@ RUN echo ${USER_NAME} ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/${USER_NAME} &&
 
 # switch to newly created username
 USER ${USER_NAME}
+SHELL ["/bin/bash", "--login", "-c"]
 
 # add workspace and vscode folders to home directory
 RUN \
@@ -38,7 +39,9 @@ RUN \
 
 # copy script to download and install each element/workflow on container start
 COPY --chown=${USER_NAME} git-elements /usr/local/bin/
-RUN chmod 770 /usr/local/bin/git-elements
+RUN chmod 770 /usr/local/bin/git-elements && \
+    mamba env export -n $CONDA_ENV_USER --no-builds -f /srv/conda/elements.lock.yml && \
+    mamba clean -fiya
 
 # finalize
 WORKDIR /home/${USER_NAME}/datajoint-elements
