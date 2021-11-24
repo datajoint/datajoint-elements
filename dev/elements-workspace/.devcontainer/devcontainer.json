@@ -48,9 +48,7 @@
 	// If specifying user, you must make sure forks of the repos exist or use --mix-origin, e.g.
 	//   ["git-elements", "--user=myGitHubUsername", "--mix-origin"]
 	"postCreateCommand": [
-		// "git-elements"
-		"git-elements",
-		"--user=iamamutt"
+		"git-elements"
 	],
 	"shutdownAction": "stopCompose",
 	"userEnvProbe": "loginInteractiveShell",
