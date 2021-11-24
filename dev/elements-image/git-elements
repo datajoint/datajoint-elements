@@ -129,7 +129,7 @@ remove_repo() {
 git_clone() {
     local gh_user="${1:-datajoint}"
     if [[ ! -d "${repo_path}" ]]; then
-        echo "=============================================== Cloning: '${repo_path}'"
+        echo "=============================================== Cloning: '${url_prefix}${gh_user}/${repo_name}'"
         git clone ${url_prefix}${gh_user}/${repo_name}.git "${repo_path}" || true
         if $mix_repo_origin &&
             [[ ! -d "${repo_path}" ]] &&
@@ -146,9 +146,11 @@ git_clone() {
                 git remote set-url --push origin DISABLED
             else
                 # add upstream if cloning fork
+                set +e
                 git remote add upstream ${url_prefix}datajoint/${repo_name}.git
                 git remote set-url --push upstream DISABLED
                 git fetch --all
+                set -e
             fi
         )
     fi
@@ -158,7 +160,7 @@ git_clone() {
 pip_install() {
     if [[ -d "${repo_path}" ]]; then
         (
-            echo "=============================================== Install: '${repo_name}'"
+            echo "=============================================== Install: '${repo_path}'"
             cd "${repo_path}"
             pip install -qqqvvv --no-deps --log=/tmp/pip-elements.log --editable .
         )

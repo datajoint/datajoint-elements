@@ -28,6 +28,7 @@ services:
       DJ_HOST: db
       DJ_PASS: supersecretpw
       DJ_USER: root
+      GITHUB_USER: ${GITHUB_USER:-datajoint}
     init: true
     networks:
       djelem:

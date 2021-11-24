@@ -3,16 +3,15 @@
 		{
 			"path": ".",
 			"name": "datajoint-elements (remote)"
+		},
+		{
+			"path": "elements",
+			"name": "elements-dev"
+		},
+		{
+			"path": "workflows",
+			"name": "workflows-dev"
 		}
-		// additional folders for multiroot workspace
-		// {
-		// 	"path": "elements",
-		// 	"name": "elements-dev"
-		// },
-		// {
-		// 	"path": "workflows",
-		// 	"name": "workflows-dev"
-		// }
 	],
 	"settings": {
 		"python.defaultInterpreterPath": "/home/dj/.conda/envs/elements/bin/python"
