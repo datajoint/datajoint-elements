@@ -2,6 +2,7 @@
 name: elements
 channels:
   - conda-forge
+  - pytorch
   - defaults
 dependencies:
   - python=3.9.* # ....................... minimum python version
@@ -31,6 +32,7 @@ dependencies:
   - pytest # ............................. dev
   - pytest-cov # ......................... dev
   - pyyaml # ............................. dev
+  - qtconsole # .......................... dev
   - openpyxl # ........................... element-array-ephys
   - cython # ............................. element-data-loader
   - fftw # ............................... element-data-loader
@@ -39,6 +41,7 @@ dependencies:
   - scipy # .............................. element-data-loader
   - tabulate # ........................... element-data-loader
   - tifffile # ........................... element-data-loader
+  - pytorch # ............................ element-calcium-imaging
   - scikit-learn # ....................... element-miniscope
   - bokeh # .............................. caiman
   - coverage # ........................... caiman
@@ -61,17 +64,15 @@ dependencies:
   - importlib-metadata # ................. suite2p
   - paramiko # ........................... suite2p
   - pip:
-      - --no-cache-dir
       - datajoint>=0.13.2 # .............. datajoint
-      - pynwb # .......................... datajoint
+      - pynwb>=2.0.0 # ................... datajoint
       - pyopenephys # .................... element-array-ephys
       - sbxreader # ...................... element-data-loader
       - imreg_dft # ...................... element-miniscope
       - opencv-contrib-python-headless # . element-miniscope
       - rastermap>0.1.0 # ................ suite2p
       - scanimage-tiff-reader>=1.4.1 # ... suite2p
-      - torch>=1.7.1 # ................... suite2p
       - scanreader@git+https://github.com/atlab/scanreader.git # element-data-loader
       - suite2p@git+https://github.com/MouseLand/suite2p.git # element-data-loader
       # - caiman@git+https://github.com/flatironinstitute/CaImAn.git # element-data-loader
-      # - pyfftw # ......................... element-miniscope python<3.9
+      # - pyfftw # ......................... element-miniscope python<3.9, libfftw3-3
