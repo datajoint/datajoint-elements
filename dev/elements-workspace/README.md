@@ -1,4 +1,4 @@
-# Dev Workspace for DataJoint Elements
+# Development Workspace for DataJoint Elements
 
 A dev container to be used primarily with Visual Studio Code, but can be built and run without it. The installation process will download each [element and workflow](../../README.md#Elements) from GitHub (from datajoint or from your own fork) and install them as a development package within the container under the `elements` conda environment.
 
