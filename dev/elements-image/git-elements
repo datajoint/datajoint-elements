@@ -137,6 +137,7 @@ git_clone() {
             echo "# ==> Clone failed. Trying datajoint https fallback url ..."
             gh_user=datajoint
             git clone ${url_prefix}${gh_user}/${repo_name}.git "${repo_path}"
+            sleep .2
         fi
 
         # disable push to datajoint repo
