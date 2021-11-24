@@ -10,44 +10,33 @@ services:
       MYSQL_ROOT_PASSWORD: supersecretpw
     image: datajoint/mysql:5.7
     networks:
-      djelem: null
+      djelem:
     platform: linux/amd64
     ports:
-      - "6603:3306"
+      - 6603:3306
     restart: always
     volumes:
-      - type: volume
-        source: sqldata
-        target: /var/lib/mysql
-        volume: {}
+      - sqldata:/var/lib/mysql
   conda:
     build:
       context: ../elements-image
       dockerfile: Dockerfile
     depends_on:
       db:
-        condition: service_healthy # service_started
+        condition: service_started # service_healthy
     environment:
       DJ_HOST: db
       DJ_PASS: supersecretpw
       DJ_USER: root
     init: true
     networks:
-      djelem: null
+      djelem:
     ports:
-      - "18888:8888"
+      - 18888:8888
     volumes:
-      - type: bind
-        source: ./dev-container
-        target: /home/dj/datajoint-elements
-      - type: volume
-        source: vscode
-        target: /home/dj/.vscode-server/extensions
-        volume: {}
-      - type: volume
-        source: vscode-insiders
-        target: /home/dj/.vscode-server-insiders/extensions
-        volume: {}
+      - ./dev-container:/home/dj/datajoint-elements
+      - vscode:/home/dj/.vscode-server/extensions
+      - vscode-insiders:/home/dj/.vscode-server-insiders/extensions
 networks:
   djelem:
     name: datajoint-elements-net-djelem

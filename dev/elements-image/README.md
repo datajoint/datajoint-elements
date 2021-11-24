@@ -4,7 +4,7 @@ Change to the `elements-image` directory then build using the commands below. Ch
 
 ```bash
 cd elements-image
-VERSION=v1.0
+VERSION=v1.0.0
 docker build \
     --file=Dockerfile \
     --build-arg USER_NAME=dj
