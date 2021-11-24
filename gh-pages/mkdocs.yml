@@ -6,19 +6,23 @@ theme:
 nav:
   - About: index.md
   - Setup: install.md
+  - design-principles.md
+  - adopt.md
+  - support.md
+  - community.md
+  - publications.md
+  - glossary.md
+  - 'Community':
+    - community/publications.md
+    - community/contribute.md
   - 'Management and Policies':
     - management/plan.md
     - management/team.md
     - management/governance.md
     - management/selection.md
     - management/quality-assurance.md
-    - management/contribute.md
     - management/outreach.md
     - management/licenses.md
-  - design-principles.md
-  - adopt.md
-  - support.md
-  - glossary.md
 markdown_extensions:
   - pymdownx.magiclink
   - mdx_truly_sane_lists
