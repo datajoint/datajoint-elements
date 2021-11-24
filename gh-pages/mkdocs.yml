@@ -5,13 +5,11 @@ theme:
   custom_dir: themes/cinder-theme-ext
 nav:
   - About: index.md
-  - Setup: install.md
-  - design-principles.md
-  - adopt.md
-  - support.md
-  - community.md
-  - publications.md
-  - glossary.md
+  - Usage:
+    - design-principles.md
+    - adopt.md
+    - Setup: install.md
+    - glossary.md
   - 'Community':
     - community/publications.md
     - community/contribute.md
@@ -23,6 +21,7 @@ nav:
     - management/quality-assurance.md
     - management/outreach.md
     - management/licenses.md
+  - support.md
 markdown_extensions:
   - pymdownx.magiclink
   - mdx_truly_sane_lists
