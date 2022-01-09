@@ -80,37 +80,67 @@ specific project within an isolated environment on your computer.
 environment to run the workflow.
 
 + Conda and virtualenv are virtual environment managers and you can use either 
-option.  Below are the commands for Conda.
+option.  
+    + Conda instructions
+    <details>
+    <summary>Click to expand for details</summary>
 
-+ We will install Miniconda which is a minimal installer for conda.
-    + Select the [Miniconda installer link](
-        https://conda.io/en/latest/miniconda.html) 
-    for your operating system and following the instructions.
+    + We will install Miniconda which is a minimal installer for conda.
+        + Select the [Miniconda installer link](
+            https://conda.io/en/latest/miniconda.html) 
+        for your operating system and following the instructions.
 
-    + You may need to add the Miniconda directory to the PATH environment 
-    variable
+        + You may need to add the Miniconda directory to the PATH environment 
+        variable
 
-        + First locate the Miniconda directory
+            + First locate the Miniconda directory
 
-        + Then modify and run the following command
+            + Then modify and run the following command
+                ```bash
+                export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
+                ```
+
+    + Create a new conda environment
+        + Type the following command into a terminal window
             ```bash
-            export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
+            conda create -n <environment_name> python=<version>
+            ```
+        + Example command to create a conda environment
+            ```bash
+            conda create -n workflow-array-ephys python=3.8.11
             ```
 
-+ Create a new conda environment
-    + Type the following command into a terminal window
+    + Activate the conda environment
         ```bash
-        conda create -n <environment_name> python=<version>
-        ```
-    + Example command to create a conda environment
-        ```bash
-        conda create -n workflow-array-ephys python=3.8.11
+        conda activate <environment_name>
         ```
 
-+ Activate the conda environment
-    ```bash
-    conda activate <environment_name>
-    ```
+    </details>
+
+   + Virtualenv instructions
+    <details>
+    <summary>Click to expand for details</summary>
+
+    + If `virtualenv` not yet installed, run `pip install --user virtualenv`
+
+    + Create a new virtual environment
+        ```
+        virtualenv <environment_name>
+        ```
+
+    + Activate the virtual environment
+        + On Windows:
+            ```
+            .\<environment_name>\Scripts\activate
+            ```
+
+        + On Linux/macOS:
+            ```
+            source <environment_name>/bin/activate
+            ```
+
+    </details>
+ 
 
 ## Install Jupyter Notebook packages
 
@@ -156,6 +186,14 @@ option.  Below are the commands for Conda.
      scripts). If no such modification is required, using `pip install .` is 
      sufficient.
 
+    + Install `element-data-loader`
+
+        + `element-data-loader` is a dependency of `element-array-ephys`, however it is not contained within `requirements.txt`.
+        
+        ```
+        pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
+        ```
+
     </details>
 
 + `workflow-calcium-imaging`
@@ -188,6 +226,14 @@ option.  Below are the commands for Conda.
      scripts). If no such modification is required, using `pip install .` is 
      sufficient.
 
+    + Install `element-data-loader`
+
+        + `element-data-loader` is a dependency of `element-calcium-imaging`, however it is not contained within `requirements.txt`.
+        
+        ```
+        pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
+        ```
+
     </details>
 
 ## Set up a connection to the database server
@@ -212,7 +258,8 @@ create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
     "display.show_tuple_count": true,
     "custom": {
         "database.prefix": "<username_>",
-        "ephys_root_data_dir": "<~/data/ephys_root_data_dir>"
+        "ephys_root_data_dir": ["Full path to root directory of raw data",
+                                "Full path to root directory of processed data"]
         }
     }
     ```
@@ -562,10 +609,8 @@ and file naming convention as described below.
 
 + For an in depth explanation of how to run the workflows and explore the data,
 please refer to the following workflow specific Jupyter notebooks.
-
     + `workflow-array-ephys` [Jupyter notebooks](
         https://github.com/datajoint/workflow-array-ephys/tree/main/notebooks)
-
     + `workflow-calcium-imaging` [Jupyter notebooks](
         https://github.com/datajoint/workflow-calcium-imaging/tree/main/notebooks)
 
@@ -583,21 +628,24 @@ DataJoint tables.
 + [DataJoint LabBook GitHub Repository](
     https://github.com/datajoint/datajoint-labbook)
 
-## Development mode installation
+
+## Developer guide
+### Development mode installation
 
 + This method allows you to modify the source code for example DataJoint 
+workflows (e.g. `workflow-array-ephys`, `workflow-calcium-imaging`, 
 workflows (e.g. `workflow-array-ephys`, `workflow-calcium-imaging`) and their 
 dependencies (i.e. DataJoint Elements).
+
++ Launch a new terminal and change directory to where you want to clone the 
+repositories
+    ```bash
+    cd ~/Projects
+    ```
 
 + `workflow-array-ephys`
     <details>
     <summary>Click to expand for details</summary>
-
-    + Launch a new terminal and change directory to where you want to clone the 
-    repositories
-        ```bash
-        cd ~/Projects
-        ```
 
     + Clone the repositories
         ```bash
@@ -623,17 +671,12 @@ dependencies (i.e. DataJoint Elements).
     <details>
     <summary>Click to expand for details</summary>
 
-    + Launch a new terminal and change directory to where you want to clone the 
-    repositories
-        ```bash
-        cd ~/Projects
-        ```
-
     + Clone the repositories
         ```bash
         git clone https://github.com/datajoint/element-lab
         git clone https://github.com/datajoint/element-animal
         git clone https://github.com/datajoint/element-session
+        git clone https://github.com/datajoint/element-data-loader
         git clone https://github.com/datajoint/element-calcium-imaging
         git clone https://github.com/datajoint/workflow-calcium-imaging
         ```
@@ -643,9 +686,63 @@ dependencies (i.e. DataJoint Elements).
         pip install -e ./element-lab
         pip install -e ./element-animal
         pip install -e ./element-session
+        pip install -e ./element-data-loader
         pip install -e ./element-calcium-imaging
         pip install -e ./workflow-calcium-imaging
         ```
 
     </details>
 
+
+### Optionally drop all schemas
+
++ If required to drop all schemas, the following is the dependency order. 
+Also refer to `notebooks/06-drop-optional.ipynb` within the respective 
+`workflow`.
+
++ `workflow-array-ephys`
+    <details>
+    <summary>Click to expand for details</summary>
+    
+    ```
+    from workflow_array_ephys.pipeline import *
+
+    ephys.schema.drop()
+    probe.schema.drop()
+    session.schema.drop()
+    subject.schema.drop()
+    lab.schema.drop()
+    ```
+    
+    </details>
+
++ `workflow-calcium-imaging`
+    <details>
+    <summary>Click to expand for details</summary>
+    
+    ```
+    from workflow_calcium_imaging.pipeline import *
+
+    imaging.schema.drop()
+    scan.schema.drop()
+    session.schema.drop()
+    subject.schema.drop()
+    lab.schema.drop()
+    ```
+
+    </details>
+
+### Run integration tests
+
+1. Download the test dataset to your local machine
+(note the directory where the dataset is saved at - e.g. `/tmp/testset`)
+
+2. Create an `.env` file with the following content:
+
+    > TEST_DATA_DIR=/tmp/testset
+
+    (replace `/tmp/testset` with the directory where you have the test dataset downloaded to)
+
+3. Run:
+
+    docker-compose -f docker-compose-test.yaml up --build
