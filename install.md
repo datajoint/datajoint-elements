@@ -682,7 +682,6 @@ DataJoint tables.
 ### Development mode installation
 
 + This method allows you to modify the source code for example DataJoint 
-workflows (e.g. `workflow-array-ephys`, `workflow-calcium-imaging`, 
 workflows (e.g. `workflow-array-ephys`, `workflow-calcium-imaging`) and their 
 dependencies (i.e. DataJoint Elements).
 
