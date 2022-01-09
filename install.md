@@ -121,23 +121,24 @@ option.
         <details>
         <summary>Click to expand for details</summary>
 
-        + If `virtualenv` not yet installed, run `pip install --user virtualenv`
+        + If `virtualenv` not yet installed, install this package.
+            ```bash
+            pip install --user virtualenv
+            ```
 
         + Create a new virtual environment
             ```
             virtualenv <environment_name>
             ```
 
-        + Activate the virtual environment
-            + On Windows:
-                ```
-                .\<environment_name>\Scripts\activate
-                ```
-
-            + On Linux/macOS:
-                ```
-                source <environment_name>/bin/activate
-                ```
+        + On Windows, activate the virtual environment
+            ```
+            .\<environment_name>\Scripts\activate
+            ```
+        + On Linux/macOS, activate the virtual environment
+            ```
+            source <environment_name>/bin/activate
+            ```
 
         </details>
  
@@ -789,11 +790,11 @@ Also refer to `notebooks/06-drop-optional.ipynb` within the respective
 
 2. Create an `.env` file with the following content.  Replace `/tmp/testset` 
 with the directory where you have the test dataset downloaded
-```
-TEST_DATA_DIR=/tmp/testset
-```
+    ```
+    TEST_DATA_DIR=/tmp/testset
+    ```
 
 3. Run the Docker container.
-```
-docker-compose -f docker-compose-test.yaml up --build
-```
+    ```
+    docker-compose -f docker-compose-test.yaml up --build
+    ```
