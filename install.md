@@ -187,12 +187,22 @@ option.
      sufficient.
 
     + Install `element-data-loader`
+        + `element-data-loader` contains the scripts to load data for 
+        `element-array-ephys` and `workflow-array-ephys`.
 
-        + `element-data-loader` is a dependency of `element-array-ephys`, however it is not contained within `requirements.txt`.
-        
-        ```
-        pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
-        ```
+        + `element-data-loader` is a dependency of `element-array-ephys` and
+         `workflow-array-ephys`, however it is not contained within `requirements.txt`.
+
+        + `element-data-loader` can also be used to install packages used for 
+        reading acquired data and running analysis.
+
+        + If your `workflow-array-ephys` uses these packages, you should 
+        install them when you install `element-data-loader`.
+
+        + Install `element-data-loader` without any other packages
+            ```
+            pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
+            ```
 
     </details>
 
@@ -228,12 +238,50 @@ option.
 
     + Install `element-data-loader`
 
-        + `element-data-loader` is a dependency of `element-calcium-imaging`, however it is not contained within `requirements.txt`.
-        
-        ```
-        pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
-        ```
+        + `element-data-loader` contains the scripts to load data for 
+        `element-calcium-imaging` and `workflow-calcium-imaging`.
 
+        + `element-data-loader` is a dependency of `element-calcium-imaging` and
+         `workflow-calcium-imaging`, however it is not contained within `requirements.txt`.
+
+        + `element-data-loader` can also be used to install packages used for 
+        reading acquired data (e.g. `scanreader`) and running analysis (e.g. 
+        `CaImAn`).
+
+        + If your `workflow-calcium-imaging` uses these packages, you should 
+        install them when you install `element-data-loader`.
+
+        + Install `element-data-loader` without any other packages
+            ```
+            pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
+            ```
+
+        + Install `element-data-loader` with `scanreader`
+            ```
+            pip install "element-data-loader[scanreader] @ git+https://github.com/datajoint/element-data-loader"
+            ```
+
+        + Install `element-data-loader` with `sbxreader`
+            ```
+            pip install "element-data-loader[sbxreader] @ git+https://github.com/datajoint/element-data-loader"
+            ```
+
+        + Install `element-data-loader` with `Suite2p`
+            ```
+            pip install "element-data-loader[suite2p] @ git+https://github.com/datajoint/element-data-loader"
+            ```
+
+        + Install `element-data-loader` with `CaImAn` requires two separate commands
+            ```
+            pip install "element-data-loader[caiman_requirements] @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-data-loader[caiman] @ git+https://github.com/datajoint/element-data-loader"
+            ```
+
+        + Install `element-data-loader` with multiple packages
+            ```
+            pip install "element-data-loader[caiman_requirements] @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-data-loader[scanreader,sbxreader,suite2p,caiman] @ git+https://github.com/datajoint/element-data-loader"
+            ```
     </details>
 
 ## Set up a connection to the database server
@@ -652,6 +700,7 @@ repositories
         git clone https://github.com/datajoint/element-lab
         git clone https://github.com/datajoint/element-animal
         git clone https://github.com/datajoint/element-session
+        git clone https://github.com/datajoint/element-data-loader
         git clone https://github.com/datajoint/element-array-ephys
         git clone https://github.com/datajoint/workflow-array-ephys
         ```
@@ -661,6 +710,7 @@ repositories
         pip install -e ./element-lab
         pip install -e ./element-animal
         pip install -e ./element-session
+        pip install -e ./element-data-loader
         pip install -e ./element-array-ephys
         pip install -e ./workflow-array-ephys
         ```
