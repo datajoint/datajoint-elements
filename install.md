@@ -82,64 +82,64 @@ environment to run the workflow.
 + Conda and virtualenv are virtual environment managers and you can use either 
 option.  
     + Conda instructions
-    <details>
-    <summary>Click to expand for details</summary>
+        <details>
+        <summary>Click to expand for details</summary>
 
-    + We will install Miniconda which is a minimal installer for conda.
-        + Select the [Miniconda installer link](
-            https://conda.io/en/latest/miniconda.html) 
-        for your operating system and following the instructions.
+        + We will install Miniconda which is a minimal installer for conda.
+            + Select the [Miniconda installer link](
+                https://conda.io/en/latest/miniconda.html) 
+            for your operating system and following the instructions.
 
-        + You may need to add the Miniconda directory to the PATH environment 
-        variable
+            + You may need to add the Miniconda directory to the PATH environment 
+            variable
 
-            + First locate the Miniconda directory
+                + First locate the Miniconda directory
 
-            + Then modify and run the following command
+                + Then modify and run the following command
+                    ```bash
+                    export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
+                    ```
+
+        + Create a new conda environment
+            + Type the following command into a terminal window
                 ```bash
-                export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
+                conda create -n <environment_name> python=<version>
+                ```
+            + Example command to create a conda environment
+                ```bash
+                conda create -n workflow-array-ephys python=3.8.11
                 ```
 
-    + Create a new conda environment
-        + Type the following command into a terminal window
+        + Activate the conda environment
             ```bash
-            conda create -n <environment_name> python=<version>
-            ```
-        + Example command to create a conda environment
-            ```bash
-            conda create -n workflow-array-ephys python=3.8.11
+            conda activate <environment_name>
             ```
 
-    + Activate the conda environment
-        ```bash
-        conda activate <environment_name>
-        ```
+        </details>
 
-    </details>
+    + Virtualenv instructions
+        <details>
+        <summary>Click to expand for details</summary>
 
-   + Virtualenv instructions
-    <details>
-    <summary>Click to expand for details</summary>
+        + If `virtualenv` not yet installed, run `pip install --user virtualenv`
 
-    + If `virtualenv` not yet installed, run `pip install --user virtualenv`
-
-    + Create a new virtual environment
-        ```
-        virtualenv <environment_name>
-        ```
-
-    + Activate the virtual environment
-        + On Windows:
+        + Create a new virtual environment
             ```
-            .\<environment_name>\Scripts\activate
+            virtualenv <environment_name>
             ```
 
-        + On Linux/macOS:
-            ```
-            source <environment_name>/bin/activate
-            ```
+        + Activate the virtual environment
+            + On Windows:
+                ```
+                .\<environment_name>\Scripts\activate
+                ```
 
-    </details>
+            + On Linux/macOS:
+                ```
+                source <environment_name>/bin/activate
+                ```
+
+        </details>
  
 
 ## Install Jupyter Notebook packages
@@ -787,12 +787,13 @@ Also refer to `notebooks/06-drop-optional.ipynb` within the respective
 1. Download the test dataset to your local machine
 (note the directory where the dataset is saved at - e.g. `/tmp/testset`)
 
-2. Create an `.env` file with the following content:
+2. Create an `.env` file with the following content.  Replace `/tmp/testset` 
+with the directory where you have the test dataset downloaded
+```
+TEST_DATA_DIR=/tmp/testset
+```
 
-    > TEST_DATA_DIR=/tmp/testset
-
-    (replace `/tmp/testset` with the directory where you have the test dataset downloaded to)
-
-3. Run:
-
-    docker-compose -f docker-compose-test.yaml up --build
+3. Run the Docker container.
+```
+docker-compose -f docker-compose-test.yaml up --build
+```
