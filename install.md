@@ -330,7 +330,8 @@ create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
     "display.show_tuple_count": true,
     "custom": {
         "database.prefix": "<username_>",
-        "imaging_root_data_dir": "<~/data/imaging_root_data_dir>"
+        "imaging_root_data_dir": ["Full path to root directory of raw data",
+                                  "Full path to root directory of processed data"]
         }
     }
     ```
