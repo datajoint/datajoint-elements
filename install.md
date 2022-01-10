@@ -26,19 +26,17 @@ development environment.
 
 ## Install an integrated development environment
 
-![Visual Studio Code](/images/install_vscode.png)
-
 + DataJoint development and use can be done with a plain text editor in the 
 terminal.  However, an integrated development environment (IDE) can improve your
- experience.  Several IDEs are available.  In this setup example, we will use 
- Microsoft's Visual Studio Code.
+ experience.  Several IDEs are available.
 
-+ [Install Visual Studio Code](https://code.visualstudio.com/download)
++ In this setup example, we will use Microsoft's Visual Studio Code.
+ [Installation instructions here](https://code.visualstudio.com/download)
 
 ## Install a relational database
 
 + A key feature of DataJoint is the ability to connect with a database server 
-from a scientific programming environment (i.e. Python or MATLAB) so that your 
+from a scientific programming environment (i.e., Python or MATLAB) so that your
 experimental data can be stored in the database and downloaded from the 
 database.
 
@@ -51,16 +49,15 @@ database server
 
 + Alternatively, for simplicity of this tutorial you can use the DataJoint 
 Playground tutorial database located at `tutorial-db.datajoint.io` which has 
-already been configured.
-    + Please note that the tutorial database should not be used for your 
-    experimental analysis as the storage is not persistent.
+already been configured.  Please note that the tutorial database should not be
+used for your experimental analysis as the storage is not persistent.
 
 ## Install a version control system
 
 + Git is an open-source, distributed version control system for collaborating 
 with software development.  GitHub is a platform that hosts projects managed 
 with Git.  As the example DataJoint workflows are hosted on GitHub, we will use 
-Git to clone (i.e. download) this repository.
+Git to clone (i.e., download) this repository.
 
 + For your own DataJoint workflow development we recommended that you use Git 
 and GitHub for collaboration.
@@ -85,20 +82,14 @@ option.
         <details>
         <summary>Click to expand for details</summary>
 
-        + We will install Miniconda which is a minimal installer for conda.
-            + Select the [Miniconda installer link](
-                https://conda.io/en/latest/miniconda.html) 
-            for your operating system and following the instructions.
+        + We will install Miniconda which is a minimal installer for conda.         Follow the [Miniconda installer instructions here]
+        (https://conda.io/en/latest/miniconda.html) for your operating system.
 
-            + You may need to add the Miniconda directory to the PATH environment 
-            variable
-
-                + First locate the Miniconda directory
-
-                + Then modify and run the following command
-                    ```bash
-                    export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
-                    ```
+        + You may need to add the Miniconda directory to the PATH environment
+        variable with the following command
+            ```bash
+            export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
+            ```
 
         + Create a new conda environment
             + Type the following command into a terminal window
@@ -154,14 +145,14 @@ option.
     conda install graphviz python-graphviz pydotplus
     ```
 
-## Clone and install the repository
+## Clone and install the relevant repository
 
 + `workflow-array-ephys`
     <details>
     <summary>Click to expand for details</summary>
 
-    + In a terminal window and change the directory to where you want to clone the 
-    repository
+    + In a terminal window and change the directory to where you want to clone
+    the repository
         ```bash
         cd ~/Projects
         ```
@@ -186,9 +177,8 @@ option.
      scripts). If no such modification is required, using `pip install .` is 
      sufficient.
 
-    + Install `element-data-loader`
-        + `element-data-loader` contains the scripts to load data for 
-        `element-array-ephys` and `workflow-array-ephys`.
+    + Install `element-data-loader`, which contains scripts to load data for
+     both `element-array-ephys` and `workflow-array-ephys`.
 
         + `element-data-loader` is a dependency of `element-array-ephys` and
          `workflow-array-ephys`, however it is not contained within `requirements.txt`.
@@ -196,11 +186,8 @@ option.
         + `element-data-loader` can also be used to install packages used for 
         reading acquired data and running analysis.
 
-        + If your `workflow-array-ephys` uses these packages, you should 
-        install them when you install `element-data-loader`.
-
-        + Install `element-data-loader` without any other packages
-            ```
+        + `element-data-loader` installation command:
+            ```bash
             pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
             ```
 
@@ -236,10 +223,8 @@ option.
      scripts). If no such modification is required, using `pip install .` is 
      sufficient.
 
-    + Install `element-data-loader`
-
-        + `element-data-loader` contains the scripts to load data for 
-        `element-calcium-imaging` and `workflow-calcium-imaging`.
+    + Install `element-data-loader`, which contains the scripts to load data for
+     `element-calcium-imaging` and `workflow-calcium-imaging`.
 
         + `element-data-loader` is a dependency of `element-calcium-imaging` and
          `workflow-calcium-imaging`, however it is not contained within `requirements.txt`.
@@ -247,9 +232,6 @@ option.
         + `element-data-loader` can also be used to install packages used for 
         reading acquired data (e.g. `scanreader`) and running analysis (e.g. 
         `CaImAn`).
-
-        + If your `workflow-calcium-imaging` uses these packages, you should 
-        install them when you install `element-data-loader`.
 
         + Install `element-data-loader` without any other packages
             ```
@@ -287,7 +269,7 @@ option.
 ## Set up a connection to the database server
 
 + One way to set up a connection to the database server with DataJoint is to 
-create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
+create a local configuration file (i.e., `dj_local_conf.json`) at the root of the
  repository folder, with the following template:
 
 + `workflow-array-ephys`
@@ -428,12 +410,11 @@ workflow package.  Browse the revisions.
                         revision=revision)
         ```
 
-+ Directory organization
-    + After downloading, the directory will be organized as follows
-    
-    + We will use this data as an example for the tutorial notebooks for each 
-    workflow. If you use for own dataset for the workflow, change the path 
++ We will use this data as an example for the tutorial notebooks for each
+    workflow. If you use for own dataset for the workflow, change the path
     accordingly.
+
++ Directory organization
 
     + `workflow-array-ephys`
         <details>
@@ -605,25 +586,9 @@ and file naming convention as described below.
 ## Interacting with the DataJoint workflow
 
 + Connect to the database and import tables
-    + `workflow-array-ephys`
-        <details>
-        <summary>Click to expand for details</summary>
-        
-        ```python
-        from workflow_array_ephys.pipeline import *
-        ```
-
-        </details>
-
-    + `workflow-calcium-imaging`
-        <details>
-        <summary>Click to expand for details</summary>
-
-        ```python
-        from workflow_calcium_imaging.pipeline import *
-        ```
-
-        </details>
+    ```python
+    from <relevant-workflow>.pipeline import *
+    ```
 
 + View the declared tables
     + `workflow-array-ephys`
@@ -671,8 +636,7 @@ please refer to the following workflow specific Jupyter notebooks.
 DataJoint tables.
 
 + [DataJoint LabBook Documentation](
-    https://datajoint.github.io/datajoint-labbook/)
-    + Including prerequisites, installation, and running the application
+    https://datajoint.github.io/datajoint-labbook/), including prerequisites, installation, and running the application
 
 + [DataJoint LabBook GitHub Repository](
     https://github.com/datajoint/datajoint-labbook)
@@ -683,7 +647,7 @@ DataJoint tables.
 
 + This method allows you to modify the source code for example DataJoint 
 workflows (e.g. `workflow-array-ephys`, `workflow-calcium-imaging`) and their 
-dependencies (i.e. DataJoint Elements).
+dependencies (i.e., DataJoint Elements).
 
 + Launch a new terminal and change directory to where you want to clone the 
 repositories
