@@ -37,7 +37,7 @@ utilities.
 
 ## Elements
 * [Lab management](https://github.com/datajoint/element-lab)
-* [Animal management](https://github.com/datajoint/element-animal)
+* [Animal management](https://github.com/datajoint/element-subject)
   * [Example workflow](https://github.com/datajoint/workflow-animal)
 * [Experiment session](https://github.com/datajoint/element-session)
 * [Extracellular array electrophysiology](https://github.com/datajoint/element-array-ephys)

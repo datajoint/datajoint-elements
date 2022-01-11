@@ -187,22 +187,22 @@ option.
      scripts). If no such modification is required, using `pip install .` is 
      sufficient.
 
-    + Install `element-data-loader`
-        + `element-data-loader` contains the scripts to load data for 
+    + Install `element-interface`
+        + `element-interface` contains the scripts to load data for 
         `element-array-ephys` and `workflow-array-ephys`.
 
-        + `element-data-loader` is a dependency of `element-array-ephys` and
+        + `element-interface` is a dependency of `element-array-ephys` and
          `workflow-array-ephys`, however it is not contained within `requirements.txt`.
 
-        + `element-data-loader` can also be used to install packages used for 
+        + `element-interface` can also be used to install packages used for 
         reading acquired data and running analysis.
 
         + If your `workflow-array-ephys` uses these packages, you should 
-        install them when you install `element-data-loader`.
+        install them when you install `element-interface`.
 
-        + Install `element-data-loader` without any other packages
+        + Install `element-interface` without any other packages
             ```
-            pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-interface @ git+https://github.com/datajoint/element-interface"
             ```
 
     </details>
@@ -237,51 +237,51 @@ option.
      scripts). If no such modification is required, using `pip install .` is 
      sufficient.
 
-    + Install `element-data-loader`
+    + Install `element-interface`
 
-        + `element-data-loader` contains the scripts to load data for 
+        + `element-interface` contains the scripts to load data for 
         `element-calcium-imaging` and `workflow-calcium-imaging`.
 
-        + `element-data-loader` is a dependency of `element-calcium-imaging` and
+        + `element-interface` is a dependency of `element-calcium-imaging` and
          `workflow-calcium-imaging`, however it is not contained within `requirements.txt`.
 
-        + `element-data-loader` can also be used to install packages used for 
+        + `element-interface` can also be used to install packages used for 
         reading acquired data (e.g. `scanreader`) and running analysis (e.g. 
         `CaImAn`).
 
         + If your `workflow-calcium-imaging` uses these packages, you should 
-        install them when you install `element-data-loader`.
+        install them when you install `element-interface`.
 
-        + Install `element-data-loader` without any other packages
+        + Install `element-interface` without any other packages
             ```
-            pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
-            ```
-
-        + Install `element-data-loader` with `scanreader`
-            ```
-            pip install "element-data-loader[scanreader] @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-interface @ git+https://github.com/datajoint/element-interface"
             ```
 
-        + Install `element-data-loader` with `sbxreader`
+        + Install `element-interface` with `scanreader`
             ```
-            pip install "element-data-loader[sbxreader] @ git+https://github.com/datajoint/element-data-loader"
-            ```
-
-        + Install `element-data-loader` with `Suite2p`
-            ```
-            pip install "element-data-loader[suite2p] @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-interface[scanreader] @ git+https://github.com/datajoint/element-interface"
             ```
 
-        + Install `element-data-loader` with `CaImAn` requires two separate commands
+        + Install `element-interface` with `sbxreader`
             ```
-            pip install "element-data-loader[caiman_requirements] @ git+https://github.com/datajoint/element-data-loader"
-            pip install "element-data-loader[caiman] @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-interface[sbxreader] @ git+https://github.com/datajoint/element-interface"
             ```
 
-        + Install `element-data-loader` with multiple packages
+        + Install `element-interface` with `Suite2p`
             ```
-            pip install "element-data-loader[caiman_requirements] @ git+https://github.com/datajoint/element-data-loader"
-            pip install "element-data-loader[scanreader,sbxreader,suite2p,caiman] @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-interface[suite2p] @ git+https://github.com/datajoint/element-interface"
+            ```
+
+        + Install `element-interface` with `CaImAn` requires two separate commands
+            ```
+            pip install "element-interface[caiman_requirements] @ git+https://github.com/datajoint/element-interface"
+            pip install "element-interface[caiman] @ git+https://github.com/datajoint/element-interface"
+            ```
+
+        + Install `element-interface` with multiple packages
+            ```
+            pip install "element-interface[caiman_requirements] @ git+https://github.com/datajoint/element-interface"
+            pip install "element-interface[scanreader,sbxreader,suite2p,caiman] @ git+https://github.com/datajoint/element-interface"
             ```
     </details>
 
@@ -699,9 +699,9 @@ repositories
     + Clone the repositories
         ```bash
         git clone https://github.com/datajoint/element-lab
-        git clone https://github.com/datajoint/element-animal
+        git clone https://github.com/datajoint/element-subject
         git clone https://github.com/datajoint/element-session
-        git clone https://github.com/datajoint/element-data-loader
+        git clone https://github.com/datajoint/element-interface
         git clone https://github.com/datajoint/element-array-ephys
         git clone https://github.com/datajoint/workflow-array-ephys
         ```
@@ -709,9 +709,9 @@ repositories
     + Install each package with the `-e` option
         ```bash
         pip install -e ./element-lab
-        pip install -e ./element-animal
+        pip install -e ./element-subject
         pip install -e ./element-session
-        pip install -e ./element-data-loader
+        pip install -e ./element-interface
         pip install -e ./element-array-ephys
         pip install -e ./workflow-array-ephys
         ```
@@ -725,9 +725,9 @@ repositories
     + Clone the repositories
         ```bash
         git clone https://github.com/datajoint/element-lab
-        git clone https://github.com/datajoint/element-animal
+        git clone https://github.com/datajoint/element-subject
         git clone https://github.com/datajoint/element-session
-        git clone https://github.com/datajoint/element-data-loader
+        git clone https://github.com/datajoint/element-interface
         git clone https://github.com/datajoint/element-calcium-imaging
         git clone https://github.com/datajoint/workflow-calcium-imaging
         ```
@@ -735,9 +735,9 @@ repositories
     + Install each package with the `-e` option
         ```bash
         pip install -e ./element-lab
-        pip install -e ./element-animal
+        pip install -e ./element-subject
         pip install -e ./element-session
-        pip install -e ./element-data-loader
+        pip install -e ./element-interface
         pip install -e ./element-calcium-imaging
         pip install -e ./workflow-calcium-imaging
         ```
