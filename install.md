@@ -699,7 +699,7 @@ repositories
     + Clone the repositories
         ```bash
         git clone https://github.com/datajoint/element-lab
-        git clone https://github.com/datajoint/element-subject
+        git clone https://github.com/datajoint/element-animal
         git clone https://github.com/datajoint/element-session
         git clone https://github.com/datajoint/element-interface
         git clone https://github.com/datajoint/element-array-ephys
@@ -709,7 +709,7 @@ repositories
     + Install each package with the `-e` option
         ```bash
         pip install -e ./element-lab
-        pip install -e ./element-subject
+        pip install -e ./element-animal
         pip install -e ./element-session
         pip install -e ./element-interface
         pip install -e ./element-array-ephys
@@ -725,7 +725,7 @@ repositories
     + Clone the repositories
         ```bash
         git clone https://github.com/datajoint/element-lab
-        git clone https://github.com/datajoint/element-subject
+        git clone https://github.com/datajoint/element-animal
         git clone https://github.com/datajoint/element-session
         git clone https://github.com/datajoint/element-interface
         git clone https://github.com/datajoint/element-calcium-imaging
@@ -735,7 +735,7 @@ repositories
     + Install each package with the `-e` option
         ```bash
         pip install -e ./element-lab
-        pip install -e ./element-subject
+        pip install -e ./element-animal
         pip install -e ./element-session
         pip install -e ./element-interface
         pip install -e ./element-calcium-imaging
