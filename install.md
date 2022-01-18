@@ -785,16 +785,30 @@ Also refer to `notebooks/06-drop-optional.ipynb` within the respective
 
 ### Run integration tests
 
-1. Download the test dataset to your local machine
-(note the directory where the dataset is saved at - e.g. `/tmp/testset`)
++ Download the test dataset to your local machine.  Note the directory where the
+ dataset is saved (e.g. `/tmp/testset`).
 
-2. Create an `.env` file with the following content.  Replace `/tmp/testset` 
-with the directory where you have the test dataset downloaded
++ Create an `.env` file with the following content.  Replace `/tmp/testset` 
+with the directory where you have the test dataset downloaded.
     ```
     TEST_DATA_DIR=/tmp/testset
     ```
 
-3. Run the Docker container.
++ If testing your remote fork of an `element`, within the `Dockerfile` add the 
+following before installing the `workflow`.  Be sure that the `element` package 
+version matches the version in the `requirements.txt` of the `workflow`.
+    ```
+    RUN pip install git+https://github.com/<user_fork>/element-<modality>.git
+    ```
+
++ If testing your fork of the `workflow`, within the `Dockerfile` change the 
+following to clone and install your remote fork.
+    ```
+    RUN git clone https://github.com/<user_fork>/workflow-<modality>.git .
+    ```
+
+
++ Run the Docker container.
     ```
     docker-compose -f docker-compose-test.yaml up --build
     ```
