@@ -307,8 +307,9 @@ create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
     "display.show_tuple_count": true,
     "custom": {
         "database.prefix": "<username_>",
-        "ephys_root_data_dir": ["Full path to root directory of raw data",
-                                "Full path to root directory of processed data"]
+        "ephys_root_data_dir": ["Full first path to root directory of raw data",
+                                "Full second path to root directory of raw data, optional",
+                                "Full path(s) to root directory of processed data"]
         }
     }
     ```
@@ -331,8 +332,9 @@ create a local configuration file (i.e. `dj_local_conf.json`) at the root of the
     "display.show_tuple_count": true,
     "custom": {
         "database.prefix": "<username_>",
-        "imaging_root_data_dir": ["Full path to root directory of raw data",
-                                  "Full path to root directory of processed data"]
+        "imaging_root_data_dir": ["Full first path to root directory of raw data",
+                                "Full second path to root directory of raw data, optional",
+                                "Full path(s) to root directory of processed data"]
         }
     }
     ```
