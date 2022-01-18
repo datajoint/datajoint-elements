@@ -82,8 +82,8 @@ option.
         <details>
         <summary>Click to expand for details</summary>
 
-        + We will install Miniconda which is a minimal installer for conda.         Follow the [Miniconda installer instructions here]
-        (https://conda.io/en/latest/miniconda.html) for your operating system.
+        + We will install Miniconda which is a minimal installer for conda.  Follow the [Miniconda installer instructions here](
+        https://conda.io/en/latest/miniconda.html) for your operating system.
 
         + You may need to add the Miniconda directory to the PATH environment
         variable with the following command
