@@ -796,20 +796,12 @@ with the directory where you have the test dataset downloaded.
     TEST_DATA_DIR=/tmp/testset
     ```
 
-+ If testing an unreleased version or your remote fork of an `element`, within 
-the `Dockerfile` add the following before installing the `workflow`.  Be sure 
-that the `element` package version matches the version in the `requirements.txt`
- of the `workflow`.
-    ```
-    RUN pip install git+https://github.com/<user_fork>/element-<modality>.git
-    ```
-
-+ If testing your fork of the `workflow`, within the `Dockerfile` change the 
-following to clone and install your remote fork.
-    ```
-    RUN git clone https://github.com/<user_fork>/workflow-<modality>.git .
-    ```
-
++ If testing an unreleased version of the `element` or your fork of an `element`
+ or the `workflow`, within the `Dockerfile` uncomment the lines from the 
+ different options presented.  This will allow you to install the repositories 
+ of interest and run the integration tests on those packages. Be sure that the 
+ `element` package version matches the version in the `requirements.txt` of the 
+ `workflow`.
 
 + Run the Docker container.
     ```
