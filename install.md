@@ -112,23 +112,24 @@ option.
         <details>
         <summary>Click to expand for details</summary>
 
-        + If `virtualenv` not yet installed, run `pip install --user virtualenv`
+        + If `virtualenv` not yet installed, install this package.
+            ```bash
+            pip install --user virtualenv
+            ```
 
         + Create a new virtual environment
             ```
             virtualenv <environment_name>
             ```
 
-        + Activate the virtual environment
-            + On Windows:
-                ```
-                .\<environment_name>\Scripts\activate
-                ```
-
-            + On Linux/macOS:
-                ```
-                source <environment_name>/bin/activate
-                ```
+        + On Windows, activate the virtual environment
+            ```
+            .\<environment_name>\Scripts\activate
+            ```
+        + On Linux/macOS, activate the virtual environment
+            ```
+            source <environment_name>/bin/activate
+            ```
 
         </details>
  
@@ -177,18 +178,22 @@ option.
      scripts). If no such modification is required, using `pip install .` is 
      sufficient.
 
-    + Install `element-data-loader`, which contains scripts to load data for
-     both `element-array-ephys` and `workflow-array-ephys`.
+    + Install `element-interface`
+        + `element-interface` contains the scripts to load data for 
+        `element-array-ephys` and `workflow-array-ephys`.
 
-        + `element-data-loader` is a dependency of `element-array-ephys` and
+        + `element-interface` is a dependency of `element-array-ephys` and
          `workflow-array-ephys`, however it is not contained within `requirements.txt`.
 
-        + `element-data-loader` can also be used to install packages used for 
+        + `element-interface` can also be used to install packages used for 
         reading acquired data and running analysis.
 
-        + `element-data-loader` installation command:
-            ```bash
-            pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
+        + If your `workflow-array-ephys` uses these packages, you should 
+        install them when you install `element-interface`.
+
+        + Install `element-interface` without any other packages
+            ```
+            pip install "element-interface @ git+https://github.com/datajoint/element-interface"
             ```
 
     </details>
@@ -223,46 +228,51 @@ option.
      scripts). If no such modification is required, using `pip install .` is 
      sufficient.
 
-    + Install `element-data-loader`, which contains the scripts to load data for
-     `element-calcium-imaging` and `workflow-calcium-imaging`.
+    + Install `element-interface`
 
-        + `element-data-loader` is a dependency of `element-calcium-imaging` and
+        + `element-interface` contains the scripts to load data for 
+        `element-calcium-imaging` and `workflow-calcium-imaging`.
+
+        + `element-interface` is a dependency of `element-calcium-imaging` and
          `workflow-calcium-imaging`, however it is not contained within `requirements.txt`.
 
-        + `element-data-loader` can also be used to install packages used for 
+        + `element-interface` can also be used to install packages used for 
         reading acquired data (e.g. `scanreader`) and running analysis (e.g. 
         `CaImAn`).
 
-        + Install `element-data-loader` without any other packages
+        + If your `workflow-calcium-imaging` uses these packages, you should 
+        install them when you install `element-interface`.
+
+        + Install `element-interface` without any other packages
             ```
-            pip install "element-data-loader @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-interface @ git+https://github.com/datajoint/element-interface"
             ```
 
-        + Install `element-data-loader` with `scanreader`
+        + Install `element-interface` with `scanreader`
             ```
-            pip install "element-data-loader[scanreader] @ git+https://github.com/datajoint/element-data-loader"
-            ```
-
-        + Install `element-data-loader` with `sbxreader`
-            ```
-            pip install "element-data-loader[sbxreader] @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-interface[scanreader] @ git+https://github.com/datajoint/element-interface"
             ```
 
-        + Install `element-data-loader` with `Suite2p`
+        + Install `element-interface` with `sbxreader`
             ```
-            pip install "element-data-loader[suite2p] @ git+https://github.com/datajoint/element-data-loader"
-            ```
-
-        + Install `element-data-loader` with `CaImAn` requires two separate commands
-            ```
-            pip install "element-data-loader[caiman_requirements] @ git+https://github.com/datajoint/element-data-loader"
-            pip install "element-data-loader[caiman] @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-interface[sbxreader] @ git+https://github.com/datajoint/element-interface"
             ```
 
-        + Install `element-data-loader` with multiple packages
+        + Install `element-interface` with `Suite2p`
             ```
-            pip install "element-data-loader[caiman_requirements] @ git+https://github.com/datajoint/element-data-loader"
-            pip install "element-data-loader[scanreader,sbxreader,suite2p,caiman] @ git+https://github.com/datajoint/element-data-loader"
+            pip install "element-interface[suite2p] @ git+https://github.com/datajoint/element-interface"
+            ```
+
+        + Install `element-interface` with `CaImAn` requires two separate commands
+            ```
+            pip install "element-interface[caiman_requirements] @ git+https://github.com/datajoint/element-interface"
+            pip install "element-interface[caiman] @ git+https://github.com/datajoint/element-interface"
+            ```
+
+        + Install `element-interface` with multiple packages
+            ```
+            pip install "element-interface[caiman_requirements] @ git+https://github.com/datajoint/element-interface"
+            pip install "element-interface[scanreader,sbxreader,suite2p,caiman] @ git+https://github.com/datajoint/element-interface"
             ```
     </details>
 
@@ -288,8 +298,9 @@ create a local configuration file (i.e., `dj_local_conf.json`) at the root of th
     "display.show_tuple_count": true,
     "custom": {
         "database.prefix": "<username_>",
-        "ephys_root_data_dir": ["Full path to root directory of raw data",
-                                "Full path to root directory of processed data"]
+        "ephys_root_data_dir": ["Full first path to root directory of raw data",
+                                "Full second path to root directory of raw data, optional",
+                                "Full path(s) to root directory of processed data"]
         }
     }
     ```
@@ -312,8 +323,9 @@ create a local configuration file (i.e., `dj_local_conf.json`) at the root of th
     "display.show_tuple_count": true,
     "custom": {
         "database.prefix": "<username_>",
-        "imaging_root_data_dir": ["Full path to root directory of raw data",
-                                  "Full path to root directory of processed data"]
+        "imaging_root_data_dir": ["Full first path to root directory of raw data",
+                                "Full second path to root directory of raw data, optional",
+                                "Full path(s) to root directory of processed data"]
         }
     }
     ```
@@ -664,7 +676,7 @@ repositories
         git clone https://github.com/datajoint/element-lab
         git clone https://github.com/datajoint/element-animal
         git clone https://github.com/datajoint/element-session
-        git clone https://github.com/datajoint/element-data-loader
+        git clone https://github.com/datajoint/element-interface
         git clone https://github.com/datajoint/element-array-ephys
         git clone https://github.com/datajoint/workflow-array-ephys
         ```
@@ -674,7 +686,7 @@ repositories
         pip install -e ./element-lab
         pip install -e ./element-animal
         pip install -e ./element-session
-        pip install -e ./element-data-loader
+        pip install -e ./element-interface
         pip install -e ./element-array-ephys
         pip install -e ./workflow-array-ephys
         ```
@@ -690,7 +702,7 @@ repositories
         git clone https://github.com/datajoint/element-lab
         git clone https://github.com/datajoint/element-animal
         git clone https://github.com/datajoint/element-session
-        git clone https://github.com/datajoint/element-data-loader
+        git clone https://github.com/datajoint/element-interface
         git clone https://github.com/datajoint/element-calcium-imaging
         git clone https://github.com/datajoint/workflow-calcium-imaging
         ```
@@ -700,7 +712,7 @@ repositories
         pip install -e ./element-lab
         pip install -e ./element-animal
         pip install -e ./element-session
-        pip install -e ./element-data-loader
+        pip install -e ./element-interface
         pip install -e ./element-calcium-imaging
         pip install -e ./workflow-calcium-imaging
         ```
@@ -748,16 +760,23 @@ Also refer to `notebooks/06-drop-optional.ipynb` within the respective
 
 ### Run integration tests
 
-1. Download the test dataset to your local machine
-(note the directory where the dataset is saved at - e.g. `/tmp/testset`)
++ Download the test dataset to your local machine.  Note the directory where the
+ dataset is saved (e.g. `/tmp/testset`).
 
-2. Create an `.env` file with the following content.  Replace `/tmp/testset` 
-with the directory where you have the test dataset downloaded
-```
-TEST_DATA_DIR=/tmp/testset
-```
++ Create an `.env` file with the following content.  Replace `/tmp/testset` 
+with the directory where you have the test dataset downloaded.
+    ```
+    TEST_DATA_DIR=/tmp/testset
+    ```
 
-3. Run the Docker container.
-```
-docker-compose -f docker-compose-test.yaml up --build
-```
++ If testing an unreleased version of the `element` or your fork of an `element`
+ or the `workflow`, within the `Dockerfile` uncomment the lines from the 
+ different options presented.  This will allow you to install the repositories 
+ of interest and run the integration tests on those packages. Be sure that the 
+ `element` package version matches the version in the `requirements.txt` of the 
+ `workflow`.
+
++ Run the Docker container.
+    ```
+    docker-compose -f docker-compose-test.yaml up --build
+    ```
