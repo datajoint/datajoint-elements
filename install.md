@@ -159,7 +159,7 @@ option.
     git clone https://github.com/datajoint/<repository>
     ```
 
-+ Change into the coned directory
++ Change into the cloned directory
     ```bash
     cd <repository>
     ```
