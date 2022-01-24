@@ -80,7 +80,7 @@ environment to run the workflow.
 option.  
     + Conda instructions
         <details>
-        <summary>Click to expand for details</summary>
+        <summary>Click to expand details</summary>
 
         + We will install Miniconda which is a minimal installer for conda.  Follow the [Miniconda installer instructions here](
         https://conda.io/en/latest/miniconda.html) for your operating system.
@@ -110,7 +110,7 @@ option.
 
     + Virtualenv instructions
         <details>
-        <summary>Click to expand for details</summary>
+        <summary>Click to expand details</summary>
 
         + If `virtualenv` not yet installed, install this package.
             ```bash
@@ -179,7 +179,7 @@ option.
 
 + Items specific to `workflow-calcium-imaging`
     <details>
-    <summary>Click to expand for details</summary>
+    <summary>Click to expand details</summary>
 
     + `element-interface` can also be used to install packages used for reading
     acquired data (e.g., `scanreader`) and running analyses (e.g., `CaImAn`).
@@ -229,7 +229,7 @@ option.
     "display.show_tuple_count": true,
     "custom": {
         "database.prefix": "<username_>"
-    }
+        }
     }
     ```
 
@@ -252,54 +252,60 @@ option.
 
 + Specific workflows will require additional information in the custom field, including
 paths to data directories, following the convention described in the
-[Directory structure section](#directory-structure-and-file-naming-convention). If
+[directory structure section](#directory-structure-and-file-naming-convention). If
 multiple root directories exist, include all in the relevant json array.
 
     + `workflow-array-ephys`
-    <details>
-    <summary>Click to expand</summary>
-    ```json
-    "custom": {
-        "database.prefix": "<username_>",
-        "ephys_root_data_dir": ["Full path to root directory of raw data",
-                                "Full path to root directory of processed data"]
-        }
-    ```
-    </details>
+        <details>
+        <summary>Click to expand</summary>
+
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "ephys_root_data_dir": ["Full path to root directory of raw data",
+                                    "Full path to root directory of processed data"]
+            }
+        ```
+        </details>
 
     + `workflow-calcium-imaging`
-    <details>
-    <summary>Click to expand</summary>
-    ```json
-    "custom": {
-        "database.prefix": "<username_>",
-        "imaging_root_data_dir": ["Full path to root directory of raw data",
-                                  "Full path to root directory of processed data"]
-        }
-    ```
-    </details>
+        <details>
+        <summary>Click to expand</summary>
+
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "imaging_root_data_dir": ["Full path to root directory of raw data",
+                                      "Full path to root directory of processed data"]
+            }
+        ```
+        </details>
+
     + `workflow-trial`
-    <details>
-    <summary>Click to expand</summary>
-    ```json
-    "custom": {
-        "database.prefix": "<username_>",
-        "trial_root_data_dir": ["Full path to root directory of raw data",
-                                "Full path to root directory of processed data"]
-        }
-    ```
-    </details>
+        <details>
+        <summary>Click to expand</summary>
+
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "trial_root_data_dir": ["Full path to root directory of raw data",
+                                    "Full path to root directory of processed data"]
+            }
+        ```
+        </details>
+
     + `workflow-behavior`
-    <details>
-    <summary>Click to expand</summary>
-    ```json
-    "custom": {
-        "database.prefix": "<username_>",
-        "beh_root_data_dir": ["Full path to root directory of raw data",
-                              "Full path to root directory of processed data"]
-        }
-    ```
-    </details>
+        <details>
+        <summary>Click to expand</summary>
+
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "beh_root_data_dir": ["Full path to root directory of raw data",
+                                  "Full path to root directory of processed data"]
+            }
+        ```
+        </details>
 
 ## Setup complete
 
@@ -361,7 +367,7 @@ workflow package. Browse the revisions.
 
     + `workflow-array-ephys`
         <details>
-        <summary>Click to expand for details</summary>
+        <summary>Click to expand details</summary>
 
         ```
         /tmp/example_data/
@@ -382,7 +388,7 @@ workflow package. Browse the revisions.
 
     + `workflow-calcium-imaging`
         <details>
-        <summary>Click to expand for details</summary>
+        <summary>Click to expand details</summary>
 
         ```
         /tmp/example_data/
@@ -420,7 +426,7 @@ and file naming convention as described below.
 
 + `workflow-array-ephys`
     <details>
-    <summary>Click to expand for details</summary>
+    <summary>Click to expand details</summary>
 
     + The `ephys_root_data_dir` is configurable in the `dj_local_conf.json`, 
     under `custom/ephys_root_data_dir` variable.
@@ -470,7 +476,7 @@ and file naming convention as described below.
 
 + `workflow-calcium-imaging`
     <details>
-    <summary>Click to expand for details</summary>
+    <summary>Click to expand details</summary>
 
     + Note: the `element-calcium-imaging` is designed to accommodate multiple 
     scans per session, however, in this particular `workflow-calcium-imaging`, 
@@ -536,7 +542,7 @@ and file naming convention as described below.
 + View the declared tables
     + `workflow-array-ephys`
         <details>
-        <summary>Click to expand for details</summary>
+        <summary>Click to expand details</summary>
 
         ```python
         subject.Subject()
@@ -551,7 +557,7 @@ and file naming convention as described below.
 
     + `workflow-calcium-imaging`
         <details>
-        <summary>Click to expand for details</summary>
+        <summary>Click to expand details</summary>
 
         ```python
         subject.Subject()
@@ -600,7 +606,7 @@ repositories
 
 + `workflow-array-ephys`
     <details>
-    <summary>Click to expand for details</summary>
+    <summary>Click to expand details</summary>
 
     + Clone the repositories
         ```bash
@@ -626,7 +632,7 @@ repositories
 
 + `workflow-calcium-imaging`
     <details>
-    <summary>Click to expand for details</summary>
+    <summary>Click to expand details</summary>
 
     + Clone the repositories
         ```bash
@@ -659,7 +665,7 @@ Also refer to `notebooks/06-drop-optional.ipynb` within the respective
 
 + `workflow-array-ephys`
     <details>
-    <summary>Click to expand for details</summary>
+    <summary>Click to expand details</summary>
     
     ```
     from workflow_array_ephys.pipeline import *
@@ -675,7 +681,7 @@ Also refer to `notebooks/06-drop-optional.ipynb` within the respective
 
 + `workflow-calcium-imaging`
     <details>
-    <summary>Click to expand for details</summary>
+    <summary>Click to expand details</summary>
     
     ```
     from workflow_calcium_imaging.pipeline import *
