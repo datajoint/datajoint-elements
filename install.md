@@ -366,21 +366,6 @@ workflow package.  Browse the revisions.
     list(client.revisions())                
     ```
 
-+ Get the current version of the workflow
-    + `workflow-array-ephys`
-        ```python
-        from workflow_array_ephys import version
-        revision = version.__version__.replace('.', '_')
-        revision
-        ```
-
-    + `workflow-calcium-imaging`
-        ```python
-        from workflow_calcium_imaging import version
-        revision = version.__version__.replace('.', '_')
-        revision
-        ```
-
 + Prepare a directory to store the download data, for example in `/tmp`
     ```bash
     mkdir /tmp/example_data
@@ -389,16 +374,16 @@ workflow package.  Browse the revisions.
 + Download a given dataset
     + `workflow-array-ephys`
         ```python
-        client.download('workflow-array-ephys-test-set', 
+        client.download('workflow-array-ephys', 
                         target_directory='/tmp/example_data', 
-                        revision=revision)
+                        revision='v1')
         ```
 
     + `workflow-calcium-imaging`
         ```python
-        client.download('workflow-calcium-imaging-test-set', 
+        client.download('workflow-calcium-imaging', 
                         target_directory='/tmp/example_data', 
-                        revision=revision)
+                        revision='v1')
         ```
 
 + Directory organization
