@@ -80,68 +80,38 @@ specific project within an isolated environment on your computer.
 environment to run the workflow.
 
 + Conda and virtualenv are virtual environment managers and you can use either 
-option.  
-    + Conda instructions
-        <details>
-        <summary>Click to expand for details</summary>
+option.  Below you will find instructions for conda.
 
-        + We will install Miniconda which is a minimal installer for conda.
-            + Select the [Miniconda installer link](
-                https://conda.io/en/latest/miniconda.html) 
-            for your operating system and following the instructions.
+    + We will install Miniconda which is a minimal installer for conda.
+        + Select the [Miniconda installer link](
+            https://conda.io/en/latest/miniconda.html) 
+        for your operating system and following the instructions.
 
-            + You may need to add the Miniconda directory to the PATH environment 
-            variable
+        + You may need to add the Miniconda directory to the PATH environment 
+        variable
 
-                + First locate the Miniconda directory
+            + First locate the Miniconda directory
 
-                + Then modify and run the following command
-                    ```bash
-                    export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
-                    ```
-
-        + Create a new conda environment
-            + Type the following command into a terminal window
+            + Then modify and run the following command
                 ```bash
-                conda create -n <environment_name> python=<version>
-                ```
-            + Example command to create a conda environment
-                ```bash
-                conda create -n workflow-array-ephys python=3.8.11
+                export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
                 ```
 
-        + Activate the conda environment
+    + Create a new conda environment
+        + Type the following command into a terminal window
             ```bash
-            conda activate <environment_name>
+            conda create -n <environment_name> python=<version>
             ```
-
-        </details>
-
-    + Virtualenv instructions
-        <details>
-        <summary>Click to expand for details</summary>
-
-        + If `virtualenv` not yet installed, install this package.
+        + Example command to create a conda environment
             ```bash
-            pip install --user virtualenv
+            conda create -n workflow-array-ephys python=3.8.11
             ```
 
-        + Create a new virtual environment
-            ```
-            virtualenv <environment_name>
-            ```
+    + Activate the conda environment
+        ```bash
+        conda activate <environment_name>
+        ```
 
-        + On Windows, activate the virtual environment
-            ```
-            .\<environment_name>\Scripts\activate
-            ```
-        + On Linux/macOS, activate the virtual environment
-            ```
-            source <environment_name>/bin/activate
-            ```
-
-        </details>
- 
 
 ## Install Jupyter Notebook packages
 
