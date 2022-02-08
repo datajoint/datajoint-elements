@@ -77,62 +77,35 @@ specific project within an isolated environment on your computer.
 environment to run the workflow.
 
 + Conda and virtualenv are virtual environment managers and you can use either 
-option.  
-    + Conda instructions
-        <details>
-        <summary>Click to expand details</summary>
-
-        + We will install Miniconda which is a minimal installer for conda.  Follow the [Miniconda installer instructions here](
+option.  Below you will find instructions for conda.
+    
+    + Miniconda is a minimal installer for conda.  Follow the [installer instructions](
         https://conda.io/en/latest/miniconda.html) for your operating system.
+    
+    + You may need to add the Miniconda directory to the PATH environment 
+        variable
+        
+        + First locate the Miniconda directory
 
-        + You may need to add the Miniconda directory to the PATH environment
-        variable with the following command
+        + Then modify and run the following command
             ```bash
             export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
             ```
+    + Create a new conda environment
+        ```bash
+        conda create -n <environment_name> python=<version>
+        ```
 
-        + Create a new conda environment
-            + Type the following command into a terminal window
-                ```bash
-                conda create -n <environment_name> python=<version>
-                ```
-            + Example command to create a conda environment
-                ```bash
-                conda create -n workflow-array-ephys python=3.8.11
-                ```
-
-        + Activate the conda environment
+        + Example command to create a conda environment
             ```bash
-            conda activate <environment_name>
+            conda create -n workflow-array-ephys python=3.8.11
             ```
 
-        </details>
+    + Activate the conda environment
+        ```bash
+        conda activate <environment_name>
+        ```
 
-    + Virtualenv instructions
-        <details>
-        <summary>Click to expand details</summary>
-
-        + If `virtualenv` not yet installed, install this package.
-            ```bash
-            pip install --user virtualenv
-            ```
-
-        + Create a new virtual environment
-            ```
-            virtualenv <environment_name>
-            ```
-
-        + On Windows, activate the virtual environment
-            ```
-            .\<environment_name>\Scripts\activate
-            ```
-        + On Linux/macOS, activate the virtual environment
-            ```
-            source <environment_name>/bin/activate
-            ```
-
-        </details>
- 
 
 ## Install Jupyter Notebook packages
 
@@ -340,13 +313,6 @@ workflow package. Browse the revisions.
     list(client.revisions())                
     ```
 
-+ Get the current version of the workflow
-    ```python
-    from <relevant-workflow> import version
-    revision = version.__version__.replace('.', '_')
-    revision
-    ```
-
 + Prepare a directory to store the download data, for example in `/tmp`
     ```bash
     mkdir /tmp/example_data
@@ -356,7 +322,7 @@ workflow package. Browse the revisions.
     ```python
     client.download('<workflow-dataset>',
                     target_directory='/tmp/example_data',
-                    revision=revision)
+                    revision='<revision>')
     ```
 
 + We will use this data as an example for the tutorial notebooks for each
