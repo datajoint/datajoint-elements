@@ -25,7 +25,10 @@ services:
       - ./glossary.md:/main/docs/glossary.md
       - ./support.md:/main/docs/support.md
       - ./adopt.md:/main/docs/adopt.md
+      - ./projects.md:/main/docs/projects.md
+      - ./publications.md:/main/docs/publications.md
       - ./README.md:/main/docs/README.md
+      - ./images/elements-logo.png:/main/docs/images/elements-logo.png
       - ./.mkdocs/mkdocs.yml:/main/mkdocs.yml
       - ./.mkdocs/site:/main/site
       - ./.mkdocs/cinder-theme-ext:/main/cinder-theme-ext
