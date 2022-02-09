@@ -6,12 +6,17 @@ The project is performed by [DataJoint](https://www.datajoint.com) with Dimitri 
 * Dimitri Yatsenko - PI
 * Thinh Nguyen - Data Scientist
 * Kabilar Gunalan - Data Scientist
+* Joseph Burling - Data Scientist
+* Chris Brozdowski - Data Scientist
+* Tolga Dincer - Data Scientist
 
 ## Engineers
 * Raphael Guzman - Software Engineer
-* Christopher Turner - Data Systems Engineer
 * Drew Yang - Data Systems Engineer
-* David Godinez - Data Engineer
+* Geetika Singh - Data Engineer
+* Jeroen Verswijver - Software Engineer
+* Carlos Ortiz - Software Engineer
+* Adib Baji - Software Engineer
 
 ## Past contributors
 * Edgar Y. Walker - System architect, Data Scientist, Project Manager (from project start to Jan, 2021)
@@ -20,6 +25,8 @@ The project is performed by [DataJoint](https://www.datajoint.com) with Dimitri 
 * Shan Shen - Data Scientist
 * Maho Sasaki - Frontend Developer
 * Daniel Sitonic - Backend Developer, Software Engineer
+* Christopher Turner - Data Systems Engineer
+* David Godinez - Data Engineer
 
 The first-person pronouns "we" and "our" in these documents refer to the Performer Team.
 
