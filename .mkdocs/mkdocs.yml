@@ -3,8 +3,8 @@ dev_addr: '0.0.0.0:8000'
 theme:
   name: cinder
   custom_dir: cinder-theme-ext
+  include_sidebar: false
 nav:
-  - About: README.md
   - 'Management and Policies':
     - management/plan.md
     - management/team.md
@@ -14,6 +14,8 @@ nav:
     - management/contribute.md
     - management/outreach.md
     - management/licenses.md
+  - publications.md
+  - projects.md
   - design-principles.md
   - adopt.md
   - support.md
