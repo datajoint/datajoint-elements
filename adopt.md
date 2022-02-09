@@ -8,7 +8,7 @@ If you have not yet used DataJoint, we recommend completing our online training 
 
 Tutorials:
 
-* https://playground.datajoint.io
+* https://codebook.datajoint.io
 * https://tutorials.datajoint.io
 * https://docs.datajoint.org
 
