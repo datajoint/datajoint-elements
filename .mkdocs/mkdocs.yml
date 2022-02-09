@@ -14,12 +14,12 @@ nav:
     - management/contribute.md
     - management/outreach.md
     - management/licenses.md
-  - publications.md
-  - projects.md
   - design-principles.md
   - adopt.md
   - support.md
   - glossary.md
+  - publications.md
+  - projects.md
 markdown_extensions:
   - pymdownx.magiclink
   - mdx_truly_sane_lists
