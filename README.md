@@ -35,7 +35,7 @@ workflows + related documentation, tools, and utilities.
 modalities of neurophysiology experiments + related documentation, tools, and 
 utilities.
 
-## Elements
+## DataJoint Elements
 * [Lab management](https://github.com/datajoint/element-lab)
 * [Animal management](https://github.com/datajoint/element-animal)
   * [Example workflow](https://github.com/datajoint/workflow-animal)
@@ -47,18 +47,18 @@ utilities.
 * [Miniscope imaging](https://github.com/datajoint/element-miniscope)
   * [Example workflow](https://github.com/datajoint/workflow-miniscope)
 
-## The DataJoint framework 
+## DataJoint framework 
 * [DataJoint for Python](https://github.com/datajoint/datajoint-python)
 * [DataJoint for MATLAB](https://github.com/datajoint/datajoint-matlab)
 * [DataJoint Documentation](https://docs.datajoint.org)
 * [DataJoint Tutorials](https://tutorials.datajoint.io)
 * [Docker image for MySQL server configured for use with DataJoint](https://github.com/datajoint/mysql-docker)
 
-## Interfaces 
+## DataJoint Interfaces 
 * [Pharus](https://github.com/datajoint/pharus) — a REST API for interacting 
 with DataJoint databases
 * [DataJoint LabBook](https://github.com/datajoint/datajoint-labbook) — a 
 front-end web interface for viewing and entering data
 
-## Online Training  
-* [DataJoint interactive online tutorials](https://playground.datajoint.io)
+## DataJoint Online Training  
+* [DataJoint CodeBook](https://codebook.datajoint.io) - interactive online tutorials
