@@ -25,7 +25,7 @@ This includes:
   * fully managed cloud hosting by DataJoint
 * Workflow execution
   * configuration and automation
-  * optional fully managed service by DataJoint Neuro
+  * optional fully managed service by DataJoint&reg;
 * Interfaces for data entry, export and publishing
 
 During alpha and beta testing phases, these services may be subsidized by the grant funding for qualified research groups.
