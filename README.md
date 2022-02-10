@@ -10,20 +10,6 @@ derived from the developments in leading neuroscience projects and uses the
 [DataJoint framework](https://datajoint.org) for defining, deploying, and 
 sharing their data workflows. 
 
-An overview of the principles of DataJoint workflows and the goals of DataJoint 
-Elements are described in the position paper 
-["DataJoint Elements: Data Workflows for Neurophysiology"](
-  https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
-
-# Project Structure
-* [Management and Policies](management/plan.md)
-* [Design Principles](design-principles.md)
-* [Guidelines for Adoption](adopt.md)
-* [Glossary](glossary.md) 
-
-# Components 
-The Resource provides the following main components:
-
 ***DataJoint***
 
 > the open-source framework for data pipelines and automated computational 
@@ -34,6 +20,17 @@ workflows + related documentation, tools, and utilities.
 > a collection of curated modules for assembling workflows for the major 
 modalities of neurophysiology experiments + related documentation, tools, and 
 utilities.
+
+An overview of the principles of DataJoint workflows and the goals of DataJoint 
+Elements are described in the position paper 
+["DataJoint Elements: Data Workflows for Neurophysiology"](
+  https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
+
+# Project Structure
+* [Management and Policies](management/plan.md)
+* [Design Principles](design-principles.md)
+* [Guidelines for Adoption](adopt.md)
+* [Glossary](glossary.md) 
 
 ## DataJoint Elements
 * [Lab management](https://github.com/datajoint/element-lab)
