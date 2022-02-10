@@ -16,9 +16,9 @@ nav:
     - management/outreach.md
     - management/licenses.md
   - design-principles.md
+  - glossary.md
   - adopt.md
   - support.md
-  - glossary.md
   - publications.md
   - projects.md
 markdown_extensions:
