@@ -3,6 +3,8 @@ dev_addr: '0.0.0.0:8000'
 theme:
   name: cinder
   custom_dir: cinder-theme-ext
+  disable_nav_previous_next: true
+  disable_nav_search: false
 nav:
   - 'Management and Policies':
     - management/plan.md
