@@ -3,7 +3,8 @@ dev_addr: '0.0.0.0:8000'
 theme:
   name: cinder
   custom_dir: cinder-theme-ext
-  include_sidebar: false
+  disable_nav_previous_next: true
+  disable_nav_search: false
 nav:
   - 'Management and Policies':
     - management/plan.md
@@ -14,12 +15,12 @@ nav:
     - management/contribute.md
     - management/outreach.md
     - management/licenses.md
-  - publications.md
-  - projects.md
   - design-principles.md
+  - glossary.md
   - adopt.md
   - support.md
-  - glossary.md
+  - publications.md
+  - projects.md
 markdown_extensions:
   - pymdownx.magiclink
   - mdx_truly_sane_lists
