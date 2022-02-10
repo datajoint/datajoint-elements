@@ -42,7 +42,7 @@ For the workflows and their revisions, the initial development and internal test
 + The participating lab/group has an existing DataJoint pipeline for the Element(s) to be connected to
 + The DataJoint pipeline code base is hosted as a Github repository (either public or private)
 + The participating lab/group has existing datasets in the format supported by the Element(s) for the purpose of this validation
-+ The participating lab/group has a dedicated point of contact person to work closely with DataJoint NEURO engineering team for this validation effort
++ The participating lab/group has a dedicated point of contact person to work closely with DataJoint&reg; engineering team for this validation effort
 
 ### Criteria for a successful validation
 + Able to connect the Element(s) to existing pipeline and all schemas/tables declared without errors
