@@ -267,7 +267,7 @@ multiple root directories exist, include all in the relevant json array.
         ```
         </details>
 
-    + `workflow-behavior`
+    + `workflow-deeplabcut`
         <details>
         <summary>Click to expand</summary>
 
