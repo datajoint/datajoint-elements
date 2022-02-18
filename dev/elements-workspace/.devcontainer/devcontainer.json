@@ -2,40 +2,11 @@
 {
 	"name": "DataJoint Elements (dev-container)",
 	"dockerComposeFile": "../docker-compose.yml",
-	"service": "conda",
-	"workspaceFolder": "/home/dj/datajoint-elements",
-	// Set *default* container specific settings.json values on container create.
-	"settings": {
-		"autoDocstring.docstringFormat": "google",
-		"autoDocstring.generateDocstringOnEnter": true,
-		"autoDocstring.guessTypes": true,
-		"autoDocstring.startOnNewLine": true,
-		"python.condaPath": "/opt/local/conda/bin/conda",
-		"python.defaultInterpreterPath": "/home/dj/.conda/envs/elements/bin/python",
-		"python.formatting.provider": "black",
-		"python.formatting.blackArgs": [
-			"--line-length=88"
-		],
-		"python.linting.flake8Enabled": true,
-		"python.linting.flake8Args": [
-			"--max-line-length=88",
-			"--extend-ignore=E203,W503,E501,F401,E402",
-			"--select=C,E,F,W,B,B950"
-		],
-		"python.sortImports.args": [
-			"--profile", "black"
-		],
-		"python.linting.enabled": true,
-		"python.linting.pylintEnabled": false,
-		"python.terminal.activateEnvInCurrentTerminal": true,
-		"python.terminal.activateEnvironment": true
-	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"ms-python.python",
 		"ms-python.vscode-pylance",
 		"ms-toolsai.jupyter",
-		"ms-toolsai.jupyter-renderers",
 		"github.vscode-pull-request-github",
 		"visualstudioexptteam.vscodeintellicode",
 		"eamodio.gitlens",
@@ -45,14 +16,45 @@
 		"tamasfe.even-better-toml",
 		"cweijan.vscode-mysql-client2"
 	],
+	"features": {
+		"github": "latest"
+	},
 	// If specifying user, you must make sure forks of the repos exist or use --mix-origin, e.g.
 	//   ["git-elements", "--user=myGitHubUsername", "--mix-origin"]
 	"postCreateCommand": [
 		"git-elements"
 	],
-	"shutdownAction": "stopCompose",
-	"userEnvProbe": "loginInteractiveShell",
-	"features": {
-		"github": "latest"
-	}
+	"service": "conda",
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"[python]": {
+			"editor.formatOnSave": true
+		},
+		"autoDocstring.generateDocstringOnEnter": true,
+		"autoDocstring.guessTypes": true,
+		"autoDocstring.startOnNewLine": true,
+		"jupyter.generateSVGPlots": true,
+		"python.condaPath": "/opt/local/conda/bin/conda",
+		"python.defaultInterpreterPath": "/opt/local/conda/envs/elements/bin/python",
+		"python.formatting.blackArgs": [
+			"--line-length=88"
+		],
+		"python.formatting.provider": "black",
+		"python.languageServer": "Pylance",
+		"python.linting.enabled": true,
+		"python.linting.flake8Args": [
+			"--max-line-length=88",
+			"--extend-ignore=E203"
+		],
+		"python.linting.flake8Enabled": true,
+		"python.linting.pylintEnabled": false,
+		"python.sortImports.args": [
+			"--profile",
+			"black"
+		],
+		"python.terminal.activateEnvInCurrentTerminal": true,
+		"python.terminal.activateEnvironment": true
+	},
+	"shutdownAction": "none",
+	"workspaceFolder": "/home/dj/datajoint-elements"
 }

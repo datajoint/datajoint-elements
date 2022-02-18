@@ -14,6 +14,6 @@
 		}
 	],
 	"settings": {
-		"python.defaultInterpreterPath": "/home/dj/.conda/envs/elements/bin/python"
+		"python.defaultInterpreterPath": "/opt/local/conda/envs/elements/bin/python"
 	}
 }

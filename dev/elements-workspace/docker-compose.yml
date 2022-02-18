@@ -7,7 +7,7 @@ version: "2.4"
 services:
   db:
     environment:
-      MYSQL_ROOT_PASSWORD: supersecretpw
+      MYSQL_ROOT_PASSWORD: simple
     image: datajoint/mysql:5.7
     networks:
       djelem:
@@ -17,6 +17,7 @@ services:
     restart: always
     volumes:
       - sqldata:/var/lib/mysql
+
   conda:
     build:
       context: ../elements-image
@@ -26,7 +27,7 @@ services:
         condition: service_started # service_healthy
     environment:
       DJ_HOST: db
-      DJ_PASS: supersecretpw
+      DJ_PASS: simple
       DJ_USER: root
       GITHUB_USER: ${GITHUB_USER:-datajoint}
     init: true
@@ -38,9 +39,11 @@ services:
       - ./dev-container:/home/dj/datajoint-elements
       - vscode:/home/dj/.vscode-server/extensions
       - vscode-insiders:/home/dj/.vscode-server-insiders/extensions
+
 networks:
   djelem:
     name: datajoint-elements-net-djelem
+
 volumes:
   sqldata:
     name: datajoint-elements-vol-sqldata
