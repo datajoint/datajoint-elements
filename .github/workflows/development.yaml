@@ -31,13 +31,13 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: docs-static-datajoint-elements
-          path: .mkdocs/site
+          path: gh-pages/site
       - name: Commit documentation changes
         run: |
           git clone https://github.com/${GITHUB_REPOSITORY}.git \
               --branch gh-pages --single-branch gh-pages-branch
           rm -R gh-pages-branch/*
-          cp -r .mkdocs/site/* gh-pages-branch/
+          cp -r gh-pages/site/* gh-pages-branch/
           touch gh-pages-branch/.nojekyll
           echo "elements.datajoint.org" > gh-pages-branch/CNAME
           cd gh-pages-branch
