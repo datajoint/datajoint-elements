@@ -3,6 +3,8 @@ dev_addr: '0.0.0.0:8000'
 theme:
   name: cinder
   custom_dir: themes/cinder-theme-ext
+  disable_nav_previous_next: true
+  disable_nav_search: false
 nav:
   - About: index.md
   - Usage:
@@ -12,6 +14,7 @@ nav:
     - glossary.md
   - 'Community':
     - community/publications.md
+    - community/projects.md
     - community/contribute.md
   - 'Management and Policies':
     - management/plan.md

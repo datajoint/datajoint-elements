@@ -404,7 +404,7 @@
     under `custom/ephys_root_data_dir` variable.
 
   - The `subject` directory names must match the identifiers of your subjects
-    in the [subjects.csv](./user_data/subjects.csv) script.
+    in the `subjects.csv script` (`./user_data/subjects.csv`).
 
   - The `session` directories can have any naming convention.
 
@@ -458,7 +458,7 @@
     `dj_local_conf.json`, under the `custom/imaging_root_data_dir` variable
 
   - The `subject` directory names must match the identifiers of your subjects
-    in the [subjects.csv](./user_data/subjects.csv) script
+    in the `subjects.csv` script (`./user_data/subjects.csv`).
 
   - The `session` directories can have any naming convention
   - Each `session` directory should contain:

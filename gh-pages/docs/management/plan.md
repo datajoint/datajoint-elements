@@ -10,6 +10,6 @@ The following sections provide detailed information.
 - [Project Governance](governance.md)
 - [Project Selection Process](selection.md)
 - [Quality Assurance](quality-assurance.md)
-- [Contribution Guideline](contribute.md)
+- [Contribution Guideline](../community/contribute.md)
 - [Outreach Plan](outreach.md)
 - [Licenses and User Agreements](licenses.md)
