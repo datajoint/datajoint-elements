@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "datajoint-elements (remote)"
+		},
+		{
+			"path": "elements",
+			"name": "elements-dev"
+		},
+		{
+			"path": "workflows",
+			"name": "workflows-dev"
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "/opt/local/conda/envs/elements/bin/python"
+	}
+}
