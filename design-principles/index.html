@@ -69,6 +69,72 @@
                 <ul class="nav navbar-nav">
                 
                 
+                    <li >
+                        <a href="..">About</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usage <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Design Principles</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../adopt/">Adopt</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../install/">Setup</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../glossary/">Glossary</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../community/publications/">Publications</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../community/projects/">Projects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../community/contribute/">Contribution Guideline</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management and Policies <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -105,12 +171,6 @@
                         
                             
 <li >
-    <a href="../management/contribute/">Contribution Guideline</a>
-</li>
-
-                        
-                            
-<li >
     <a href="../management/outreach/">Outreach Plan</a>
 </li>
 
@@ -126,38 +186,8 @@
                 
                 
                 
-                    <li class="active">
-                        <a href="./">Design Principles</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../glossary/">Glossary</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../adopt/">Adopt</a>
-                    </li>
-                
-                
-                
                     <li >
                         <a href="../support/">Support</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../publications/">Publications</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../projects/">Projects</a>
                     </li>
                 
                 
@@ -193,25 +223,25 @@
 <h1 id="design-principles">Design Principles</h1>
 <p>The following conventions describe the Python implementation. Matlab conventions are similar and will be described separately.</p>
 <h2 id="datajoint-schemas">DataJoint Schemas</h2>
-<p>DataJoint allows creating <em>database schemas</em>, which are namespaces for collections of related tables. </p>
+<p>DataJoint allows creating <em>database schemas</em>, which are namespaces for collections of related tables.</p>
 <p>The following commands declare a new schema and create the object named <code>schema</code> to reference the database schema.</p>
 <pre><code class="language-python">import datajoint as dj
 schema = dj.schema('&lt;schema_name&gt;')
 </code></pre>
-<p>We follow the convention of having only one schema defined per Python module. 
-Then such a module becomes a "DataJoint schema" comprising a python module  with a corresponding database schema. </p>
-<p>The module's <code>schema</code> object is then used as the decorator for classes that define tables in the database. </p>
+<p>We follow the convention of having only one schema defined per Python module.
+Then such a module becomes a "DataJoint schema" comprising a python module with a corresponding database schema.</p>
+<p>The module's <code>schema</code> object is then used as the decorator for classes that define tables in the database.</p>
 <h2 id="elements">Elements</h2>
-<p>An Element is a software package defining one or more DataJoint schemas serving a particular purpose. 
+<p>An Element is a software package defining one or more DataJoint schemas serving a particular purpose.
 By convention, such packages are hosted in individual GitHub repositories.
-For example, Element <code>element_calcium_imaging</code> is hosted at <a href="https://github.com/datajoint/element-calcium-imaging">https://github.com/datajoint/element-calcium-imaging</a>, 
+For example, Element <code>element_calcium_imaging</code> is hosted at <a href="https://github.com/datajoint/element-calcium-imaging">https://github.com/datajoint/element-calcium-imaging</a>,
 and contains two DataJoint schemas: <code>scan</code> and <code>imaging</code>.</p>
 <h3 id="deferred-schemas">Deferred schemas</h3>
-<p>A <em>deferred schema</em> is one in which the name of the database schema name is not specified. 
-This module does not declare schema and tables upon import. 
-Instead, they are declared by calling <code>schema.activate('&lt;schema_name&gt;')</code> after import. </p>
-<p>By convention, all modules corresponding to deferred schema must declare the function <code>activate</code> which in turn calls <code>schema.activate</code>. </p>
-<p>Thus Element modules begin with </p>
+<p>A <em>deferred schema</em> is one in which the name of the database schema name is not specified.
+This module does not declare schema and tables upon import.
+Instead, they are declared by calling <code>schema.activate('&lt;schema_name&gt;')</code> after import.</p>
+<p>By convention, all modules corresponding to deferred schema must declare the function <code>activate</code> which in turn calls <code>schema.activate</code>.</p>
+<p>Thus Element modules begin with</p>
 <pre><code class="language-python">import datajoint as dj
 schema = dj.schema()
 
@@ -220,10 +250,10 @@ def activate(schema_name):
 </code></pre>
 <p>However, many activate functions perform other work associated with activating the schema such as activating other schemas upstream.</p>
 <h3 id="linking-module">Linking Module</h3>
-<p>To make the code more modular with fewer dependencies, Elements' modules do not <code>import</code> upstream schemas directly. 
-Instead, all required classes and functions  must be defined in a "linking module" and passed to the module's <code>activate</code> function.</p>
-<p>For instance, the <a href="https://github.com/datajoint/element-calcium-imaging/blob/main/element_calcium_imaging/scan.py"><code>element_calcium_imaging.scan</code></a> module receives 
-its required functions from the linking module passed into the module's <code>activate</code> function. 
+<p>To make the code more modular with fewer dependencies, Elements' modules do not <code>import</code> upstream schemas directly.
+Instead, all required classes and functions must be defined in a "linking module" and passed to the module's <code>activate</code> function.</p>
+<p>For instance, the <a href="https://github.com/datajoint/element-calcium-imaging/blob/main/element_calcium_imaging/scan.py"><code>element_calcium_imaging.scan</code></a> module receives
+its required functions from the linking module passed into the module's <code>activate</code> function.
 See the <a href="https://github.com/datajoint/workflow-calcium-imaging/blob/main/workflow_calcium_imaging/pipeline.py">corresponding workflow</a> for an example of how the linking module is passed into the Element's module.</p></div>
         
         

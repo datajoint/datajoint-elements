@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>Setup - DataJoint Elements</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">DataJoint Elements</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">About</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usage <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../design-principles/">Design Principles</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../adopt/">Adopt</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Setup</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../glossary/">Glossary</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../community/publications/">Publications</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../community/projects/">Projects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../community/contribute/">Contribution Guideline</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management and Policies <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../management/plan/">Management Plan</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../management/team/">Team</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../management/governance/">Project Governance</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../management/selection/">Project Selection Process</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../management/quality-assurance/">Quality Assurance</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../management/outreach/">Outreach Plan</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../management/licenses/">Licenses and User Agreements</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../support/">Support</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#setup-instructions-for-workflows-created-with-the-datajoint-elements">Setup instructions for workflows created with the DataJoint Elements</a></li>
+            <li class="second-level"><a href="#system-architecture">System architecture</a></li>
+                
+            <li class="second-level"><a href="#install-an-integrated-development-environment">Install an integrated development environment</a></li>
+                
+            <li class="second-level"><a href="#install-a-relational-database">Install a relational database</a></li>
+                
+            <li class="second-level"><a href="#install-a-version-control-system">Install a version control system</a></li>
+                
+            <li class="second-level"><a href="#install-a-virtual-environment">Install a virtual environment</a></li>
+                
+            <li class="second-level"><a href="#install-jupyter-notebook-packages">Install Jupyter Notebook packages</a></li>
+                
+            <li class="second-level"><a href="#clone-and-install-the-relevant-repository">Clone and install the relevant repository</a></li>
+                
+            <li class="second-level"><a href="#set-up-a-connection-to-the-database-server">Set up a connection to the database server</a></li>
+                
+            <li class="second-level"><a href="#setup-complete">Setup complete</a></li>
+                
+            <li class="second-level"><a href="#download-example-data">Download example data</a></li>
+                
+            <li class="second-level"><a href="#directory-structure-and-file-naming-convention">Directory structure and file naming convention</a></li>
+                
+            <li class="second-level"><a href="#interacting-with-the-datajoint-workflow">Interacting with the DataJoint workflow</a></li>
+                
+            <li class="second-level"><a href="#datajoint-labbook">DataJoint LabBook</a></li>
+                
+            <li class="second-level"><a href="#developer-guide">Developer guide</a></li>
+                
+                <li class="third-level"><a href="#development-mode-installation">Development mode installation</a></li>
+                <li class="third-level"><a href="#optionally-drop-all-schemas">Optionally drop all schemas</a></li>
+                <li class="third-level"><a href="#run-integration-tests">Run integration tests</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="setup-instructions-for-workflows-created-with-the-datajoint-elements">Setup instructions for workflows created with the DataJoint Elements</h1>
+<ul>
+<li>The following document describes the steps to setup a development environment
+  so that you can use the DataJoint Elements to build and run a workflow on your
+  local machine.</li>
+</ul>
+<ul>
+<li>The DataJoint Elements can be combined together to create a workflow that
+  matches your experimental setup. We have created example workflows (e.g.
+  <code>workflow-array-ephys</code>, <code>workflow-calcium-imaging</code>) for your reference. In this
+  tutorial we will install these example DataJoint workflows.</li>
+</ul>
+<ul>
+<li>These instructions can be adapted for your custom DataJoint workflow.</li>
+</ul>
+<ul>
+<li>There are several ways to create a development environment. Here we will
+  discuss one method in detail, and will highlight other methods along the way.
+  If you have already set up certain components, feel free to skip those sections.</li>
+</ul>
+<ul>
+<li>You will need administrative privileges on your system for the following setup
+  instructions.</li>
+</ul>
+<h2 id="system-architecture">System architecture</h2>
+<p><img alt="Architecture" src="../img/install_architecture.png" /></p>
+<ul>
+<li>The above diagram describes the general components for a local DataJoint
+  development environment.</li>
+</ul>
+<h2 id="install-an-integrated-development-environment">Install an integrated development environment</h2>
+<ul>
+<li>DataJoint development and use can be done with a plain text editor in the
+  terminal. However, an integrated development environment (IDE) can improve your
+  experience. Several IDEs are available.</li>
+</ul>
+<ul>
+<li>In this setup example, we will use Microsoft's Visual Studio Code.
+  <a href="https://code.visualstudio.com/download">Installation instructions here</a></li>
+</ul>
+<h2 id="install-a-relational-database">Install a relational database</h2>
+<ul>
+<li>A key feature of DataJoint is the ability to connect with a database server
+  from a scientific programming environment (i.e., Python or MATLAB) so that your
+  experimental data can be stored in the database and downloaded from the
+  database.</li>
+</ul>
+<ul>
+<li>There are several options if you would like to install a local relational
+  database server + <a href="https://github.com/datajoint/mysql-docker">Docker image for MySQL server configured for use with DataJoint</a><pre><code>+ [Install MariaDB server](https://mariadb.com/kb/en/binary-packages/)
+</code></pre>
+</li>
+</ul>
+<ul>
+<li>Alternatively, for simplicity of this tutorial you can use the DataJoint
+  Playground tutorial database located at <code>tutorial-db.datajoint.io</code> which has
+  already been configured. Please note that the tutorial database should not be
+  used for your experimental analysis as the storage is not persistent.</li>
+</ul>
+<h2 id="install-a-version-control-system">Install a version control system</h2>
+<ul>
+<li>Git is an open-source, distributed version control system for collaborating
+  with software development. GitHub is a platform that hosts projects managed
+  with Git. As the example DataJoint workflows are hosted on GitHub, we will use
+  Git to clone (i.e., download) this repository.</li>
+</ul>
+<ul>
+<li>For your own DataJoint workflow development we recommended that you use Git
+  and GitHub for collaboration.</li>
+</ul>
+<ul>
+<li>Many systems come preinstalled with Git. You can test if Git is already
+  installed by typing <code>git</code> in a terminal window.</li>
+</ul>
+<ul>
+<li>If Git is not installed on your system, <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install Git</a>.</li>
+</ul>
+<h2 id="install-a-virtual-environment">Install a virtual environment</h2>
+<ul>
+<li>A virtual environment allows you to install the packages required for a
+  specific project within an isolated environment on your computer.</li>
+</ul>
+<ul>
+<li>It is highly recommended (though not strictly required) to create a virtual
+  environment to run the workflow.</li>
+</ul>
+<ul>
+<li>Conda and virtualenv are virtual environment managers and you can use either
+  option. Below you will find instructions for conda.<pre><code>+ Miniconda is a minimal installer for conda.  Follow the [installer instructions](
+    https://conda.io/en/latest/miniconda.html) for your operating system.
+
++ You may need to add the Miniconda directory to the PATH environment
+    variable
+
+    + First locate the Miniconda directory
+
+    + Then modify and run the following command
+        ```bash
+        export PATH="&lt;absolute-path-to-miniconda-directory&gt;/bin:$PATH"
+        ```
++ Create a new conda environment
+    ```bash
+    conda create -n &lt;environment_name&gt; python=&lt;version&gt;
+    ```
+
+    + Example command to create a conda environment
+        ```bash
+        conda create -n workflow-array-ephys python=3.8.11
+        ```
+
++ Activate the conda environment
+    ```bash
+    conda activate &lt;environment_name&gt;
+    ```
+</code></pre>
+</li>
+</ul>
+<h2 id="install-jupyter-notebook-packages">Install Jupyter Notebook packages</h2>
+<ul>
+<li>
+<p>Install the following, if you are using Jupyter Notebook.</p>
+<p><code>bash
+conda install jupyter ipykernel nb_conda_kernels</code></p>
+</li>
+</ul>
+<ul>
+<li>Install the following, for <code>dj.Diagram</code> to render.
+  <code>bash
+  conda install graphviz python-graphviz pydotplus</code></li>
+</ul>
+<h2 id="clone-and-install-the-relevant-repository">Clone and install the relevant repository</h2>
+<ul>
+<li>
+<p>In a terminal window and change the directory to where you want to clone
+  the repository</p>
+<p><code>bash
+cd ~/Projects</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Clone the relevant repository, often one of the workflows</p>
+<p><code>bash
+git clone https://github.com/datajoint/&lt;repository&gt;</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Change into the cloned directory</p>
+<p><code>bash
+cd &lt;repository&gt;</code></p>
+</li>
+</ul>
+<ul>
+<li>From the root of the cloned repository directory. Note: the <code>-e</code> flag, which will
+  will install this repository in editable mode, in case there's a need to modify the
+  code (e.g. the workflow <code>pipeline.py</code> or <code>paths.py</code> scripts). If no such
+  modification is required, using <code>pip install .</code> is sufficient.
+  <code>bash
+   pip install -e .</code></li>
+<li>
+<p>Install <code>element-interface</code>, which contains scripts to load data for many of our
+  Elements, and all workflows</p>
+<p><code>bash
+pip install "element-interface @ git+https://github.com/datajoint/element-interface"</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Items specific to <code>workflow-calcium-imaging</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<ul>
+<li><code>element-interface</code> can also be used to install packages used for reading
+  acquired data (e.g., <code>scanreader</code>) and running analyses (e.g., <code>CaImAn</code>).</li>
+</ul>
+<ul>
+<li>
+<p>Install <code>element-interface</code> with <code>scanreader</code></p>
+<p><code>bash
+pip install "element-interface[scanreader] @ git+https://github.com/datajoint/element-interface"</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Install <code>element-interface</code> with <code>sbxreader</code></p>
+<p><code>bash
+pip install "element-interface[sbxreader] @ git+https://github.com/datajoint/element-interface"</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Install <code>element-interface</code> with <code>Suite2p</code></p>
+<p><code>bash
+pip install "element-interface[suite2p] @ git+https://github.com/datajoint/element-interface"</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Install <code>element-interface</code> with <code>CaImAn</code> requires two separate commands</p>
+<p><code>bash
+pip install "element-interface[caiman_requirements] @ git+https://github.com/datajoint/element-interface"
+pip install "element-interface[caiman] @ git+https://github.com/datajoint/element-interface"</code></p>
+</li>
+</ul>
+<ul>
+<li>Example <code>element-interface</code> installation with multiple packages
+<code>bash pip install "element-interface[caiman_requirements] @ git+https://github.com/datajoint/element-interface" pip install "element-interface[scanreader,sbxreader,suite2p,caiman] @ git+https://github.com/datajoint/element-interface"</code>
+</details></li>
+</ul>
+</li>
+</ul>
+<h2 id="set-up-a-connection-to-the-database-server">Set up a connection to the database server</h2>
+<ul>
+<li>
+<p>One way to set up a connection to the database server with DataJoint is to
+  create a local configuration file (i.e., <code>dj_local_conf.json</code>) at the root of the
+  repository folder, with the following template:</p>
+<p><code>json
+{
+  "database.host": "&lt;hostname&gt;",
+  "database.user": "&lt;username&gt;",
+  "database.password": "&lt;password&gt;",
+  "loglevel": "INFO",
+  "safemode": true,
+  "display.limit": 7,
+  "display.width": 14,
+  "display.show_tuple_count": true,
+  "custom": {
+    "database.prefix": "&lt;username_&gt;"
+  }
+}</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Specify the database's <code>hostname</code>, <code>username</code>, and <code>password</code>.</p>
+<ul>
+<li>If using the
+  <a href="https://github.com/datajoint/mysql-docker">Docker image for MySQL server configured for use with DataJoint</a> then the <code>hostname</code> will be
+  <code>localhost</code>.</li>
+</ul>
+<ul>
+<li>If using the tutorial database, the <code>hostname</code> will be
+  <code>tutorial-db.datajoint.io</code>. And the <code>username</code> and <code>password</code> will be the
+  credentials for your <a href="https://accounts.datajoint.io">DataJoint account</a>.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>Specify a <code>database.prefix</code> which will be the prefix for your schema names.</p>
+<ul>
+<li>For a local setup, it can be set as you see fit (e.g., <code>neuro_</code>).</li>
+</ul>
+<ul>
+<li>For the <code>tutorial-db</code> database, you will use your DataJoint username.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Specific workflows will require additional information in the custom field, including
+  paths to data directories, following the convention described in the
+  <a href="#directory-structure-and-file-naming-convention">directory structure section</a>. If
+  multiple root directories exist, include all in the relevant json array.<pre><code>+ `workflow-array-ephys`
+    &lt;details&gt;
+    &lt;summary&gt;Click to expand&lt;/summary&gt;
+
+    ```json
+    "custom": {
+        "database.prefix": "&lt;username_&gt;",
+        "ephys_root_data_dir": ["Full path to root directory of raw data",
+                                "Full path to root directory of processed data"]
+        }
+    ```
+    &lt;/details&gt;
+
++ `workflow-calcium-imaging`
+    &lt;details&gt;
+    &lt;summary&gt;Click to expand&lt;/summary&gt;
+
+    ```json
+    "custom": {
+        "database.prefix": "&lt;username_&gt;",
+        "imaging_root_data_dir": ["Full path to root directory of raw data",
+                                  "Full path to root directory of processed data"]
+        }
+    ```
+    &lt;/details&gt;
+
++ `workflow-trial`
+    &lt;details&gt;
+    &lt;summary&gt;Click to expand&lt;/summary&gt;
+
+    ```json
+    "custom": {
+        "database.prefix": "&lt;username_&gt;",
+        "trial_root_data_dir": ["Full path to root directory of raw data",
+                                "Full path to root directory of processed data"]
+        }
+    ```
+    &lt;/details&gt;
+
++ `workflow-deeplabcut`
+    &lt;details&gt;
+    &lt;summary&gt;Click to expand&lt;/summary&gt;
+
+    ```json
+    "custom": {
+        "database.prefix": "&lt;username_&gt;",
+        "beh_root_data_dir": ["Full path to root directory of raw data",
+                              "Full path to root directory of processed data"]
+        }
+    ```
+    &lt;/details&gt;
+</code></pre>
+</li>
+</ul>
+<h2 id="setup-complete">Setup complete</h2>
+<ul>
+<li>At this point the setup of this workflow is complete.</li>
+</ul>
+<h2 id="download-example-data">Download example data</h2>
+<ul>
+<li>We provide example data to use with the example DataJoint workflows.</li>
+</ul>
+<ul>
+<li>The data is hosted on DataJoint's Archive which is an AWS storage and can be
+  download with <a href="https://github.com/datajoint/djarchive-client">djarchive-client</a>.</li>
+</ul>
+<ul>
+<li>
+<p>Install <code>djarchive-client</code></p>
+<p><code>bash
+pip install git+https://github.com/datajoint/djarchive-client.git</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>In your python interpreter, import the client</p>
+<p><code>python
+import djarchive_client
+client = djarchive_client.client()</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Browse the available datasets</p>
+<p><code>python
+list(client.datasets())</code></p>
+</li>
+</ul>
+<ul>
+<li>Each datasets has different versions associated with the version of the
+  workflow package. Browse the revisions.
+  <code>python list(client.revisions())</code></li>
+</ul>
+<ul>
+<li>
+<p>Prepare a directory to store the download data, for example in <code>/tmp</code></p>
+<p><code>bash
+mkdir /tmp/example_data</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Download a given dataset</p>
+<p><code>python
+client.download('&lt;workflow-dataset&gt;',
+                target_directory='/tmp/example_data',
+                revision='&lt;revision&gt;')</code></p>
+</li>
+</ul>
+<ul>
+<li>We will use this data as an example for the tutorial notebooks for each
+  workflow. If you want to use for own dataset for the workflow, change the path
+  accordingly.</li>
+</ul>
+<ul>
+<li>
+<p>Directory organization</p>
+<ul>
+<li>
+<p><code>workflow-array-ephys</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<p><code>/tmp/example_data/
+- subject6
+    - session1
+        - towersTask_g0_imec0
+        - towersTask_g0_t0_nidq.meta
+        - towersTask_g0_t0.nidq.bin</code></p>
+<ul>
+<li>The example subject6/session1 data was recorded with SpikeGLX and
+  processed with Kilosort2.</li>
+</ul>
+<ul>
+<li>
+<p><code>element-array-ephys</code> and <code>workflow-array-ephys</code> also support data
+  recorded with OpenEphys.</p>
+</details>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p><code>workflow-calcium-imaging</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<p><code>/tmp/example_data/
+- subject3/
+    - 210107_run00_orientation_8dir/
+        - run00_orientation_8dir_000_000.sbx
+        - run00_orientation_8dir_000_000.mat
+        - suite2p/
+            - combined
+            - plane0
+            - plane1
+            - plane2
+            - plane3
+- subject7/
+    - session1
+        - suite2p
+            - plane0</code></p>
+<ul>
+<li>The example subject3 data was recorded with Scanbox and processed with
+  Suite2p.</li>
+</ul>
+<ul>
+<li>The example subject7 data was recorded with ScanImage and processed
+  with Suite2p.</li>
+</ul>
+<ul>
+<li>
+<p><code>element-calcium-imaging</code> and <code>workflow-calcium-imaging</code> also support
+  data processed with CaImAn.</p>
+</details>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="directory-structure-and-file-naming-convention">Directory structure and file naming convention</h2>
+<ul>
+<li>The workflow presented here is designed to work with the directory structure
+  and file naming convention as described below.</li>
+</ul>
+<ul>
+<li>
+<p><code>workflow-array-ephys</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<ul>
+<li>The <code>ephys_root_data_dir</code> is configurable in the <code>dj_local_conf.json</code>,
+  under <code>custom/ephys_root_data_dir</code> variable.</li>
+</ul>
+<ul>
+<li>The <code>subject</code> directory names must match the identifiers of your subjects
+  in the <code>subjects.csv script</code> (<code>./user_data/subjects.csv</code>).</li>
+</ul>
+<ul>
+<li>The <code>session</code> directories can have any naming convention.</li>
+</ul>
+<ul>
+<li>Each session can have multiple probes, the <code>probe</code> directories must match
+  the following naming convention:<pre><code>`*[0-9]` (where `[0-9]` is a one digit number specifying the probe
+number)
+</code></pre>
+</li>
+</ul>
+<ul>
+<li>
+<p>Each <code>probe</code> directory should contain:</p>
+<ul>
+<li>
+<p>One neuropixels meta file, with the following naming convention:</p>
+<p><code>*[0-9].ap.meta</code></p>
+</li>
+</ul>
+<ul>
+<li>Potentially one Kilosort output folder</li>
+</ul>
+</li>
+</ul>
+<p><code>&lt;ephys_root_data_dir&gt;/
+└───&lt;subject1&gt;/                       # Subject name in `subjects.csv`
+│   └───&lt;session0&gt;/                   # Session directory in `sessions.csv`
+│   │   └───imec0/
+│   │   │   │   *imec0.ap.meta
+│   │   │   └───ksdir/
+│   │   │       │   spike_times.npy
+│   │   │       │   templates.npy
+│   │   │       │   ...
+│   │   └───imec1/
+│   │       │   *imec1.ap.meta
+│   │       └───ksdir/
+│   │           │   spike_times.npy
+│   │           │   templates.npy
+│   │           │   ...
+│   └───&lt;session1&gt;/
+│   │   │   ...
+└───&lt;subject2&gt;/
+│   │   ...</code></p>
+</details>
+</li>
+</ul>
+<ul>
+<li>
+<p><code>workflow-calcium-imaging</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<ul>
+<li>Note: the <code>element-calcium-imaging</code> is designed to accommodate multiple
+  scans per session, however, in this particular <code>workflow-calcium-imaging</code>,
+  we take the assumption that there is only one scan per session.</li>
+</ul>
+<ul>
+<li>The <code>imaging_root_data_dir</code> directory is configurable in the
+  <code>dj_local_conf.json</code>, under the <code>custom/imaging_root_data_dir</code> variable</li>
+</ul>
+<ul>
+<li>The <code>subject</code> directory names must match the identifiers of your subjects
+  in the <code>subjects.csv</code> script (<code>./user_data/subjects.csv</code>).</li>
+</ul>
+<ul>
+<li>The <code>session</code> directories can have any naming convention</li>
+<li>
+<p>Each <code>session</code> directory should contain:</p>
+<ul>
+<li>All <code>.tif</code> or <code>.sbx</code> files for the scan, with any naming convention</li>
+</ul>
+<ul>
+<li>One <code>suite2p</code> subfolder per <code>session</code> folder, containing the <code>Suite2p</code>
+  analysis outputs</li>
+</ul>
+<ul>
+<li>One <code>caiman</code> subfolder per <code>session</code> folder, containing the <code>CaImAn</code>
+  analysis output <code>.hdf5</code> file, with any naming convention</li>
+</ul>
+</li>
+</ul>
+<p><code>imaging_root_data_dir/
+└───&lt;subject1&gt;/                     # Subject name in `subjects.csv`
+│   └───&lt;session0&gt;/                 # Session directory in `sessions.csv`
+│   │   │   scan_0001.tif
+│   │   │   scan_0002.tif
+│   │   │   scan_0003.tif
+│   │   │   ...
+│   │   └───suite2p/
+│   │       │   ops1.npy
+│   │       └───plane0/
+│   │       │   │   ops.npy
+│   │       │   │   spks.npy
+│   │       │   │   stat.npy
+│   │       │   │   ...
+│   │       └───plane1/
+│   │           │   ops.npy
+│   │           │   spks.npy
+│   │           │   stat.npy
+│   │           │   ...
+│   │   └───caiman/
+│   │       │   analysis_results.hdf5
+│   └───&lt;session1&gt;/                 # Session directory in `sessions.csv`
+│   │   │   scan_0001.tif
+│   │   │   scan_0002.tif
+│   │   │   ...
+└───&lt;subject2&gt;/                     # Subject name in `subjects.csv`
+│   │   ...</code></p>
+</details>
+</li>
+</ul>
+<h2 id="interacting-with-the-datajoint-workflow">Interacting with the DataJoint workflow</h2>
+<ul>
+<li>
+<p>Connect to the database and import tables</p>
+<p><code>python
+from &lt;relevant-workflow&gt;.pipeline import *</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>View the declared tables</p>
+<ul>
+<li>
+<p><code>workflow-array-ephys</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<p><code>python
+subject.Subject()
+session.Session()
+ephys.ProbeInsertion()
+ephys.EphysRecording()
+ephys.Clustering()
+ephys.Clustering.Unit()</code></p>
+</details>
+</li>
+</ul>
+<ul>
+<li>
+<p><code>workflow-calcium-imaging</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<p><code>python
+subject.Subject()
+session.Session()
+scan.Scan()
+scan.ScanInfo()
+imaging.ProcessingParamSet()
+imaging.ProcessingTask()</code></p>
+</details>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>For an in depth explanation of how to run the workflows and explore the data,
+  please refer to the following workflow specific Jupyter notebooks. + <code>workflow-array-ephys</code> <a href="https://github.com/datajoint/workflow-array-ephys/tree/main/notebooks">Jupyter notebooks</a> + <code>workflow-calcium-imaging</code> <a href="https://github.com/datajoint/workflow-calcium-imaging/tree/main/notebooks">Jupyter notebooks</a></li>
+</ul>
+<h2 id="datajoint-labbook">DataJoint LabBook</h2>
+<p><img alt="LabBook GIF" src="https://github.com/datajoint/datajoint-labbook/blob/master/docs/sphinx/_static/images/walkthroughDemoOptimized.gif" /></p>
+<ul>
+<li>DataJoint LabBook is a graphical user interface to facilitate working with
+  DataJoint tables.</li>
+</ul>
+<ul>
+<li><a href="https://datajoint.github.io/datajoint-labbook/">DataJoint LabBook Documentation</a>, including prerequisites, installation, and running the application</li>
+</ul>
+<ul>
+<li><a href="https://github.com/datajoint/datajoint-labbook">DataJoint LabBook GitHub Repository</a></li>
+</ul>
+<h2 id="developer-guide">Developer guide</h2>
+<h3 id="development-mode-installation">Development mode installation</h3>
+<ul>
+<li>This method allows you to modify the source code for example DataJoint
+  workflows (e.g. <code>workflow-array-ephys</code>, <code>workflow-calcium-imaging</code>) and their
+  dependencies (i.e., DataJoint Elements).</li>
+</ul>
+<ul>
+<li>Launch a new terminal and change directory to where you want to clone the
+  repositories
+  <code>bash cd ~/Projects</code></li>
+</ul>
+<ul>
+<li>
+<p><code>workflow-array-ephys</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<ul>
+<li>
+<p>Clone the repositories</p>
+<p><code>bash
+git clone https://github.com/datajoint/element-lab
+git clone https://github.com/datajoint/element-animal
+git clone https://github.com/datajoint/element-session
+git clone https://github.com/datajoint/element-interface
+git clone https://github.com/datajoint/element-array-ephys
+git clone https://github.com/datajoint/workflow-array-ephys</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Install each package with the <code>-e</code> option</p>
+<p><code>bash
+pip install -e ./element-lab
+pip install -e ./element-animal
+pip install -e ./element-session
+pip install -e ./element-interface
+pip install -e ./element-array-ephys
+pip install -e ./workflow-array-ephys</code></p>
+</details>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p><code>workflow-calcium-imaging</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<ul>
+<li>
+<p>Clone the repositories</p>
+<p><code>bash
+git clone https://github.com/datajoint/element-lab
+git clone https://github.com/datajoint/element-animal
+git clone https://github.com/datajoint/element-session
+git clone https://github.com/datajoint/element-interface
+git clone https://github.com/datajoint/element-calcium-imaging
+git clone https://github.com/datajoint/workflow-calcium-imaging</code></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Install each package with the <code>-e</code> option</p>
+<p><code>bash
+pip install -e ./element-lab
+pip install -e ./element-animal
+pip install -e ./element-session
+pip install -e ./element-interface
+pip install -e ./element-calcium-imaging
+pip install -e ./workflow-calcium-imaging</code></p>
+</details>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="optionally-drop-all-schemas">Optionally drop all schemas</h3>
+<ul>
+<li>If required to drop all schemas, the following is the dependency order.
+  Also refer to <code>notebooks/06-drop-optional.ipynb</code> within the respective
+  <code>workflow</code>.</li>
+</ul>
+<ul>
+<li>
+<p><code>workflow-array-ephys</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<p>```
+  from workflow_array_ephys.pipeline import *</p>
+<p>ephys.schema.drop()
+probe.schema.drop()
+session.schema.drop()
+subject.schema.drop()
+lab.schema.drop()</p>
+<p>```</p>
+</details>
+<p>```</p>
+</li>
+</ul>
+<ul>
+<li>
+<p><code>workflow-calcium-imaging</code>
+    <details>
+    <summary>Click to expand details</summary></p>
+<p>```
+  from workflow_calcium_imaging.pipeline import *</p>
+<p>imaging.schema.drop()
+scan.schema.drop()
+session.schema.drop()
+subject.schema.drop()
+lab.schema.drop()</p>
+<p>```</p>
+<p></details>
+```</p>
+</li>
+</ul>
+<h3 id="run-integration-tests">Run integration tests</h3>
+<ul>
+<li>Download the test dataset to your local machine. Note the directory where the
+  dataset is saved (e.g. <code>/tmp/testset</code>).</li>
+</ul>
+<ul>
+<li>Create an <code>.env</code> file with the following content. Replace <code>/tmp/testset</code>
+  with the directory where you have the test dataset downloaded.
+  <code>TEST_DATA_DIR=/tmp/testset</code></li>
+</ul>
+<ul>
+<li>If testing an unreleased version of the <code>element</code> or your fork of an <code>element</code>
+  or the <code>workflow</code>, within the <code>Dockerfile</code> uncomment the lines from the
+  different options presented. This will allow you to install the repositories
+  of interest and run the integration tests on those packages. Be sure that the
+  <code>element</code> package version matches the version in the <code>requirements.txt</code> of the
+  <code>workflow</code>.</li>
+</ul>
+<ul>
+<li>Run the Docker container.
+  <code>docker-compose -f docker-compose-test.yaml up --build</code></li>
+</ul></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<hr>
+<p>
+<small>&copy; DataJoint, 2022.</small>
+
+</p>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

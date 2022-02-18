@@ -69,6 +69,72 @@
                 <ul class="nav navbar-nav">
                 
                 
+                    <li >
+                        <a href="../..">About</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usage <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../design-principles/">Design Principles</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../adopt/">Adopt</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../install/">Setup</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../glossary/">Glossary</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../community/publications/">Publications</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../community/projects/">Projects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../community/contribute/">Contribution Guideline</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management and Policies <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -105,12 +171,6 @@
                         
                             
 <li >
-    <a href="../contribute/">Contribution Guideline</a>
-</li>
-
-                        
-                            
-<li >
     <a href="../outreach/">Outreach Plan</a>
 </li>
 
@@ -127,37 +187,7 @@
                 
                 
                     <li >
-                        <a href="../../design-principles/">Design Principles</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../../glossary/">Glossary</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../../adopt/">Adopt</a>
-                    </li>
-                
-                
-                
-                    <li >
                         <a href="../../support/">Support</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../../publications/">Publications</a>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../../projects/">Projects</a>
                     </li>
                 
                 
@@ -224,7 +254,7 @@
 <p>When introducing new code to the code base, the following will be required for acceptance by DataJoint core team into the main code repository.</p>
 <ul>
 <li><strong>Independence</strong>: Proposed changes should not directly alter the code base in the review process. New changes should be applied separately on a copy of the code base and proposed for review by the DataJoint core team. For example, apply changes on a GitHub fork and open a pull request targeting the <code>main</code> branch once ready for review.</li>
-<li><strong>Etiquette</strong>: An author who has requested for a code for review should not accept and merge their own code to the code base. A reviewer should not commit any suggestions directly to the authors proposed changes but rather should allow the author to review. </li>
+<li><strong>Etiquette</strong>: An author who has requested for a code for review should not accept and merge their own code to the code base. A reviewer should not commit any suggestions directly to the authors proposed changes but rather should allow the author to review.</li>
 <li><strong>Coding Standards</strong>: Ensure the above coding standards are respected.</li>
 <li><strong>Summary</strong>: A description should be included that summarizes and highlights the notable changes that are being proposed.</li>
 <li><strong>Issue Reference</strong>: Any bugs or feature requests that have been filed in the issue tracker that would be resolved by acceptance should be properly linked and referenced.</li>
@@ -245,14 +275,14 @@
 <ul>
 <li>Able to connect the Element(s) to existing pipeline and all schemas/tables declared without errors</li>
 <li>Successful ingestion of data for at least 2 experimental sessions</li>
-<li>Inspection/verification that the data are ingested correctly by the participating lab/group - e.g. manual inspection of ingested traces, plotting of spatial footprints, spike trains, etc. to confirm correctness of ingested data </li>
+<li>Inspection/verification that the data are ingested correctly by the participating lab/group - e.g. manual inspection of ingested traces, plotting of spatial footprints, spike trains, etc. to confirm correctness of ingested data</li>
 </ul>
 <h2 id="beta-release-process">Beta Release Process</h2>
 <p>After the initial validation phase, we make the workflows available to the general public with a warning of <em>Beta</em> status and that the released code may be subject to errors and changes. During this phase, feature development should be complete with a focus on collecting user feedback to make design improvements and bug fixes.</p>
 <h2 id="official-release-process">Official Release Process</h2>
 <p>After gaining confidence of user satisfaction by resolving concerns raised in <em>Beta</em>, the workflows are declared officially released and announced to the community.</p>
 <h2 id="maintenance-support-lifecycle">Maintenance Support Lifecycle</h2>
-<p>Revision of the workflows will be released with a version specification that clearly identifies whether in <em>Alpha</em>, <em>Beta</em>, or <em>Official</em> release status. Quality assurance process will be followed for all iterations and new designs. If the updates require changes in the design of the database schema or formats, a process for data migration will be provided. </p>
+<p>Revision of the workflows will be released with a version specification that clearly identifies whether in <em>Alpha</em>, <em>Beta</em>, or <em>Official</em> release status. Quality assurance process will be followed for all iterations and new designs. If the updates require changes in the design of the database schema or formats, a process for data migration will be provided.</p>
 <h2 id="user-feedback-issue-tracking">User Feedback &amp; Issue Tracking</h2>
 <p>All components will be organized in GitHub repositories with guidelines for contribution, feedback, and issue submission to the issue tracker. For more information on the general policy around issue filing, tracking, and escalation, see the <a href="https://docs.datajoint.io/python/community/02-Contribute.html">DataJoint Open-Source Contribute</a> policy. Typically issues will be prioritized based on their criticality and impact. If new feature requirements become apparent, this may trigger the creation of a separate workflow or a major revision of an existing workflow.</p></div>
         
