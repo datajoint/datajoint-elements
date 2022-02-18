@@ -4,7 +4,6 @@ Thank you for your interest in engineering support for DataJoint Elements adopti
 
 Please provide the following information.
 
-
 <form name="contact-form" action="https://datajoint.io/api/element-validation-site-request" method="post">
     <section>
         <div style="float:left;margin-right:20px;">
@@ -50,7 +49,7 @@ Please provide the following information.
     </section>
     <section>
         <div style="float:left;margin-right:20px;">
-            <label for="mysql_setup">Do you prefer to setup a database server yourself (on premises or cloud) or use DataJoint Neuro managed cloud hosting?</label>
+            <label for="mysql_setup">Do you prefer to setup a database server yourself (on premises or cloud) or use DataJoint&reg; managed cloud hosting?</label>
             <br>
             <input name="mysql_setup" type="text" id="mysql_setup" size="67">
         </div>

@@ -6,10 +6,10 @@ DataJoint Elements has established a Resource Management Plan to select projects
 
 The following sections provide detailed information.
 
-* [Team](team.md)
-* [Project Governance](governance.md)
-* [Project Selection Process](selection.md)
-* [Quality Assurance](quality-assurance.md)
-* [Contribution Guideline](contribute.md)
-* [Outreach Plan](outreach.md)
-* [Licenses and User Agreements](licenses.md)
+- [Team](team.md)
+- [Project Governance](governance.md)
+- [Project Selection Process](selection.md)
+- [Quality Assurance](quality-assurance.md)
+- [Contribution Guideline](contribute.md)
+- [Outreach Plan](outreach.md)
+- [Licenses and User Agreements](licenses.md)

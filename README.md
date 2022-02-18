@@ -2,20 +2,13 @@
 
 ![Logo](https://github.com/datajoint/datajoint.org/blob/main/static/images/elements-logo.png)
 
-This resource ("Resource") provides an efficient approach for neuroscience labs to create and manage _scientific data workflows_: the complex multi-step methods for data collection, preparation, processing, analysis, and modeling that researchers must perform in the course of an experimental study. The work is derived from the developments in leading neuroscience projects and uses the [DataJoint framework](https://datajoint.org) for defining, deploying, and sharing their data workflows.
-
-An overview of the principles of DataJoint workflows and the goals of DataJoint Elements are described in the position paper ["DataJoint Elements: Data Workflows for Neurophysiology"](https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
-
-# Project Structure
-
-- [Management and Policies](management/plan.md)
-- [Design Principles](design-principles.md)
-- [Guidelines for Adoption](adopt.md)
-- [Glossary](glossary.md)
-
-# Components
-
-The Resource provides the following main components:
+DataJoint Elements provides an efficient approach for neuroscience labs
+to create and manage _scientific data workflows_: the complex multi-step methods
+for data collection, preparation, processing, analysis, and modeling that
+researchers must perform in the course of an experimental study. The work is
+derived from the developments in leading neuroscience projects and uses the
+[DataJoint framework](https://datajoint.org) for defining, deploying, and
+sharing their data workflows.
 
 **_DataJoint_**
 
@@ -28,7 +21,18 @@ The Resource provides the following main components:
 > modalities of neurophysiology experiments + related documentation, tools, and
 > utilities.
 
-## Elements
+An overview of the principles of DataJoint workflows and the goals of DataJoint
+Elements are described in the position paper
+["DataJoint Elements: Data Workflows for Neurophysiology"](https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
+
+# Project Structure
+
+- [Management and Policies](management/plan.md)
+- [Design Principles](design-principles.md)
+- [Guidelines for Adoption](adopt.md)
+- [Glossary](glossary.md)
+
+## DataJoint Elements
 
 - [Lab management](https://github.com/datajoint/element-lab)
 - [Animal management](https://github.com/datajoint/element-animal)
@@ -41,7 +45,7 @@ The Resource provides the following main components:
 - [Miniscope imaging](https://github.com/datajoint/element-miniscope)
   - [Example workflow](https://github.com/datajoint/workflow-miniscope)
 
-## The DataJoint framework
+## DataJoint framework
 
 - [DataJoint for Python](https://github.com/datajoint/datajoint-python)
 - [DataJoint for MATLAB](https://github.com/datajoint/datajoint-matlab)
@@ -49,11 +53,13 @@ The Resource provides the following main components:
 - [DataJoint Tutorials](https://tutorials.datajoint.io)
 - [Docker image for MySQL server configured for use with DataJoint](https://github.com/datajoint/mysql-docker)
 
-## Interfaces
+## DataJoint Interfaces
 
-- [Pharus](https://github.com/datajoint/pharus) — a REST API for interacting with DataJoint databases
-- [DataJoint LabBook](https://github.com/datajoint/datajoint-labbook) — a front-end web interface for viewing and entering data
+- [Pharus](https://github.com/datajoint/pharus) — a REST API for interacting
+  with DataJoint databases
+- [DataJoint LabBook](https://github.com/datajoint/datajoint-labbook) — a
+  front-end web interface for viewing and entering data
 
-## Online Training
+## DataJoint Online Training
 
-- [DataJoint interactive online tutorials](https://playground.datajoint.io)
+- [DataJoint CodeBook](https://codebook.datajoint.io) - interactive online tutorials
