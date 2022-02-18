@@ -1,6 +1,6 @@
 # DataJoint Elements
 
-![Logo](https://github.com/datajoint/datajoint.org/blob/main/static/images/elements-logo.png)
+![Logo](https://raw.githubusercontent.com/datajoint/datajoint.org/0a05cf5c2530a3595a13fc11f6abac64746d845d/static/images/elements-logo.png)
 
 DataJoint Elements provides an efficient approach for neuroscience labs
 to create and manage _scientific data workflows_: the complex multi-step methods
