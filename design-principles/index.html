@@ -69,12 +69,6 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li >
-                        <a href="..">About</a>
-                    </li>
-                
-                
-                
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usage <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -126,7 +120,13 @@
                         
                             
 <li >
-    <a href="../community/contribute/">Contribution Guideline</a>
+    <a href="../community/contribute/">Contribution Guidelines</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../community/support/">Support</a>
 </li>
 
                         
@@ -182,12 +182,6 @@
 
                         
                         </ul>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../support/">Support</a>
                     </li>
                 
                 
@@ -250,8 +244,8 @@ def activate(schema_name):
 </code></pre>
 <p>However, many activate functions perform other work associated with activating the schema such as activating other schemas upstream.</p>
 <h3 id="linking-module">Linking Module</h3>
-<p>To make the code more modular with fewer dependencies, Elements' modules do not <code>import</code> upstream schemas directly.
-Instead, all required classes and functions must be defined in a "linking module" and passed to the module's <code>activate</code> function.</p>
+<p>To make the code more modular with fewer dependencies, Elements' modules do not <code>import</code> upstream schemas directly. 
+Instead, all required classes and functions must be defined in a <code>linking_module</code> and passed to the module's <code>activate</code> function.</p>
 <p>For instance, the <a href="https://github.com/datajoint/element-calcium-imaging/blob/main/element_calcium_imaging/scan.py"><code>element_calcium_imaging.scan</code></a> module receives
 its required functions from the linking module passed into the module's <code>activate</code> function.
 See the <a href="https://github.com/datajoint/workflow-calcium-imaging/blob/main/workflow_calcium_imaging/pipeline.py">corresponding workflow</a> for an example of how the linking module is passed into the Element's module.</p></div>
