@@ -6,7 +6,6 @@ theme:
   disable_nav_previous_next: true
   disable_nav_search: false
 nav:
-  - About: index.md
   - Usage:
     - design-principles.md
     - adopt.md
