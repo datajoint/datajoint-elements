@@ -16,4 +16,4 @@ We have a general policy for DataJoint open-source [community engagement](
 + Open-ended discussions: [DataJoint Slack](
      https://join.slack.com/t/datajoint/shared_invite/enQtMjkwNjQxMjI5MDk0LWIzN2ExYzBiM2NlODQxN2YxODAxNWQwOWVkNjVmZDkzYzEwMjM5OWJkM2EwYTRhYmRiZDgxMjUzYjBlZWVjMzA)
 
-For fully managed services, we invite you to review the [DataJoint Solutions](https://www.datajoint.com/solutions) page and request more information.
+For fully managed services, we invite you to visit the [DataJoint Solutions](https://www.datajoint.com/solutions) page and request more information.
