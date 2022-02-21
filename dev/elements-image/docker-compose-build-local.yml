@@ -1,0 +1,10 @@
+# COMPOSE_PROJECT_NAME=djelem docker-compose -f dev/elements-image/docker-compose-build-local.yml up -d --build --force-recreate
+# COMPOSE_PROJECT_NAME=djelem docker-compose -f dev/elements-image/docker-compose-build-local.yml down
+
+services:
+  image_build:
+    image: datajoint-elements:v0.0.0dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["conda", "info", "-a"]
