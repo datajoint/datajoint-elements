@@ -77,32 +77,32 @@
 - Conda and virtualenv are virtual environment managers and you can use either
   option. Below you will find instructions for conda.
 
-      + Miniconda is a minimal installer for conda.  Follow the [installer instructions](
-          https://conda.io/en/latest/miniconda.html) for your operating system.
+  + Miniconda is a minimal installer for conda.  Follow the [installer instructions](
+      https://conda.io/en/latest/miniconda.html) for your operating system.
 
-      + You may need to add the Miniconda directory to the PATH environment
-          variable
+  + You may need to add the Miniconda directory to the PATH environment
+      variable
 
-          + First locate the Miniconda directory
+    + First locate the Miniconda directory
 
-          + Then modify and run the following command
-              ```bash
-              export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
-              ```
-      + Create a new conda environment
-          ```bash
-          conda create -n <environment_name> python=<version>
-          ```
+    + Then modify and run the following command
+        ```bash
+        export PATH="<absolute-path-to-miniconda-directory>/bin:$PATH"
+        ```
+  + Create a new conda environment
+    ```bash
+    conda create -n <environment_name> python=<version>
+    ```
 
-          + Example command to create a conda environment
-              ```bash
-              conda create -n workflow-array-ephys python=3.8.11
-              ```
+    + Example command to create a conda environment
+      ```bash
+      conda create -n workflow-array-ephys python=3.8.11
+      ```
 
-      + Activate the conda environment
-          ```bash
-          conda activate <environment_name>
-          ```
+  + Activate the conda environment
+      ```bash
+      conda activate <environment_name>
+      ```
 
 ## Install Jupyter Notebook packages
 
@@ -547,8 +547,6 @@
   please refer to the following workflow specific Jupyter notebooks. + `workflow-array-ephys` [Jupyter notebooks](https://github.com/datajoint/workflow-array-ephys/tree/main/notebooks) + `workflow-calcium-imaging` [Jupyter notebooks](https://github.com/datajoint/workflow-calcium-imaging/tree/main/notebooks)
 
 ## DataJoint LabBook
-
-![LabBook GIF](https://github.com/datajoint/datajoint-labbook/blob/master/docs/sphinx/_static/images/walkthroughDemoOptimized.gif)
 
 - DataJoint LabBook is a graphical user interface to facilitate working with
   DataJoint tables.

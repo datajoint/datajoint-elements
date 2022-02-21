@@ -6,7 +6,6 @@ theme:
   disable_nav_previous_next: true
   disable_nav_search: false
 nav:
-  - About: index.md
   - Usage:
     - design-principles.md
     - adopt.md
@@ -16,6 +15,7 @@ nav:
     - community/publications.md
     - community/projects.md
     - community/contribute.md
+    - community/support.md
   - 'Management and Policies':
     - management/plan.md
     - management/team.md
@@ -24,7 +24,6 @@ nav:
     - management/quality-assurance.md
     - management/outreach.md
     - management/licenses.md
-  - support.md
 markdown_extensions:
   - pymdownx.magiclink
   - mdx_truly_sane_lists
