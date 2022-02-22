@@ -8,7 +8,7 @@ collaborative neuroscience research.
 ## DataJoint and Neurodata Without Borders
 
 
-![NWB](../img/NWB.png) ![CatalystNeuro](../img/CatalystNeuro.png | height=64)
+![NWB](../img/NWB.png) ![CatalystNeuro](../img/CatalystNeuro.png)
 
 ### Aim
 **DataJoint** and **Neurodata Without Borders (NWB)** are two neuroinformatics 
