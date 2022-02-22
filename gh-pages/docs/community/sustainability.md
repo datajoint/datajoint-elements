@@ -8,7 +8,7 @@ collaborative neuroscience research.
 ## DataJoint and Neurodata Without Borders
 
 
-![NWB](../img/NWB.png) ![CatalystNeuro](../img/CatalystNeuro.png)
+![NWB](../img/NWB.png) ![CatalystNeuro](../img/CatalystNeuro.png | height=64)
 
 ### Aim
 **DataJoint** and **Neurodata Without Borders (NWB)** are two neuroinformatics 
@@ -34,7 +34,7 @@ DataJoint — https://datajoint.com.
 
 #### Neurodata without Borders (NWB)
 
-**NWB** https://www.nwb.org — is a data standard for neurophysiology, providing
+**NWB** - https://www.nwb.org — is a data standard for neurophysiology, providing
   neuroscientists with a common standard to share, archive, use, and build analysis
   tools for neurophysiology data. The project is funded by the NIH grant U24 NS120057
   and led by Dr. Oliver Rubel (Lawrence Berkeley National Laboratory) and Dr. Benjamin
