@@ -11,6 +11,12 @@ Cotton, R. J., McClerklin, E., Cimorelli, A., & Patel, A. (2022). <a href="https
 
 </div> <br />
 
+<!-- 2021 ---> <div id="ref-obenhaus2021functional" class="csl-entry"> 
+
+Obenhaus, H. A., Zong, W., Jacobsen, R. I., Rose, T., Donato, F., Chen, L., ... & Moser, E. I. (2022). Functional network topography of the medial entorhinal cortex. <i>Proceedings of the National Academy of Sciences</i>, <i>119</i>(7).
+
+</div> <br />
+
 <h3>2021</h3>
 
 <!-- 2021 ---> <div id="ref-bae2021functional" class="csl-entry"> 
@@ -58,12 +64,6 @@ Jacobsen, R. I., Nair, R. R., Obenhaus, H. A., Donato, F., Slettmoen, T., Moser,
 <!-- 2021 ---> <div id="ref-laboratory2021standardized" class="csl-entry"> 
 
 Laboratory, T. I. B., Aguillon-Rodriguez, V., Angelaki, D., Bayer, H., Bonacchi, N., Carandini, M., Cazettes, F., Chapuis, G., Churchland, A. K., Dan, Y.others. (2021). Standardized and reproducible measurement of decision-making in mice. <i>eLife</i>, <i>10</i>. 
-
-</div> <br />
-
-<!-- 2021 ---> <div id="ref-obenhaus2021functional" class="csl-entry"> 
-
-Obenhaus, H. A., Zong, W., Jacobsen, R. I., Rose, T., Donato, F., Chen, L., Cheng, H., Bonhoeffer, T., Moser, M.-B., & Moser, E. I. (2021). Functional network topography of the medial entorhinal cortex. <i>BioRxiv</i>. 
 
 </div> <br />
 
