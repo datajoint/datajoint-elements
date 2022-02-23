@@ -1,0 +1,29 @@
+site_name: DataJoint Elements
+dev_addr: '0.0.0.0:8000'
+theme:
+  name: cinder
+  custom_dir: themes/cinder-theme-ext
+  disable_nav_previous_next: true
+  disable_nav_search: false
+nav:
+  - Usage:
+    - design-principles.md
+    - adopt.md
+    - Setup: install.md
+    - glossary.md
+  - 'Community':
+    - community/publications.md
+    - community/projects.md
+    - community/contribute.md
+    - community/support.md
+  - 'Management and Policies':
+    - management/plan.md
+    - management/team.md
+    - management/governance.md
+    - management/selection.md
+    - management/quality-assurance.md
+    - management/outreach.md
+    - management/licenses.md
+markdown_extensions:
+  - pymdownx.magiclink
+  - mdx_truly_sane_lists

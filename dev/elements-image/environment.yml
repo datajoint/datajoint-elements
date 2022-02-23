@@ -1,0 +1,78 @@
+# mamba env create -vvv -f environment.yml
+name: elements
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python>=3.9 # ........................ minimum python version
+  - pip>=21.1.0 # ........................ no setup.py required
+  - cryptography # ....................... datajoint
+  - graphviz # ........................... datajoint
+  - ipython # ............................ datajoint
+  - matplotlib # ......................... datajoint
+  - minio>=7.0.0 # ....................... datajoint
+  - networkx # ........................... datajoint
+  - numpy>=1.21.0 # ...................... datajoint
+  - otumat # ............................. datajoint
+  - pandas # ............................. datajoint
+  - plotly # ............................. datajoint
+  - pydot # .............................. datajoint
+  - pymysql>=0.7.2 # ..................... datajoint
+  - pyparsing # .......................... datajoint
+  - tqdm # ............................... datajoint
+  - urllib3 # ............................ datajoint
+  - black # .............................. dev
+  - flake8 # ............................. dev
+  - ipykernel # .......................... dev
+  - ipyparallel # ........................ dev
+  - jupyter-server-proxy # ............... dev
+  - jupyterlab # ......................... dev
+  - pylint # ............................. dev
+  - pytest # ............................. dev
+  - pytest-cov # ......................... dev
+  - pyyaml # ............................. dev
+  - qtconsole # .......................... dev
+  - openpyxl # ........................... element-array-ephys
+  - cython # ............................. element-data-loader
+  - fftw # ............................... element-data-loader
+  - h5py # ............................... element-data-loader
+  - numba # .............................. element-data-loader
+  - scipy # .............................. element-data-loader
+  - tabulate # ........................... element-data-loader
+  - tifffile # ........................... element-data-loader
+  - pytorch # ............................ element-calcium-imaging
+  - scikit-learn # ....................... element-miniscope
+  - bokeh # .............................. caiman
+  - coverage # ........................... caiman
+  - future # ............................. caiman
+  - holoviews # .......................... caiman
+  - jupyter # ............................ caiman
+  - keras # .............................. caiman
+  - mypy # ............................... caiman
+  - peakutils # .......................... caiman
+  - pims # ............................... caiman
+  - psutil # ............................. caiman
+  - pynwb # .............................. caiman
+  - pyqtgraph # .......................... caiman
+  - scikit-image # ....................... caiman
+  # - tensorflow # ......................... caiman
+  - yapf # ............................... caiman
+  # - mkl # ................................ suite2p
+  - tbb # ................................ suite2p
+  - natsort # ............................ suite2p
+  - importlib-metadata # ................. suite2p
+  - paramiko # ........................... suite2p
+  - pip:
+      - datajoint>=0.13.2 # .............. datajoint
+      - pynwb>=2.0.0 # ................... datajoint
+      - pyopenephys # .................... element-array-ephys
+      - sbxreader # ...................... element-data-loader
+      - imreg_dft # ...................... element-miniscope
+      - opencv-contrib-python-headless # . element-miniscope
+      - rastermap>0.1.0 # ................ suite2p
+      - scanimage-tiff-reader>=1.4.1 # ... suite2p
+      - scanreader@git+https://github.com/atlab/scanreader.git # element-data-loader
+      - suite2p@git+https://github.com/MouseLand/suite2p.git # element-data-loader
+      # - caiman@git+https://github.com/flatironinstitute/CaImAn.git # element-data-loader
+      # - pyfftw # ......................... element-miniscope python<3.9, libfftw3-3
