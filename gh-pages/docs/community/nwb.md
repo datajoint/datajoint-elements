@@ -1,9 +1,15 @@
 # NWB
-
+<!-- 
+   ![NWB Logo](./../img/NWB.png)
+   ![Catalyst Logo](./../img/CatalystNeuro.png)
+   ![DataJoint Logo](./../img/DataJointOSS-small.png)
+ -->
 <p align="center">
-   <img src="../img/NWB.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/CatalystNeuro.png">
-</center>
-  
+  <img src="https://github.com/datajoint/datajoint-elements/blob/main/gh-pages/docs/img/NWB.png?raw=true" width="300" height="55">&nbsp;&nbsp;
+  <img src="https://github.com/datajoint/datajoint-elements/blob/main/gh-pages/docs/img/CatalystNeuro.png?raw=true" width="300" height="68">&nbsp;&nbsp;
+  <img src="https://github.com/datajoint/datajoint-elements/blob/main/gh-pages/docs/img/DataJointOSS.png?raw=true" width="300" height="104">
+</p>  
+
 ## Aim
 **DataJoint** and **Neurodata Without Borders (NWB)** are two neuroinformatics 
   initiatives in active development. The projects develop independently yet they have
