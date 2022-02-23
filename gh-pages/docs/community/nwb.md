@@ -1,13 +1,8 @@
 # NWB
-<!-- 
-   ![NWB Logo](./../img/NWB.png)
-   ![Catalyst Logo](./../img/CatalystNeuro.png)
-   ![DataJoint Logo](./../img/DataJointOSS-small.png)
- -->
+
 <p align="center">
   <img src="https://github.com/datajoint/datajoint-elements/blob/main/gh-pages/docs/img/NWB.png?raw=true" width="300" height="55">&nbsp;&nbsp;
-  <img src="https://github.com/datajoint/datajoint-elements/blob/main/gh-pages/docs/img/CatalystNeuro.png?raw=true" width="300" height="68">&nbsp;&nbsp;
-  <img src="https://github.com/datajoint/datajoint-elements/blob/main/gh-pages/docs/img/DataJointOSS.png?raw=true" width="300" height="104">
+  <img src="https://raw.githubusercontent.com/datajoint/datajoint.org/0a05cf5c2530a3595a13fc11f6abac64746d845d/static/images/elements-logo.png" width="300" height="83">
 </p>  
 
 ## Aim
