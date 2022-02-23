@@ -6,7 +6,7 @@
 </p>  
 
 ## Aim
-**DataJoint** and **Neurodata Without Borders (NWB)** are two neuroinformatics 
+**DataJoint Elements** and **Neurodata Without Borders (NWB)** are two neuroinformatics 
   initiatives in active development. The projects develop independently yet they have
   complementary aims and overlapping user communities. This document establishes key
   processes for coordinating development and communications in order to promote
@@ -16,15 +16,13 @@
 
 ### DataJoint
 
-**DataJoint** — https://datajoint.org — is an open-source software framework for
-  structuring scientific data in shared databases and automating analysis workflows.
-  Research projects use DataJoint to automate their data collection and analysis.
-
 **DataJoint Elements** — https://elements.datajoint.org — is a collection of open-source
-  reference database schemas and analysis workflows for neurophysiology experiments.
-  The project is funded by the NIH grant U24 NS116470 and led by Dr. Dimitri Yatsenko.
-
-The principal developer of the DataJoint framework and DataJoint Elements is the company
+  reference database schemas and analysis workflows for neurophysiology experiments, 
+  supported by the **DataJoint** — https://datajoint.org — is an open-source software 
+  framework. The project is funded by the NIH grant U24 NS116470 and led by Dr. Dimitri 
+  Yatsenko.
+  
+The principal developer of DataJoint Elements the DataJoint framework is the company
 DataJoint — https://datajoint.com.
 
 ### Neurodata without Borders (NWB)
@@ -60,10 +58,10 @@ interoperability. This includes:
 ### Points of contact
 
 To achieve the aims of coordinated development, both projects appoint a primary point of
-contact to respond to questions relating to the integration and interoperability of
-DataJoint and NWB.
+contact (POC) to respond to questions relating to the integration and interoperability 
+of DataJoint Elements and NWB.
 
-For 2022, the DataJoint POC is Dr. [Chris Brozdowski](mailto:cbroz@datajoint.com)
+For 2022, the DataJoint Elements POC is Dr. [Chris Brozdowski](mailto:cbroz@datajoint.com)
 
 For 2022, the NWB POC is Dr. Ryan Ly (Lawrence Berkeley National Laboratory)
 
@@ -77,5 +75,5 @@ made publicly available.
 ### Licensing
 
 The two parties ensure that relevant software components are developed under licenses
-that avoid any hindrance to integration and interoperability between DataJoint
+that avoid any hindrance to integration and interoperability between DataJoint Elements
 workflows and NWB utilities.
