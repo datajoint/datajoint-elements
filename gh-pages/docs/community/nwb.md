@@ -22,7 +22,7 @@
   framework. The project is funded by the NIH grant U24 NS116470 and led by Dr. Dimitri 
   Yatsenko.
   
-The principal developer of DataJoint Elements the DataJoint framework is the company
+The principal developer of DataJoint Elements and the DataJoint framework is the company
 DataJoint — https://datajoint.com.
 
 ### Neurodata without Borders (NWB)
