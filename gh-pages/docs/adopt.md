@@ -32,5 +32,3 @@ This includes:
 - Interfaces for data entry, export and publishing
 
 During alpha and beta testing phases, these services may be subsidized by the grant funding for qualified research groups.
-
-To select the support service, [apply here](./support.md).
