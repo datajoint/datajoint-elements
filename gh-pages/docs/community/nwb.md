@@ -1,8 +1,8 @@
-# NWB
+# DataJoint Elements and NWB
 
 <p align="center">
-  <img src="https://github.com/datajoint/datajoint-elements/blob/main/gh-pages/docs/img/NWB.png?raw=true" width="300" height="55">&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/datajoint/datajoint.org/0a05cf5c2530a3595a13fc11f6abac64746d845d/static/images/elements-logo.png" width="300" height="83">
+  <img src="https://github.com/datajoint/datajoint-elements/blob/main/gh-pages/docs/img/NWB.png?raw=true" width="300" height="55" align="left">&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/datajoint/datajoint.org/0a05cf5c2530a3595a13fc11f6abac64746d845d/static/images/elements-logo.png" width="300" height="83" align="right">
 </p>  
 
 ## Aim
@@ -18,7 +18,7 @@
 
 **DataJoint Elements** — https://elements.datajoint.org — is a collection of open-source
   reference database schemas and analysis workflows for neurophysiology experiments, 
-  supported by the **DataJoint** — https://datajoint.org — is an open-source software 
+  supported by **DataJoint** — https://datajoint.org — an open-source software 
   framework. The project is funded by the NIH grant U24 NS116470 and led by Dr. Dimitri 
   Yatsenko.
   
@@ -40,7 +40,7 @@ Catalyst Neuro.
 
 ### No obligation
 
-The developers of the two ecosystems acknowledge that the roadmap creates no contractual
+The developers of the two ecosystems acknowledge that this roadmap document creates no contractual
 relationship between them but they agree to work together in the spirit of partnership
 to ensure that there is a united, visible, and responsive leadership and to demonstrate
 administrative and managerial commitment to coordinate development and communications.
@@ -51,11 +51,11 @@ The two projects will coordinate their development approaches to ensure maximum
 interoperability. This includes:
 
 -   coordinated use of terminology and nomenclatures
--   support for testing infrastructure: units testing and integration testing
+-   support for testing infrastructure: unit testing and integration testing
 -   a coordinated software release process and versioning
 -   coordinated resolution of issues arising from joint use of the two tools
 
-### Points of contact
+### Points of Contact
 
 To achieve the aims of coordinated development, both projects appoint a primary point of
 contact (POC) to respond to questions relating to the integration and interoperability 
@@ -68,7 +68,7 @@ For 2022, the NWB POC is Dr. Ryan Ly (Lawrence Berkeley National Laboratory)
 ### Annual Review
 
 To achieve the aims of coordinated development, the principal developers conduct a joint
-annual review of the joint sustainability roadmap to ensure that the two programs are
+annual review of this roadmap document to ensure that the two programs are
 well integrated and not redundant. The contents and resolutions of the review will be
 made publicly available.
 
