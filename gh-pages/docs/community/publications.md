@@ -1,6 +1,6 @@
 # Publications
 
-The following publications relied on DataJoint for data analysis. If you would like to add a new publication, please submit an issue here: https://github.com/datajoint/datajoint-elements/issues 
+The following publications relied on DataJoint for data analysis. If you would like make additions or corrections, please submit an issue here: https://github.com/datajoint/datajoint-elements/issues 
 
 <div id="refs" class="references csl-bib-body hanging-indent"
 line-spacing="2">
