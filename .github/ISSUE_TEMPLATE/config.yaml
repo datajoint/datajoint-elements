@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+- name: Slack Community
+  url: https://join.slack.com/t/datajoint/shared_invite/zt-3pioa7mu-R_G_z07arbgLelDuDxotdg
+  about: Participate in open-ended discussions?
+- name: Contribution Guidelines
+  url: https://docs.datajoint.org/python/community/02-Contribute.html
+  about: Interested in contributing?
