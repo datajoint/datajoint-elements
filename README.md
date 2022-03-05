@@ -8,8 +8,7 @@ for data collection, preparation, processing, analysis, and modeling that
 researchers must perform in the course of an experimental study. The work is
 derived from the developments in leading neuroscience projects and uses the
 [DataJoint framework](https://datajoint.org) for defining, deploying, and
-sharing their data workflows.  An overview of the principles of DataJoint workflows and the goals of DataJoint Elements are described in the paper
-["DataJoint Elements: Data Workflows for Neurophysiology"](https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
+sharing their data workflows.
 
 **_DataJoint_**
 
@@ -21,6 +20,9 @@ sharing their data workflows.  An overview of the principles of DataJoint workfl
 > a collection of curated modules for assembling workflows for the major
 > modalities of neurophysiology experiments + related documentation, tools, and
 > utilities.
+
+An overview of the principles of DataJoint workflows and the goals of DataJoint Elements are described in the paper
+["DataJoint Elements: Data Workflows for Neurophysiology"](https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
 
 # Project Structure
 
