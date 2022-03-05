@@ -38,9 +38,9 @@ If your work uses DataJoint or DataJoint Elements, please cite the following:
 # Project Structure
 
 - [Management and Policies](management/plan.md)
-- [Design Principles](design-principles.md)
-- [Guidelines for Adoption](adopt.md)
-- [Glossary](glossary.md)
+- [Design Principles](usage/design-principles.md)
+- [Guidelines for Adoption](usage/adopt.md)
+- [Glossary](usage/glossary.md)
 
 ## DataJoint Elements
 
