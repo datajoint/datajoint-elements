@@ -21,7 +21,8 @@ sharing their data workflows.
 > modalities of neurophysiology experiments + related documentation, tools, and
 > utilities.
 
-An overview of the principles of DataJoint workflows and the goals of DataJoint Elements are described in the paper
+An overview of the principles of DataJoint workflows and the goals of DataJoint 
+Elements are described in the position paper
 ["DataJoint Elements: Data Workflows for Neurophysiology"](https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
 
 # Project Structure
