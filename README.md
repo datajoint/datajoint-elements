@@ -36,8 +36,8 @@ Elements are described in the position paper
 
 - [Lab management](https://github.com/datajoint/element-lab)
 - [Animal management](https://github.com/datajoint/element-animal)
-  - [Example workflow](https://github.com/datajoint/workflow-animal)
 - [Experiment session](https://github.com/datajoint/element-session)
+  - [Example workflow for lab, subject and session management](https://github.com/datajoint/workflow-session)
 - [Extracellular array electrophysiology](https://github.com/datajoint/element-array-ephys)
   - [Example workflow](https://github.com/datajoint/workflow-array-ephys)
 - [Calcium imaging](https://github.com/datajoint/element-calcium-imaging)

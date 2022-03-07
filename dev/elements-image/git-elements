@@ -25,7 +25,7 @@ default_git_repos=(
 	element-lab
 	element-miniscope
 	element-session
-	workflow-animal
+	workflow-session
 	workflow-array-ephys
 	workflow-calcium-imaging
 	workflow-miniscope
