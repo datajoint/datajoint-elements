@@ -11,14 +11,14 @@ Please visit our <a href="https://catalog.datajoint.io/">Catalog</a> for a more 
 <ul>
     <li><a href="https://www.internationalbrainlab.com/#home">International Brain Lab</a></li>
     <li><a href="https://www.simonsfoundation.org/funded-project/multi-regional-neuronal-dynamics-of-memory-guided-flexible-behavior/">Mesoscale Activity Project</a></li>
-    <li><a href="https://www.iarpa.gov/research-programs/microns">MICrONS</a></li>
+    <li><a href="https://www.microns-explorer.org">MICrONS</a></li>
     <li>Sainsbury Wellcome Centre <a href="https://www.sainsburywellcome.org/web/">"Aeon"</a></li>
     <li>U19 Awards
         <ul>
         <li>NYU <a href="https://www.osmonauts.org/">"Osmonauts"</a></li>
         <li>Harvard <a href="https://www.teamdope.org/">"Dope"</a></li>
         <li>Columbia <a href="https://confluence.columbia.edu/confluence/display/zmbbi/U19+Data+Science">"MoC3"</a></li>
-        <li>Princeton <a href="https://www.braincogs.org/">"BrainCoGs"</a></li>
+        <li>Princeton <a href="https://www.braincogs.org/">"BrainCoGS"</a></li>
         <li>Rochester <a href="https://reporter.nih.gov/project-details/10047607">Neural basis of causal inference</a></li>
         </ul>
     </li>
