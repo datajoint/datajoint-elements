@@ -28,12 +28,7 @@ Please visit our <a href="https://catalog.datajoint.io/">Catalog</a> for a more 
 <h3>Individual Labs</h3>
 
 <ul>
-    <li>Allen Institute
-        <ul>
-        <li><a href="https://alleninstitute.org/what-we-do/brain-science/research/mindscope-program/">Mindscope</a></li>
-        <li><a href="https://alleninstitute.org/what-we-do/brain-science/research/allen-institute-neural-dynamics/">Neural Dynamics</a></li>
-        </ul>
-    </li>
+    <li>Allen Institute <a href="https://alleninstitute.org/what-we-do/brain-science/research/mindscope-program/">Mindscope Program</a>
     <li>Baylor College of Medicine
         <ul>
         <li><a href="https://toliaslab.org/">Tolias Lab</a></li>
