@@ -25,7 +25,7 @@ Please visit our <a href="https://catalog.datajoint.io/">Catalog</a> for a more 
 </ul>
 
 
-<h3>Invidiual Labs</h3>
+<h3>Individual Labs</h3>
 
 <ul>
     <li>Allen Institute
