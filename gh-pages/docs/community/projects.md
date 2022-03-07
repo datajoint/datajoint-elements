@@ -61,8 +61,8 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     </li>
     <li>Boston University
         <ul>
-        <li><a href="http://chen-lab.org/index.html" target="_blank">Jerry Chen Lab, Boston University</a></li>
-        <li><a href="https://www.scottcognitionlab.com" target="_blank">Benjamin Scott Lab, Boston University</a></li>
+        <li><a href="http://chen-lab.org/index.html" target="_blank">Jerry Chen Lab</a></li>
+        <li><a href="https://www.scottcognitionlab.com" target="_blank">Benjamin Scott Lab</a></li>
         </ul>
     </li>
     <li>Bonn University <a href="https://www.uni-bonn.de/en/news/280-2021" target="_blank">SFB 1089</a></li>
