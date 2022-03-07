@@ -20,7 +20,7 @@
 
 ## System architecture
 
-![Architecture](img/install_architecture.png)
+![Architecture](../img/install_architecture.png)
 
 - The above diagram describes the general components for a local DataJoint
   development environment.

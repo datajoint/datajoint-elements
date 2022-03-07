@@ -15,7 +15,6 @@ The project is performed by [DataJoint](https://www.datajoint.com) with Dimitri 
 
 - Raphael Guzman - Software Engineer
 - Drew Yang - Data Systems Engineer
-- Geetika Singh - Data Engineer
 - Jeroen Verswijver - Software Engineer
 - Carlos Ortiz - Software Engineer
 - Adib Baji - Software Engineer
@@ -26,10 +25,11 @@ The project is performed by [DataJoint](https://www.datajoint.com) with Dimitri 
 - Andreas S. Tolias - Grant proposal contributor
 - Jacob Reimer - Grant proposal contributor
 - Shan Shen - Data Scientist
-- Maho Sasaki - Frontend Developer
-- Daniel Sitonic - Backend Developer, Software Engineer
+- Maho Sasaki - Software Engineer
+- Daniel Sitonic - Software Engineer
 - Christopher Turner - Data Systems Engineer
 - David Godinez - Data Engineer
+- Geetika Singh - Data Engineer
 
 The first-person pronouns "we" and "our" in these documents refer to the Performer Team.
 

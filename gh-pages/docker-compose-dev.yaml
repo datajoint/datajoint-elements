@@ -1,5 +1,5 @@
-# docker-compose -f docker-compose-dev.yaml up --exit-code-from app
-# docker-compose -f docker-compose-dev.yaml down
+# docker-compose -f ./gh-pages/docker-compose-dev.yaml up --exit-code-from app
+# docker-compose -f ./gh-pages/docker-compose-dev.yaml down
 #
 # Intended for normal development. Supports hot/live reloading.
 # You may find the site running locally by navigating in your browser

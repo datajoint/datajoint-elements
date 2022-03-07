@@ -1,4 +1,4 @@
-# docker-compose -f docker-compose-build.yaml up --exit-code-from app --build
+# docker-compose -f ./gh-pages/docker-compose-build.yaml up --exit-code-from app --build
 #
 # Intended for updating dependencies.
 # Used to build static artifacts.

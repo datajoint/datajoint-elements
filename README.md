@@ -1,4 +1,4 @@
-# DataJoint Elements
+# DataJoint Elements for Neurophysiology
 
 ![Logo](https://raw.githubusercontent.com/datajoint/datajoint.org/0a05cf5c2530a3595a13fc11f6abac64746d845d/static/images/elements-logo.png)
 
@@ -21,16 +21,16 @@ sharing their data workflows.
 > modalities of neurophysiology experiments + related documentation, tools, and
 > utilities.
 
-An overview of the principles of DataJoint workflows and the goals of DataJoint
+An overview of the principles of DataJoint workflows and the goals of DataJoint 
 Elements are described in the position paper
 ["DataJoint Elements: Data Workflows for Neurophysiology"](https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
 
 # Project Structure
 
 - [Management and Policies](management/plan.md)
-- [Design Principles](design-principles.md)
-- [Guidelines for Adoption](adopt.md)
-- [Glossary](glossary.md)
+- [Design Principles](usage/design-principles.md)
+- [Guidelines for Adoption](usage/adopt.md)
+- [Glossary](usage/glossary.md)
 
 ## DataJoint Elements
 
@@ -63,3 +63,18 @@ Elements are described in the position paper
 ## DataJoint Online Training
 
 - [DataJoint CodeBook](https://codebook.datajoint.io) - interactive online tutorials
+
+## Citation
+
+If your work uses DataJoint or DataJoint Elements, please cite the following:
+
+**_DataJoint_**
+> Yatsenko D, Reimer J, Ecker AS, Walker EY, Sinz F, Berens P, Hoenselaar A, Cotton RJ, 
+> Siapas AS, Tolias AS. DataJoint: managing big scientific data using MATLAB or Python. 
+> bioRxiv. 2015 Jan 1:031658.
+
+
+**_DataJoint Elements_**
+> Yatsenko D, Nguyen T, Shen S, Gunalan K, Turner CA, Guzman R, Sasaki M, Sitonic D, 
+> Reimer J, Walker EY, Tolias AS. DataJoint Elements: Data Workflows for 
+> Neurophysiology. bioRxiv. 2021 Jan 1.
