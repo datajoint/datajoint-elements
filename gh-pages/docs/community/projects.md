@@ -59,6 +59,12 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
         <li><a href="https://smirnakislab.bwh.harvard.edu/" target="_blank">Smirnakis Lab</a></li>
         </ul>
     </li>
+    <li>Boston University
+        <ul>
+        <li><a href="http://chen-lab.org/index.html" target="_blank">Jerry Chen Lab</a></li>
+        <li><a href="https://www.scottcognitionlab.com" target="_blank">Benjamin Scott Lab</a></li>
+        </ul>
+    </li>
     <li>Bonn University <a href="https://www.uni-bonn.de/en/news/280-2021" target="_blank">SFB 1089</a></li>
     <li><a href="https://www.ntnu.edu/kavli/moser-group" target="_blank">Moser Group, Kavli Institute for Systems Neuroscience</a></li>
     <li><a href="http://www.mackenziemathislab.org/" target="_blank">Mackenzie Mathis Lab, EPFL</a></li>
@@ -67,7 +73,6 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     <li><a href="http://web.stanford.edu/group/dlab/" target="_blank">Karl Deisseroth Lab, Stanford University</a></li>
     <li><a href="https://sites.duke.edu/qianbenwanglab/" target="_blank">Qianben Wang Lab, Duke University</a></li>
     <li><a href="https://angelakilabnyu.org/" target="_blank">Angelaki Lab, New York University</a></li>
-    <li><a href="http://chen-lab.org/index.html" target="_blank">Jerry Chen Lab, Boston University</a></li>
     <li><a href="http://seunglab.org/" target="_blank">Seung Lab, Princeton University</a></li>
     <li><a href="https://www.bbe.caltech.edu/people/thanos-siapas" target="_blank">Siapas Lab, California Institute of Technology</a></li>
     <li><a href="https://www.cshl.edu/research/faculty-staff/tatiana-engel/" target="_blank">Engel Lab, Cold Spring Harbor Laboratory</a></li>
