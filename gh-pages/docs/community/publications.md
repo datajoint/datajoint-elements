@@ -1,6 +1,6 @@
 # Publications
 
-The following publications relied on DataJoint for data analysis. If you would like make additions or corrections, please submit an issue in the [datajoint-elements repository](https://github.com/datajoint/datajoint-elements/issues).  If your work uses DataJoint or DataJoint Elements, please cite the following:
+The following publications relied on DataJoint open-source software for data analysis. If you would like make additions or corrections, please submit an issue in the [datajoint-elements repository](https://github.com/datajoint/datajoint-elements/issues).  If your work uses DataJoint or DataJoint Elements, please cite the following:
 
 DataJoint
 > Yatsenko D, Reimer J, Ecker AS, Walker EY, Sinz F, Berens P, Hoenselaar A, Cotton RJ, 
