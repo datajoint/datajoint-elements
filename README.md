@@ -38,12 +38,18 @@ Elements are described in the position paper
 - [Animal management](https://github.com/datajoint/element-animal)
 - [Experiment session](https://github.com/datajoint/element-session)
   - [Example workflow for lab, subject and session management](https://github.com/datajoint/workflow-session)
-- [Extracellular array electrophysiology](https://github.com/datajoint/element-array-ephys)
+- [Extracellular array electrophysiology for Neuropixels](https://github.com/datajoint/element-array-ephys)
   - [Example workflow](https://github.com/datajoint/workflow-array-ephys)
 - [Calcium imaging](https://github.com/datajoint/element-calcium-imaging)
   - [Example workflow](https://github.com/datajoint/workflow-calcium-imaging)
 - [Miniscope imaging](https://github.com/datajoint/element-miniscope)
   - [Example workflow](https://github.com/datajoint/workflow-miniscope)
+
+### DataJoint Elements coming soon
+- [DeepLabCut](https://github.com/datajoint/element-deeplabcut)
+- [Trial-based experiments](https://github.com/datajoint/element-trial)
+- [Electrode localization for Neuropixels](https://github.com/datajoint/element-electrode-localization)
+- [Facemap](https://github.com/datajoint/element-facemap)
 
 ## DataJoint framework
 
