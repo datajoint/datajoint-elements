@@ -7,6 +7,9 @@
 Yatsenko D, Reimer J, Ecker AS, Walker EY, Sinz F, Berens P, Hoenselaar A, Cotton RJ, Siapas AS, Tolias AS. <a href="https://doi.org/10.1101/031658" target="_blank" style="color:#1589F0;">DataJoint: managing big scientific data using MATLAB or Python</a>. bioRxiv. 2015 Jan 1:031658.
 </p>
 
+<p style="margin-left:5%;">
+Yatsenko D, Walker EY, Tolias AS. <a href="https://doi.org/10.48550/arXiv.1807.11104" target="_blank" style="color:#1589F0;">DataJoint: a simpler relational data model</a>. arXiv:1807.11104. 2018 Jul 29.
+</p>
 
 <p><b>DataJoint Elements</b></p>
 <p style="margin-left:5%;">
