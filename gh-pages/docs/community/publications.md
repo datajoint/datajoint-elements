@@ -1,17 +1,25 @@
-# Publications
+<h1>Publications</h1>
 
-The following publications relied on DataJoint open-source software for data analysis. If you would like make additions or corrections, please submit an issue in the [datajoint-elements repository](https://github.com/datajoint/datajoint-elements/issues).  If your work uses DataJoint or DataJoint Elements, please cite the following:
+<p>The following publications relied on DataJoint open-source software for data analysis.  If your work uses DataJoint or DataJoint Elements, please cite the following:</p>
 
-DataJoint
-> Yatsenko D, Reimer J, Ecker AS, Walker EY, Sinz F, Berens P, Hoenselaar A, Cotton RJ, 
-> Siapas AS, Tolias AS. DataJoint: managing big scientific data using MATLAB or Python. 
-> bioRxiv. 2015 Jan 1:031658.
+<p><b>DataJoint</b></p>
+<div class="vertical-line">
+<p style="margin-left:5%; margin-right:20%;">
+Yatsenko D, Reimer J, Ecker AS, Walker EY, Sinz F, Berens P, Hoenselaar A, Cotton RJ, Siapas AS, Tolias AS. <a href="https://doi.org/10.1101/031658" target="_blank" style="color:#1589F0;">DataJoint: managing big scientific data using MATLAB or Python</a>. bioRxiv. 2015 Jan 1:031658.
+</p>
+</div>
 
 
-DataJoint Elements
-> Yatsenko D, Nguyen T, Shen S, Gunalan K, Turner CA, Guzman R, Sasaki M, Sitonic D, 
-> Reimer J, Walker EY, Tolias AS. DataJoint Elements: Data Workflows for 
-> Neurophysiology. bioRxiv. 2021 Jan 1.
+<p><b>DataJoint Elements</b></p>
+<div class="vertical-line">
+<p style="margin-left:5%; margin-right:20%;">
+Yatsenko D, Nguyen T, Shen S, Gunalan K, Turner CA, Guzman R, Sasaki M, Sitonic D, Reimer J, Walker EY, Tolias AS. <a href="https://doi.org/10.1101/2021.03.30.437358" target="_blank" style="color:#1589F0;">DataJoint Elements: Data Workflows for Neurophysiology</a>. bioRxiv. 2021 Jan 1.
+</p>
+</div>
+
+<p>
+If you would like make additions or corrections, please submit an issue in the <a href="https://github.com/datajoint/datajoint-elements/issues" target="_blank" style="color:#1589F0;">datajoint-elements repository</a>.
+</p><br>
 
 <div id="refs" class="references csl-bib-body hanging-indent"
 line-spacing="2">
@@ -20,19 +28,19 @@ line-spacing="2">
 
 <!-- 2022 ---> <div id="ref-cotton2022spatiotemporal" class="csl-entry"> 
 
-Cotton, R. J., McClerklin, E., Cimorelli, A., & Patel, A. (2022). <a href="https://openreview.net/forum?id=dXPou9HkXcZ" target="_blank">Spatiotemporal characterization of gait from monocular videos with transformers</a>.
+Cotton, R. J., McClerklin, E., Cimorelli, A., & Patel, A. (2022). <a href="https://openreview.net/forum?id=dXPou9HkXcZ" target="_blank" style="color:#1589F0;">Spatiotemporal characterization of gait from monocular videos with transformers</a>.
 
 </div> <br />
 
 <!-- 2022 ---> <div id="ref-obenhaus2022functional" class="csl-entry"> 
 
-Obenhaus, H.A., Zong, W., Jacobsen, R.I., Rose, T., Donato, F., Chen, L., Cheng, H., Bonhoeffer, T., Moser, M.B. & Moser, E.I. (2022). <a href="https://doi.org/10.1073/pnas.2121655119" target="_blank">Functional network topography of the medial entorhinal cortex</a>. <i>Proceedings of the National Academy of Sciences</i>, <i>119</i>(7).
+Obenhaus, H.A., Zong, W., Jacobsen, R.I., Rose, T., Donato, F., Chen, L., Cheng, H., Bonhoeffer, T., Moser, M.B. & Moser, E.I. (2022). <a href="https://doi.org/10.1073/pnas.2121655119" target="_blank" style="color:#1589F0;">Functional network topography of the medial entorhinal cortex</a>. <i>Proceedings of the National Academy of Sciences</i>, <i>119</i>(7).
 
 </div> <br />
 
 <!-- 2022 ---> <div id="ref-ustyuzhaninov2022digitaltwin" class="csl-entry"> 
 
-Ustyuzhaninov, I., Burg, M.F., Cadena, S.A., Fu, J., Muhammad, T., Ponder, K., Froudarakis, E., Ding, Z., Bethge, M., Tolias, A. & Ecker, A.S. <a href="https://doi.org/10.1101/2022.02.10.479884" target="_blank">Digital twin reveals combinatorial code of non-linear computations in the mouse primary visual cortex</a>. <i>bioRxiv</i>.
+Ustyuzhaninov, I., Burg, M.F., Cadena, S.A., Fu, J., Muhammad, T., Ponder, K., Froudarakis, E., Ding, Z., Bethge, M., Tolias, A. & Ecker, A.S. <a href="https://doi.org/10.1101/2022.02.10.479884" target="_blank" style="color:#1589F0;">Digital twin reveals combinatorial code of non-linear computations in the mouse primary visual cortex</a>. <i>bioRxiv</i>.
 
 </div> <br />
 
@@ -70,7 +78,7 @@ Cohrs, K.-H. (2021). Investigation of feedback mechanisms in visual cortex using
 
 <!-- 2021 ---> <div id="ref-finkelstein2021attractor" class="csl-entry"> 
 
-Finkelstein, A., Fontolan, L., Economo, M. N., Li, N., Romani, S., & Svoboda, K. (2021). <a href="https://doi.org/10.1038/s41593-021-00840-6" target="_blank">Attractor dynamics gate cortical information flow during decision-making</a>. <i>Nature Neuroscience</i>. <i>24</i>(6), 843-850.
+Finkelstein, A., Fontolan, L., Economo, M. N., Li, N., Romani, S., & Svoboda, K. (2021). <a href="https://doi.org/10.1038/s41593-021-00840-6" target="_blank" style="color:#1589F0;">Attractor dynamics gate cortical information flow during decision-making</a>. <i>Nature Neuroscience</i>. <i>24</i>(6), 843-850.
 
 </div> <br />
 
@@ -348,7 +356,7 @@ Froudarakis, E., Berens, P., Ecker, A. S., Cotton, R. J., Sinz, F. H., Yatsenko,
 
 <!-- 2014 ---> <div id="ref-reimer2014pupil" class="csl-entry"> 
 
-Reimer, J., Froudarakis, E., Cadwell, C. R., Yatsenko, D., Denfield, G. H., & Tolias, A. S. (2014). Pupil fluctuations track fast switching of cortical states during quiet wakefulness. <i>Neuron</i>, <i>84</i>(2), 355–362. <a href="https://doi.org/10.1016/j.neuron.2014.09.033">https://doi.org/10.1016/j.neuron.2014.09.033</a>. 
+Reimer, J., Froudarakis, E., Cadwell, C. R., Yatsenko, D., Denfield, G. H., & Tolias, A. S. (2014). <a href="https://doi.org/10.1016/j.neuron.2014.09.033" target="_blank" style="color:#1589F0;">Pupil fluctuations track fast switching of cortical states during quiet wakefulness</a>. <i>Neuron</i>, <i>84</i>(2), 355–362.
 
 </div> <br />
 
