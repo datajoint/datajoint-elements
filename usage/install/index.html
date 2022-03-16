@@ -1005,8 +1005,8 @@ lab.schema.drop()</p>
   dataset is saved (e.g. <code>/tmp/testset</code>).</li>
 </ul>
 <ul>
-<li>Create an <code>.env</code> file with the following content. Replace <code>/tmp/testset</code>
-  with the directory where you have the test dataset downloaded.
+<li>Create an <code>.env</code> file within the <code>docker</code> directory with the following content. 
+  Replace <code>/tmp/testset</code> with the directory where you have the test dataset downloaded.
   <code>TEST_DATA_DIR=/tmp/testset</code></li>
 </ul>
 <ul>
@@ -1019,7 +1019,7 @@ lab.schema.drop()</p>
 </ul>
 <ul>
 <li>Run the Docker container.
-  <code>docker-compose -f docker-compose-test.yaml up --build</code></li>
+  <code>docker-compose -f ./docker/docker-compose-test.yaml up --build</code></li>
 </ul></div>
         
         
