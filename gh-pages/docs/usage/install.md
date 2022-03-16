@@ -671,8 +671,8 @@
 - Download the test dataset to your local machine. Note the directory where the
   dataset is saved (e.g. `/tmp/testset`).
 
-- Create an `.env` file with the following content. Replace `/tmp/testset`
-  with the directory where you have the test dataset downloaded.
+- Create an `.env` file within the `docker` directory with the following content. 
+  Replace `/tmp/testset` with the directory where you have the test dataset downloaded.
   `TEST_DATA_DIR=/tmp/testset`
 
 - If testing an unreleased version of the `element` or your fork of an `element`
@@ -684,5 +684,5 @@
 
 - Run the Docker container.
   ```
-  docker-compose -f docker-compose-test.yaml up --build
+  docker-compose -f ./docker/docker-compose-test.yaml up --build
   ```
