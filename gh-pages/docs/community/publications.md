@@ -1,6 +1,12 @@
 <h1>Publications</h1>
 
-<p>The following publications relied on DataJoint open-source software for data analysis.  If your work uses DataJoint or DataJoint Elements, please cite the following:</p>
+<p>The following publications relied on DataJoint open-source software for data analysis.</p>
+
+<p>
+If you would like make additions or corrections, please submit an issue in the <a href="https://github.com/datajoint/datajoint-elements/issues" target="_blank" style="color:#1589F0;">datajoint-elements repository</a>.
+</p>
+
+<p>If your work uses DataJoint or DataJoint Elements, please cite the following:</p>
 
 <p><b>DataJoint</b></p>
 <p style="margin-left:5%;">
@@ -14,10 +20,6 @@ Yatsenko D, Walker EY, Tolias AS. <a href="https://doi.org/10.48550/arXiv.1807.1
 <p><b>DataJoint Elements</b></p>
 <p style="margin-left:5%;">
 Yatsenko D, Nguyen T, Shen S, Gunalan K, Turner CA, Guzman R, Sasaki M, Sitonic D, Reimer J, Walker EY, Tolias AS. <a href="https://doi.org/10.1101/2021.03.30.437358" target="_blank" style="color:#1589F0;">DataJoint Elements: Data Workflows for Neurophysiology</a>. bioRxiv. 2021 Jan 1.
-</p>
-
-<p>
-If you would like make additions or corrections, please submit an issue in the <a href="https://github.com/datajoint/datajoint-elements/issues" target="_blank" style="color:#1589F0;">datajoint-elements repository</a>.
 </p><br>
 
 <div id="refs" class="references csl-bib-body hanging-indent"

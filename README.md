@@ -45,9 +45,9 @@ Elements are described in the position paper
 - [Miniscope imaging](https://github.com/datajoint/element-miniscope)
   - [Example workflow](https://github.com/datajoint/workflow-miniscope)
 
-### DataJoint Elements coming soon
+### DataJoint Elements in development
 - [DeepLabCut](https://github.com/datajoint/element-deeplabcut)
-- [Trial-based experiments](https://github.com/datajoint/element-trial)
+- [Event- and trial-based experiments](https://github.com/datajoint/element-event)
 - [Electrode localization for Neuropixels](https://github.com/datajoint/element-electrode-localization)
 - [Facemap](https://github.com/datajoint/element-facemap)
 
