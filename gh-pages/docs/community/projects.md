@@ -9,23 +9,23 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
 <h3>Multi-lab collaboratives</h3>
 
 <ul>
-    <li><a href="https://www.internationalbrainlab.com/#home" target="_blank">International Brain Lab</a></li>
+    <li><a href="https://www.internationalbrainlab.com/#home" target="_blank">International Brain Lab</a> (<a href="https://github.com/int-brain-lab" target="_blank">GitHub</a>)</li>
     <li><a href="https://www.simonsfoundation.org/funded-project/multi-regional-neuronal-dynamics-of-memory-guided-flexible-behavior/" target="_blank">Mesoscale Activity Project</a></li>
     <li><a href="https://www.microns-explorer.org" target="_blank">MICrONS</a></li>
-    <li>Sainsbury Wellcome Centre <a href="https://www.sainsburywellcome.org/web/" target="_blank">"Aeon"</a></li>
+    <li>Sainsbury Wellcome Centre<a href="https://www.sainsburywellcome.org/web/" target="_blank"> Aeon</a></li>
     <li>U19 Awards
         <ul>
-        <li>NYU <a href="https://www.osmonauts.org/" target="_blank">"Osmonauts"</a></li>
-        <li>Harvard <a href="https://www.teamdope.org/" target="_blank">"DOPE"</a></li>
-        <li>Columbia <a href="https://confluence.columbia.edu/confluence/display/zmbbi/U19+Data+Science" target="_blank">"MoC3"</a></li>
-        <li>Princeton <a href="https://www.braincogs.org/" target="_blank">"BRAINCoGS"</a></li>
+        <li>NYU<a href="https://www.osmonauts.org/" target="_blank"> Osmonauts</a></li>
+        <li>Harvard<a href="https://www.teamdope.org/" target="_blank"> DOPE</a></li>
+        <li>Columbia<a href="https://confluence.columbia.edu/confluence/display/zmbbi/U19+Data+Science" target="_blank"> MoC3</a></li>
+        <li>Princeton<a href="https://www.braincogs.org/" target="_blank"> BRAINCoGS</a> (<a href="https://github.com/braincogs/" target="_blank">GitHub</a>)</li>
         <ul>
             <li><a href="http://brodylab.org" target="_blank">Carlos Brody Lab</a></li>
             <li><a href="https://pni.princeton.edu/faculty/david-tank" target="_blank">David Tank Lab</a></li>
             <li><a href="https://wittenlab.org" target="_blank">Ilana Witten Lab</a></li>
             <li><a href="https://pillowlab.princeton.edu" target="_blank">Jonathan Pillow Lab</a></li>
         </ul>
-        <li>Rochester <a href="https://reporter.nih.gov/project-details/10047607" target="_blank">"Neural basis of causal inference"</a></li>
+        <li>Rochester<a href="https://reporter.nih.gov/project-details/10047607" target="_blank"> Neural basis of causal inference</a></li>
         </ul>
     </li>
 </ul>
@@ -87,5 +87,6 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     <li><a href="https://franklab.ucsf.edu/" target="_blank">Loren Frank Lab, University of California, San Francisco</a></li>
     <li><a href="https://isearch.asu.edu/profile/500553" target="_blank">Rick Gerkin, Arizona State University</a></li>
     <li><a href="https://www.pintolab.org" target="_blank">Lucas Pinto, Northwestern University</a></li>
+    <li><a href="https://www.imbb.forth.gr/imbb-people/en/froudarakis-home" target="_blank">Emmanouil Froudarakis, FORTH</a> (<a href="https://github.com/ef-lab" target="_blank">GitHub</a>)</li>
     <li>&#8230; and 40+ other labs</li>
 </ul>
