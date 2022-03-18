@@ -1,4 +1,6 @@
-# DataJoint Elements and NWB
+# NWB
+
+## Integrations between DataJoint Elements and Neurodata Without Borders 
 
 <p align="center">
   <img src="https://github.com/datajoint/datajoint-elements/blob/main/gh-pages/docs/img/NWB.png?raw=true" width="300" height="55" align="left">&nbsp;&nbsp;
