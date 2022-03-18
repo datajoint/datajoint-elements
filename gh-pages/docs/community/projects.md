@@ -83,10 +83,19 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     <li><a href="https://www.bbe.caltech.edu/people/thanos-siapas" target="_blank">Siapas Lab, California Institute of Technology</a></li>
     <li><a href="https://www.cshl.edu/research/faculty-staff/tatiana-engel/" target="_blank">Engel Lab, Cold Spring Harbor Laboratory</a></li>
     <li><a href="http://faculty.washington.edu/tuthill/" target="_blank">Tuthill Lab, University of Washington</a></li>
-    <li><a href="https://www.jhuapl.edu/" target="_blank">Applied Physics Lab, Johns Hopkins University</a></li>
+    <li>Johns Hopkins University
+        <ul>
+        <li><a href="https://www.jhuapl.edu/" target="_blank">Applied Physics Lab</a> (<a href="https://github.com/aplbrain" target="_blank">GitHub</a>)</li>
+        </ul>
+    </li>
+    <li>Northwestern University
+        <ul>
+        <li><a href="https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=49313" target="_blank">James Cotton</a> (<a href="https://github.com/peabody124/PosePipeline" target="_blank">GitHub</a>)</li>
+        <li><a href="https://www.pintolab.org" target="_blank">Lucas Pinto</a></li>
+        </ul>
+    </li>
     <li><a href="https://franklab.ucsf.edu/" target="_blank">Loren Frank Lab, University of California, San Francisco</a></li>
     <li><a href="https://isearch.asu.edu/profile/500553" target="_blank">Rick Gerkin, Arizona State University</a></li>
-    <li><a href="https://www.pintolab.org" target="_blank">Lucas Pinto, Northwestern University</a></li>
     <li><a href="https://www.imbb.forth.gr/imbb-people/en/froudarakis-home" target="_blank">Emmanouil Froudarakis, FORTH</a> (<a href="https://github.com/ef-lab" target="_blank">GitHub</a>)</li>
     <li>University of California, San Diego
         <ul>
