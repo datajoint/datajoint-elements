@@ -97,6 +97,11 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     <li><a href="https://franklab.ucsf.edu/" target="_blank">Loren Frank Lab, University of California, San Francisco</a></li>
     <li><a href="https://isearch.asu.edu/profile/500553" target="_blank">Rick Gerkin, Arizona State University</a></li>
     <li><a href="https://www.imbb.forth.gr/imbb-people/en/froudarakis-home" target="_blank">Emmanouil Froudarakis, FORTH</a> (<a href="https://github.com/ef-lab" target="_blank">GitHub</a>)</li>
+    <li>University of Oregon
+        <ul>
+        <li><a href="https://ion.uoregon.edu/content/michael-wehr" target="_blank">Michael Wehr Lab</a> (<a href="https://github.com/wehr-lab" target="_blank">GitHub</a>)</li>
+        </ul>
+    </li>
     <li>University of California, San Diego
         <ul>
         <li><a href="https://neurophysics.ucsd.edu" target="_blank">David Kleinfeld</a> (<a href="https://github.com/ActiveBrainAtlas" target="_blank">GitHub</a>)</li>
