@@ -42,6 +42,15 @@ We conduct activities to disseminate Resource components for adoption in diverse
 
 In order to measure the effectiveness of the Resource, we conduct several activities to estimate the adoption and use of the Resource components:
 
-- A citation mechanims for individual components of the Resource
+- A citation mechanism for individual components of the Resource.
+
+     | Resource | RRID |
+     |:---------|:-----|
+     | DataJoint | [RRID:SCR_014543](https://scicrunch.org/resolver/SCR_014543) |
+     | DataJoint Element Session | [RRID:SCR_021896](https://scicrunch.org/resolver/SCR_021896) |
+     | DataJoint Element Array Electrophysiology | [RRID:SCR_021894](https://scicrunch.org/resolver/SCR_021894) |
+     | DataJoint Element Calcium Imaging | [RRID:SCR_021895](https://scicrunch.org/resolver/SCR_021895) |
+
 - Collect summary statistics of the number of downloads and repository forking.
+
 - A register for self-reporting for component adoption and use (see [DataJoint Census](https://community.datajoint.io)).
