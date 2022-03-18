@@ -44,4 +44,4 @@ In order to measure the effectiveness of the Resource, we conduct several activi
 
 - A citation mechanims for individual components of the Resource
 - Collect summary statistics of the number of downloads and repository forking.
-- A register for self-reporting for component adoption and use.
+- A register for self-reporting for component adoption and use (see [DataJoint Census](https://community.datajoint.io)).
