@@ -135,6 +135,11 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
         <li><a href="https://www.pintolab.org" target="_blank">Lucas Pinto Lab</a></li>
         </ul>
     </li>
+    <li>Tel-Aviv University
+        <ul>
+        <li><a href="http://pblab.tau.ac.il/en/" target="_blank">Pablo Blinder Lab</a> (<a href="https://github.com/PBLab" target="_blank">GitHub</a>)</li>
+        </ul>
+    </li>
     <li>University of Indiana
         <ul>
         <li><a href="http://www.lulaboratory.com/" target="_blank">Lu Lab</a></li>
