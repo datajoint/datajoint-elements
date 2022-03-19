@@ -11,6 +11,9 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
 <ul>
     <li><a href="https://www.internationalbrainlab.com/#home" target="_blank">International Brain Lab</a> (<a href="https://github.com/int-brain-lab" target="_blank">GitHub</a>)</li>
     <li><a href="https://www.simonsfoundation.org/funded-project/multi-regional-neuronal-dynamics-of-memory-guided-flexible-behavior/" target="_blank">Mesoscale Activity Project</a></li>
+        <ul>
+        <li><a href="https://www.bcm.edu/research/faculty-labs/nuo-li-lab" target="_blank">Nuo Li Lab</a></li>
+        </ul>
     <li><a href="https://www.microns-explorer.org" target="_blank">MICrONS</a></li>
     <li>Sainsbury Wellcome Centre<a href="https://www.sainsburywellcome.org/web/" target="_blank"> Aeon</a></li>
     <li>U19 Awards
@@ -99,6 +102,7 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     <li><a href="https://www.imbb.forth.gr/imbb-people/en/froudarakis-home" target="_blank">Emmanouil Froudarakis, FORTH</a> (<a href="https://github.com/ef-lab" target="_blank">GitHub</a>)</li>
     <li>University of Oregon
         <ul>
+        <li><a href="https://ion.uoregon.edu/content/santiago-jaramillo" target="_blank">Santiago Jaramillo Lab</a> (<a href="https://github.com/sjara/uobrainflex" target="_blank">GitHub</a>)</li>
         <li><a href="https://ion.uoregon.edu/content/michael-wehr" target="_blank">Michael Wehr Lab</a> (<a href="https://github.com/wehr-lab" target="_blank">GitHub</a>)</li>
         </ul>
     </li>
