@@ -179,5 +179,5 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
         <li><a href="http://bethgelab.org/" target="_blank">Bethge Lab</a></li>
         </ul>
     </li>
-    <li>&#8230; and 40+ other labs</li>
+    <li>&#8230; and other labs</li>
 </ul>
