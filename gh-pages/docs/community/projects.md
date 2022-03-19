@@ -28,9 +28,9 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
             <li><a href="https://wittenlab.org" target="_blank">Ilana Witten Lab</a></li>
             <li><a href="https://pillowlab.princeton.edu" target="_blank">Jonathan Pillow Lab</a></li>
         </ul>
-        <li>Rochester-Harvard-NYU<a href="https://reporter.nih.gov/project-details/10047607" target="_blank"> Neural basis of causal inference</a></li>
+        <li>Rochester-NYU-Harvard<a href="https://reporter.nih.gov/project-details/10047607" target="_blank"> Neural basis of causal inference</a></li>
             <ul>
-            <li><a href="http://www.sas.rochester.edu/bcs/people/faculty/deangelis_greg/index.html" target="_blank">Greg DeAngelis, University of Rochester</a></li>
+            <li><a href="http://www.sas.rochester.edu/bcs/people/faculty/deangelis_greg/index.html" target="_blank">Greg DeAngelis Lab, University of Rochester</a></li>
             <li><a href="https://angelakilabnyu.org/" target="_blank">Dora Angelaki Lab, New York University</a></li>
             </ul>
         </ul>
@@ -48,7 +48,7 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     </li>
     <li>Arizona State University
         <ul>
-        <li><a href="https://isearch.asu.edu/profile/500553" target="_blank">Rick Gerkin</a></li>
+        <li><a href="https://isearch.asu.edu/profile/500553" target="_blank">Rick Gerkin Lab</a></li>
         </ul>
     </li>
     <li>Baylor College of Medicine
@@ -87,7 +87,7 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     </li>
     <li>FORTH
         <ul>
-        <li><a href="https://www.imbb.forth.gr/imbb-people/en/froudarakis-home" target="_blank">Emmanouil Froudarakis</a> (<a href="https://github.com/ef-lab" target="_blank">GitHub</a>)</li>
+        <li><a href="https://www.imbb.forth.gr/imbb-people/en/froudarakis-home" target="_blank">Emmanouil Froudarakis Lab</a> (<a href="https://github.com/ef-lab" target="_blank">GitHub</a>)</li>
         </ul>
     </li>
     <li>Harvard Medical School
@@ -131,8 +131,8 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     </li>
     <li>Northwestern University
         <ul>
-        <li><a href="https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=49313" target="_blank">James Cotton</a> (<a href="https://github.com/peabody124/PosePipeline" target="_blank">GitHub</a>)</li>
-        <li><a href="https://www.pintolab.org" target="_blank">Lucas Pinto</a></li>
+        <li><a href="https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=49313" target="_blank">James Cotton Lab</a> (<a href="https://github.com/peabody124/PosePipeline" target="_blank">GitHub</a>)</li>
+        <li><a href="https://www.pintolab.org" target="_blank">Lucas Pinto Lab</a></li>
         </ul>
     </li>
     <li>University of Indiana
