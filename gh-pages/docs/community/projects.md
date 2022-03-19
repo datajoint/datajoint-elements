@@ -28,7 +28,11 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
             <li><a href="https://wittenlab.org" target="_blank">Ilana Witten Lab</a></li>
             <li><a href="https://pillowlab.princeton.edu" target="_blank">Jonathan Pillow Lab</a></li>
         </ul>
-        <li>Rochester<a href="https://reporter.nih.gov/project-details/10047607" target="_blank"> Neural basis of causal inference</a></li>
+        <li>Rochester-Harvard-NYU<a href="https://reporter.nih.gov/project-details/10047607" target="_blank"> Neural basis of causal inference</a></li>
+            <ul>
+            <li><a href="http://www.sas.rochester.edu/bcs/people/faculty/deangelis_greg/index.html" target="_blank">Greg DeAngelis, University of Rochester</a></li>
+            <li><a href="https://angelakilabnyu.org/" target="_blank">Dora Angelaki Lab, New York University</a></li>
+            </ul>
         </ul>
     </li>
 </ul>
@@ -37,35 +41,27 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
 <h3>Individual Labs</h3>
 
 <ul>
-    <li>Allen Institute <a href="https://alleninstitute.org/what-we-do/brain-science/research/mindscope-program/" target="_blank">Mindscope Program</a>
+    <li>Allen Institute
+        <ul>
+        <li><a href="https://alleninstitute.org/what-we-do/brain-science/research/mindscope-program/" target="_blank">Mindscope Program</a></li>
+        </ul>
+    </li>
+    <li>Arizona State University
+        <ul>
+        <li><a href="https://isearch.asu.edu/profile/500553" target="_blank">Rick Gerkin</a></li>
+        </ul>
+    </li>
     <li>Baylor College of Medicine
         <ul>
-        <li><a href="https://toliaslab.org/" target="_blank">Tolias Lab</a></li>
+        <li><a href="https://toliaslab.org/" target="_blank">Andreas Tolias Lab</a></li>
         <li><a href="https://www.bcm.edu/research/faculty-labs/jacob-reimer-lab" target="_blank">Reimer Lab</a></li>
         <li><a href="https://www.bcm.edu/research/faculty-labs/paul-pfaffinger-lab" target="_blank">Pfaffinger Lab</a></li>
-        <li><a href="https://www.bcm.edu/research/faculty-labs/matthew-mcginley-lab" target="_blank">McGinley Lab</a></li>
+        <li><a href="https://www.bcm.edu/research/faculty-labs/matthew-mcginley-lab" target="_blank">Matthew McGinley Lab</a></li>
         </ul>
     </li>
-    <li>Wilhelm Schickard Institute for Computer Science
+    <li>Bonn University
         <ul>
-        <li><a href="https://sinzlab.org/" target="_blank">Sinz Lab</a></li>
-        <li><a href="https://philippberens.wordpress.com/" target="_blank">Berens Lab</a></li>
-        <li><a href="http://www.eye-tuebingen.de/eulerlab/" target="_blank">Euler Lab</a></li>
-        <li><a href="http://bethgelab.org/" target="_blank">Bethge Lab</a></li>
-        </ul>
-    </li>
-    <li>Ludwig-Maximilians-Universität München
-        <ul>
-        <li><a href="https://www.neuro.bio.lmu.de/research_groups/res-busse_l/index.html" target="_blank">Busse Lab</a></li>
-        <li><a href="https://www.neuro.bio.lmu.de/research_groups/res-katzner/index.html" target="_blank">Katzner Lab</a></li>
-        </ul>
-    </li>
-    <li>Harvard Medical School
-        <ul>        
-        <li><a href="https://harveylab.hms.harvard.edu/" target="_blank">Harvey Lab</a></li>
-        <li><a href="http://datta.hms.harvard.edu/" target="_blank">Datta Lab</a></li>
-        <li><a href="http://sabatini.hms.harvard.edu/" target="_blank">Sabatini Lab</a></li>
-        <li><a href="https://smirnakislab.bwh.harvard.edu/" target="_blank">Smirnakis Lab</a></li>
+        <li><a href="https://rose-group.ieecr-bonn.de" target="_blank">Tobias Rose Lab</a></li>
         </ul>
     </li>
     <li>Boston University
@@ -74,21 +70,63 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
         <li><a href="https://www.scottcognitionlab.com" target="_blank">Benjamin Scott Lab</a></li>
         </ul>
     </li>
-    <li>Bonn University <a href="https://www.uni-bonn.de/en/news/280-2021" target="_blank">SFB 1089</a></li>
-    <li><a href="https://www.ntnu.edu/kavli/moser-group" target="_blank">Moser Group, Kavli Institute for Systems Neuroscience</a></li>
-    <li><a href="http://www.mackenziemathislab.org/" target="_blank">Mackenzie Mathis Lab, EPFL</a></li>
-    <li><a href="https://churchlandlab.org/" target="_blank">Anne Churchland Lab, UCLA</a></li>
-    <li><a href="http://www.lulaboratory.com/" target="_blank">Lu Lab, University of Indiana</a></li>
-    <li><a href="http://web.stanford.edu/group/dlab/" target="_blank">Karl Deisseroth Lab, Stanford University</a></li>
-    <li><a href="https://www.wanglab-neuro.org" target="_blank">Fan Wang, MIT</a></li>
-    <li><a href="https://angelakilabnyu.org/" target="_blank">Angelaki Lab, New York University</a></li>
-    <li><a href="http://seunglab.org/" target="_blank">Seung Lab, Princeton University</a></li>
-    <li><a href="https://www.bbe.caltech.edu/people/thanos-siapas" target="_blank">Siapas Lab, California Institute of Technology</a></li>
-    <li><a href="https://www.cshl.edu/research/faculty-staff/tatiana-engel/" target="_blank">Engel Lab, Cold Spring Harbor Laboratory</a></li>
-    <li><a href="http://faculty.washington.edu/tuthill/" target="_blank">Tuthill Lab, University of Washington</a></li>
+    <li>California Institute of Technology
+        <ul>
+        <li><a href="https://www.bbe.caltech.edu/people/thanos-siapas" target="_blank">Siapas Lab</a></li>
+        </ul>
+    </li>
+    <li>Cold Spring Harbor Laboratory
+        <ul>
+        <li><a href="https://www.cshl.edu/research/faculty-staff/tatiana-engel/" target="_blank">Engel Lab</a></li>
+        </ul>
+    </li>
+    <li>EPFL
+        <ul>
+        <li><a href="http://www.mackenziemathislab.org/" target="_blank">Mackenzie Mathis Lab</a></li>
+        </ul>
+    </li>
+    <li>FORTH
+        <ul>
+        <li><a href="https://www.imbb.forth.gr/imbb-people/en/froudarakis-home" target="_blank">Emmanouil Froudarakis</a> (<a href="https://github.com/ef-lab" target="_blank">GitHub</a>)</li>
+        </ul>
+    </li>
+    <li>Harvard Medical School
+        <ul>        
+        <li><a href="http://datta.hms.harvard.edu/" target="_blank">Datta Lab</a></li>
+        <li><a href="https://harveylab.hms.harvard.edu/" target="_blank">Harvey Lab</a></li>
+        <li><a href="http://sabatini.hms.harvard.edu/" target="_blank">Sabatini Lab</a></li>
+        <li><a href="https://smirnakislab.bwh.harvard.edu/" target="_blank">Stelios Smirnakis Lab</a></li>
+        </ul>
+    </li>
     <li>Johns Hopkins University
         <ul>
         <li><a href="https://www.jhuapl.edu/" target="_blank">Applied Physics Lab</a> (<a href="https://github.com/aplbrain" target="_blank">GitHub</a>)</li>
+        </ul>
+    </li>
+    <li>Kavli Institute for Systems Neuroscience
+        <ul>
+        <li><a href="https://www.ntnu.edu/kavli/moser-group" target="_blank">Moser Group</a></li>
+        </ul>
+    </li>
+    <li>Ludwig-Maximilians-Universität München
+        <ul>
+        <li><a href="https://www.neuro.bio.lmu.de/research_groups/res-busse_l/index.html" target="_blank">Busse Lab</a></li>
+        <li><a href="https://www.neuro.bio.lmu.de/research_groups/res-katzner/index.html" target="_blank">Katzner Lab</a></li>
+        </ul>
+    </li>
+    <li>MIT
+        <ul>
+        <li><a href="https://www.wanglab-neuro.org" target="_blank">Fan Wang Lab</a></li>
+        </ul>
+    </li>
+    <li>Princeton University
+        <ul>
+        <li><a href="http://seunglab.org/" target="_blank">Seung Lab</a></li>
+        </ul>
+    </li>
+    <li>Stanford University
+        <ul>
+        <li><a href="http://web.stanford.edu/group/dlab/" target="_blank">Karl Deisseroth Lab</a></li>
         </ul>
     </li>
     <li>Northwestern University
@@ -97,18 +135,43 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
         <li><a href="https://www.pintolab.org" target="_blank">Lucas Pinto</a></li>
         </ul>
     </li>
-    <li><a href="https://franklab.ucsf.edu/" target="_blank">Loren Frank Lab, University of California, San Francisco</a></li>
-    <li><a href="https://isearch.asu.edu/profile/500553" target="_blank">Rick Gerkin, Arizona State University</a></li>
-    <li><a href="https://www.imbb.forth.gr/imbb-people/en/froudarakis-home" target="_blank">Emmanouil Froudarakis, FORTH</a> (<a href="https://github.com/ef-lab" target="_blank">GitHub</a>)</li>
+    <li>University of Indiana
+        <ul>
+        <li><a href="http://www.lulaboratory.com/" target="_blank">Lu Lab</a></li>
+        </ul>
+    </li>
+    <li>University of California, Los Angeles
+        <ul>
+        <li><a href="https://churchlandlab.org/" target="_blank">Anne Churchland Lab</a></li>
+        </ul>
+    </li>
+    <li>University of California, San Diego
+        <ul>
+        <li><a href="https://neurophysics.ucsd.edu" target="_blank">David Kleinfeld Lab</a> (<a href="https://github.com/ActiveBrainAtlas" target="_blank">GitHub</a>)</li>
+        </ul>
+    </li>
+    <li>University of California, San Francisco
+        <ul>
+        <li><a href="https://franklab.ucsf.edu/" target="_blank">Loren Frank Lab</a></li>
+        </ul>
+    </li>
     <li>University of Oregon
         <ul>
         <li><a href="https://ion.uoregon.edu/content/santiago-jaramillo" target="_blank">Santiago Jaramillo Lab</a> (<a href="https://github.com/sjara/uobrainflex" target="_blank">GitHub</a>)</li>
         <li><a href="https://ion.uoregon.edu/content/michael-wehr" target="_blank">Michael Wehr Lab</a> (<a href="https://github.com/wehr-lab" target="_blank">GitHub</a>)</li>
         </ul>
     </li>
-    <li>University of California, San Diego
+    <li>University of Washington
         <ul>
-        <li><a href="https://neurophysics.ucsd.edu" target="_blank">David Kleinfeld</a> (<a href="https://github.com/ActiveBrainAtlas" target="_blank">GitHub</a>)</li>
+        <li><a href="http://faculty.washington.edu/tuthill/" target="_blank">Tuthill Lab</a></li>
+        </ul>
+    </li>
+    <li>Wilhelm Schickard Institute for Computer Science
+        <ul>
+        <li><a href="https://sinzlab.org/" target="_blank">Sinz Lab</a></li>
+        <li><a href="https://philippberens.wordpress.com/" target="_blank">Berens Lab</a></li>
+        <li><a href="http://www.eye-tuebingen.de/eulerlab/" target="_blank">Euler Lab</a></li>
+        <li><a href="http://bethgelab.org/" target="_blank">Bethge Lab</a></li>
         </ul>
     </li>
     <li>&#8230; and 40+ other labs</li>
