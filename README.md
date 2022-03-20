@@ -26,14 +26,12 @@ Elements are described in the position paper
 ["DataJoint Elements: Data Workflows for Neurophysiology"](https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
 
 # Project Structure
-
 - [Management and Policies](management/plan.md)
 - [Design Principles](usage/design-principles.md)
 - [Guidelines for Adoption](usage/adopt.md)
 - [Glossary](usage/glossary.md)
 
 ## DataJoint Elements
-
 - [Lab management](https://github.com/datajoint/element-lab)
 - [Animal management](https://github.com/datajoint/element-animal)
 - [Experiment session](https://github.com/datajoint/element-session)
@@ -45,14 +43,13 @@ Elements are described in the position paper
 - [Miniscope imaging](https://github.com/datajoint/element-miniscope)
   - [Example workflow](https://github.com/datajoint/workflow-miniscope)
 
-### DataJoint Elements coming soon
+### DataJoint Elements -- in development
 - [DeepLabCut](https://github.com/datajoint/element-deeplabcut)
 - [Trial-based experiments](https://github.com/datajoint/element-trial)
 - [Electrode localization for Neuropixels](https://github.com/datajoint/element-electrode-localization)
 - [Facemap](https://github.com/datajoint/element-facemap)
 
 ## DataJoint framework
-
 - [DataJoint for Python](https://github.com/datajoint/datajoint-python)
 - [DataJoint for MATLAB](https://github.com/datajoint/datajoint-matlab)
 - [DataJoint Documentation](https://docs.datajoint.org)
@@ -60,11 +57,12 @@ Elements are described in the position paper
 - [Docker image for MySQL server configured for use with DataJoint](https://github.com/datajoint/mysql-docker)
 
 ## DataJoint Interfaces
-
 - [Pharus](https://github.com/datajoint/pharus) — a REST API for interacting
   with DataJoint databases
 - [DataJoint LabBook](https://github.com/datajoint/datajoint-labbook) — a
   front-end web interface for viewing and entering data
+- [DataJoint SciViz](https://github.com/datajoint/sci-viz) — a low-code 
+  framework for building websites for interactive data visualizaion.
 
 ## DataJoint Online Training
 
