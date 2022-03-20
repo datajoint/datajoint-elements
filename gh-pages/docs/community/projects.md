@@ -2,9 +2,8 @@
 
 DataJoint was originally developed by working systems neuroscientists at Baylor College of Medicine to meet the needs of their own research.
 
-Below is a partial list of known DataJoint users. Please let us know if you would like to add another group or make a correction by <a href="https://github.com/datajoint/datajoint-elements/issues" target="_blank">submitting a GitHub issue</a>.
-
-Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog</a> for a more detailed discussion of past projects.
+Below is a partial list of known teams who use DataJoint. 
+Please let us know if you would like to add another group or make other corrections by <a href="https://github.com/datajoint/datajoint-elements/issues" target="_blank">submitting a GitHub issue</a>.
 
 <h3>Multi-lab collaboratives</h3>
 
@@ -16,7 +15,7 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
         </ul>
     <li><a href="https://www.microns-explorer.org" target="_blank">MICrONS</a></li>
     <li>Sainsbury Wellcome Centre<a href="https://www.sainsburywellcome.org/web/" target="_blank"> Aeon</a></li>
-    <li>U19 Awards
+    <li>U19 Projects
         <ul>
         <li>NYU<a href="https://www.osmonauts.org/" target="_blank"> Osmonauts</a></li>
         <li>Harvard<a href="https://www.teamdope.org/" target="_blank"> DOPE</a></li>
@@ -119,6 +118,12 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
         <li><a href="https://www.wanglab-neuro.org" target="_blank">Fan Wang Lab</a></li>
         </ul>
     </li>
+    <li>Northwestern University
+        <ul>
+        <li><a href="https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=49313" target="_blank">James Cotton Lab</a> (<a href="https://github.com/peabody124/PosePipeline" target="_blank">GitHub</a>)</li>
+        <li><a href="https://www.pintolab.org" target="_blank">Lucas Pinto Lab</a></li>
+        </ul>
+    </li>
     <li>Princeton University
         <ul>
         <li><a href="http://seunglab.org/" target="_blank">Seung Lab</a></li>
@@ -127,12 +132,6 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     <li>Stanford University
         <ul>
         <li><a href="http://web.stanford.edu/group/dlab/" target="_blank">Karl Deisseroth Lab</a></li>
-        </ul>
-    </li>
-    <li>Northwestern University
-        <ul>
-        <li><a href="https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=49313" target="_blank">James Cotton Lab</a> (<a href="https://github.com/peabody124/PosePipeline" target="_blank">GitHub</a>)</li>
-        <li><a href="https://www.pintolab.org" target="_blank">Lucas Pinto Lab</a></li>
         </ul>
     </li>
     <li>Tel-Aviv University
@@ -168,6 +167,7 @@ Please visit our <a href="https://catalog.datajoint.io/" target="_blank">Catalog
     </li>
     <li>University of Washington
         <ul>
+        <li><a href="https://eywalkerlab.com/" target="_blank">Edgar Y. Walker Lab</a></li>
         <li><a href="http://faculty.washington.edu/tuthill/" target="_blank">Tuthill Lab</a></li>
         </ul>
     </li>
