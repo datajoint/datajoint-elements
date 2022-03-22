@@ -45,7 +45,7 @@ Elements are described in the position paper
 
 ### DataJoint Elements -- in development
 - [DeepLabCut](https://github.com/datajoint/element-deeplabcut)
-- [Trial-based experiments](https://github.com/datajoint/element-trial)
+- [Event- and trial-based experiments](https://github.com/datajoint/element-event)
 - [Electrode localization for Neuropixels](https://github.com/datajoint/element-electrode-localization)
 - [Facemap](https://github.com/datajoint/element-facemap)
 

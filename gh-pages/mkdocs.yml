@@ -6,14 +6,14 @@ theme:
   disable_nav_previous_next: true
   disable_nav_search: false
 nav:
+  - community/publications.md
+  - community/projects.md
   - 'Usage':
     - usage/design-principles.md
     - usage/adopt.md
     - Setup: usage/install.md
     - usage/glossary.md
   - 'Community':
-    - community/publications.md
-    - community/projects.md
     - community/contribute.md
     - community/nwb.md
     - community/support.md
