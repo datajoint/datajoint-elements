@@ -231,57 +231,57 @@
   [directory structure section](#directory-structure-and-file-naming-convention). If
   multiple root directories exist, include all in the relevant json array.
 
-      + `workflow-array-ephys`
-          <details>
-          <summary>Click to expand</summary>
+    + `workflow-array-ephys`
+        <details>
+        <summary>Click to expand</summary>
 
-          ```json
-          "custom": {
-              "database.prefix": "<username_>",
-              "ephys_root_data_dir": ["Full path to root directory of raw data",
-                                      "Full path to root directory of processed data"]
-              }
-          ```
-          </details>
-
-      + `workflow-calcium-imaging`
-          <details>
-          <summary>Click to expand</summary>
-
-          ```json
-          "custom": {
-              "database.prefix": "<username_>",
-              "imaging_root_data_dir": ["Full path to root directory of raw data",
-                                        "Full path to root directory of processed data"]
-              }
-          ```
-          </details>
-
-      + `workflow-trial`
-          <details>
-          <summary>Click to expand</summary>
-
-          ```json
-          "custom": {
-              "database.prefix": "<username_>",
-              "trial_root_data_dir": ["Full path to root directory of raw data",
-                                      "Full path to root directory of processed data"]
-              }
-          ```
-          </details>
-
-      + `workflow-deeplabcut`
-          <details>
-          <summary>Click to expand</summary>
-
-          ```json
-          "custom": {
-              "database.prefix": "<username_>",
-              "beh_root_data_dir": ["Full path to root directory of raw data",
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "ephys_root_data_dir": ["Full path to root directory of raw data",
                                     "Full path to root directory of processed data"]
-              }
-          ```
-          </details>
+            }
+        ```
+        </details>
+
+    + `workflow-calcium-imaging`
+        <details>
+        <summary>Click to expand</summary>
+
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "imaging_root_data_dir": ["Full path to root directory of raw data",
+                                      "Full path to root directory of processed data"]
+            }
+        ```
+        </details>
+
+    + `workflow-trial`
+        <details>
+        <summary>Click to expand</summary>
+
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "trial_root_data_dir": ["Full path to root directory of raw data",
+                                    "Full path to root directory of processed data"]
+            }
+        ```
+        </details>
+
+    + `workflow-deeplabcut`
+        <details>
+        <summary>Click to expand</summary>
+
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "beh_root_data_dir": ["Full path to root directory of raw data",
+                                  "Full path to root directory of processed data"]
+            }
+        ```
+        </details>
 
 ## Setup complete
 
