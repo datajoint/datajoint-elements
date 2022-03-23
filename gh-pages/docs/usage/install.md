@@ -231,57 +231,57 @@
   [directory structure section](#directory-structure-and-file-naming-convention). If
   multiple root directories exist, include all in the relevant json array.
 
-      + `workflow-array-ephys`
-          <details>
-          <summary>Click to expand</summary>
+    + `workflow-array-ephys`
+        <details>
+        <summary>Click to expand</summary>
 
-          ```json
-          "custom": {
-              "database.prefix": "<username_>",
-              "ephys_root_data_dir": ["Full path to root directory of raw data",
-                                      "Full path to root directory of processed data"]
-              }
-          ```
-          </details>
-
-      + `workflow-calcium-imaging`
-          <details>
-          <summary>Click to expand</summary>
-
-          ```json
-          "custom": {
-              "database.prefix": "<username_>",
-              "imaging_root_data_dir": ["Full path to root directory of raw data",
-                                        "Full path to root directory of processed data"]
-              }
-          ```
-          </details>
-
-      + `workflow-trial`
-          <details>
-          <summary>Click to expand</summary>
-
-          ```json
-          "custom": {
-              "database.prefix": "<username_>",
-              "trial_root_data_dir": ["Full path to root directory of raw data",
-                                      "Full path to root directory of processed data"]
-              }
-          ```
-          </details>
-
-      + `workflow-deeplabcut`
-          <details>
-          <summary>Click to expand</summary>
-
-          ```json
-          "custom": {
-              "database.prefix": "<username_>",
-              "beh_root_data_dir": ["Full path to root directory of raw data",
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "ephys_root_data_dir": ["Full path to root directory of raw data",
                                     "Full path to root directory of processed data"]
-              }
-          ```
-          </details>
+            }
+        ```
+        </details>
+
+    + `workflow-calcium-imaging`
+        <details>
+        <summary>Click to expand</summary>
+
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "imaging_root_data_dir": ["Full path to root directory of raw data",
+                                      "Full path to root directory of processed data"]
+            }
+        ```
+        </details>
+
+    + `workflow-miniscope`
+        <details>
+        <summary>Click to expand</summary>
+
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "miniscope_root_data_dir": ["Full path to root directory of raw data",
+                                        "Full path to root directory of processed data"]
+            }
+        ```
+        </details>
+
+    + `workflow-deeplabcut`
+        <details>
+        <summary>Click to expand</summary>
+
+        ```json
+        "custom": {
+            "database.prefix": "<username_>",
+            "dlc_root_data_dir": ["Full path to root directory of raw data",
+                                  "Full path to root directory of processed data"]
+            }
+        ```
+        </details>
 
 ## Setup complete
 
@@ -513,35 +513,35 @@
 
 - View the declared tables
 
-  - `workflow-array-ephys`
-      <details>
-      <summary>Click to expand details</summary>
+    - `workflow-array-ephys`
+        <details>
+        <summary>Click to expand details</summary>
 
-    ```python
-    subject.Subject()
-    session.Session()
-    ephys.ProbeInsertion()
-    ephys.EphysRecording()
-    ephys.Clustering()
-    ephys.Clustering.Unit()
-    ```
+        ```python
+        subject.Subject()
+        session.Session()
+        ephys.ProbeInsertion()
+        ephys.EphysRecording()
+        ephys.Clustering()
+        ephys.Clustering.Unit()
+        ```
 
-      </details>
+    </details>
 
-  - `workflow-calcium-imaging`
-      <details>
-      <summary>Click to expand details</summary>
+    - `workflow-calcium-imaging`
+        <details>
+        <summary>Click to expand details</summary>
 
-    ```python
-    subject.Subject()
-    session.Session()
-    scan.Scan()
-    scan.ScanInfo()
-    imaging.ProcessingParamSet()
-    imaging.ProcessingTask()
-    ```
+        ```python
+        subject.Subject()
+        session.Session()
+        scan.Scan()
+        scan.ScanInfo()
+        imaging.ProcessingParamSet()
+        imaging.ProcessingTask()
+        ```
 
-      </details>
+        </details>
 
 - For an in depth explanation of how to run the workflows and explore the data,
   please refer to the following workflow specific Jupyter notebooks. + `workflow-array-ephys` [Jupyter notebooks](https://github.com/datajoint/workflow-array-ephys/tree/main/notebooks) + `workflow-calcium-imaging` [Jupyter notebooks](https://github.com/datajoint/workflow-calcium-imaging/tree/main/notebooks)
@@ -636,17 +636,15 @@
     ```
     from workflow_array_ephys.pipeline import *
 
-  ephys.schema.drop()
-  probe.schema.drop()
-  session.schema.drop()
-  subject.schema.drop()
-  lab.schema.drop()
+    ephys.schema.drop()
+    probe.schema.drop()
+    session.schema.drop()
+    subject.schema.drop()
+    lab.schema.drop()
+    ```
 
-  ```
+    </details>
 
-  </details>
-
-  ```
 
 - `workflow-calcium-imaging`
     <details>
@@ -655,16 +653,29 @@
     ```
     from workflow_calcium_imaging.pipeline import *
 
-  imaging.schema.drop()
-  scan.schema.drop()
-  session.schema.drop()
-  subject.schema.drop()
-  lab.schema.drop()
+    imaging.schema.drop()
+    scan.schema.drop()
+    session.schema.drop()
+    subject.schema.drop()
+    lab.schema.drop()
+    ```
 
-  ```
+    </details>
 
-  </details>
-  ```
+- `workflow-miniscope`
+    <details>
+    <summary>Click to expand details</summary>
+    
+    ```
+    from workflow_miniscope.pipeline import *
+
+    miniscope.schema.drop()
+    session.schema.drop()
+    subject.schema.drop()
+    lab.schema.drop()
+    ```
+
+    </details>
 
 ### Run integration tests
 
