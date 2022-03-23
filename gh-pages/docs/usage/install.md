@@ -636,17 +636,15 @@
     ```
     from workflow_array_ephys.pipeline import *
 
-  ephys.schema.drop()
-  probe.schema.drop()
-  session.schema.drop()
-  subject.schema.drop()
-  lab.schema.drop()
+    ephys.schema.drop()
+    probe.schema.drop()
+    session.schema.drop()
+    subject.schema.drop()
+    lab.schema.drop()
+    ```
 
-  ```
+    </details>
 
-  </details>
-
-  ```
 
 - `workflow-calcium-imaging`
     <details>
@@ -655,11 +653,15 @@
     ```
     from workflow_calcium_imaging.pipeline import *
 
-  imaging.schema.drop()
-  scan.schema.drop()
-  session.schema.drop()
-  subject.schema.drop()
-  lab.schema.drop()
+    imaging.schema.drop()
+    scan.schema.drop()
+    session.schema.drop()
+    subject.schema.drop()
+    lab.schema.drop()
+    ```
+
+    </details>
+
 
   ```
 
