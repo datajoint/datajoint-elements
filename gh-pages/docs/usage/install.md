@@ -662,11 +662,20 @@
 
     </details>
 
+- `workflow-miniscope`
+    <details>
+    <summary>Click to expand details</summary>
+    
+    ```
+    from workflow_miniscope.pipeline import *
 
-  ```
+    miniscope.schema.drop()
+    session.schema.drop()
+    subject.schema.drop()
+    lab.schema.drop()
+    ```
 
-  </details>
-  ```
+    </details>
 
 ### Run integration tests
 
