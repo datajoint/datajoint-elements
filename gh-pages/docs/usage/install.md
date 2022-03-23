@@ -277,7 +277,7 @@
         ```json
         "custom": {
             "database.prefix": "<username_>",
-            "beh_root_data_dir": ["Full path to root directory of raw data",
+            "dlc_root_data_dir": ["Full path to root directory of raw data",
                                   "Full path to root directory of processed data"]
             }
         ```
