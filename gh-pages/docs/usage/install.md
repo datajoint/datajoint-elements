@@ -513,35 +513,35 @@
 
 - View the declared tables
 
-  - `workflow-array-ephys`
-      <details>
-      <summary>Click to expand details</summary>
+    - `workflow-array-ephys`
+        <details>
+        <summary>Click to expand details</summary>
 
-    ```python
-    subject.Subject()
-    session.Session()
-    ephys.ProbeInsertion()
-    ephys.EphysRecording()
-    ephys.Clustering()
-    ephys.Clustering.Unit()
-    ```
+        ```python
+        subject.Subject()
+        session.Session()
+        ephys.ProbeInsertion()
+        ephys.EphysRecording()
+        ephys.Clustering()
+        ephys.Clustering.Unit()
+        ```
 
-      </details>
+    </details>
 
-  - `workflow-calcium-imaging`
-      <details>
-      <summary>Click to expand details</summary>
+    - `workflow-calcium-imaging`
+        <details>
+        <summary>Click to expand details</summary>
 
-    ```python
-    subject.Subject()
-    session.Session()
-    scan.Scan()
-    scan.ScanInfo()
-    imaging.ProcessingParamSet()
-    imaging.ProcessingTask()
-    ```
+        ```python
+        subject.Subject()
+        session.Session()
+        scan.Scan()
+        scan.ScanInfo()
+        imaging.ProcessingParamSet()
+        imaging.ProcessingTask()
+        ```
 
-      </details>
+        </details>
 
 - For an in depth explanation of how to run the workflows and explore the data,
   please refer to the following workflow specific Jupyter notebooks. + `workflow-array-ephys` [Jupyter notebooks](https://github.com/datajoint/workflow-array-ephys/tree/main/notebooks) + `workflow-calcium-imaging` [Jupyter notebooks](https://github.com/datajoint/workflow-calcium-imaging/tree/main/notebooks)
