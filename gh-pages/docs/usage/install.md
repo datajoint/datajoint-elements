@@ -257,15 +257,15 @@
         ```
         </details>
 
-    + `workflow-trial`
+    + `workflow-miniscope`
         <details>
         <summary>Click to expand</summary>
 
         ```json
         "custom": {
             "database.prefix": "<username_>",
-            "trial_root_data_dir": ["Full path to root directory of raw data",
-                                    "Full path to root directory of processed data"]
+            "miniscope_root_data_dir": ["Full path to root directory of raw data",
+                                        "Full path to root directory of processed data"]
             }
         ```
         </details>
