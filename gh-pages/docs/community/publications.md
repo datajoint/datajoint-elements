@@ -9,18 +9,13 @@ If you would like make additions or corrections, please submit an issue in the <
 <p>If your work uses DataJoint or DataJoint Elements, please cite the following:</p>
 
 <p><b>DataJoint</b></p>
-<p style="margin-left:5%;">
-Yatsenko D, Reimer J, Ecker AS, Walker EY, Sinz F, Berens P, Hoenselaar A, Cotton RJ, Siapas AS, Tolias AS. <a href="https://doi.org/10.1101/031658" target="_blank" style="color:#1589F0;">DataJoint: managing big scientific data using MATLAB or Python</a>. bioRxiv. 2015 Jan 1:031658.
-</p>
+<blockquote>Yatsenko D, Reimer J, Ecker AS, Walker EY, Sinz F, Berens P, Hoenselaar A, Cotton RJ, Siapas AS, Tolias AS. <a href="https://doi.org/10.1101/031658" target="_blank" style="color:#1589F0;">DataJoint: managing big scientific data using MATLAB or Python</a>. bioRxiv. 2015 Jan 1:031658.</blockquote>
 
-<p style="margin-left:5%;">
-Yatsenko D, Walker EY, Tolias AS. <a href="https://doi.org/10.48550/arXiv.1807.11104" target="_blank" style="color:#1589F0;">DataJoint: a simpler relational data model</a>. arXiv:1807.11104. 2018 Jul 29.
-</p>
+<blockquote>Yatsenko D, Walker EY, Tolias AS. <a href="https://doi.org/10.48550/arXiv.1807.11104" target="_blank" style="color:#1589F0;">DataJoint: a simpler relational data model</a>. arXiv:1807.11104. 2018 Jul 29.</blockquote>
 
 <p><b>DataJoint Elements</b></p>
-<p style="margin-left:5%;">
-Yatsenko D, Nguyen T, Shen S, Gunalan K, Turner CA, Guzman R, Sasaki M, Sitonic D, Reimer J, Walker EY, Tolias AS. <a href="https://doi.org/10.1101/2021.03.30.437358" target="_blank" style="color:#1589F0;">DataJoint Elements: Data Workflows for Neurophysiology</a>. bioRxiv. 2021 Jan 1.
-</p><br>
+<blockquote>Yatsenko D, Nguyen T, Shen S, Gunalan K, Turner CA, Guzman R, Sasaki M, Sitonic D, Reimer J, Walker EY, Tolias AS. <a href="https://doi.org/10.1101/2021.03.30.437358" target="_blank" style="color:#1589F0;">DataJoint Elements: Data Workflows for Neurophysiology</a>. bioRxiv. 2021 Jan 1.</blockquote>
+<br>
 
 <div id="refs" class="references csl-bib-body hanging-indent"
 line-spacing="2">

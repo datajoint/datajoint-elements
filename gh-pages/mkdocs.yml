@@ -28,3 +28,5 @@ nav:
 markdown_extensions:
   - pymdownx.magiclink
   - mdx_truly_sane_lists
+extra_css:
+  - extra.css
