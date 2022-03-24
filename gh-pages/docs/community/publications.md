@@ -22,9 +22,21 @@ line-spacing="2">
 
 <h3>2022</h3>
 
+<!-- 2022 ---> <div id="ref-cotton2022posepipe" class="csl-entry"> 
+
+Cotton, R. J. (2022). <a href="https://doi.org/10.48550/arXiv.2203.08792" target="_blank" style="color:#1589F0;">PosePipe: Open-Source Human Pose Estimation Pipeline for Clinical Research</a>. <i>arXiv</i>. 2203.08792.
+
+</div> <br />
+
 <!-- 2022 ---> <div id="ref-cotton2022spatiotemporal" class="csl-entry"> 
 
 Cotton, R. J., McClerklin, E., Cimorelli, A., & Patel, A. (2022). <a href="https://openreview.net/forum?id=dXPou9HkXcZ" target="_blank" style="color:#1589F0;">Spatiotemporal characterization of gait from monocular videos with transformers</a>.
+
+</div> <br />
+
+<!-- 2022 ---> <div id="ref-cotton2022transforminggait" class="csl-entry"> 
+
+Cotton, R. J., McClerklin, E., Cimorelli, A., Patel, A., & Karakostas, T. (2022). <a href="https://doi.org/10.48550/arXiv.2203.09371" target="_blank" style="color:#1589F0;">Transforming Gait: Video-Based Spatiotemporal Gait Analysis</a>. <i>arXiv</i>. 2203.09371.
 
 </div> <br />
 
