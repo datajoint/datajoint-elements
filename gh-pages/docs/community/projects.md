@@ -47,11 +47,6 @@ Please let us know if you would like to add another group or make other correcti
         <li><a href="https://toliaslab.org/" target="_blank">Andreas Tolias Lab</a></li>
         </ul>
     </li>
-    <li>Bonn University
-        <ul>
-        <li><a href="https://rose-group.ieecr-bonn.de" target="_blank">Tobias Rose Lab</a></li>
-        </ul>
-    </li>
     <li>Boston University
         <ul>
         <li><a href="http://chen-lab.org/index.html" target="_blank">Jerry Chen Lab</a></li>
@@ -145,9 +140,9 @@ Please let us know if you would like to add another group or make other correcti
         <li><a href="http://pblab.tau.ac.il/en/" target="_blank">Pablo Blinder Lab</a> (<a href="https://github.com/PBLab" target="_blank">GitHub</a>)</li>
         </ul>
     </li>
-    <li>University of Indiana
+    <li>University of Bonn
         <ul>
-        <li><a href="http://www.lulaboratory.com/" target="_blank">Lu Lab</a></li>
+        <li><a href="https://rose-group.ieecr-bonn.de" target="_blank">Tobias Rose Lab</a></li>
         </ul>
     </li>
     <li>University of California, Los Angeles
@@ -163,6 +158,11 @@ Please let us know if you would like to add another group or make other correcti
     <li>University of California, San Francisco
         <ul>
         <li><a href="https://franklab.ucsf.edu/" target="_blank">Loren Frank Lab</a></li>
+        </ul>
+    </li>
+    <li>University of Indiana
+        <ul>
+        <li><a href="http://www.lulaboratory.com/" target="_blank">Lu Lab</a></li>
         </ul>
     </li>
     <li>University of Oregon
@@ -191,5 +191,5 @@ Please let us know if you would like to add another group or make other correcti
         <li><a href="http://bethgelab.org/" target="_blank">Bethge Lab</a></li>
         </ul>
     </li>
-    <li>&#8230; and other labs</li>
+    <li>&#8230; and more labs</li>
 </ul>
