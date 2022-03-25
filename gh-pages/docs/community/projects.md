@@ -17,7 +17,7 @@ Please let us know if you would like to add another group or make other correcti
         <li>NYU<a href="https://www.osmonauts.org/" target="_blank"> Osmonauts</a></li>
         <li>Harvard<a href="https://www.teamdope.org/" target="_blank"> DOPE</a></li>
         <li>Columbia<a href="https://confluence.columbia.edu/confluence/display/zmbbi/U19+Data+Science" target="_blank"> MoC3</a></li>
-        <li>Princeton<a href="https://www.braincogs.org/" target="_blank"> BRAINCoGS</a> (<a href="https://github.com/braincogs/" target="_blank">GitHub</a>)</li>
+        <li>Princeton<a href="https://www.braincogs.org/" target="_blank"> BRAIN CoGS</a> (<a href="https://github.com/braincogs/" target="_blank">GitHub</a>)</li>
         <li>Rochester-NYU-Harvard<a href="https://reporter.nih.gov/project-details/10047607" target="_blank"> Neural basis of causal inference</a></li>
         </ul>
     </li>
