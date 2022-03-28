@@ -7,7 +7,9 @@ DataJoint and DataJoint Elements serve as a framework and starting points for nu
 When writting code, the following principles should be observed.
 
 - **Style**: Code shall be written for clear readability. Uniform and clear naming conventions, module structure, and formatting requirements shall be established across all components of the project. Python's [PEP8](https://www.python.org/dev/peps/pep-0008/#naming-conventions) standard offers clear guidance to this regard which can similarly be applied to all languages.
+
 - **Maintenance Overhead**: Code base size should be noted to prevent large, unnecessarily complex solutions from being introduced. The idea is that the larger the code base, the more there is to review and maintain. Therefore, we should aim to find a compromise where we can keep the code base from becoming too large without adding convoluted complexity.
+
 - **Performance**: Performance drawbacks should be avoided, controlled, or, at least, be properly monitored and justified. For instance: memory management, garbage collection, disk reads/writes, and processing overhead should be regarded to ensure that an efficient solution is achieved.
 
 ## Automated Testing
@@ -26,12 +28,19 @@ Generally, this includes tests related to:
 When introducing new code to the code base, the following will be required for acceptance by DataJoint core team into the main code repository.
 
 - **Independence**: Proposed changes should not directly alter the code base in the review process. New changes should be applied separately on a copy of the code base and proposed for review by the DataJoint core team. For example, apply changes on a GitHub fork and open a pull request targeting the `main` branch once ready for review.
+
 - **Etiquette**: An author who has requested for a code for review should not accept and merge their own code to the code base. A reviewer should not commit any suggestions directly to the authors proposed changes but rather should allow the author to review.
+
 - **Coding Standards**: Ensure the above coding standards are respected.
+
 - **Summary**: A description should be included that summarizes and highlights the notable changes that are being proposed.
+
 - **Issue Reference**: Any bugs or feature requests that have been filed in the issue tracker that would be resolved by acceptance should be properly linked and referenced.
+
 - **Satisfy Automated Tests**: All automated tests associated with the project will be verified to be successful prior to acceptance.
+
 - **Documentation**: Documentation should be included to reflect any new feature or behavior introduced.
+
 - **Release Notes**: Include necessary updates to the release notes or change log to capture a summary of the patched bugs and new feature introduction. Proper linking should be maintained to associated tickets in issue tracker and reviews.
 
 ## Alpha Release Process

@@ -17,7 +17,7 @@ Please let us know if you would like to add another group or make other correcti
         <li>NYU<a href="https://www.osmonauts.org/" target="_blank"> Osmonauts</a></li>
         <li>Harvard<a href="https://www.teamdope.org/" target="_blank"> DOPE</a></li>
         <li>Columbia<a href="https://confluence.columbia.edu/confluence/display/zmbbi/U19+Data+Science" target="_blank"> MoC3</a></li>
-        <li>Princeton<a href="https://www.braincogs.org/" target="_blank"> BRAINCoGS</a> (<a href="https://github.com/braincogs/" target="_blank">GitHub</a>)</li>
+        <li>Princeton<a href="https://www.braincogs.org/" target="_blank"> BRAIN CoGS</a> (<a href="https://github.com/braincogs/" target="_blank">GitHub</a>)</li>
         <li>Rochester-NYU-Harvard<a href="https://reporter.nih.gov/project-details/10047607" target="_blank"> Neural basis of causal inference</a></li>
         </ul>
     </li>
@@ -45,11 +45,6 @@ Please let us know if you would like to add another group or make other correcti
         <li><a href="https://www.bcm.edu/research/faculty-labs/paul-pfaffinger-lab" target="_blank">Paul Pfaffinger Lab</a></li>
         <li><a href="https://www.bcm.edu/research/faculty-labs/jacob-reimer-lab" target="_blank">Jacob Reimer Lab</a></li>
         <li><a href="https://toliaslab.org/" target="_blank">Andreas Tolias Lab</a></li>
-        </ul>
-    </li>
-    <li>Bonn University
-        <ul>
-        <li><a href="https://rose-group.ieecr-bonn.de" target="_blank">Tobias Rose Lab</a></li>
         </ul>
     </li>
     <li>Boston University
@@ -91,6 +86,11 @@ Please let us know if you would like to add another group or make other correcti
         <li><a href="https://harveylab.hms.harvard.edu/" target="_blank">Harvey Lab</a></li>
         <li><a href="http://sabatini.hms.harvard.edu/" target="_blank">Sabatini Lab</a></li>
         <li><a href="https://smirnakislab.bwh.harvard.edu/" target="_blank">Stelios Smirnakis Lab</a></li>
+        </ul>
+    </li>
+    <li>Indiana University
+        <ul>
+        <li><a href="http://www.lulaboratory.com/" target="_blank">Lu Lab</a></li>
         </ul>
     </li>
     <li>Johns Hopkins University
@@ -145,9 +145,9 @@ Please let us know if you would like to add another group or make other correcti
         <li><a href="http://pblab.tau.ac.il/en/" target="_blank">Pablo Blinder Lab</a> (<a href="https://github.com/PBLab" target="_blank">GitHub</a>)</li>
         </ul>
     </li>
-    <li>University of Indiana
+    <li>University of Bonn
         <ul>
-        <li><a href="http://www.lulaboratory.com/" target="_blank">Lu Lab</a></li>
+        <li><a href="https://rose-group.ieecr-bonn.de" target="_blank">Tobias Rose Lab</a></li>
         </ul>
     </li>
     <li>University of California, Los Angeles
@@ -191,5 +191,5 @@ Please let us know if you would like to add another group or make other correcti
         <li><a href="http://bethgelab.org/" target="_blank">Bethge Lab</a></li>
         </ul>
     </li>
-    <li>&#8230; and other labs</li>
+    <li>&#8230; and more labs</li>
 </ul>

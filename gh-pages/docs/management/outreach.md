@@ -30,13 +30,13 @@ Before new Resource components are released as part of this Resource, our team e
 
 We conduct activities to disseminate Resource components for adoption in diverse neuroscience labs. These activities include
 
-- A central website for the Resource. Presently, the site https://elements.datajoint.org serves this purpose.
+- A central website for the Resource. Presently, this [site](https://elements.datajoint.org) serves this purpose.
 - Conference talks, presentations, and workshops
 - Publications in peer-reviewed journals
 - White papers posted on internet resources and websites
 - On-site workshops by invitation
 - Remote workshops and webinars
-- Online interactive tutorials
+- Online interactive tutorials hosted on [DataJoint CodeBook](https://codebook.datajoint.io).
 
 # 5. Census
 
