@@ -88,6 +88,11 @@ Please let us know if you would like to add another group or make other correcti
         <li><a href="https://smirnakislab.bwh.harvard.edu/" target="_blank">Stelios Smirnakis Lab</a></li>
         </ul>
     </li>
+    <li>Indiana University
+        <ul>
+        <li><a href="http://www.lulaboratory.com/" target="_blank">Lu Lab</a></li>
+        </ul>
+    </li>
     <li>Johns Hopkins University
         <ul>
         <li><a href="https://www.jhuapl.edu/" target="_blank">Applied Physics Lab</a> (<a href="https://github.com/aplbrain" target="_blank">GitHub</a>)</li>
@@ -158,11 +163,6 @@ Please let us know if you would like to add another group or make other correcti
     <li>University of California, San Francisco
         <ul>
         <li><a href="https://franklab.ucsf.edu/" target="_blank">Loren Frank Lab</a></li>
-        </ul>
-    </li>
-    <li>University of Indiana
-        <ul>
-        <li><a href="http://www.lulaboratory.com/" target="_blank">Lu Lab</a></li>
         </ul>
     </li>
     <li>University of Oregon
