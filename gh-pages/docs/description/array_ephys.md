@@ -1,4 +1,4 @@
-# Array Electrophysiology Element
+# Array Electrophysiology
 ## Description of modality, user population 
 
 Neuropixels probes were developed by a collaboration between HHMI Janelia, industry partners, and others (Jun et al., Nature 2017). 
