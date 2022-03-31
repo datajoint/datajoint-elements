@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
     
-    <title>Project Governance - DataJoint Elements</title>
+    <title>Array Electrophysiology - DataJoint Elements</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -115,67 +115,67 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Element Descriptions <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../../description/lab/">Lab</a>
+    <a href="../lab/">Lab</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/animal/">Animal</a>
+    <a href="../animal/">Animal</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/session/">Session Element</a>
+    <a href="../session/">Session Element</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/event/">Event</a>
+    <a href="../event/">Event</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Array Electrophysiology</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/array_ephys/">Array Electrophysiology</a>
+    <a href="../electrode_localization/">Electrode localization</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/electrode_localization/">Electrode localization</a>
+    <a href="../calcium_imaging/">Calcium Imaging</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/calcium_imaging/">Calcium Imaging</a>
+    <a href="../miniscope/">Miniscope</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/miniscope/">Miniscope</a>
+    <a href="../deeplabcut/">Deeplabcut</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/deeplabcut/">Deeplabcut</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../description/facemap/">Facemap</a>
+    <a href="../facemap/">Facemap</a>
 </li>
 
                         
@@ -211,49 +211,49 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management and Policies <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../plan/">Management Plan</a>
+    <a href="../../management/plan/">Management Plan</a>
 </li>
 
                         
                             
 <li >
-    <a href="../team/">Team</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">Project Governance</a>
+    <a href="../../management/team/">Team</a>
 </li>
 
                         
                             
 <li >
-    <a href="../selection/">Project Selection Process</a>
+    <a href="../../management/governance/">Project Governance</a>
 </li>
 
                         
                             
 <li >
-    <a href="../quality-assurance/">Quality Assurance</a>
+    <a href="../../management/selection/">Project Selection Process</a>
 </li>
 
                         
                             
 <li >
-    <a href="../outreach/">Outreach Plan</a>
+    <a href="../../management/quality-assurance/">Quality Assurance</a>
 </li>
 
                         
                             
 <li >
-    <a href="../licenses/">Licenses and User Agreements</a>
+    <a href="../../management/outreach/">Outreach Plan</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../management/licenses/">Licenses and User Agreements</a>
 </li>
 
                         
@@ -279,28 +279,77 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#project-governance">Project Governance</a></li>
-            <li class="second-level"><a href="#funding">Funding</a></li>
+        <li class="first-level active"><a href="#array-electrophysiology">Array Electrophysiology</a></li>
+            <li class="second-level"><a href="#description-of-modality-user-population">Description of modality, user population</a></li>
                 
-            <li class="second-level"><a href="#scientific-steering-group">Scientific Steering Group</a></li>
+            <li class="second-level"><a href="#acquisition-tools">Acquisition tools</a></li>
+                
+            <li class="second-level"><a href="#preprocessing-tools">Preprocessing tools</a></li>
+                
+            <li class="second-level"><a href="#key-projects">Key projects</a></li>
+                
+            <li class="second-level"><a href="#pipeline-development">Pipeline Development</a></li>
                 
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="project-governance">Project Governance</h1>
-<h2 id="funding">Funding</h2>
-<p>This Resource is supported by the National Institute Of Neurological Disorders And Stroke of the National Institutes of Health under Award Number U24NS116470. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</p>
-<h2 id="scientific-steering-group">Scientific Steering Group</h2>
-<p>The project oversight and guidance is provided by the Scientific Steering Group comprising</p>
+<h1 id="array-electrophysiology">Array Electrophysiology</h1>
+<h2 id="description-of-modality-user-population">Description of modality, user population</h2>
+<p>Neuropixels probes were developed by a collaboration between HHMI Janelia, industry partners, and others (Jun et al., Nature 2017). 
+Since its initial release in October 2018, 300 labs have ordered 1200 probes. 
+Since the rollout of Neuropixels 2.0 in October 2020, IMEC has been shipping 100+ probes monthly (correspondence with Tim Harris). </p>
+<p>Neuropixels probes offer 960 electrode sites along a 10mm long shank, 
+with 384 recordable channels per probe that can record hundreds of units spanning multiple brain regions 
+(Neuropixels 2.0 version is a 4-shank probe with 1280 electrode sites per shank). 
+Such large recording capacity have offered tremendous opportunities for the field of neurophysiology research, 
+yet this is accompanied by an equally great challenge in terms of data and computation management.</p>
+<h2 id="acquisition-tools">Acquisition tools</h2>
+<p>The typical instrumentation used for data acquisition is the Neuropixels probe and headstage interfacing with a PXIe acquisition module (<a href="https://www.neuropixels.org/control-system">https://www.neuropixels.org/control-system</a>).
+Two main acquisition softwares are used for Neuropixels:
++ SpikeGLX - developed by Bill Karsh and Tim Harris at HHMI/Janelia
++ OpenEphys - developed by Joshua Siegle at the Allen Institute.</p>
+<p>These save the data into specific directory structure and file-naming convention as custom binary formats (e.g. “.bin”, “.dat”). Meta data are stored as separate files in xml or text format.</p>
+<h2 id="preprocessing-tools">Preprocessing tools</h2>
+<p>The preprocessing pipeline includes bandpass filtering for LFP extraction, bandpass filtering for spike sorting,  spike sorting, and manual curation of the spike sorting results, and calculation of quality control metrics. In trial-based experiments, the spike trains are aligned and separated into trials. Standard processing may include PSTH computation aligned to trial onset or other events, and often grouped by different trial types. 
+Neuroscience groups have traditionally developed custom home-made toolchains. </p>
+<p>In recent years, several leaders have been emerging as de facto standards with significant community uptake: 
++ Kilosort
++ JRClust
++ MountainSort
++ SpyKING CIRCUS</p>
+<p>Kilosort provides most automation and has gained significant popularity, being adopted as one of the key spike sorting methods in the majority of the teams/collaborations we have worked with. As part of Year-1 U24 effort, we provide support for data ingestion of spike sorting results from Kilosort.
+Further effort will be devoted for the ingestion support of other spike sorting methods. 
+On this end, a framework for unifying existing spike sorting methods, 
+named <a href="https://github.com/SpikeInterface/spikeinterface">SpikeInterface</a>, 
+has been developed by Alessio Buccino, et al. 
+SpikeInterface provides a convenient Python-based wrapper to invoke, extract, compare spike sorting results from different sorting algorithms.</p>
+<h2 id="key-projects">Key projects</h2>
+<p>Over the past few years, several labs have developed DataJoint-based data management and processing pipelines for Neuropixels probes. 
+Our team collaborated with several of them during their projects. 
+Additionally, we interviewed these teams to understand their experiment workflow, pipeline design, associated tools, and interfaces. 
+These teams include:</p>
 <ul>
-<li><a href="http://www.mackenziemathislab.org/team">Mackenzie Mathis (EPFL)</a></li>
-<li><a href="https://stat.columbia.edu/~cunningham/">John Cunningham (Columbia U)</a></li>
-<li><a href="https://https://pni.princeton.edu/faculty/carlos-brody">Carlos Brody (Princeton U)</a></li>
-<li><a href="https://alleninstitute.org/what-we-do/brain-science/about/team/staff-profiles/karel-svoboda1/">Karel Svoboda (Allen Institute)</a></li>
-<li><a href="http://www.nicksteinmetz.com/">Nick Steinmetz (U of Washington)</a></li>
-<li><a href="https://franklab.ucsf.edu/">Loren Frank (UCSF)</a></li>
-</ul></div>
+<li>International Brain Lab - <a href="https://internationalbrainlab.org">https://internationalbrainlab.org</a> - <a href="https://github.com/int-brain-lab/IBL-pipeline">https://github.com/int-brain-lab/IBL-pipeline</a></li>
+<li>Mesoscale Activity Project (HHMI Janelia) - <a href="https://github.com/mesoscale-activity-map">https://github.com/mesoscale-activity-map</a> - <a href="https://github.com/mesoscale-activity-map/map-ephys">https://github.com/mesoscale-activity-map/map-ephys</a> </li>
+<li>Moser Group (private repository)</li>
+<li>Andreas Tolias Lab (BCM)</li>
+<li>BrainCoGs (Princeton Neuroscience Institute)</li>
+<li>Brody Lab (Princeton)</li>
+</ul>
+<h2 id="pipeline-development">Pipeline Development</h2>
+<p>Through our interviews and direct collaboration on the precursor projects,
+ we identified the common motifs to create the Array Electrophysiology Element with the repository hosted at <a href="https://github.com/datajoint/element-array-ephys">https://github.com/datajoint/element-array-ephys</a>.</p>
+<p>Major features of the Array Electrophysiology Element include:
++ Pipeline architecture defining:
+    + Probe, electrode configuration compatible with Neuropixels probes and generalizable to other types of probes (e.g. tetrodes) - supporting both chronic and acute probe insertion mode
+    + Probe-insertion, ephys-recordings, LFP extraction, clusterings, curations, sorted units and the associated data (e.g. spikes, waveforms, etc.)
+    + Store/track/manage different curations of the spike sorting results
++ Ingestion support for data acquired with SpikeGLX and OpenEphys acquisition systems
++ Ingestion support for spike sorting outputs from Kilosort
++ Sample data and complete test suite for quality assurance</p>
+<p>Incorporation of SpikeInterface into the Array Electrophysiology Element will be on DataJoint Elements development roadmap. 
+Dr. Loren Frank has led a development effort of a DataJoint pipeline with SpikeInterface framework and NeurodataWithoutBorders format integrated (<a href="https://github.com/LorenFrankLab/nwb_datajoint">https://github.com/LorenFrankLab/nwb_datajoint</a>).</p></div>
         
         
     </div>

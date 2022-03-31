@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
     
-    <title>Project Governance - DataJoint Elements</title>
+    <title>Miniscope - DataJoint Elements</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -115,67 +115,67 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Element Descriptions <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../../description/lab/">Lab</a>
+    <a href="../lab/">Lab</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/animal/">Animal</a>
+    <a href="../animal/">Animal</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/session/">Session Element</a>
+    <a href="../session/">Session Element</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/event/">Event</a>
+    <a href="../event/">Event</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/array_ephys/">Array Electrophysiology</a>
+    <a href="../array_ephys/">Array Electrophysiology</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/electrode_localization/">Electrode localization</a>
+    <a href="../electrode_localization/">Electrode localization</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/calcium_imaging/">Calcium Imaging</a>
+    <a href="../calcium_imaging/">Calcium Imaging</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Miniscope</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/miniscope/">Miniscope</a>
+    <a href="../deeplabcut/">Deeplabcut</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/deeplabcut/">Deeplabcut</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../description/facemap/">Facemap</a>
+    <a href="../facemap/">Facemap</a>
 </li>
 
                         
@@ -211,49 +211,49 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management and Policies <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../plan/">Management Plan</a>
+    <a href="../../management/plan/">Management Plan</a>
 </li>
 
                         
                             
 <li >
-    <a href="../team/">Team</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">Project Governance</a>
+    <a href="../../management/team/">Team</a>
 </li>
 
                         
                             
 <li >
-    <a href="../selection/">Project Selection Process</a>
+    <a href="../../management/governance/">Project Governance</a>
 </li>
 
                         
                             
 <li >
-    <a href="../quality-assurance/">Quality Assurance</a>
+    <a href="../../management/selection/">Project Selection Process</a>
 </li>
 
                         
                             
 <li >
-    <a href="../outreach/">Outreach Plan</a>
+    <a href="../../management/quality-assurance/">Quality Assurance</a>
 </li>
 
                         
                             
 <li >
-    <a href="../licenses/">Licenses and User Agreements</a>
+    <a href="../../management/outreach/">Outreach Plan</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../management/licenses/">Licenses and User Agreements</a>
 </li>
 
                         
@@ -279,27 +279,71 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#project-governance">Project Governance</a></li>
-            <li class="second-level"><a href="#funding">Funding</a></li>
+        <li class="first-level active"><a href="#miniscope">Miniscope</a></li>
+            <li class="second-level"><a href="#description-of-modality-user-population">Description of modality, user population</a></li>
                 
-            <li class="second-level"><a href="#scientific-steering-group">Scientific Steering Group</a></li>
+            <li class="second-level"><a href="#acquisition-tools">Acquisition tools</a></li>
+                
+            <li class="second-level"><a href="#preprocessing-tools">Preprocessing tools</a></li>
+                
+            <li class="second-level"><a href="#key-projects">Key projects</a></li>
+                
+            <li class="second-level"><a href="#pipeline-development">Pipeline Development</a></li>
                 
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="project-governance">Project Governance</h1>
-<h2 id="funding">Funding</h2>
-<p>This Resource is supported by the National Institute Of Neurological Disorders And Stroke of the National Institutes of Health under Award Number U24NS116470. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</p>
-<h2 id="scientific-steering-group">Scientific Steering Group</h2>
-<p>The project oversight and guidance is provided by the Scientific Steering Group comprising</p>
+<h1 id="miniscope">Miniscope</h1>
+<h2 id="description-of-modality-user-population">Description of modality, user population</h2>
+<p>Miniature fluorescence microscopes (miniscopes) are a head-mounted calcium imaging full-frame video modality first introduced in 2005 by Mark Schnitzer's lab (<a href="https://pubmed.ncbi.nlm.nih.gov/16190441/">Flusberg et al., Optics Letters 2005</a>). Due to their light weight, these miniscopes allow measuring the dynamic activity of populations of cortical neurons in freely behaving animals. In 2011, Inscopix Inc. was founded to support one-photon miniscopes as a commercial neuroscience research platform, providing proprietary hardware, acquisition software, and analysis software. Today, they estimate their active user base is 491 labs with a total of 1179 installs. An open-source alternative was launched by a UCLA team led by Daniel Aharoni and Peyman Golshani (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5063500/">Cai et al., Nature 2016</a>; <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6461004/">Aharoni and Hoogland, Frontiers in Cellular Neuroscience 2019</a>). In our conversation with Dr. Aharoni, he estimated about 700 labs currently using the UCLA system alone.  The Inscopix user base is smaller but more established. Several two-photon miniscopes have been developed but lack widespread adoption likely due to the expensive hardware required for the two-photon excitation (<a href="https://pubmed.ncbi.nlm.nih.gov/11580892/">Helmchen et al., Neuron 2001</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/28553965/">Zong et al., Nature Methods 2017</a>; <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6461004/">Aharoni and Hoogland, Frontiers in Cellular Neuroscience 2019</a>).  Due to the low costs and ability to record during natural behaviors, one-photon miniscope imaging appears to be the fastest growing calcium imaging modality in the field today.  In Year 1, we focused our efforts on supporting the UCLA platform due its fast growth and deficiency of standardization in acquisition and processing pipelines. In future phases, we will reach out to Inscopix to support their platform as well.</p>
+<h2 id="acquisition-tools">Acquisition tools</h2>
+<p>Daniel Aharoni's lab has developed iterations of the UCLA Miniscope platform.  Based on interviews, we have found labs using the two most recent versions including <a href="http://miniscope.org/index.php/Information_on_the_(previous_Version_3)_Miniscope_platform">Miniscope DAQ V3</a> and <a href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki">Miniscope DAQ V4</a>.  Labs also use the Bonsai OpenEphys tool for data acquisition with the UCLA miniscope.  Inscopix provides the Inscopix Data Acquisition Software (IDAS) for the nVista and nVoke systems.</p>
+<h2 id="preprocessing-tools">Preprocessing tools</h2>
+<p>The preprocessing workflow for miniscope imaging includes denoising, motion correction, cell segmentation, and calcium event extraction (sometimes described as "deconvolution" or "spike inference").  For the UCLA Miniscopes, the following <a href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Analysis-Packages">analysis packages</a> are commonly used:</p>
+<p>(Package, Developer [Affiliation], Programming Language)</p>
 <ul>
-<li><a href="http://www.mackenziemathislab.org/team">Mackenzie Mathis (EPFL)</a></li>
-<li><a href="https://stat.columbia.edu/~cunningham/">John Cunningham (Columbia U)</a></li>
-<li><a href="https://https://pni.princeton.edu/faculty/carlos-brody">Carlos Brody (Princeton U)</a></li>
-<li><a href="https://alleninstitute.org/what-we-do/brain-science/about/team/staff-profiles/karel-svoboda1/">Karel Svoboda (Allen Institute)</a></li>
-<li><a href="http://www.nicksteinmetz.com/">Nick Steinmetz (U of Washington)</a></li>
-<li><a href="https://franklab.ucsf.edu/">Loren Frank (UCSF)</a></li>
+<li><a href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Removing-Horizontal-Noise-from-Recordings">Miniscope Denoising</a>, Daniel Aharoni (UCLA), Python</li>
+<li><a href="https://github.com/flatironinstitute/NoRMCorre">NoRMCorre</a>, Flatiron Institute, MATLAB</li>
+<li><a href="https://github.com/zhoupc/CNMF_E">CNMF-E</a>, Pengcheng Zhou (Liam Paninski’s Lab, Columbia University), MATLAB</li>
+<li><a href="https://github.com/flatironinstitute/CaImAn">CaImAn</a>, Flatiron Institute, Python</li>
+<li><a href="https://github.com/PeyracheLab/miniscoPy">miniscoPy</a>, Guillaume Viejo (Adrien Peyrache’s Lab, McGill University), Python</li>
+<li><a href="https://github.com/JinghaoLu/MIN1PIPE">MIN1PIPE</a>, Jinghao Lu (Fan Wang’s Lab, MIT), MATLAB</li>
+<li><a href="https://github.com/bahanonu/calciumImagingAnalysis">CIAtah</a>, Biafra Ahanonu, MATLAB</li>
+<li><a href="https://github.com/DeniseCaiLab/minian">MiniAn</a>, Phil Dong (Denise Cai's Lab, Mount Sinai), Python</li>
+<li><a href="https://github.com/etterguillaume/MiniscopeAnalysis">MiniscopeAnalysis</a>, Guillaume Etter (Sylvain Williams’ Lab, McGill University), MATLAB</li>
+<li><a href="https://github.com/etterguillaume/PIMPN">PIMPN</a>, Guillaume Etter (Sylvain Williams’ Lab, McGill University), Python</li>
+<li><a href="https://github.com/zivlab/CellReg">CellReg</a>, Liron Sheintuch (Yaniv Ziv’s Lab, Weizmann Institute of Science), MATLAB</li>
+<li>Inscopix Data Processing Software (IDPS)</li>
+<li>Inscopix Multimodal Image Registration and Analysis (MIRA)</li>
+</ul>
+<p>Based on interviews with UCLA and Inscopix miniscope users and developers, each research lab uses a different preprocessing workflow.  These custom workflows are often closed source and not tracked with version control software.  For the preprocessing tools that are open source, they are often developed by an individual during their training period and lack funding for long term maintenance.  These factors result in a lack of standardization for miniscope preprocessing tools, which is a major obstacle to adoption for new labs.</p>
+<h2 id="key-projects">Key projects</h2>
+<p>Until recently, DataJoint had not been used for miniscope pipelines. However, labs we have contacted have been eager to engage and adopt DataJoint-based workflows in their labs.</p>
+<ul>
+<li>Adrien Peyrache Lab, McGill University</li>
+<li>Peyman Golshani Lab, UCLA</li>
+<li>Daniel Aharoni Lab, UCLA</li>
+<li>Anne Churchland Lab, UCLA</li>
+<li>Fan Wang Lab, MIT</li>
+<li>Antoine Adamantidis Lab, University of Bern</li>
+<li>Manolis Froudaraki Lab, FORTH</li>
+<li>Allan Basbaum Lab, UCSF</li>
+</ul>
+<h2 id="pipeline-development">Pipeline Development</h2>
+<p>With assistance from Peyman Golshani’s Lab (UCLA) we have added support for the UCLA Miniscope DAQ V3 acquisition tool and MiniscopeAnalysis preprocessing tool in <code>element-miniscope</code> and <code>workflow-miniscope</code>.  They have provided example data for development, and will begin validating in March 2021.</p>
+<p>Based on interviews, we are considering adding support for the tools listed below.  The deciding factors include the number of users, long term support, quality controls, and python programming language (so that the preprocessing tool can be triggered within the element).</p>
+<ul>
+<li>Acquisition tools
+    + Miniscope DAQ V4
+    + Inscopix Data Acquisition Software (IDAS)</li>
+<li>Preprocessing tools
+    + Inscopix Data Processing Software (IDPS)
+    + Inscopix Multimodal Image Registration and Analysis (MIRA)
+    + MiniAn
+    + CaImAn
+    + CNMF-E
+    + CellReg</li>
 </ul></div>
         
         

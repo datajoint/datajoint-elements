@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
     
-    <title>Project Governance - DataJoint Elements</title>
+    <title>Calcium Imaging - DataJoint Elements</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -115,67 +115,67 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Element Descriptions <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../../description/lab/">Lab</a>
+    <a href="../lab/">Lab</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/animal/">Animal</a>
+    <a href="../animal/">Animal</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/session/">Session Element</a>
+    <a href="../session/">Session Element</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/event/">Event</a>
+    <a href="../event/">Event</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/array_ephys/">Array Electrophysiology</a>
+    <a href="../array_ephys/">Array Electrophysiology</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/electrode_localization/">Electrode localization</a>
+    <a href="../electrode_localization/">Electrode localization</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Calcium Imaging</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/calcium_imaging/">Calcium Imaging</a>
+    <a href="../miniscope/">Miniscope</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/miniscope/">Miniscope</a>
+    <a href="../deeplabcut/">Deeplabcut</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../description/deeplabcut/">Deeplabcut</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../description/facemap/">Facemap</a>
+    <a href="../facemap/">Facemap</a>
 </li>
 
                         
@@ -211,49 +211,49 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management and Policies <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../plan/">Management Plan</a>
+    <a href="../../management/plan/">Management Plan</a>
 </li>
 
                         
                             
 <li >
-    <a href="../team/">Team</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">Project Governance</a>
+    <a href="../../management/team/">Team</a>
 </li>
 
                         
                             
 <li >
-    <a href="../selection/">Project Selection Process</a>
+    <a href="../../management/governance/">Project Governance</a>
 </li>
 
                         
                             
 <li >
-    <a href="../quality-assurance/">Quality Assurance</a>
+    <a href="../../management/selection/">Project Selection Process</a>
 </li>
 
                         
                             
 <li >
-    <a href="../outreach/">Outreach Plan</a>
+    <a href="../../management/quality-assurance/">Quality Assurance</a>
 </li>
 
                         
                             
 <li >
-    <a href="../licenses/">Licenses and User Agreements</a>
+    <a href="../../management/outreach/">Outreach Plan</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../management/licenses/">Licenses and User Agreements</a>
 </li>
 
                         
@@ -279,28 +279,82 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#project-governance">Project Governance</a></li>
-            <li class="second-level"><a href="#funding">Funding</a></li>
+        <li class="first-level active"><a href="#calcium-imaging">Calcium Imaging</a></li>
+            <li class="second-level"><a href="#description-of-modality-user-population">Description of modality, user population</a></li>
                 
-            <li class="second-level"><a href="#scientific-steering-group">Scientific Steering Group</a></li>
+            <li class="second-level"><a href="#acquisition-tools">Acquisition tools</a></li>
+                
+                <li class="third-level"><a href="#hardware">Hardware</a></li>
+                <li class="third-level"><a href="#software">Software</a></li>
+            <li class="second-level"><a href="#preprocessing-toolchain-development-teams">Preprocessing toolchain: development teams</a></li>
+                
+            <li class="second-level"><a href="#key-projects">Key projects</a></li>
+                
+            <li class="second-level"><a href="#pipeline-development">Pipeline Development</a></li>
                 
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="project-governance">Project Governance</h1>
-<h2 id="funding">Funding</h2>
-<p>This Resource is supported by the National Institute Of Neurological Disorders And Stroke of the National Institutes of Health under Award Number U24NS116470. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</p>
-<h2 id="scientific-steering-group">Scientific Steering Group</h2>
-<p>The project oversight and guidance is provided by the Scientific Steering Group comprising</p>
+<h1 id="calcium-imaging">Calcium Imaging</h1>
+<h2 id="description-of-modality-user-population">Description of modality, user population</h2>
+<p>Over the past two decades, in vivo two-photon laser-scanning imaging of calcium signals 
+has evolved into a mainstream modality for neurophysiology experiments to record population activity in intact neural circuits. 
+The tools for signal acquisition and analysis continue to evolve but common patterns and elements of standardization have emerged.</p>
+<h2 id="acquisition-tools">Acquisition tools</h2>
+<h3 id="hardware">Hardware</h3>
+<p>The primary acquisition systems are: 
++ Sutter (we estimate 400 rigs in active use - TBC)
++ Thorlabs  (we estimate 400 rigs in active use - TBC)
++ Bruker  (we estimate 400 rigs in active use - TBC)
++ Neurolabware (we estimate 400 rigs in active use - TBC)</p>
+<p>We do not include Miniscopes in these estimates. 
+In all there are perhaps on the order of 3000 two-photon setups globally but their processing needs may need to be further segmented.</p>
+<h3 id="software">Software</h3>
 <ul>
-<li><a href="http://www.mackenziemathislab.org/team">Mackenzie Mathis (EPFL)</a></li>
-<li><a href="https://stat.columbia.edu/~cunningham/">John Cunningham (Columbia U)</a></li>
-<li><a href="https://https://pni.princeton.edu/faculty/carlos-brody">Carlos Brody (Princeton U)</a></li>
-<li><a href="https://alleninstitute.org/what-we-do/brain-science/about/team/staff-profiles/karel-svoboda1/">Karel Svoboda (Allen Institute)</a></li>
-<li><a href="http://www.nicksteinmetz.com/">Nick Steinmetz (U of Washington)</a></li>
-<li><a href="https://franklab.ucsf.edu/">Loren Frank (UCSF)</a></li>
-</ul></div>
+<li>ScanImage</li>
+<li>ThorImageLS</li>
+<li>Scanbox</li>
+</ul>
+<p>Vidrio’s <a href="https://docs.scanimage.org/">ScanImage</a> is the data acquisition software for two types of home-built scanning two-photon systems, 
+either based on Thorlabs and Sutter hardware. ScanImage has a free version and a licensed version. 
+Thorlabs also provides their own acquisition software - ThorImageLS (probably half of the systems).</p>
+<h2 id="preprocessing-toolchain-development-teams">Preprocessing toolchain: development teams</h2>
+<p>The preprocessing workflow for two-photon laser-scanning microscopy includes 
+motion correction (rigid or non-rigid), cell segmentation, and calcium event extraction 
+(sometimes described as "deconvolution" or "spike inference"). 
+Some include raster artifact correction, cropping and stitching operations. </p>
+<p>Until recently, most labs have developed custom processing pipelines, sharing them with others as academic open-source projects. 
+Recently, a few leaders have emerged as standardization candidates for the initial preprocessing.</p>
+<ul>
+<li><a href="https://github.com/flatironinstitute/CaImAn">CaImAn</a> (Originally developed by Andrea Giovannucci, current support by FlatIron Institute: Eftychios A. Pnevmatikakis, Johannes Friedrich)</li>
+<li><a href="https://github.com/MouseLand/suite2p">Suite2p</a> (Carsen Stringer and Marius Pachitariu at Janelia), 200+ users, active support</li>
+</ul>
+<h2 id="key-projects">Key projects</h2>
+<p>Over the past few years, several labs have developed DataJoint-based data management and processing pipelines for two-photon Calcium imaging. 
+Our team collaborated with several of them during their projects. 
+Additionally, we interviewed these teams to understand their experiment workflow, pipeline design, associated tools, and interfaces. </p>
+<p>These teams include:
++ MICrONS (Andreas Tolias Lab, BCM) - <a href="https://github.com/cajal">https://github.com/cajal</a>
++ BrainCoGs (Princeton) - <a href="https://github.com/BrainCOGS">https://github.com/BrainCOGS</a>
++ Moser Group (Kavli Institute/NTNU) - private repository
++ Anne Churchland Lab (UCLA)</p>
+<h2 id="pipeline-development">Pipeline Development</h2>
+<p>Through our interviews and direct collaboration on the precursor projects, 
+we identified the common motifs to create the Calcium ImagingElement 
+with the repository hosted at <a href="https://github.com/datajoint/element-calcium-imaging">https://github.com/datajoint/element-calcium-imaging</a>.</p>
+<p>Major features of the Calcium Imaging Element include:
++ Pipeline architecture defining:
+    + Calcium-imaging scanning metadata, also compatible with mesoscale imaging and multi-ROI scanning mode
+    + Tables for all processing steps: motion correction, segmentation, cell spatial footprint, fluorescence trace extraction, spike inference and cell classification
+    + Store/track/manage different curations of the segmentation results
++ Ingestion support for data acquired with ScanImage and Scanbox acquisition systems
++ Ingestion support for processing outputs from both Suite2p and CaImAn analysis suites
++ Sample data and complete test suite for quality assurance</p>
+<p>The processing workflow is typically performed on a per-scan basis, 
+however, depending on the nature of the research questions, 
+different labs may opt to perform processing/segmentation on a concatenated set of data from multiple scans. 
+To this end, we have extended the Calcium Imaging Element and provided a design version capable of supporting a multi-scan processing scheme.</p></div>
         
         
     </div>
