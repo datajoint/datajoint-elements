@@ -1,4 +1,4 @@
-# Session Element
+# Session
 
 ## Description of modality, user population 
 
