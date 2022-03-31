@@ -26,7 +26,7 @@ Elements are described in the position paper
 ["DataJoint Elements: Data Workflows for Neurophysiology"](https://www.biorxiv.org/content/10.1101/2021.03.30.437358v2).
 
 # Project Structure
-- [Management and Policies](management/plan.md) #TODO fix
+- [Management and Policies](management/plan.md)
 - [Design Principles](usage/design-principles.md)
 - [Guidelines for Adoption](usage/adopt.md)
 - [Glossary](usage/glossary.md)
