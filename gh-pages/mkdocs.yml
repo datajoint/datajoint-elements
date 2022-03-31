@@ -15,7 +15,7 @@ nav:
     - usage/adopt.md
     - Setup: usage/install.md
     - usage/glossary.md
-  - 'Background':
+  - 'Element Descriptions':
     - background/lab.md
     - background/animal.md
     - background/session.md
