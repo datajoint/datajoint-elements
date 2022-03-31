@@ -1,4 +1,4 @@
-# Miniscope Element
+# Miniscope
 
 ## Description of modality, user population
 
