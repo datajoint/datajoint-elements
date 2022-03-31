@@ -32,22 +32,25 @@ Elements are described in the position paper
 - [Glossary](usage/glossary.md)
 
 ## DataJoint Elements
-- [Lab management](https://github.com/datajoint/element-lab)
-- [Animal management](https://github.com/datajoint/element-animal)
-- [Experiment session](https://github.com/datajoint/element-session)
-  - [Example workflow for lab, subject and session management](https://github.com/datajoint/workflow-session)
-- [Extracellular array electrophysiology for Neuropixels](https://github.com/datajoint/element-array-ephys)
-  - [Example workflow](https://github.com/datajoint/workflow-array-ephys)
-- [Calcium imaging](https://github.com/datajoint/element-calcium-imaging)
-  - [Example workflow](https://github.com/datajoint/workflow-calcium-imaging)
-- [Miniscope imaging](https://github.com/datajoint/element-miniscope)
-  - [Example workflow](https://github.com/datajoint/workflow-miniscope)
+
+| DataJoint Element | Example workflow | Backgound, Features, and Status |
+|:-|:-|:-|
+| [Lab management](https://github.com/datajoint/element-lab) | See Session | [Link](description/lab.md) |
+| [Animal management](https://github.com/datajoint/element-animal) | See Session | [Link](description/animal.md) |
+| [Experiment Session management](https://github.com/datajoint/element-session) | [Lab, subject and session management](https://github.com/datajoint/workflow-session) | [Link](description/session.md) |
+| [Extracellular array electrophysiology](https://github.com/datajoint/element-array-ephys) | [Neuropixels](https://github.com/datajoint/workflow-array-ephys) | [Link](description/array_electrophysiology.md) |
+| [Calcium imaging](https://github.com/datajoint/element-calcium-imaging) | [Multiphoton laser scanning](https://github.com/datajoint/workflow-calcium-imaging) | [Link](description/calcium_imaging.md) |
+| [Miniscope imaging](https://github.com/datajoint/element-miniscope) | [UCLA Miniscope](https://github.com/datajoint/workflow-miniscope) | [Link](description/miniscope.md) |
+
 
 ### DataJoint Elements -- in development
-- [DeepLabCut](https://github.com/datajoint/element-deeplabcut)
-- [Event- and trial-based experiments](https://github.com/datajoint/element-event)
-- [Electrode localization for Neuropixels](https://github.com/datajoint/element-electrode-localization)
-- [Facemap](https://github.com/datajoint/element-facemap)
+| DataJoint Element | Example workflow | Description |
+|:-|:-|:-|
+| [DeepLabCut](https://github.com/datajoint/element-deeplabcut) | [Workflow for pose tracking](https://github.com/datajoint/workflow-deeplabcut) | [Background, features, and status](description/deeplabcut.md) |
+| [Event- and trial-based experiments](https://github.com/datajoint/element-event) | [Workflow for Neuropixels](https://github.com/datajoint/workflow-array-ephys) <br/> [Workflow for multiphoton laser scanning](https://github.com/datajoint/workflow-calcium-imaging) | [Background, features, and status](description/event.md) |
+| [Electrode localization for Neuropixels](https://github.com/datajoint/element-electrode-localization) | [Workflow for Neuropixels](https://github.com/datajoint/workflow-array-ephys) | [Background, features, and status](description/electrode_localization.md) |
+| [Facemap](https://github.com/datajoint/element-facemap)  |  In development |  [Background, features, and status](description/facemap.md) |
+
 
 ## DataJoint framework
 - [DataJoint for Python](https://github.com/datajoint/datajoint-python)

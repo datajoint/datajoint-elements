@@ -8,13 +8,24 @@ theme:
   analytics:
     gtag: G-67GBDT81TP
 nav:
-  - community/publications.md
-  - community/projects.md
+  - publications.md
+  - projects.md
   - 'Usage':
     - usage/design-principles.md
     - usage/adopt.md
     - Setup: usage/install.md
     - usage/glossary.md
+  - 'Element Descriptions':
+    - description/lab.md
+    - description/animal.md
+    - description/session.md
+    - description/event.md
+    - description/array_ephys.md
+    - description/electrode_localization.md
+    - description/calcium_imaging.md
+    - description/miniscope.md
+    - description/deeplabcut.md
+    - description/facemap.md
   - 'Community':
     - community/contribute.md
     - community/nwb.md
