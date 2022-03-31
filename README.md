@@ -33,14 +33,14 @@ Elements are described in the position paper
 
 ## DataJoint Elements
 
-| DataJoint Element | Example workflow | Description |
+| DataJoint Element | Example workflow | Backgound, Features, and Status |
 |:-|:-|:-|
-| [Lab management](https://github.com/datajoint/element-lab) | See workflow for session management | [Background, features, and status](description/lab.md) |
-| [Animal management](https://github.com/datajoint/element-animal) | See workflow for session management | [Background, features, and status](description/animal.md) |
-| [Experiment session management](https://github.com/datajoint/element-session) | [Workflow for lab, subject and session management](https://github.com/datajoint/workflow-session) | [Background, features, and status](description/session.md) |
-|  [Extracellular array electrophysiology](https://github.com/datajoint/element-array-ephys) | [Workflow for Neuropixels](https://github.com/datajoint/workflow-array-ephys) | [Background, features, and status](description/array_electrophysiology.md) |
-|  [Calcium imaging](https://github.com/datajoint/element-calcium-imaging) | [Workflow for multiphoton laser scanning](https://github.com/datajoint/workflow-calcium-imaging) | [Background, features, and status](description/calcium_imaging.md) |
-|  [Miniscope imaging](https://github.com/datajoint/element-miniscope) | [Workflow for UCLA Miniscope](https://github.com/datajoint/workflow-miniscope) | [Background, features, and status](description/miniscope.md) |
+| [Lab management](https://github.com/datajoint/element-lab) | See Session | [Link](description/lab.md) |
+| [Animal management](https://github.com/datajoint/element-animal) | See Session | [Link](description/animal.md) |
+| [Experiment Session management](https://github.com/datajoint/element-session) | [Lab, subject and session management](https://github.com/datajoint/workflow-session) | [Link](description/session.md) |
+| [Extracellular array electrophysiology](https://github.com/datajoint/element-array-ephys) | [Neuropixels](https://github.com/datajoint/workflow-array-ephys) | [Link](description/array_electrophysiology.md) |
+| [Calcium imaging](https://github.com/datajoint/element-calcium-imaging) | [Multiphoton laser scanning](https://github.com/datajoint/workflow-calcium-imaging) | [Link](description/calcium_imaging.md) |
+| [Miniscope imaging](https://github.com/datajoint/element-miniscope) | [UCLA Miniscope](https://github.com/datajoint/workflow-miniscope) | [Link](description/miniscope.md) |
 
 
 ### DataJoint Elements -- in development

@@ -1,4 +1,4 @@
-# Calcium Imaging Element
+# Calcium Imaging
 
 ## Description of modality, user population 
 Over the past two decades, in vivo two-photon laser-scanning imaging of calcium signals 
