@@ -15,6 +15,17 @@ nav:
     - usage/adopt.md
     - Setup: usage/install.md
     - usage/glossary.md
+  - 'Background':
+    - background/lab.md
+    - background/animal.md
+    - background/session.md
+    - background/event.md
+    - background/array_electrophysiology.md
+    - background/electrode_localization.md
+    - background/calcium_imaging.md
+    - background/miniscope.md
+    - background/deeplabcut.md
+    - background/facemap.md
   - 'Community':
     - community/contribute.md
     - community/nwb.md
