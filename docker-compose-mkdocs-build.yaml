@@ -1,0 +1,26 @@
+# docker-compose -f ./docker-compose-mkdocs-build.yaml up --exit-code-from app --build
+#
+# Intended for updating dependencies.
+# Used to build static artifacts.
+version: "2.4"
+services:
+  app:
+    image: python:3.9-slim
+    entrypoint:
+      - sh
+      - -c
+      - |
+        pip install mkdocs mkdocs-cinder pymdown-extensions mdx_truly_sane_lists mkdocs-include-markdown-plugin jinja2==3.0.3
+        "$${@}"
+    command:
+      - ignored
+      - bash
+      - -c
+      - |
+        mkdocs build
+    working_dir: /gh-pages
+    volumes:
+      - ./docs:/gh-pages/docs
+      - ./README.md:/gh-pages/README.md
+      - ./mkdocs.yml:/gh-pages/mkdocs.yml
+      - ./site:/gh-pages/site
