@@ -8,7 +8,7 @@ theme:
   analytics:
     gtag: G-67GBDT81TP
 nav:
-  - README.md
+  - index.md
   - publications.md
   - projects.md
   - 'Usage':
