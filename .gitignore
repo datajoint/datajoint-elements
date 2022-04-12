@@ -1,5 +1,4 @@
-gh-pages/docs/index.md
-gh-pages/site
+site
 .idea
 .DS_Store
 /*.code-workspace

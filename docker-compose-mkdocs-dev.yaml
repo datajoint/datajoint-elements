@@ -1,5 +1,5 @@
-# docker-compose -f ./gh-pages/docker-compose-dev.yaml up --exit-code-from app
-# docker-compose -f ./gh-pages/docker-compose-dev.yaml down
+# docker-compose -f ./docker-compose-mkdocs-dev.yaml up --exit-code-from app
+# docker-compose -f ./docker-compose-mkdocs-dev.yaml down
 #
 # Intended for normal development. Supports hot/live reloading.
 # You may find the site running locally by navigating in your browser
@@ -8,7 +8,7 @@ version: "2.4"
 services:
   app:
     extends:
-      file: ./docker-compose-build.yaml
+      file: ./docker-compose-mkdocs-build.yaml
       service: app
     command:
       - ignored

@@ -1,5 +1,5 @@
-# COMPOSE_PROJECT_NAME=djelem docker-compose -f dev/elements-image/docker-compose-build-local.yml up -d --build --force-recreate
-# COMPOSE_PROJECT_NAME=djelem docker-compose -f dev/elements-image/docker-compose-build-local.yml down
+# COMPOSE_PROJECT_NAME=djelem docker-compose -f dev/elements-image/docker-compose-mkdocs-build-local.yml up -d --build --force-recreate
+# COMPOSE_PROJECT_NAME=djelem docker-compose -f dev/elements-image/docker-compose-mkdocs-build-local.yml down
 
 services:
   image_build:
