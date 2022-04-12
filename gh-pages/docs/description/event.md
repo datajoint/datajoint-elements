@@ -2,7 +2,7 @@
 
 ## User population
 
-Event- & trial-based experiments have an extensive history in behavioral and cognitive psychology. Fundamentally, data collection is carved up in time according to some ontology. Researchers may repeat Trial conditions in some manner to improve statistical power when contrasting an environmental feature of interest versus a neutral baseline. Neuroscientists, in particular, may be interested in the moments before and after a theoretically-instantaneous Event to look at neurophysiological factors that predict or are predicted by a subject's behavior. What may differ between research groups is the ontology used to carve up time. 
+Event- & trial-based experiments have an extensive history in behavioral and cognitive psychology. Fundamentally, data collection is carved up in time according to some ontology. Researchers may repeat Trial conditions in some manner to improve statistical power when contrasting a feature of interest versus a neutral baseline. Neuroscientists, in particular, may be interested in the moments before and after an Event to look at neurophysiological factors that predict or are predicted by a subject's behavior. What may differ between research groups is the ontology used to carve up time. 
 
 ## Key Projects
 
@@ -17,7 +17,7 @@ DataJoint has partnered with the following teams to interview key members, and d
 
 ## Pipeline Development
 
-In addition to the key projects listed below, the DataJoint team met with leaders from both [Neurodata Without Borders](https://www.nwb.org/) and the [Kepecs Lab](https://sites.wustl.edu/kepecslab/), as these groups have both tackled the difficulty of developing ontologies that can cover all possible iterations of behavioral data collection. Our resulting structure is exemplified by the figure below. The language below is tailored to the dependent variable in may neuroscience experiments, behavior, but could be ex
+In addition to the key projects listed above, the DataJoint team met with leaders from both [Neurodata Without Borders](https://www.nwb.org/) and the [Kepecs Lab](https://sites.wustl.edu/kepecslab/), as these groups have both tackled the difficulty of developing ontologies that can cover all possible iterations of behavioral data collection. Our resulting structure is exemplified by the figure below. The language below is tailored to the dependent variable in many neuroscience experiments, behavior.
 
 ```
 |----------------------------------------------------------------------------|
@@ -35,7 +35,7 @@ In addition to the key projects listed below, the DataJoint team met with leader
 - **Trials** may occur within or extend to the intervals between **Blocks**.
 - An **Event** (represented with `e` above) is an optionally instantaneous occurrence during a **Session**. 
   + Projects may differ in their need to record event duration (e.g., onset versus duration of subject behavior)
-  + **Events** may occur during other categories, or may be unpredictable responses during continuously recorded behavior.
+  + **Events** may occur during other categories, or during continuously recorded behavior.
   
 Features of Element Event include:
 
@@ -45,6 +45,6 @@ Features of Element Event include:
 - Optionally activating only the `event` schema for event-based recording, without Trial and Block phases.
 - An `AlignmentEvent` table to define the window of interest relative to specific event types.
 
-Each level of the hierarchy (Block, Trial, Event) is designed to be optional to suit a given experiments needs. For example use, visit our [Array Electrophysiology Workflow](https://github.com/datajoint/workflow-array-ephys/).
+Each level of the hierarchy (Block, Trial, Event) is designed to be optional to suit a given experiment's needs. For example usage, visit our [Array Electrophysiology Workflow](https://github.com/datajoint/workflow-array-ephys/).
 
 <!-- At time of writing, the relevant notebook is only on the `event` branch. -->
