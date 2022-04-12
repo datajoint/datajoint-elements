@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
     
-    <title>Deeplabcut - DataJoint Elements</title>
+    <title>DeepLabCut - DataJoint Elements</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -175,7 +175,7 @@
                         
                             
 <li class="active">
-    <a href="./">Deeplabcut</a>
+    <a href="./">DeepLabCut</a>
 </li>
 
                         
@@ -280,11 +280,41 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#deeplabcut">DeepLabCut</a></li>
+            <li class="second-level"><a href="#pose-estimation-in-neurophysiology">Pose Estimation in Neurophysiology</a></li>
+                
+            <li class="second-level"><a href="#key-partnerships">Key Partnerships</a></li>
+                
+            <li class="second-level"><a href="#pipeline-development">Pipeline Development</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<p>In development</p></div>
+<h1 id="deeplabcut">DeepLabCut</h1>
+<h2 id="pose-estimation-in-neurophysiology">Pose Estimation in Neurophysiology</h2>
+<p>Previous pose estimation methods required reflective markers placed on a subject, as well as multiple expensive high-frame-rate infrared cameras to triangulate position within a limited field. Recent advancements in machine learning have facilitated dramatic advancements in capturing pose data with a video camera alone. In particular, DeepLabCut (DLC) facilitates the use of pre-trained machine learning models for 2- and 3-D non-invasive markerless pose estimation. </p>
+<p>While some alternative tools are either species-specific (e.g., <a href="https://github.com/NeLy-EPFL/DeepFly3D">DeepFly3D</a>) or uniquely 2D (e.g., <a href="https://github.com/jgraving/DeepPoseKit">DeepPoseKit</a>), DLC highlights a diversity of use-cases via a <a href="http://www.mackenziemathislab.org/dlc-modelzoo">Model Zoo</a>. Even compared to tools with similar functionality (e.g., <a href="https://github.com/murthylab/sleap">SLEAP</a> and <a href="https://github.com/spoonsso/dannce">dannce</a>), DLC has more users, as measured by either GitHub forks or more citations (1600 vs. 900). DLC's trajectory toward an industry standard is attributable to <a href="http://www.mackenziemathislab.org/deeplabcutblog/2020/11/18/czidlc">continued funding</a>, <a href="https://deeplabcut.github.io/DeepLabCut/docs/intro.html">extensive documentation</a> and both creator- and peer-support. </p>
+<h2 id="key-partnerships">Key Partnerships</h2>
+<p>Mackenzie Mathis (Swiss Federal Institute of Technology Lausanne) is both a lead developer of DLC and a key advisor on DataJoint open source development as a member of the <a href="../management/guidance.md">Scientific Steering Committee</a>.</p>
+<p>DataJoint is also partnered with a number of groups who use DLC as part of broader workflows. In these collaborations, members of the DataJoint team have interviewed researchers to understand their needs in experiment workflow, pipeline design, and interfaces.</p>
+<p>These teams include:</p>
+<ul>
+<li>Moser Group (Norwegian University of Science and Technology) - see <a href="https://moser-pipelines.readthedocs.io/en/latest/imaging/dlc.html">pipeline design</a></li>
+<li>Mesoscale Activity Project (Janelia Research Campus/Baylor College of Medicine/New York University)</li>
+<li>Hui-Chen Lu Lab (Indiana University)</li>
+<li>Tobias Rose Lab (University of Bonn)</li>
+<li>James Cotton Lab (Northwestern University)</li>
+</ul>
+<h2 id="pipeline-development">Pipeline Development</h2>
+<p>Development of the Element began with an <a href="https://github.com/MMathisLab/DataJoint_Demo_DeepLabCut">open source repository</a> shared by the Mathis team. We further identified common needs across our respective partnerships to offer the following features for single-camera 2D models:</p>
+<ul>
+<li>Training data and parameter management</li>
+<li>Launching model training and automatic model evaluation</li>
+<li>Model metadata management</li>
+<li>Launching inference video analysis and capturing pose estimation output</li>
+</ul>
+<p>The workflow handles training data as file sets stored within DLC's project directory. Parameters of the configuration file are captured and preserved. Model evaluation permits direct model comparison, and, when combined with upstream Elements, Element DeepLabCut can be used to generate pose estimation information for each session.</p></div>
         
         
     </div>
