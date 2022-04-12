@@ -31,7 +31,7 @@ In addition to the key projects listed above, the DataJoint team met with leader
 
 - A **Session** is period during which data is collected.
 - A **Recording** is some source of data tied to a single modality (e.g., behavior). This may or may not fully capture the session depending on recording latencies or equipment malfunctions. 
-- **Block** and **Trial** are a non-instantaneous subsets of Session whose traits often repeat across instances. These periods may be combined or contrasted in downstream analyses. 
+- **Block** and **Trial** are non-instantaneous subsets of Session whose traits often repeat across instances. These periods may be combined or contrasted in downstream analyses. 
 - **Trials** may occur within or extend to the intervals between **Blocks**.
 - An **Event** (represented with `e` above) is an optionally instantaneous occurrence during a **Session**. 
   + Projects may differ in their need to record event duration (e.g., onset versus duration of subject behavior)
