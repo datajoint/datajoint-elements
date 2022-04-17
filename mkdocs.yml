@@ -5,7 +5,6 @@ theme:
   custom_dir: docs/themes/cinder-theme-ext
   disable_nav_previous_next: true
   disable_nav_search: false
-  include_sidebar: false
   analytics:
     gtag: G-67GBDT81TP
 nav:
