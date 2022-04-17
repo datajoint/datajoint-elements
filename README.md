@@ -36,7 +36,7 @@ Elements are described in the position paper
 
 ## DataJoint Elements
 
-| DataJoint Element                                                                         | Example workflow                                                                     | Backgound, Features, and Status                |
+| DataJoint Element                                                                         | Example workflow                                                                     | Background, Features, and Status                |
 | :---------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- | :--------------------------------------------- |
 | [Lab management](https://github.com/datajoint/element-lab)                                | See Session                                                                          | [Link](docs/description/lab.md)                     |
 | [Animal management](https://github.com/datajoint/element-animal)                          | See Session                                                                          | [Link](docs/description/animal.md)                  |
