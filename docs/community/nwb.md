@@ -3,7 +3,7 @@
 ## Integrations between DataJoint Elements and Neurodata Without Borders 
 
 <p align="center">
-  <img src="https://github.com/datajoint/datajoint-elements/blob/main/gh-pages/docs/img/NWB.png?raw=true" width="300" height="55" align="left">&nbsp;&nbsp;
+  <img src="https://github.com/datajoint/datajoint-elements/blob/main/docs/img/NWB.png?raw=true" width="300" height="55" align="left">&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/datajoint/datajoint.org/0a05cf5c2530a3595a13fc11f6abac64746d845d/static/images/elements-logo.png" width="300" height="83" align="right">
 </p>  
 
