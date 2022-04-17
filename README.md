@@ -38,7 +38,7 @@ Elements are described in the position paper
 | [Lab management](https://github.com/datajoint/element-lab) | See Session | [Link](description/lab.md) |
 | [Animal management](https://github.com/datajoint/element-animal) | See Session | [Link](description/animal.md) |
 | [Experiment Session management](https://github.com/datajoint/element-session) | [Lab, subject and session management](https://github.com/datajoint/workflow-session) | [Link](description/session.md) |
-| [Extracellular array electrophysiology](https://github.com/datajoint/element-array-ephys) | [Neuropixels](https://github.com/datajoint/workflow-array-ephys) | [Link](description/array_electrophysiology.md) |
+| [Extracellular array electrophysiology](https://github.com/datajoint/element-array-ephys) | [Neuropixels](https://github.com/datajoint/workflow-array-ephys) | [Link](description/array_ephys.md) |
 | [Calcium imaging](https://github.com/datajoint/element-calcium-imaging) | [Multiphoton laser scanning](https://github.com/datajoint/workflow-calcium-imaging) | [Link](description/calcium_imaging.md) |
 | [Miniscope imaging](https://github.com/datajoint/element-miniscope) | [UCLA Miniscope](https://github.com/datajoint/workflow-miniscope) | [Link](description/miniscope.md) |
 
