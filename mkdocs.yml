@@ -5,8 +5,6 @@ theme:
   custom_dir: docs/themes/cinder-theme-ext
   disable_nav_previous_next: true
   disable_nav_search: false
-  analytics:
-    gtag: G-67GBDT81TP
 nav:
   - index.md
   - publications.md
