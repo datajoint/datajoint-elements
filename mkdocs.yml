@@ -26,6 +26,7 @@ nav:
     - description/calcium_imaging.md
     - description/miniscope.md
     - description/deeplabcut.md
+    - description/visual_stimulus.md
     - description/facemap.md
   - 'Community':
     - community/contribute.md
