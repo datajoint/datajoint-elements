@@ -3,7 +3,7 @@
 DataJoint was originally developed by working systems neuroscientists at Baylor College of Medicine to meet the needs of their own research.
 
 Below is a partial list of known teams who use DataJoint. 
-Please let us know if you would like to add another group or make other corrections by <a href="https://github.com/datajoint/datajoint-elements/issues" target="_blank">submitting a GitHub issue</a>.
+Please let us know if you would like to add another group or make other corrections by sending an email to support@datajoint.com.
 
 <h3>Multi-lab collaboratives</h3>
 
