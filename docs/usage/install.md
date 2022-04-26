@@ -42,14 +42,18 @@
   database.
 
 - There are several options if you would like to install a local relational
-  database server + [Docker image for MySQL server configured for use with DataJoint](https://github.com/datajoint/mysql-docker)
+  database server.
+    + If using the Docker and Compose files that come with each workflow (e.g. [workflow-calcium-imaging](https://github.com/datajoint/workflow-calcium-imaging/tree/main/docker)), these are preconfigured with a Docker container that hosts a MySQL server.
+    + [Docker image for MySQL server configured for use with DataJoint](
+        https://github.com/datajoint/mysql-docker)
+    + [Install MariaDB server](https://mariadb.com/kb/en/binary-packages/)
 
-      + [Install MariaDB server](https://mariadb.com/kb/en/binary-packages/)
-
-- Alternatively, for simplicity of this tutorial you can use the DataJoint
-  Playground tutorial database located at `tutorial-db.datajoint.io` which has
-  already been configured. Please note that the tutorial database should not be
-  used for your experimental analysis as the storage is not persistent.
+- Alternatively, for the simplicity of this tutorial you can use the DataJoint
+  tutorial database located at `tutorial-db.datajoint.io` which has
+  already been configured. The credentials to log in to the tutorial database are the 
+  same as for [DataJoint Accounts](https://accounts.datajoint.io).  Please note that 
+  the tutorial database should not be used for your experimental analysis as the 
+  storage is not persistent.
 
 ## Install a version control system
 
