@@ -20,17 +20,17 @@ Find us at the following upcoming and past workshops!
 + UCL Neuropixels Course - October 19, 2021
 
 + INCF Neuroinformatics Training Week - August 30 - September 2, 2021
-     + [Session 1 Recording](https://vimeo.com/586441656)
-     + [Session 2 Recording](https://vimeo.com/594775662)
-     + [Session 3 Recording](https://vimeo.com/595437592)
-     + [Session 4 Recording](https://vimeo.com/596070098)
+  + [Session 1 Recording](https://vimeo.com/586441656)
+  + [Session 2 Recording](https://vimeo.com/594775662)
+  + [Session 3 Recording](https://vimeo.com/595437592)
+  + [Session 4 Recording](https://vimeo.com/596070098)
 
 + NYU ‘FAIR Thee Well’ Symposium - August 9-10, 2021
-     + [Sessions 1-3 Recordings](https://www.youtube.com/watch?v=EyKC-VPP93k&list=PLoxm1_YI8Y4Mv0wUYiRinKkmqTxx2_Z3Y)
+  + [Sessions 1-3 Recordings](https://www.youtube.com/watch?v=EyKC-VPP93k&list=PLoxm1_YI8Y4Mv0wUYiRinKkmqTxx2_Z3Y)
 
 + Neuromatch Academy - July 29, 2021
-     + [Session 1 Recording](https://www.crowdcast.io/e/nma2021/32)
-     + [Session 2 Recording](https://www.crowdcast.io/e/nma2021/34)
+  + [Session 1 Recording](https://www.crowdcast.io/e/nma2021/32)
+  + [Session 2 Recording](https://www.crowdcast.io/e/nma2021/34)
 
 ## Past Office Hours
 

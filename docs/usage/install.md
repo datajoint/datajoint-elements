@@ -43,10 +43,11 @@
 
 - There are several options if you would like to install a local relational
   database server.
-    + If using the Docker and Compose files that come with each workflow (e.g. [workflow-calcium-imaging](https://github.com/datajoint/workflow-calcium-imaging/tree/main/docker)), these are preconfigured with a Docker container that hosts a MySQL server.
-    + [Docker image for MySQL server configured for use with DataJoint](
+
+  - If using the Docker and Compose files that come with each workflow (e.g. [workflow-calcium-imaging](https://github.com/datajoint/workflow-calcium-imaging/tree/main/docker)), these are preconfigured with a Docker container that hosts a MySQL server.
+  - [Docker image for MySQL server configured for use with DataJoint](
         https://github.com/datajoint/mysql-docker)
-    + [Install MariaDB server](https://mariadb.com/kb/en/binary-packages/)
+  - [Install MariaDB server](https://mariadb.com/kb/en/binary-packages/)
 
 - Alternatively, for the simplicity of this tutorial you can use the DataJoint
   tutorial database located at `tutorial-db.datajoint.io` which has
