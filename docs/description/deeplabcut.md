@@ -8,7 +8,7 @@ While some alternative tools are either species-specific (e.g., [DeepFly3D](http
 
 ## Key Partnerships
 
-Mackenzie Mathis (Swiss Federal Institute of Technology Lausanne) is both a lead developer of DLC and a key advisor on DataJoint open source development as a member of the [Scientific Steering Committee](../management/guidance.md).
+Mackenzie Mathis (Swiss Federal Institute of Technology Lausanne) is both a lead developer of DLC and a key advisor on DataJoint open source development as a member of the [Scientific Steering Committee](../management/governance.md).
 
 DataJoint is also partnered with a number of groups who use DLC as part of broader workflows. In these collaborations, members of the DataJoint team have interviewed researchers to understand their needs in experiment workflow, pipeline design, and interfaces.
 

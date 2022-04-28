@@ -28,8 +28,9 @@ nav:
     - description/facemap.md
   - 'Community':
     - community/contribute.md
-    - community/nwb.md
+    - community/workshops.md
     - community/support.md
+    - community/nwb.md
   - 'Management and Policies':
     - management/plan.md
     - management/team.md
