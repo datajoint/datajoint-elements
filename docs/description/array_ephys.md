@@ -58,14 +58,15 @@ Through our interviews and direct collaboration on the precursor projects,
 
 Major features of the Array Electrophysiology Element include:
 
-+ Pipeline architecture defining:
++ Pipeline architecture detailed by:
 
-   + Probe, electrode configuration compatible with Neuropixels probes and generalizable to other types of probes (e.g. tetrodes) - supporting chronic, acute, and no-curation probe insertion modes
+   + Probe, electrode configuration compatible with Neuropixels probes and generalizable to other types of probes (e.g. tetrodes) - supporting both chronic and acute probe insertion modes
    + Probe-insertion, ephys-recordings, LFP extraction, clusterings, curations, sorted units and the associated data (e.g. spikes, waveforms, etc.)
-   + Store/track/manage different curations of the spike sorting results
+   + Store/track/manage different curations of the spike sorting results - supporting both curated clustering and kilosort triggered clustering (no_curation)
 
 + Ingestion support for data acquired with SpikeGLX and OpenEphys acquisition systems
 + Ingestion support for spike sorting outputs from Kilosort
++ Triggering support for workflow integrated Kilosort processing
 + Sample data and complete test suite for quality assurance
 
 Incorporation of SpikeInterface into the Array Electrophysiology Element will be on DataJoint Elements development roadmap. 
