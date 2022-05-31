@@ -14,6 +14,7 @@ yet this is accompanied by an equally great challenge in terms of data and compu
 ## Acquisition tools
 The typical instrumentation used for data acquisition is the Neuropixels probe and headstage interfacing with a PXIe acquisition module (https://www.neuropixels.org/control-system).
 Two main acquisition softwares are used for Neuropixels:
+
 + SpikeGLX - developed by Bill Karsh and Tim Harris at HHMI/Janelia
 + OpenEphys - developed by Joshua Siegle at the Allen Institute.
 
@@ -24,6 +25,7 @@ The preprocessing pipeline includes bandpass filtering for LFP extraction, bandp
 Neuroscience groups have traditionally developed custom home-made toolchains. 
 
 In recent years, several leaders have been emerging as de facto standards with significant community uptake: 
+
 + Kilosort
 + JRClust
 + MountainSort
