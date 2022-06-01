@@ -62,7 +62,7 @@ Major features of the Array Electrophysiology Element include:
 
    + Probe, electrode configuration compatible with Neuropixels probes and generalizable to other types of probes (e.g. tetrodes) - supporting both chronic and acute probe insertion modes
    + Probe-insertion, ephys-recordings, LFP extraction, clusterings, curations, sorted units and the associated data (e.g. spikes, waveforms, etc.)
-   + Store/track/manage different curations of the spike sorting results - supporting both curated clustering and kilosort triggered clustering (no_curation)
+   + Store/track/manage different curations of the spike sorting results - supporting both curated clustering and kilosort triggered clustering (i.e., `no_curation`)
 
 + Ingestion support for data acquired with SpikeGLX and OpenEphys acquisition systems
 + Ingestion support for spike sorting outputs from Kilosort
