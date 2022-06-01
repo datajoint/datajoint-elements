@@ -14,6 +14,7 @@ yet this is accompanied by an equally great challenge in terms of data and compu
 ## Acquisition tools
 The typical instrumentation used for data acquisition is the Neuropixels probe and headstage interfacing with a PXIe acquisition module (https://www.neuropixels.org/control-system).
 Two main acquisition softwares are used for Neuropixels:
+
 + SpikeGLX - developed by Bill Karsh and Tim Harris at HHMI/Janelia
 + OpenEphys - developed by Joshua Siegle at the Allen Institute.
 
@@ -24,6 +25,7 @@ The preprocessing pipeline includes bandpass filtering for LFP extraction, bandp
 Neuroscience groups have traditionally developed custom home-made toolchains. 
 
 In recent years, several leaders have been emerging as de facto standards with significant community uptake: 
+
 + Kilosort
 + JRClust
 + MountainSort
@@ -55,12 +57,16 @@ Through our interviews and direct collaboration on the precursor projects,
  we identified the common motifs to create the Array Electrophysiology Element with the repository hosted at https://github.com/datajoint/element-array-ephys.
 
 Major features of the Array Electrophysiology Element include:
-+ Pipeline architecture defining:
-    + Probe, electrode configuration compatible with Neuropixels probes and generalizable to other types of probes (e.g. tetrodes) - supporting both chronic and acute probe insertion mode
-    + Probe-insertion, ephys-recordings, LFP extraction, clusterings, curations, sorted units and the associated data (e.g. spikes, waveforms, etc.)
-    + Store/track/manage different curations of the spike sorting results
+
++ Pipeline architecture detailed by:
+
+   + Probe, electrode configuration compatible with Neuropixels probes and generalizable to other types of probes (e.g. tetrodes) - supporting both `chronic` and `acute` probe insertion modes (see `ephys_mode` [here](https://github.com/datajoint/element-array-ephys/blob/main/README.md)
+   + Probe-insertion, ephys-recordings, LFP extraction, clusterings, curations, sorted units and the associated data (e.g. spikes, waveforms, etc.)
+   + Store/track/manage different curations of the spike sorting results - supporting both curated clustering and kilosort triggered clustering (i.e., `no_curation`)
+
 + Ingestion support for data acquired with SpikeGLX and OpenEphys acquisition systems
 + Ingestion support for spike sorting outputs from Kilosort
++ Triggering support for workflow integrated Kilosort processing
 + Sample data and complete test suite for quality assurance
 
 Incorporation of SpikeInterface into the Array Electrophysiology Element will be on DataJoint Elements development roadmap. 
