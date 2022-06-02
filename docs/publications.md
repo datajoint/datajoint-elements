@@ -52,6 +52,12 @@ Obenhaus, H.A., Zong, W., Jacobsen, R.I., Rose, T., Donato, F., Chen, L., Cheng,
 
 </div> <br />
 
+<!-- 2022 ---> <div id="ref-sanchez2022connectomicsannotation" class="csl-entry"> 
+
+Sanchez, M., Moore, D., Johnson, E. C., Wester, B., Lichtman, J. W., & Gray-Roncal, W. (2022). <a href="https://doi.org/10.3389/fninf.2022.828458" target="_blank" style="color:#1589F0;">Connectomics Annotation Metadata Standardization for Increased Accessibility and Queryability</a>. <i>Frontiers in Neuroinformatics</i>.
+
+</div> <br />
+
 <!-- 2022 ---> <div id="ref-ustyuzhaninov2022digitaltwin" class="csl-entry"> 
 
 Ustyuzhaninov, I., Burg, M.F., Cadena, S.A., Fu, J., Muhammad, T., Ponder, K., Froudarakis, E., Ding, Z., Bethge, M., Tolias, A. & Ecker, A.S. <a href="https://doi.org/10.1101/2022.02.10.479884" target="_blank" style="color:#1589F0;">Digital twin reveals combinatorial code of non-linear computations in the mouse primary visual cortex</a>. <i>bioRxiv</i>.
