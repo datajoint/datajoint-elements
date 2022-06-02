@@ -325,18 +325,22 @@ Such large recording capacity have offered tremendous opportunities for the fiel
 yet this is accompanied by an equally great challenge in terms of data and computation management.</p>
 <h2 id="acquisition-tools">Acquisition tools</h2>
 <p>The typical instrumentation used for data acquisition is the Neuropixels probe and headstage interfacing with a PXIe acquisition module (<a href="https://www.neuropixels.org/control-system">https://www.neuropixels.org/control-system</a>).
-Two main acquisition softwares are used for Neuropixels:
-+ SpikeGLX - developed by Bill Karsh and Tim Harris at HHMI/Janelia
-+ OpenEphys - developed by Joshua Siegle at the Allen Institute.</p>
+Two main acquisition softwares are used for Neuropixels:</p>
+<ul>
+<li>SpikeGLX - developed by Bill Karsh and Tim Harris at HHMI/Janelia</li>
+<li>OpenEphys - developed by Joshua Siegle at the Allen Institute.</li>
+</ul>
 <p>These save the data into specific directory structure and file-naming convention as custom binary formats (e.g. “.bin”, “.dat”). Meta data are stored as separate files in xml or text format.</p>
 <h2 id="preprocessing-tools">Preprocessing tools</h2>
 <p>The preprocessing pipeline includes bandpass filtering for LFP extraction, bandpass filtering for spike sorting,  spike sorting, and manual curation of the spike sorting results, and calculation of quality control metrics. In trial-based experiments, the spike trains are aligned and separated into trials. Standard processing may include PSTH computation aligned to trial onset or other events, and often grouped by different trial types. 
 Neuroscience groups have traditionally developed custom home-made toolchains. </p>
-<p>In recent years, several leaders have been emerging as de facto standards with significant community uptake: 
-+ Kilosort
-+ JRClust
-+ MountainSort
-+ SpyKING CIRCUS</p>
+<p>In recent years, several leaders have been emerging as de facto standards with significant community uptake: </p>
+<ul>
+<li>Kilosort</li>
+<li>JRClust</li>
+<li>MountainSort</li>
+<li>SpyKING CIRCUS</li>
+</ul>
 <p>Kilosort provides most automation and has gained significant popularity, being adopted as one of the key spike sorting methods in the majority of the teams/collaborations we have worked with. As part of Year-1 U24 effort, we provide support for data ingestion of spike sorting results from Kilosort.
 Further effort will be devoted for the ingestion support of other spike sorting methods. 
 On this end, a framework for unifying existing spike sorting methods, 
@@ -359,14 +363,23 @@ These teams include:</p>
 <h2 id="pipeline-development">Pipeline Development</h2>
 <p>Through our interviews and direct collaboration on the precursor projects,
  we identified the common motifs to create the Array Electrophysiology Element with the repository hosted at <a href="https://github.com/datajoint/element-array-ephys">https://github.com/datajoint/element-array-ephys</a>.</p>
-<p>Major features of the Array Electrophysiology Element include:
-+ Pipeline architecture defining:
-    + Probe, electrode configuration compatible with Neuropixels probes and generalizable to other types of probes (e.g. tetrodes) - supporting both chronic and acute probe insertion mode
-    + Probe-insertion, ephys-recordings, LFP extraction, clusterings, curations, sorted units and the associated data (e.g. spikes, waveforms, etc.)
-    + Store/track/manage different curations of the spike sorting results
-+ Ingestion support for data acquired with SpikeGLX and OpenEphys acquisition systems
-+ Ingestion support for spike sorting outputs from Kilosort
-+ Sample data and complete test suite for quality assurance</p>
+<p>Major features of the Array Electrophysiology Element include:</p>
+<ul>
+<li>
+<p>Pipeline architecture detailed by:</p>
+<ul>
+<li>Probe, electrode configuration compatible with Neuropixels probes and generalizable to other types of probes (e.g. tetrodes) - supporting both <code>chronic</code> and <code>acute</code> probe insertion modes (see <code>ephys_mode</code> <a href="https://github.com/datajoint/element-array-ephys/blob/main/README.md">here</a></li>
+<li>Probe-insertion, ephys-recordings, LFP extraction, clusterings, curations, sorted units and the associated data (e.g. spikes, waveforms, etc.)</li>
+<li>Store/track/manage different curations of the spike sorting results - supporting both curated clustering and kilosort triggered clustering (i.e., <code>no_curation</code>)</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Ingestion support for data acquired with SpikeGLX and OpenEphys acquisition systems</li>
+<li>Ingestion support for spike sorting outputs from Kilosort</li>
+<li>Triggering support for workflow integrated Kilosort processing</li>
+<li>Sample data and complete test suite for quality assurance</li>
+</ul>
 <p>Incorporation of SpikeInterface into the Array Electrophysiology Element will be on DataJoint Elements development roadmap. 
 Dr. Loren Frank has led a development effort of a DataJoint pipeline with SpikeInterface framework and NeurodataWithoutBorders format integrated (<a href="https://github.com/LorenFrankLab/nwb_datajoint">https://github.com/LorenFrankLab/nwb_datajoint</a>).</p></div>
         
