@@ -20,10 +20,10 @@ Find us at the following upcoming and past workshops!
 + UCL Neuropixels Course - October 19, 2021
 
 + INCF Neuroinformatics Training Week - August 30 - September 2, 2021
-  + [Session 1 Recording](https://vimeo.com/586441656)
-  + [Session 2 Recording](https://vimeo.com/594775662)
-  + [Session 3 Recording](https://vimeo.com/595437592)
-  + [Session 4 Recording](https://vimeo.com/596070098)
+  + [Session 1 Recording](https://youtu.be/YOSNIW6vlQ8)
+  + [Session 2 Recording](https://youtu.be/dudHnEtT_30)
+  + [Session 3 Recording](https://youtu.be/KQlGYOBq7ow)
+  + [Session 4 Recording](https://youtu.be/1j_OQiQDJV0)
 
 + NYU ‘FAIR Thee Well’ Symposium - August 9-10, 2021
   + [Sessions 1-3 Recordings](https://www.youtube.com/watch?v=EyKC-VPP93k&list=PLoxm1_YI8Y4Mv0wUYiRinKkmqTxx2_Z3Y)
@@ -35,3 +35,4 @@ Find us at the following upcoming and past workshops!
 ## Past Office Hours
 
 + April 27, 2022 - Filepath handling, `linking_module`, and `key` management in `make` functions.
++ May 20, 2022 - MATLAB/Python interoperability. [Video Link](https://www.youtube.com/watch?v=Y7JG2-B2O5U)
