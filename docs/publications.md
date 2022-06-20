@@ -64,7 +64,7 @@ Spacek, M. A., Crombie, D., Bauer, Y., Born, G., Liu, X., Katzner, S., & Busse, 
 
 </div> <br />
 
-<!-- 2022 ---> <div id="ref-ustyuzhaninov2022digitaltwin" class="csl-entry"> 
+<!-- 2022 ---> <div id="ref-tseng2022coding" class="csl-entry"> 
 
 Tseng, S. Y., Chettih, S. N., Arlt, C., Barroso-Luque, R., & Harvey, C. D. (2022). <a href="https://doi.org/10.1016/j.neuron.2022.05.012" target="_blank" style="color:#1589F0;">Shared and specialized coding across posterior cortical areas for dynamic navigation decisions.</a>. <i>Neuron</i>.
 

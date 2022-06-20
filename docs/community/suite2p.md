@@ -1,6 +1,6 @@
 # Suite2p
 
-## Sustainability Roadmap  between DataJoint Elements and Suite2p
+## Sustainability Roadmap between DataJoint Elements and Suite2p
 
 <p align="center">
   <img src="https://github.com/datajoint/datajoint-elements/blob/main/docs/img/suite2p.png?raw=true" width="66" height="87" align="left">&nbsp;&nbsp;
@@ -33,7 +33,7 @@ DataJoint — https://datajoint.com.
   data. The project is funded by HHMI Janelia Research Campus and led by Dr. Carsen
   Stringer and Dr. Marius Pachitariu.
 
-The principal developers of Suite2p are at Janelia Research Campus.
+The principal developers of Suite2p are at the Janelia Research Campus.
 
 ## General Principles
 
@@ -61,9 +61,9 @@ To achieve the aims of coordinated development, both projects appoint a primary 
 contact (POC) to respond to questions relating to the integration and interoperability 
 of DataJoint Elements and Suite2p.
 
-For 2022, the DataJoint Elements POC is [Dr. Tolga Dincer](mailto:tolga@datajoint.com)
+For 2022, the DataJoint Elements POC is Dr. Tolga Dincer (tolga@datajoint.com)
 
-For 2022, the Suite2p POC is [Dr. Carsen Stringer](mailto:stringerc@janelia.hhmi.org)
+For 2022, the Suite2p POC is Dr. Carsen Stringer (stringerc@janelia.hhmi.org)
 
 ### Annual Review
 
@@ -76,7 +76,7 @@ made publicly available.
 
 The two parties ensure that relevant software components are developed under licenses
 that avoid any hindrance to integration and interoperability between DataJoint Elements
-workflows and Suite2p utilities.
+and Suite2p.
 
 ## Development Roadmap
 
@@ -86,7 +86,7 @@ workflows and Suite2p utilities.
 - Mechanism to run Suite2p within DataJoint Element - Completed 2022 - 
 [Element Calcium Imaging](https://github.com/datajoint/element-calcium-imaging/blob/00df4434fcfd6c1497d7950601248f046170139e/element_calcium_imaging/imaging.py#L267-L299)
 
-- Tutorials on running DataJoint Element with Suite2p - Completed 2022 -
+- Tutorials on running DataJoint Element with Suite2p - Completed 2021 -
 [Workflow Calcium Imaging Jupyter notebooks](https://github.com/datajoint/workflow-calcium-imaging/tree/main/notebooks)
 
 - Integration tests to verify loading Suite2p data - Completed 2021 - 
@@ -97,5 +97,5 @@ workflows and Suite2p utilities.
 
 ## Citation
 
-If you use this package please cite the 
-[suite2p paper](https://www.biorxiv.org/content/10.1101/061507v2) in your publications.
+If you use Suite2p please cite 
+[Pachitariu et al., bioRxiv 2017](https://www.biorxiv.org/content/10.1101/061507v2) in your publications.
