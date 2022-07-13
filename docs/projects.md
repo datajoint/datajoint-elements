@@ -67,6 +67,7 @@ Please let us know if you would like to add another group or make other correcti
     <li>Columbia University's Zuckerman Institute
         <ul>
         <li><a href="https://churchland.zuckermaninstitute.columbia.edu" target="_blank">Mark Churchland Lab</a></li>
+        <li><a href="https://hillmanlab.zuckermaninstitute.columbia.edu/" target="_blank">Elizabeth Hillman Lab</a></li>
         <li><a href="https://www.actingbrain.com" target="_blank">Rui Costa Lab</a></li>
         </ul>
     </li>
