@@ -83,7 +83,6 @@ Please let us know if you would like to add another group or make other correcti
     </li>
     <li>Harvard Medical School
         <ul>        
-        <li><a href="http://datta.hms.harvard.edu/" target="_blank">Datta Lab</a></li>
         <li><a href="https://drugowitschlab.hms.harvard.edu" target="_blank">Jan Drugowitsch Lab</a></li>
         <li><a href="https://harveylab.hms.harvard.edu/" target="_blank">Harvey Lab</a></li>
         <li><a href="http://sabatini.hms.harvard.edu/" target="_blank">Sabatini Lab</a></li>
