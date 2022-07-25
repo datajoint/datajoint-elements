@@ -9,13 +9,15 @@ Find us at the following upcoming and past workshops!
 
 ## Upcoming workshops
 
-+ NIH BRAIN Initiative Meeting - June 21-22, 2022
-
 + INCF Assembly - September 12-16, 2022
 
 + Society for Neuroscience - November 12-16, 2022
 
 ## Past workshops
+
++ NWB Hackathon User Days - July 24-27, 2022
+
++ NIH BRAIN Initiative Meeting - June 21-22, 2022
 
 + UCL Neuropixels Course - October 19, 2021
 
