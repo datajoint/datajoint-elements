@@ -22,6 +22,18 @@ line-spacing="2">
 
 <h3>2022</h3>
 
+<!-- 2022 ---> <div id="ref-cadena2022diverse" class="csl-entry"> 
+
+Born, G. (2022). <a href="https://edoc.ub.uni-muenchen.de/30350/1/Born_Gregory.pdf" target="_blank" style="color:#1589F0;">The effect of feedback on sensory processing in the mouse early visual system</a>. <i>Doctoral dissertation</i>.
+
+</div> <br />
+
+<!-- 2022 ---> <div id="ref-cadena2022diverse" class="csl-entry"> 
+
+Cadena, S. A., Willeke, K. F., Restivo, K., Denfield, G., Sinz, F. H., Bethge, M., ... & Ecker, A. S. (2022). <a href="https://doi.org/10.1101/2022.05.18.492503" target="_blank" style="color:#1589F0;">Diverse task-driven modeling of macaque V4 reveals functional specialization towards semantic tasks.</a>. <i>bioRxiv.</i>.
+
+</div> <br />
+
 <!-- 2022 ---> <div id="ref-cotton2022posepipe" class="csl-entry"> 
 
 Cotton, R. J. (2022). <a href="https://doi.org/10.48550/arXiv.2203.08792" target="_blank" style="color:#1589F0;">PosePipe: Open-Source Human Pose Estimation Pipeline for Clinical Research</a>. <i>arXiv</i>. 2203.08792.
@@ -40,6 +52,18 @@ Cotton, R. J., McClerklin, E., Cimorelli, A., Patel, A., & Karakostas, T. (2022)
 
 </div> <br />
 
+<!-- 2022 ---> <div id="ref-fu2022heterogeneous" class="csl-entry"> 
+
+Fu, J., Willeke, K. F., Pierzchlewicz, P. A., Muhammad, T., Denfield, G. H., Sinz, F. H., & Tolias, A. S. (2022). <a href="https://dx.doi.org/10.2139/ssrn.4029075" target="_blank" style="color:#1589F0;">Heterogeneous Orientation Tuning Across Sub-Regions of Receptive Fields of V1 Neurons in Mice.</a>. <i>Available at SSRN 4029075</i>.
+
+</div> <br />
+
+<!-- 2022 ---> <div id="ref-goetz2022unified" class="csl-entry"> 
+
+Goetz, J., Jessen, Z. F., Jacobi, A., Mani, A., Cooler, S., Greer, D., ... & Schwartz, G. W. (2022). <a href="https://doi.org/10.1016/j.celrep.2022.111040" target="_blank" style="color:#1589F0;">Unified classification of mouse retinal ganglion cells using function, morphology, and gene expression</a>. <i>Cell reports</i>, 40(2), 111040.
+
+</div> <br />
+
 <!-- 2022 ---> <div id="ref-jaffe2022optical" class="csl-entry"> 
 
 Jaffe, A. (2022). <a href="https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37371150" target="_blank" style="color:#1589F0;">Optical investigation of microcircuit computations in mouse primary visual cortex</a>. <i>Doctoral dissertation</i>.
@@ -49,6 +73,12 @@ Jaffe, A. (2022). <a href="https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37371150"
 <!-- 2022 ---> <div id="ref-obenhaus2022functional" class="csl-entry"> 
 
 Obenhaus, H.A., Zong, W., Jacobsen, R.I., Rose, T., Donato, F., Chen, L., Cheng, H., Bonhoeffer, T., Moser, M.B. & Moser, E.I. (2022). <a href="https://doi.org/10.1073/pnas.2121655119" target="_blank" style="color:#1589F0;">Functional network topography of the medial entorhinal cortex</a>. <i>Proceedings of the National Academy of Sciences</i>, <i>119</i> (7).
+
+</div> <br />
+
+<!-- 2022 ---> <div id="ref-roukes2022integrated" class="csl-entry"> 
+
+Roukes, M. L. (2022, May). <a href="https://opg.optica.org/viewmedia.cfm?r=1&uri=CLEO_AT-2022-ATh4I.6&seq=0" target="_blank" style="color:#1589F0;">The Integrated Neurophotonics Paradigm</a>. <i>In CLEO: Applications and Technology</i> (pp. ATh4I-6). Optica Publishing Group.
 
 </div> <br />
 
@@ -70,9 +100,21 @@ Tseng, S. Y., Chettih, S. N., Arlt, C., Barroso-Luque, R., & Harvey, C. D. (2022
 
 </div> <br />
 
+<!-- 2022 ---> <div id="ref-turner2022reconstruction" class="csl-entry"> 
+
+Turner, N. L., Macrina, T., Bae, J. A., Yang, R., Wilson, A. M., Schneider-Mizell, C., ... & Seung, H. S. (2022). <a href="https://doi.org/10.1016/j.cell.2022.01.023" target="_blank" style="color:#1589F0;">Reconstruction of neocortex: Organelles, compartments, cells, circuits, and activity. </a>. <i>Cell, 185</i>(6), 1082-1100.
+
+</div> <br />
+
 <!-- 2022 ---> <div id="ref-ustyuzhaninov2022digitaltwin" class="csl-entry"> 
 
 Ustyuzhaninov, I., Burg, M.F., Cadena, S.A., Fu, J., Muhammad, T., Ponder, K., Froudarakis, E., Ding, Z., Bethge, M., Tolias, A. & Ecker, A.S. <a href="https://doi.org/10.1101/2022.02.10.479884" target="_blank" style="color:#1589F0;">Digital twin reveals combinatorial code of non-linear computations in the mouse primary visual cortex</a>. <i>bioRxiv</i>.
+
+</div> <br />
+
+<!-- 2022 ---> <div id="ref-willeke2022sensorium" class="csl-entry"> 
+
+Willeke, K. F., Fahey, P. G., Bashiri, M., Pede, L., Burg, M. F., Blessing, C., ... & Sinz, F. H. (2022). <a href="https://doi.org/10.48550/arXiv.2206.08666" target="_blank" style="color:#1589F0;">The Sensorium competition on predicting large-scale mouse primary visual cortex activity</a>. <i>arXiv preprint arXiv:2206.08666</i>.
 
 </div> <br />
 
