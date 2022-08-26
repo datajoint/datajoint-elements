@@ -1,7 +1,7 @@
 # Facemap
 
 ## Sustainability Roadmap between DataJoint Elements and Facemap
-
+<br>
 <p align="center">
   <img src="https://github.com/datajoint/datajoint-elements/blob/main/docs/img/facemap.png?raw=true" width="150" height="28">&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/datajoint/datajoint.org/0a05cf5c2530a3595a13fc11f6abac64746d845d/static/images/elements-logo.png" width="300" height="83">
