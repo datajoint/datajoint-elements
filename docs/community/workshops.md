@@ -9,13 +9,23 @@ Find us at the following upcoming and past workshops!
 
 ## Upcoming workshops
 
-+ NIH BRAIN Initiative Meeting - June 21-22, 2022
++ Research Workflows Workshop - September 6-8, 2022
 
 + INCF Assembly - September 12-16, 2022
+
++ Neuropixels and OpenScope Workshop - September 21-23, 2022
+
++ NeuroDataReHack Hackathon - September 28, 2022; October 3-5, 2022
+
++ Senses in Motion Symposium - October 17, 2022
 
 + Society for Neuroscience - November 12-16, 2022
 
 ## Past workshops
+
++ [NWB Hackathon User Days](https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK13_2022_Janelia/projects/PROJECTS.md) - July 24-27, 2022
+
++ NIH BRAIN Initiative Meeting - June 21-22, 2022
 
 + UCL Neuropixels Course - October 19, 2021
 
