@@ -24,6 +24,10 @@ line-spacing="2">
 
 <!-- 2022 ---> <div id="ref-cadena2022diverse" class="csl-entry"> 
 
+<br>
+Saunders, J. L., Ott, L. A., Wehr, M. (2022). <a href="https://doi.org/10.1101/807693" target="_blank", style="color:#1589F0;">AUTOPILOT: Automating experiments with lots of Raspberry Pis</a>. <i>bioRxiv.</i>
+</br>
+<br>
 Born, G. (2022). <a href="https://edoc.ub.uni-muenchen.de/30350/1/Born_Gregory.pdf" target="_blank" style="color:#1589F0;">The effect of feedback on sensory processing in the mouse early visual system</a>. <i>Doctoral dissertation</i>.
 
 </div> <br />
