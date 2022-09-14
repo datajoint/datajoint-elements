@@ -22,7 +22,19 @@ line-spacing="2">
 
 <h3>2022</h3>
 
-<!-- 2022 ---> <div id="ref-cadena2022diverse" class="csl-entry"> 
+<!-- 2022 ---> <div id="ref-pettit2022fos" class="csl-entry"> 
+
+Pettit, N. H., Yap, E., Greenberg, M. E., Harvey, C. D. (2022). <a href="https://www.nature.com/articles/s41586-022-05113-1" target="_blank", style="color:#1589F0;">Fos ensembles encode and shape stable spatial maps in the hippocampus</a>. <i>Nature</i>.
+
+</div><br />
+
+<!-- 2022 ---> <div id="ref-saunders2022autopilot" class="csl-entry"> 
+
+Saunders, J. L., Ott, L. A., Wehr, M. (2022). <a href="https://doi.org/10.1101/807693" target="_blank", style="color:#1589F0;">AUTOPILOT: Automating experiments with lots of Raspberry Pis</a>. <i>bioRxiv</i>.
+
+</div><br />
+
+<!-- 2022 ---> <div id="ref-born2022effect" class="csl-entry">  
 
 Born, G. (2022). <a href="https://edoc.ub.uni-muenchen.de/30350/1/Born_Gregory.pdf" target="_blank" style="color:#1589F0;">The effect of feedback on sensory processing in the mouse early visual system</a>. <i>Doctoral dissertation</i>.
 
@@ -30,7 +42,7 @@ Born, G. (2022). <a href="https://edoc.ub.uni-muenchen.de/30350/1/Born_Gregory.p
 
 <!-- 2022 ---> <div id="ref-cadena2022diverse" class="csl-entry"> 
 
-Cadena, S. A., Willeke, K. F., Restivo, K., Denfield, G., Sinz, F. H., Bethge, M., ... & Ecker, A. S. (2022). <a href="https://doi.org/10.1101/2022.05.18.492503" target="_blank" style="color:#1589F0;">Diverse task-driven modeling of macaque V4 reveals functional specialization towards semantic tasks.</a>. <i>bioRxiv.</i>.
+Cadena, S. A., Willeke, K. F., Restivo, K., Denfield, G., Sinz, F. H., Bethge, M., ... & Ecker, A. S. (2022). <a href="https://doi.org/10.1101/2022.05.18.492503" target="_blank" style="color:#1589F0;">Diverse task-driven modeling of macaque V4 reveals functional specialization towards semantic tasks.</a>. <i>bioRxiv</i>.
 
 </div> <br />
 
@@ -54,7 +66,7 @@ Cotton, R. J., McClerklin, E., Cimorelli, A., Patel, A., & Karakostas, T. (2022)
 
 <!-- 2022 ---> <div id="ref-fu2022heterogeneous" class="csl-entry"> 
 
-Fu, J., Willeke, K. F., Pierzchlewicz, P. A., Muhammad, T., Denfield, G. H., Sinz, F. H., & Tolias, A. S. (2022). <a href="https://dx.doi.org/10.2139/ssrn.4029075" target="_blank" style="color:#1589F0;">Heterogeneous Orientation Tuning Across Sub-Regions of Receptive Fields of V1 Neurons in Mice.</a>. <i>Available at SSRN 4029075</i>.
+Fu, J., Willeke, K. F., Pierzchlewicz, P. A., Muhammad, T., Denfield, G. H., Sinz, F. H., & Tolias, A. S. (2022). <a href="https://dx.doi.org/10.2139/ssrn.4029075" target="_blank" style="color:#1589F0;">Heterogeneous Orientation Tuning Across Sub-Regions of Receptive Fields of V1 Neurons in Mice</a>. <i>Available at SSRN 4029075</i>.
 
 </div> <br />
 
