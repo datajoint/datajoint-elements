@@ -10,6 +10,9 @@ The project is performed by [DataJoint](https://www.datajoint.com) with Dimitri 
 - Joseph Burling - Data Scientist
 - Chris Brozdowski - Data Scientist
 - Tolga Dincer - Data Scientist
+- Sid Hulyalkar - Data Scientist
+- Jaerong Ahn - Data Scientist
+- Kushal Bakshi - Data Scientist
 
 ## Engineers
 
@@ -18,6 +21,8 @@ The project is performed by [DataJoint](https://www.datajoint.com) with Dimitri 
 - Jeroen Verswijver - Software Engineer
 - Carlos Ortiz - Software Engineer
 - Adib Baji - Software Engineer
+- Timothy Chandler - Data Systems Engineer
+- Chetana Pitani - Software Engineer
 
 ## Past contributors
 
