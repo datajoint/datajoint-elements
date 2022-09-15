@@ -22,15 +22,11 @@ When the new Element is released, a full attribution is given to the Precursor P
 DataJoint pipelines rely on analysis tools, atlases, data standards, archives and catalogs, and other neuroinformatics resources developed and maintained by the broader scientific community.
 To ensure sustainability of the Resource, we reach out to the tool developer to establish joint sustainability roadmaps.
 
-# 3. Validation Sites
-
-Before new Resource components are released as part of this Resource, our team engages other research groups to evaluate these components in their projects in realistic scenarios experiments. During the Alpha testing period, the validation sites set up the workflow by either integrating Resource components with their existing workflow or by combining only the Resource components with the help of our team. We evaluate the feedback and upgrade our Resource components accordingly during this process.
-
-# 4. Dissemination
+# 3. Dissemination
 
 We conduct activities to disseminate Resource components for adoption in diverse neuroscience labs. These activities include
 
-- A central website for the Resource. Presently, this [site](https://elements.datajoint.org) serves this purpose.
+- A central [website](https://elements.datajoint.org) for the Resource.
 - Conference talks, presentations, and workshops
 - Publications in peer-reviewed journals
 - White papers posted on internet resources and websites
@@ -38,7 +34,7 @@ We conduct activities to disseminate Resource components for adoption in diverse
 - Remote workshops and webinars
 - Online interactive tutorials hosted on [DataJoint CodeBook](https://codebook.datajoint.io).
 
-# 5. Census
+# 4. Census
 
 In order to measure the effectiveness of the Resource, we conduct several activities to estimate the adoption and use of the Resource components:
 

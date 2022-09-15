@@ -20,7 +20,9 @@ Generally, this includes tests related to:
 
 - **Syntax**: Verify that the code base does not contain any syntax errors and will run or compile successfully.
 - **Unit & Integration**: Verify that low-level, method-specific tests (unit tests) and any tests related coordinated interface between methods (integration tests) pass successfully. Typically, when bugs are patched or features are introduced, unit and integration tests are added to ensure that the use-case intended to be satisfied is accounted for. This helps us prevent any regression in functionality.
+
 - **Style**: Verify that the code base adheres to style guides for optimal readability.
+
 - **Code Coverage**: Verify that the code base has similar or better code coverage than the last run.
 
 ## Code Reviews
@@ -43,35 +45,16 @@ When introducing new code to the code base, the following will be required for a
 
 - **Release Notes**: Include necessary updates to the release notes or change log to capture a summary of the patched bugs and new feature introduction. Proper linking should be maintained to associated tickets in issue tracker and reviews.
 
-## Alpha Release Process
+## Release Process
 
-For the workflows and their revisions, the initial development and internal testing, the code will be released in _Alpha_. During this phase, we will engage external research teams to test and validate the complete workflows in real-life experiments with our team's engineering support. During this phase, significant design changes may be performed and not all features may be completely developed. However, several features should be usable and suitable for testing and validation.
+Upon satisfactory adherence to the above Coding Standards, Automated Testing, and Code Reviews:
 
-### Criteria to participate as validation sites
+- The package version will be incremented following the standard definition of [Semantic Versioning](https://semver.org/spec/v2.0.0.html) with a `Major.Minor.Patch` number.
+- Updates will be merged into the base repository `main` branch.
+- A new release will be made on PyPI.
 
-- The participating lab/group has an existing DataJoint pipeline for the Element(s) to be connected to
-- The DataJoint pipeline code base is hosted as a Github repository (either public or private)
-- The participating lab/group has existing datasets in the format supported by the Element(s) for the purpose of this validation
-- The participating lab/group has a dedicated point of contact person to work closely with DataJoint&reg; engineering team for this validation effort
-
-### Criteria for a successful validation
-
-- Able to connect the Element(s) to existing pipeline and all schemas/tables declared without errors
-- Successful ingestion of data for at least 2 experimental sessions
-- Inspection/verification that the data are ingested correctly by the participating lab/group - e.g. manual inspection of ingested traces, plotting of spatial footprints, spike trains, etc. to confirm correctness of ingested data
-
-## Beta Release Process
-
-After the initial validation phase, we make the workflows available to the general public with a warning of _Beta_ status and that the released code may be subject to errors and changes. During this phase, feature development should be complete with a focus on collecting user feedback to make design improvements and bug fixes.
-
-## Official Release Process
-
-After gaining confidence of user satisfaction by resolving concerns raised in _Beta_, the workflows are declared officially released and announced to the community.
-
-## Maintenance Support Lifecycle
-
-Revision of the workflows will be released with a version specification that clearly identifies whether in _Alpha_, _Beta_, or _Official_ release status. Quality assurance process will be followed for all iterations and new designs. If the updates require changes in the design of the database schema or formats, a process for data migration will be provided.
+For external research teams that reach out to us, we will provide engineering support to help users adopt the updated software, collect feedback, and resolve issues following the processes described in the section below. If the updates require changes in the design of the database schema or formats, a process for data migration will be provided upon request.
 
 ## User Feedback & Issue Tracking
 
-All components will be organized in GitHub repositories with guidelines for contribution, feedback, and issue submission to the issue tracker. For more information on the general policy around issue filing, tracking, and escalation, see the [DataJoint Open-Source Contribute](https://docs.datajoint.io/python/community/02-Contribute.html) policy. Typically issues will be prioritized based on their criticality and impact. If new feature requirements become apparent, this may trigger the creation of a separate workflow or a major revision of an existing workflow.
+All components will be organized in GitHub repositories with guidelines for contribution, feedback, and issue submission to the issue tracker. For more information on the general policy around issue filing, tracking, and escalation, see the [DataJoint Open-Source Contribute](https://docs.datajoint.org/python/community/02-Contribute.html) policy. For research groups that reach out to us, our team will work closely to collect feedback and resolve issues. Typically issues will be prioritized based on their criticality and impact. If new feature requirements become apparent, this may trigger the creation of a separate workflow or a major revision of an existing workflow.
