@@ -323,15 +323,7 @@
                 
             <li class="second-level"><a href="#code-reviews">Code Reviews</a></li>
                 
-            <li class="second-level"><a href="#alpha-release-process">Alpha Release Process</a></li>
-                
-                <li class="third-level"><a href="#criteria-to-participate-as-validation-sites">Criteria to participate as validation sites</a></li>
-                <li class="third-level"><a href="#criteria-for-a-successful-validation">Criteria for a successful validation</a></li>
-            <li class="second-level"><a href="#beta-release-process">Beta Release Process</a></li>
-                
-            <li class="second-level"><a href="#official-release-process">Official Release Process</a></li>
-                
-            <li class="second-level"><a href="#maintenance-support-lifecycle">Maintenance Support Lifecycle</a></li>
+            <li class="second-level"><a href="#release-process">Release Process</a></li>
                 
             <li class="second-level"><a href="#user-feedback-issue-tracking">User Feedback &amp; Issue Tracking</a></li>
                 
@@ -358,7 +350,11 @@
 <ul>
 <li><strong>Syntax</strong>: Verify that the code base does not contain any syntax errors and will run or compile successfully.</li>
 <li><strong>Unit &amp; Integration</strong>: Verify that low-level, method-specific tests (unit tests) and any tests related coordinated interface between methods (integration tests) pass successfully. Typically, when bugs are patched or features are introduced, unit and integration tests are added to ensure that the use-case intended to be satisfied is accounted for. This helps us prevent any regression in functionality.</li>
+</ul>
+<ul>
 <li><strong>Style</strong>: Verify that the code base adheres to style guides for optimal readability.</li>
+</ul>
+<ul>
 <li><strong>Code Coverage</strong>: Verify that the code base has similar or better code coverage than the last run.</li>
 </ul>
 <h2 id="code-reviews">Code Reviews</h2>
@@ -387,29 +383,16 @@
 <ul>
 <li><strong>Release Notes</strong>: Include necessary updates to the release notes or change log to capture a summary of the patched bugs and new feature introduction. Proper linking should be maintained to associated tickets in issue tracker and reviews.</li>
 </ul>
-<h2 id="alpha-release-process">Alpha Release Process</h2>
-<p>For the workflows and their revisions, the initial development and internal testing, the code will be released in <em>Alpha</em>. During this phase, we will engage external research teams to test and validate the complete workflows in real-life experiments with our team's engineering support. During this phase, significant design changes may be performed and not all features may be completely developed. However, several features should be usable and suitable for testing and validation.</p>
-<h3 id="criteria-to-participate-as-validation-sites">Criteria to participate as validation sites</h3>
+<h2 id="release-process">Release Process</h2>
+<p>Upon satisfactory adherence to the above Coding Standards, Automated Testing, and Code Reviews:</p>
 <ul>
-<li>The participating lab/group has an existing DataJoint pipeline for the Element(s) to be connected to</li>
-<li>The DataJoint pipeline code base is hosted as a Github repository (either public or private)</li>
-<li>The participating lab/group has existing datasets in the format supported by the Element(s) for the purpose of this validation</li>
-<li>The participating lab/group has a dedicated point of contact person to work closely with DataJoint&reg; engineering team for this validation effort</li>
+<li>The package version will be incremented following the standard definition of <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a> with a <code>Major.Minor.Patch</code> number.</li>
+<li>Updates will be merged into the base repository <code>main</code> branch.</li>
+<li>A new release will be made on PyPI.</li>
 </ul>
-<h3 id="criteria-for-a-successful-validation">Criteria for a successful validation</h3>
-<ul>
-<li>Able to connect the Element(s) to existing pipeline and all schemas/tables declared without errors</li>
-<li>Successful ingestion of data for at least 2 experimental sessions</li>
-<li>Inspection/verification that the data are ingested correctly by the participating lab/group - e.g. manual inspection of ingested traces, plotting of spatial footprints, spike trains, etc. to confirm correctness of ingested data</li>
-</ul>
-<h2 id="beta-release-process">Beta Release Process</h2>
-<p>After the initial validation phase, we make the workflows available to the general public with a warning of <em>Beta</em> status and that the released code may be subject to errors and changes. During this phase, feature development should be complete with a focus on collecting user feedback to make design improvements and bug fixes.</p>
-<h2 id="official-release-process">Official Release Process</h2>
-<p>After gaining confidence of user satisfaction by resolving concerns raised in <em>Beta</em>, the workflows are declared officially released and announced to the community.</p>
-<h2 id="maintenance-support-lifecycle">Maintenance Support Lifecycle</h2>
-<p>Revision of the workflows will be released with a version specification that clearly identifies whether in <em>Alpha</em>, <em>Beta</em>, or <em>Official</em> release status. Quality assurance process will be followed for all iterations and new designs. If the updates require changes in the design of the database schema or formats, a process for data migration will be provided.</p>
+<p>For external research teams that reach out to us, we will provide engineering support to help users adopt the updated software, collect feedback, and resolve issues following the processes described in the section below. If the updates require changes in the design of the database schema or formats, a process for data migration will be provided upon request.</p>
 <h2 id="user-feedback-issue-tracking">User Feedback &amp; Issue Tracking</h2>
-<p>All components will be organized in GitHub repositories with guidelines for contribution, feedback, and issue submission to the issue tracker. For more information on the general policy around issue filing, tracking, and escalation, see the <a href="https://docs.datajoint.io/python/community/02-Contribute.html">DataJoint Open-Source Contribute</a> policy. Typically issues will be prioritized based on their criticality and impact. If new feature requirements become apparent, this may trigger the creation of a separate workflow or a major revision of an existing workflow.</p></div>
+<p>All components will be organized in GitHub repositories with guidelines for contribution, feedback, and issue submission to the issue tracker. For more information on the general policy around issue filing, tracking, and escalation, see the <a href="https://docs.datajoint.org/python/community/02-Contribute.html">DataJoint Open-Source Contribute</a> policy. For research groups that reach out to us, our team will work closely to collect feedback and resolve issues. Typically issues will be prioritized based on their criticality and impact. If new feature requirements become apparent, this may trigger the creation of a separate workflow or a major revision of an existing workflow.</p></div>
         
         
     </div>
