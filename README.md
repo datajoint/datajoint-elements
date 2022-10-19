@@ -1,5 +1,7 @@
 <!--readme-start-->
 
+> ⚠️ This is no longer maintained and has been superseded by [datajoint-company/datajoint-docs](https://github.com/datajoint-company/datajoint-docs). Please file new issues there (or help contribute!). We are currently migrating and generating new content until November 2022 after which we'll be decomissioning https://elements.datajoint.org in favor of https://datajoint.com/docs/.
+
 # DataJoint Elements for Neurophysiology
 
 ![Logo](docs/img/elements-logo.png)
